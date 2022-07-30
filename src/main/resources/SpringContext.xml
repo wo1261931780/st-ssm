@@ -11,8 +11,6 @@
 		<!--ioc的单例模式，主要为了方便管理-->
 		<!--但是，如果对象需要记录成员变量的属性值，那么就需要使用非单例的新建方式-->
 		<!--这种带有属性值的，一般都带有一定的业务状态-->
-
-
 	</bean>
 	<bean id="demoBean2" name="bookService bookServiceEbi" class="com.stssm.github.io.service.impl.BookServiceImpl">
 		<!--name中设置的是变量的自定义名称-->
@@ -25,8 +23,15 @@
 		</property>
 	</bean>
 
-	<bean name=""></bean>
-
+	<!--这里新建出来的静态factory对象-->
+	<bean name="demoBean" class="com.stssm.github.io.factory.FactoryDao" factory-method="getBookDao">
+		<!--新建了工厂以后，还需要说明工厂的构造方法是什么-->
+	</bean>
+	<!--下面是实例工厂-->
+	<bean id="factoryStaticDao2" class="com.stssm.github.io.factory.FactoryStaticDao"></bean>
+	<!--首先要映射到工厂对象-->
+	<!--然后工厂对象再次映射到具体对象的新建方法-->
+	<bean name="demoBean" factory-bean="factoryStaticDao2" factory-method="getBookDao"></bean>
 
 
 </beans>

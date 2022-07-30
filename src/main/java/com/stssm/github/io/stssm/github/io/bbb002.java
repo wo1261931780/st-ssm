@@ -1,7 +1,8 @@
 package com.stssm.github.io.stssm.github.io;
 
 import com.stssm.github.io.dao.BookDao;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.stssm.github.io.factory.FactoryDao;
+import com.stssm.github.io.factory.FactoryStaticDao;
 
 /**
  * Created by Intellij IDEA.
@@ -27,5 +28,16 @@ public class bbb002 {
 		// 通过打印多个对象的地址，可以发现，这是同一个对象
 		// 使用了单例设计模式
 		// res1.show();
+		// -------------------------------------------------
+		// 第二种方法，新建一个静态工厂来新建对象
+		FactoryDao factoryDao = new FactoryDao();
+		BookDao bookDao = factoryDao.getBookDao();
+		bookDao.show();
+		// 以前的造对象方法
+		// 使用静态方式构造对象
+		// -------------------------------------------------
+		FactoryStaticDao factoryStaticDao = new FactoryStaticDao();
+
+
 	}
 }

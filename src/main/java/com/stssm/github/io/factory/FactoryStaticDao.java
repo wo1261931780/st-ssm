@@ -15,9 +15,9 @@ import com.stssm.github.io.dao.impl.BookDaoImpl;
  * @return
  * @exception
  */
-public class factoryDao {
-	public static BookDao getBookDao() {
-		System.out.println("工厂新建一个对象");
+public class FactoryStaticDao {
+	public BookDao getBookDao() {
+		System.out.println("我是实例工厂");
 		return new BookDaoImpl();
 	}
 }
