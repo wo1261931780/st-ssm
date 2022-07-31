@@ -15,5 +15,15 @@ package com.stssm.github.io.dao;
 public interface BookDao {
 	// 数据层接口
 	// 对应我们之前使用的model
-	public void show();
+	public void daoShow();
+
+	// 上面的show方法是正常使用的
+	// 但是对一个bean对象来说，
+	// 在创建以后，是存在一个完整生命周期的
+	// 我们可以根据生命周期来进行一些定义，从而展示对应的过程
+	public void daoInit();
+	public void daoDestory();
+
+
+
 }

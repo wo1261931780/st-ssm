@@ -1,4 +1,4 @@
-package com.stssm.github.io.stssm.github.io;
+package com.stssm.github.io.junw.bbb001_2022年7月30日;
 
 import com.stssm.github.io.service.BookService;
 import com.stssm.github.io.service.impl.BookServiceImpl;
@@ -17,8 +17,8 @@ import com.stssm.github.io.service.impl.BookServiceImpl;
  */
 public class bbb001 {
 	public static void main(String[] args) {
-		BookService x=new BookServiceImpl();
-		x.show2();
+		BookService bookService=new BookServiceImpl();
+		bookService.serviceShow();
 		// 这里都是在没有设置的情况下，运行类的方法
 	}
 }

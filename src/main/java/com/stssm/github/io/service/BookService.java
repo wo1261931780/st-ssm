@@ -16,5 +16,5 @@ public interface BookService {
 
 	// 业务层，主要写运行的逻辑
 
-	public void show2();
+	public void serviceShow();
 }

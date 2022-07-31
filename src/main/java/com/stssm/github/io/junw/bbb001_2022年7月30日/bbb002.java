@@ -1,8 +1,8 @@
-package com.stssm.github.io.stssm.github.io;
+package com.stssm.github.io.junw.bbb001_2022年7月30日;
 
 import com.stssm.github.io.dao.BookDao;
-import com.stssm.github.io.factory.FactoryDao;
 import com.stssm.github.io.factory.FactoryStaticDao;
+import com.stssm.github.io.factory.FactoryDao;
 
 /**
  * Created by Intellij IDEA.
@@ -30,13 +30,13 @@ public class bbb002 {
 		// res1.show();
 		// -------------------------------------------------
 		// 第二种方法，新建一个静态工厂来新建对象
-		FactoryDao factoryDao = new FactoryDao();
-		BookDao bookDao = factoryDao.getBookDao();
-		bookDao.show();
+		FactoryStaticDao factoryStaticDao = new FactoryStaticDao();
+		BookDao bookDao = factoryStaticDao.getBookDao();
+		bookDao.daoShow();
 		// 以前的造对象方法
 		// 使用静态方式构造对象
 		// -------------------------------------------------
-		FactoryStaticDao factoryStaticDao = new FactoryStaticDao();
+		FactoryDao factoryDao = new FactoryDao();
 
 
 	}

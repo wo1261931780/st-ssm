@@ -1,7 +1,6 @@
 package com.stssm.github.io.service.impl;
 
 import com.stssm.github.io.dao.BookDao;
-import com.stssm.github.io.dao.impl.BookDaoImpl;
 import com.stssm.github.io.service.BookService;
 
 /**
@@ -18,17 +17,17 @@ import com.stssm.github.io.service.BookService;
  */
 public class BookServiceImpl implements BookService {
 	// 左上角出现的小图标，对应的就是后面的spring配置出来的xml
-	// private BookDao demoDao = new BookDaoImpl();
-	private BookDao demoDao;
-	private BookService demoService = new BookServiceImpl();
+	// private BookDao serviceDao = new BookDaoImpl();
+	private BookDao serviceDao;
+	// private BookService serviceObj = new BookServiceImpl();
 
 	@Override
-	public void show2() {
-		System.out.println("我是show2");
-		demoDao.show();
+	public void serviceShow() {
+		System.out.println("我是serviceShow");
+		serviceDao.daoShow();
 	}
-	public void setDemoDao(BookDao bookDao){
-		this.demoDao=bookDao;
+	public void setXmlServiceDao(BookDao xmlServiceDao){
+		this.serviceDao = xmlServiceDao;
 	}
 
 }

@@ -4,34 +4,50 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<!--这里主要是配置bean文件-->
 	<!--需要配置的是实现类，因为要新建对象出来-->
-	<bean id="demoBean" class="com.stssm.github.io.dao.impl.BookDaoImpl" scope="prototype">
-		<!--注意一下，是否生成单例对象，是在dao的配置文件中设置的-->
-		<!--默认scope中，是单例-->
-		<!--如果修改，就可以生成不同的内存地址-->
-		<!--ioc的单例模式，主要为了方便管理-->
-		<!--但是，如果对象需要记录成员变量的属性值，那么就需要使用非单例的新建方式-->
-		<!--这种带有属性值的，一般都带有一定的业务状态-->
+	<!--<bean id="daoBeanXmlId" class="com.stssm.github.io.dao.impl.BookDaoImpl" scope="prototype">-->
+	<!--注意一下，是否生成单例对象，是在dao的配置文件中设置的-->
+	<!--默认scope中，是单例-->
+	<!--如果修改，就可以生成不同的内存地址-->
+	<!--ioc的单例模式，主要为了方便管理-->
+	<!--但是，如果对象需要记录成员变量的属性值，那么就需要使用非单例的新建方式-->
+	<!--这种带有属性值的，一般都带有一定的业务状态-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<bean id="daoBeanXmlId" name="daoBeanXmlName" class="com.stssm.github.io.dao.impl.BookDaoImpl" scope="prototype" init-method="daoInit"
+	      destroy-method="daoDestory">
+		<!--上面是测试初始化和销毁的生命周期-->
 	</bean>
-	<bean id="demoBean2" name="bookService bookServiceEbi" class="com.stssm.github.io.service.impl.BookServiceImpl">
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<bean id="serviceBeanXmlId" name="serviceBeanXmlName bookServiceEbi"
+	      class="com.stssm.github.io.service.impl.BookServiceImpl">
 		<!--name中设置的是变量的自定义名称-->
 		<!--自定义名称可以多个，还可以同时生效-->
-		<property name="demoDao" ref="demoBean">
+		<property name="xmlServiceDao" ref="daoBeanXmlId">
 			<!--name表示我要设置的类名-->
 			<!--具体指的是bbb002中，通过多态创建的对象，对象对应的名称-->
 			<!--ref表示我参考的对象-->
 			<!--这里指的是我上面创建的bean-->
 		</property>
 	</bean>
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
 
 	<!--这里新建出来的静态factory对象-->
-	<bean name="demoBean" class="com.stssm.github.io.factory.FactoryDao" factory-method="getBookDao">
+	<bean name="staticFactoryDaoBean" class="com.stssm.github.io.factory.FactoryStaticDao" factory-method="getBookDao">
 		<!--新建了工厂以后，还需要说明工厂的构造方法是什么-->
 	</bean>
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
 	<!--下面是实例工厂-->
-	<bean id="factoryStaticDao2" class="com.stssm.github.io.factory.FactoryStaticDao"></bean>
+	<bean id="factoryDaoBean" class="com.stssm.github.io.factory.FactoryDao"></bean>
 	<!--首先要映射到工厂对象-->
 	<!--然后工厂对象再次映射到具体对象的新建方法-->
-	<bean name="demoBean" factory-bean="factoryStaticDao2" factory-method="getBookDao"></bean>
+	<bean name="factoryDaoBeanName" factory-bean="factoryDaoBean" factory-method="getBookDao"></bean>
 
 
 </beans>
