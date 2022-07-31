@@ -14,10 +14,28 @@
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
-	<bean id="daoBeanXmlId" name="daoBeanXmlName" class="com.stssm.github.io.dao.impl.BookDaoImpl" scope="prototype" init-method="daoInit"
+	<bean id="daoBeanXmlId" name="daoBeanXmlName" class="com.stssm.github.io.dao.impl.BookDaoImpl" scope="prototype"
+	      init-method="daoInit"
 	      destroy-method="daoDestory">
 		<!--上面是测试初始化和销毁的生命周期-->
+		<!--一种方法是类似上面这样，直接使用xml配置对应的初始化-->
+		<!--还有一种就是直接实现对应的接口，完成标准流程的初始化-->
 	</bean>
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--这里新建出来的静态factory对象-->
+	<bean name="staticFactoryDaoBean" class="com.stssm.github.io.factory.FactoryStaticDao" factory-method="getBookDao">
+		<!--新建了工厂以后，还需要说明工厂的构造方法是什么-->
+	</bean>
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--下面是实例工厂-->
+	<bean id="factoryDaoBean" class="com.stssm.github.io.factory.FactoryDao"></bean>
+	<!--首先要映射到工厂对象-->
+	<!--然后工厂对象再次映射到具体对象的新建方法-->
+	<bean name="factoryDaoBeanName" factory-bean="factoryDaoBean" factory-method="getBookDao"></bean>
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
@@ -31,23 +49,29 @@
 			<!--ref表示我参考的对象-->
 			<!--这里指的是我上面创建的bean-->
 		</property>
+		<property name="xmlServiceDaoUser" ref="userDaoBeanXmlId"></property>
 	</bean>
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 
-	<!--这里新建出来的静态factory对象-->
-	<bean name="staticFactoryDaoBean" class="com.stssm.github.io.factory.FactoryStaticDao" factory-method="getBookDao">
-		<!--新建了工厂以后，还需要说明工厂的构造方法是什么-->
+	<bean id="userDaoBeanXmlId" name="userDaoBeanXmlName" class="com.stssm.github.io.dao.impl.userDaoImpl"
+	      scope="prototype">
+		<property name="nums" value="123"></property>
+		<property name="resultStr" value="str123"></property>
+		<!--这里是setter注入-->
+		<!--直接根据设置的value，将数据传递过去-->
 	</bean>
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
-	<!--下面是实例工厂-->
-	<bean id="factoryDaoBean" class="com.stssm.github.io.factory.FactoryDao"></bean>
-	<!--首先要映射到工厂对象-->
-	<!--然后工厂对象再次映射到具体对象的新建方法-->
-	<bean name="factoryDaoBeanName" factory-bean="factoryDaoBean" factory-method="getBookDao"></bean>
+	<bean id="userDaoBeanXmlId"></bean>
+
+	<bean id="userDao2BeanXmlId" name="userDao2BeanXmlName" class="com.stssm.github.io.dao.impl.userDaoImpl2"
+	      scope="prototype">
+		<constructor-arg name="nums" value="222"></constructor-arg>
+		<constructor-arg name="resultStr" value="str222"></constructor-arg>
+	</bean>
 
 
 </beans>
