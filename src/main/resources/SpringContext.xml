@@ -14,63 +14,120 @@
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
-	<bean id="daoBeanXmlId" name="daoBeanXmlName" class="com.stssm.github.io.dao.impl.BookDaoImpl" scope="prototype"
-	      init-method="daoInit"
-	      destroy-method="daoDestory">
-		<!--上面是测试初始化和销毁的生命周期-->
-		<!--一种方法是类似上面这样，直接使用xml配置对应的初始化-->
-		<!--还有一种就是直接实现对应的接口，完成标准流程的初始化-->
-	</bean>
+	<!--<bean id="daoBeanXmlId" name="daoBeanXmlName" class="com.stssm.github.io.dao.impl.BookDaoImpl" scope="prototype"-->
+	<!--      init-method="daoInit"-->
+	<!--      destroy-method="daoDestory">-->
+	<!--	&lt;!&ndash;上面是测试初始化和销毁的生命周期&ndash;&gt;-->
+	<!--	&lt;!&ndash;一种方法是类似上面这样，直接使用xml配置对应的初始化&ndash;&gt;-->
+	<!--	&lt;!&ndash;还有一种就是直接实现对应的接口，完成标准流程的初始化&ndash;&gt;-->
+	<!--</bean>-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--这里新建出来的静态factory对象-->
-	<bean name="staticFactoryDaoBean" class="com.stssm.github.io.factory.FactoryStaticDao" factory-method="getBookDao">
-		<!--新建了工厂以后，还需要说明工厂的构造方法是什么-->
-	</bean>
+	<!--<bean name="staticFactoryDaoBean" class="com.stssm.github.io.factory.FactoryStaticDao" factory-method="getBookDao">-->
+	<!--	&lt;!&ndash;新建了工厂以后，还需要说明工厂的构造方法是什么&ndash;&gt;-->
+	<!--</bean>-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--下面是实例工厂-->
-	<bean id="factoryDaoBean" class="com.stssm.github.io.factory.FactoryDao"></bean>
+	<!--<bean id="factoryDaoBean" class="com.stssm.github.io.factory.FactoryDao"></bean>-->
 	<!--首先要映射到工厂对象-->
 	<!--然后工厂对象再次映射到具体对象的新建方法-->
-	<bean name="factoryDaoBeanName" factory-bean="factoryDaoBean" factory-method="getBookDao"></bean>
+	<!--<bean name="factoryDaoBeanName" factory-bean="factoryDaoBean" factory-method="getBookDao"></bean>-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
-	<bean id="serviceBeanXmlId" name="serviceBeanXmlName bookServiceEbi"
-	      class="com.stssm.github.io.service.impl.BookServiceImpl">
-		<!--name中设置的是变量的自定义名称-->
-		<!--自定义名称可以多个，还可以同时生效-->
-		<property name="xmlServiceDao" ref="daoBeanXmlId">
-			<!--name表示我要设置的类名-->
-			<!--具体指的是bbb002中，通过多态创建的对象，对象对应的名称-->
-			<!--ref表示我参考的对象-->
-			<!--这里指的是我上面创建的bean-->
+	<!--<bean id="serviceBeanXmlId" name="serviceBeanXmlName bookServiceEbi"-->
+	<!--      class="com.stssm.github.io.service.impl.BookServiceImpl">-->
+	<!--	&lt;!&ndash;name中设置的是变量的自定义名称&ndash;&gt;-->
+	<!--	&lt;!&ndash;自定义名称可以多个，还可以同时生效&ndash;&gt;-->
+	<!--	<property name="xmlServiceDao" ref="daoBeanXmlId">-->
+	<!--		&lt;!&ndash;name表示我要设置的类名&ndash;&gt;-->
+	<!--		&lt;!&ndash;具体指的是bbb002中，通过多态创建的对象，对象对应的名称&ndash;&gt;-->
+	<!--		&lt;!&ndash;ref表示我参考的对象&ndash;&gt;-->
+	<!--		&lt;!&ndash;这里指的是我上面创建的bean&ndash;&gt;-->
+	<!--	</property>-->
+	<!--	<property name="xmlServiceDaoUser" ref="userDaoBeanXmlId"></property>-->
+	<!--</bean>-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+
+	<!--<bean id="userDaoBeanXmlId" name="userDaoBeanXmlName" class="com.stssm.github.io.dao.impl.userDaoImpl"-->
+	<!--      scope="prototype">-->
+	<!--	<property name="nums" value="123"></property>-->
+	<!--	<property name="resultStr" value="str123"></property>-->
+	<!--	&lt;!&ndash;这里是setter注入&ndash;&gt;-->
+	<!--	&lt;!&ndash;直接根据设置的value，将数据传递过去&ndash;&gt;-->
+	<!--</bean>-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--<bean id="userDaoBeanXmlId"></bean>-->
+	<!--<bean id="userDao2BeanXmlId" name="userDao2BeanXmlName" class="com.stssm.github.io.dao.impl.userDaoImpl2"-->
+	<!--      scope="prototype">-->
+	<!--	<constructor-arg name="nums" value="222"></constructor-arg>-->
+	<!--	<constructor-arg name="resultStr" value="str222"></constructor-arg>-->
+	<!--</bean>-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+
+	<!--<bean id="userDao3BeanXmlId" class="com.stssm.github.io.dao.impl.userDaoImpl3" autowire="byType"/>-->
+	<!--通过类型注入，在原有dao中取消构造器-->
+	<!--如果两个名称一样，那么类型会提示错误，存在多个备选bean-->
+	<!--<bean id="userDao3BeanXmlId" class="com.stssm.github.io.dao.impl.userDaoImpl3" autowire="byName"/>-->
+	<!--按名称-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<!--********************************************************************************************************-->
+	<bean id="userDao4BeanXmlId" class="com.stssm.github.io.dao.impl.userDaoImpl4">
+		<!--首先要设置一个bean进行注入-->
+		<property name="array">
+			<array>
+				<value>100</value>
+				<value>200</value>
+				<value>300</value>
+				<value>400</value>
+				<value>500</value>
+			</array>
 		</property>
-		<property name="xmlServiceDaoUser" ref="userDaoBeanXmlId"></property>
-	</bean>
-	<!--********************************************************************************************************-->
-	<!--********************************************************************************************************-->
-	<!--********************************************************************************************************-->
-
-	<bean id="userDaoBeanXmlId" name="userDaoBeanXmlName" class="com.stssm.github.io.dao.impl.userDaoImpl"
-	      scope="prototype">
-		<property name="nums" value="123"></property>
-		<property name="resultStr" value="str123"></property>
-		<!--这里是setter注入-->
-		<!--直接根据设置的value，将数据传递过去-->
-	</bean>
-	<!--********************************************************************************************************-->
-	<!--********************************************************************************************************-->
-	<!--********************************************************************************************************-->
-	<bean id="userDaoBeanXmlId"></bean>
-
-	<bean id="userDao2BeanXmlId" name="userDao2BeanXmlName" class="com.stssm.github.io.dao.impl.userDaoImpl2"
-	      scope="prototype">
-		<constructor-arg name="nums" value="222"></constructor-arg>
-		<constructor-arg name="resultStr" value="str222"></constructor-arg>
+		<!--上面的array和list是可以混合使用的-->
+		<property name="list">
+			<list>
+				<value>list1</value>
+				<value>list2</value>
+				<value>list3</value>
+			</list>
+		</property>
+		<property name="set">
+			<set>
+				<value>set1</value>
+				<value>set1</value>
+				<value>set2</value>
+				<value>set3</value>
+				<value>set1</value>
+			</set>
+			<!--上面的set会对value进行自动过滤-->
+		</property>
+		<property name="map">
+			<map>
+				<entry key="demo1" value="demo100"></entry>
+				<entry key="demo2" value="demo200"></entry>
+				<entry key="demo3" value="demo300"></entry>
+				<entry key="demo1" value="demo100"></entry>
+			</map>
+		</property>
+		<property name="properties">
+			<props>
+				<prop key="p1">1</prop>
+				<prop key="p2">2</prop>
+				<prop key="p3">3</prop>
+				<prop key="p1">1</prop>
+			</props>
+		</property>
 	</bean>
 
 
