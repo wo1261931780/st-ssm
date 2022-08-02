@@ -17,12 +17,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class bbb003 {
 	public static void main(String[] args) {
-		// ApplicationContext ctx = new ClassPathXmlApplicationContext("SpringContext.xml");
+		// ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");
 		// ApplicationContext其实也是一个实现类，
 		// 而且这个实现类底下并没有close的方法
 		// 将其修改为ClassPathXmlApplicationContext就有了
 		// *****************************
-		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("SpringContext.xml");
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");
 		System.out.println("我是运行类中，手动的新建dao对象");
 		BookDao daoBeanXmlId = (BookDao) ctx.getBean("daoBeanXmlName");
 		daoBeanXmlId.daoShow();
@@ -35,7 +35,7 @@ public class bbb003 {
 	// *****************************
 	// 下面是所有的日志：
 	// 17:54:04.939 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@506e6d5e
-	// 17:54:05.074 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [SpringContext.xml]
+	// 17:54:05.074 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [bbb001SpringContext.xml]
 	// 17:54:05.101 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'serviceBeanXmlId'
 	// 我是dao构造方法，地址为：com.stssm.github.io.dao.impl.BookDaoImpl@291ae
 	// 我是dao初始化过程

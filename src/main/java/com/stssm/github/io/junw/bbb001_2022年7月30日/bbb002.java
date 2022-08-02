@@ -19,7 +19,7 @@ import com.stssm.github.io.factory.FactoryDao;
 public class bbb002 {
 	public static  void main(String[] args) {
 		// 这里拿到的就是ioc对象
-		// SpringContext x = new ClassPathXmlApplicationContext("SpringContext.xml");
+		// SpringContext x = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");
 		// BookDao res1= x.getBean("demoBean");
 		// BookDao res2= x.getBean("demoBean");
 		// -------------------------------------------------

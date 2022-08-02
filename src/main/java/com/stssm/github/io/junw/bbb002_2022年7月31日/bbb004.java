@@ -17,7 +17,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class bbb004 {
 	public static void main(String[] args) {
-		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("SpringContext.xml");
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");
 		userDao userDaoBeanXmlId = (userDao) ctx.getBean("userDaoBeanXmlId");
 		userDaoBeanXmlId.showMeSetter();
 
