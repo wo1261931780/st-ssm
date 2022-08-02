@@ -25,6 +25,7 @@ public class userDaoImpl5 implements userDao5, InitializingBean, DisposableBean 
 	@Override
 	public void show() {
 		System.out.println("我是show方法");
+		System.out.println("我是demoName：" + demoName);
 	}
 
 	/**

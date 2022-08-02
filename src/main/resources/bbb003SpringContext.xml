@@ -10,7 +10,14 @@
 
 	<!--上面的操作，相当于新开了一个命名空间-->
 	<!--ns，就是namespace的意思-->
-	<context:property-placeholder location="jdbc2.properties"/>
+	<!--<context:property-placeholder location="jdbc2.properties" system-properties-mode="NEVER"/>-->\
+	<!--要配置多个文件同时加载，中间用逗号间隔-->
+	<!--<context:property-placeholder location="jdbc.properties,jdbc2.properties" system-properties-mode="NEVER"/>-->
+	<!--标准的写法，直接添加一个类路径，但是这样只能读取当前的-->
+	<!--<context:property-placeholder location="classpath*:jdbc.properties,jdbc2.properties" system-properties-mode="NEVER"/>-->
+	<!--如果添加了两个星号，那么所有的配置都可以被加载出来，但是也会加载jar包内的-->
+	<context:property-placeholder location="classpath*:*jdbc.properties,jdbc2.properties" system-properties-mode="NEVER"/>
+	<!--禁止系统属性加载，避免配置过程中，不规范命名，导致了数据展示错误-->
 	<bean id="dataSource002" class="com.alibaba.druid.pool.DruidDataSource">
 		<property name="driverClassName" value="${jdbc.driver}"/>
 		<property name="url" value="${jdbc.url}"/>
