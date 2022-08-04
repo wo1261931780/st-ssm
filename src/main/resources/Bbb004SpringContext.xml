@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 	<bean id="serviceUserDao6" class="com.stssm.github.io.dao.impl.UserDaoImpl6"/>
+	<!--首先观察bean的结构-->
+	<!--这里有一个id，一个地方指定对象的类型-->
+	<!--我们通过注解的方式，避免了bean的手动映射-->
+	<!--但是xml还需要知道组件具体的位置，从而进行扫描-->
+	<!--<context:component-scan base-package="com.stssm.github.io.dao.impl"></context:component-scan>-->
+	<!--这里可以写得更加简单一点，直接扫描顶层包，这样内部的所有文件都会递归查找-->
+	<context:component-scan base-package="com.stssm.github.io.dao"></context:component-scan>
+	<!--如果直接写顶层的，好像会报错-->
+	<context:component-scan base-package="com.stssm.github.io.service"></context:component-scan>
 </beans>

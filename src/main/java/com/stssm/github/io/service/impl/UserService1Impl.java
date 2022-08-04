@@ -2,6 +2,7 @@ package com.stssm.github.io.service.impl;
 
 import com.stssm.github.io.dao.UserDao6;
 import com.stssm.github.io.service.UserService1;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by Intellij IDEA.
@@ -12,7 +13,8 @@ import com.stssm.github.io.service.UserService1;
  * @Date 2022-08-23-13  星期四
  * @description
  */
-public class UserServiceImpl implements UserService1 {
+@Component
+public class UserService1Impl implements UserService1 {
 	private UserDao6 serviceUserDao6;
 
 	public void setServiceuserDao6(UserDao6 userDao6){
