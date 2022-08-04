@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb001Spring20220730;
+package com.stssm.github.io.junw.bbb001spring20220730;
 
 import com.stssm.github.io.service.BookService;
 import com.stssm.github.io.service.impl.BookServiceImpl;
