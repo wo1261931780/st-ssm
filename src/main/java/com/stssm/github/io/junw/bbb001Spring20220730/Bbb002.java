@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb001_20220730;
+package com.stssm.github.io.junw.bbb001Spring20220730;
 
 import com.stssm.github.io.dao.BookDao;
 import com.stssm.github.io.factory.FactoryStaticDao;

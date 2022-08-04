@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb002_20220731;
+package com.stssm.github.io.junw.bbb002Spring20220731;
 
 import com.stssm.github.io.dao.BookDao;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

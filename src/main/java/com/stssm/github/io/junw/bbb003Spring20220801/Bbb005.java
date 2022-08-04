@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb003_20220801;
+package com.stssm.github.io.junw.bbb003Spring20220801;
 
 import com.stssm.github.io.dao.UserDao4;
 import org.springframework.context.ApplicationContext;
@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
- * Package:com.stssm.github.io.junw.bbb003_20220801
+ * Package:com.stssm.github.io.junw.bbb003Spring20220801
  *
  * @param
  * @author liujiajun_junw
