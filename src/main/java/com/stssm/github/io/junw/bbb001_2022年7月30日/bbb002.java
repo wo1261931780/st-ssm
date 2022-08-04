@@ -31,7 +31,7 @@ public class bbb002 {
 		// -------------------------------------------------
 		// 第二种方法，新建一个静态工厂来新建对象
 		FactoryStaticDao factoryStaticDao = new FactoryStaticDao();
-		BookDao bookDao = factoryStaticDao.getBookDao();
+		BookDao bookDao = FactoryStaticDao.getBookDao();
 		bookDao.daoShow();
 		// 以前的造对象方法
 		// 使用静态方式构造对象

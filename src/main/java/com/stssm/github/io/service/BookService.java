@@ -14,7 +14,8 @@ package com.stssm.github.io.service;
  */
 public interface BookService {
 
-	// 业务层，主要写运行的逻辑
-
+	/**
+	 * 业务层，主要写运行的逻辑
+	 */
 	public void serviceShow();
 }

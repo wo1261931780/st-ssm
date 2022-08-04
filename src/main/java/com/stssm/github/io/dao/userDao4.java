@@ -14,6 +14,9 @@ package com.stssm.github.io.dao;
  */
 public interface userDao4 {
 
+	/**
+	 * 测试方法
+	 */
 	public void show();
 
 }

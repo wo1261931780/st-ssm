@@ -19,13 +19,20 @@ import org.springframework.beans.factory.InitializingBean;
  * @exception
  */
 public class BookServiceImpl implements BookService, InitializingBean, DisposableBean {
-	// 这里使用实现的方式，完成生命周期的测试
-	// 左上角出现的小图标，对应的就是后面的spring配置出来的xml
-	// private BookDao serviceDao = new BookDaoImpl();
+	/**
+	 * 这里使用实现的方式，完成生命周期的测试
+	 * 左上角出现的小图标，对应的就是后面的spring配置出来的xml
+	 * private BookDao serviceDao = new BookDaoImpl();
+	 */
 	private BookDao serviceDao;
-	// private BookService serviceObj = new BookServiceImpl();
+	/**
+	 * private BookService serviceObj = new BookServiceImpl();
+	 */
 	private userDao serviceUserDao;
 
+	/**
+	 * 测试方法
+	 */
 	@Override
 	public void serviceShow() {
 		System.out.println("我是serviceShow");

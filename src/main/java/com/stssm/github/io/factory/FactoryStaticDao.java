@@ -16,7 +16,9 @@ import com.stssm.github.io.dao.impl.BookDaoImpl;
  * @exception
  */
 public class FactoryStaticDao {
-	// 这里有static关键字，是静态的工厂
+	/**
+	 * 这里有static关键字，是静态的工厂
+	 */
 	public static BookDao getBookDao() {
 		System.out.println("静态工厂新建一个dao对象");
 		return new BookDaoImpl();
