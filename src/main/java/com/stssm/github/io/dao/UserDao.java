@@ -12,11 +12,10 @@ package com.stssm.github.io.dao;
  * @return
  * @exception
  */
-public interface userDao4 {
+public interface UserDao {
 
 	/**
-	 * 测试方法
+	 * 展示结果
 	 */
-	public void show();
-
+	public void showMeSetter();
 }

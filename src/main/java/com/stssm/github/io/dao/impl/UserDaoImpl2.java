@@ -1,6 +1,6 @@
 package com.stssm.github.io.dao.impl;
 
-import com.stssm.github.io.dao.userDao5;
+import com.stssm.github.io.dao.UserDao2;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
@@ -16,16 +16,14 @@ import org.springframework.beans.factory.InitializingBean;
  * @return
  * @exception
  */
-public class userDaoImpl5 implements userDao5, InitializingBean, DisposableBean {
-	private String demoName;
+public class UserDaoImpl2 implements UserDao2, InitializingBean, DisposableBean {
 
-	/**
-	 *
-	 */
-	@Override
-	public void show() {
-		System.out.println("我是show方法");
-		System.out.println("我是demoName：" + demoName);
+	private int nums;
+	private String resultStr;
+
+	public UserDaoImpl2(int nums, String resultStr) {
+		this.nums = nums;
+		this.resultStr = resultStr;
 	}
 
 	/**
@@ -34,7 +32,6 @@ public class userDaoImpl5 implements userDao5, InitializingBean, DisposableBean 
 	@Override
 	public void destroy() throws Exception {
 		System.out.println("我是销毁方法");
-
 	}
 
 	/**
@@ -44,9 +41,5 @@ public class userDaoImpl5 implements userDao5, InitializingBean, DisposableBean 
 	public void afterPropertiesSet() throws Exception {
 		System.out.println("我是初始化方法");
 
-	}
-
-	public void setName(String xmlName) {
-		this.demoName = xmlName;
 	}
 }

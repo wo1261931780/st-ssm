@@ -66,7 +66,7 @@
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--<bean id="userDaoBeanXmlId"></bean>-->
-	<!--<bean id="userDao2BeanXmlId" name="userDao2BeanXmlName" class="com.stssm.github.io.dao.impl.userDaoImpl2"-->
+	<!--<bean id="userDao2BeanXmlId" name="userDao2BeanXmlName" class="com.stssm.github.io.dao.impl.UserDaoImpl2"-->
 	<!--      scope="prototype">-->
 	<!--	<constructor-arg name="nums" value="222"></constructor-arg>-->
 	<!--	<constructor-arg name="resultStr" value="str222"></constructor-arg>-->
@@ -75,15 +75,15 @@
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 
-	<!--<bean id="userDao3BeanXmlId" class="com.stssm.github.io.dao.impl.userDaoImpl3" autowire="byType"/>-->
+	<!--<bean id="userDao3BeanXmlId" class="com.stssm.github.io.dao.impl.UserDaoImpl3" autowire="byType"/>-->
 	<!--通过类型注入，在原有dao中取消构造器-->
 	<!--如果两个名称一样，那么类型会提示错误，存在多个备选bean-->
-	<!--<bean id="userDao3BeanXmlId" class="com.stssm.github.io.dao.impl.userDaoImpl3" autowire="byName"/>-->
+	<!--<bean id="userDao3BeanXmlId" class="com.stssm.github.io.dao.impl.UserDaoImpl3" autowire="byName"/>-->
 	<!--按名称-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
-	<bean id="userDao4BeanXmlId" class="com.stssm.github.io.dao.impl.userDaoImpl4">
+	<bean id="userDao4BeanXmlId" class="com.stssm.github.io.dao.impl.UserDaoImpl4">
 		<!--首先要设置一个bean进行注入-->
 		<property name="array">
 			<array>

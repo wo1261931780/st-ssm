@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb002_2022年7月31日;
+package com.stssm.github.io.junw.bbb002_20220731;
 
 import com.stssm.github.io.dao.BookDao;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -15,7 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @return
  * @exception
  */
-public class bbb003 {
+public class Bbb003 {
 	public static void main(String[] args) {
 		// ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");
 		// ApplicationContext其实也是一个实现类，

@@ -1,12 +1,12 @@
-package com.stssm.github.io.junw.bbb002_2022年7月31日;
+package com.stssm.github.io.junw.bbb002_20220731;
 
-import com.stssm.github.io.dao.userDao;
+import com.stssm.github.io.dao.UserDao;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
- * Package:com.stssm.github.io.junw.bbb002_2022年7月31日
+ * Package:com.stssm.github.io.junw.bbb002_20220731
  *
  * @param
  * @author liujiajun_junw
@@ -15,10 +15,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @return
  * @exception
  */
-public class bbb004 {
+public class Bbb004 {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");
-		userDao userDaoBeanXmlId = (userDao) ctx.getBean("userDaoBeanXmlId");
+		UserDao userDaoBeanXmlId = (UserDao) ctx.getBean("userDaoBeanXmlId");
 		userDaoBeanXmlId.showMeSetter();
 
 		ctx.registerShutdownHook();

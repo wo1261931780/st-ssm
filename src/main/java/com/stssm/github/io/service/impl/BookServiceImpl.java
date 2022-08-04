@@ -1,7 +1,7 @@
 package com.stssm.github.io.service.impl;
 
 import com.stssm.github.io.dao.BookDao;
-import com.stssm.github.io.dao.userDao;
+import com.stssm.github.io.dao.UserDao;
 import com.stssm.github.io.service.BookService;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
@@ -28,7 +28,7 @@ public class BookServiceImpl implements BookService, InitializingBean, Disposabl
 	/**
 	 * private BookService serviceObj = new BookServiceImpl();
 	 */
-	private userDao serviceUserDao;
+	private UserDao serviceUserDao;
 
 	/**
 	 * 测试方法
@@ -63,7 +63,7 @@ public class BookServiceImpl implements BookService, InitializingBean, Disposabl
 
 	}
 
-	public void setXmlServiceDaoUser(userDao xmlServiceDaoUser) {
+	public void setXmlServiceDaoUser(UserDao xmlServiceDaoUser) {
 		this.serviceUserDao = xmlServiceDaoUser;
 	}
 }

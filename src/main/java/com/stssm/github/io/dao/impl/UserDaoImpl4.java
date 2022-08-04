@@ -1,6 +1,6 @@
 package com.stssm.github.io.dao.impl;
 
-import com.stssm.github.io.dao.userDao4;
+import com.stssm.github.io.dao.UserDao4;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
@@ -22,7 +22,7 @@ import java.util.Set;
  * @return
  * @exception
  */
-public class userDaoImpl4 implements userDao4, InitializingBean, DisposableBean {
+public class UserDaoImpl4 implements UserDao4, InitializingBean, DisposableBean {
 
 	private int[] array;
 	private List<String> list;

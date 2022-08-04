@@ -1,6 +1,6 @@
 package com.stssm.github.io.dao.impl;
 
-import com.stssm.github.io.dao.userDao2;
+import com.stssm.github.io.dao.UserDao2;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
@@ -16,7 +16,7 @@ import org.springframework.beans.factory.InitializingBean;
  * @return
  * @exception
  */
-public class userDaoImpl3 implements userDao2, InitializingBean, DisposableBean {
+public class UserDaoImpl3 implements UserDao2, InitializingBean, DisposableBean {
 
 	private int nums;
 	private String resultStr;

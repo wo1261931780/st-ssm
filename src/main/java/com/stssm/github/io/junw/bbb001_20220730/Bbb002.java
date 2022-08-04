@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb001_2022年7月30日;
+package com.stssm.github.io.junw.bbb001_20220730;
 
 import com.stssm.github.io.dao.BookDao;
 import com.stssm.github.io.factory.FactoryStaticDao;
@@ -16,7 +16,7 @@ import com.stssm.github.io.factory.FactoryDao;
  * @return
  * @exception
  */
-public class bbb002 {
+public class Bbb002 {
 	public static  void main(String[] args) {
 		// 这里拿到的就是ioc对象
 		// SpringContext x = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");

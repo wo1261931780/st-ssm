@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb001_2022年7月30日;
+package com.stssm.github.io.junw.bbb001_20220730;
 
 import com.stssm.github.io.service.BookService;
 import com.stssm.github.io.service.impl.BookServiceImpl;
@@ -15,7 +15,7 @@ import com.stssm.github.io.service.impl.BookServiceImpl;
  * @return
  * @exception
  */
-public class bbb001 {
+public class Bbb001 {
 	public static void main(String[] args) {
 		BookService bookService=new BookServiceImpl();
 		bookService.serviceShow();
