@@ -16,7 +16,7 @@ import org.springframework.beans.factory.InitializingBean;
  * @return
  * @exception
  */
-public class userDaoImpl implements UserDao, InitializingBean, DisposableBean {
+public class UserDaoImpl implements UserDao, InitializingBean, DisposableBean {
 
 	private int nums;
 	private String resultStr;

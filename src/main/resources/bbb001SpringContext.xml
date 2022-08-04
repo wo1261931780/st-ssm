@@ -55,7 +55,7 @@
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 
-	<!--<bean id="userDaoBeanXmlId" name="userDaoBeanXmlName" class="com.stssm.github.io.dao.impl.userDaoImpl"-->
+	<!--<bean id="userDaoBeanXmlId" name="userDaoBeanXmlName" class="com.stssm.github.io.dao.impl.UserDaoImpl"-->
 	<!--      scope="prototype">-->
 	<!--	<property name="nums" value="123"></property>-->
 	<!--	<property name="resultStr" value="str123"></property>-->
