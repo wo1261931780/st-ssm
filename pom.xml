@@ -97,6 +97,22 @@
 	</dependencies>
 
 	<build>
+		<!--<resources>-->
+		<!--	<resource>-->
+		<!--		<directory>src/main/java</directory>-->
+		<!--		<includes>-->
+		<!--			<include>**/*.*</include>-->
+		<!--		</includes>-->
+		<!--		<excludes>-->
+		<!--			<exclude>**/*.java</exclude>-->
+		<!--		</excludes>-->
+		<!--	</resource>-->
+		<!--</resources>-->
+		<!--这里有个神奇的bug，csdn说是没有扫描到对应的文件-->
+		<!--所以需要添加上面的配置-->
+		<!--但是我用idea自带的创建工具，就在路径下创建了一个完全相同的路径，然后在里面自动创建了一个配置文件-->
+		<!--但是上面两个都是无效的-->
+		<!--我使用idea自带的配置文件创建工具，直接创建对应名称对象，就解决了该问题-->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
