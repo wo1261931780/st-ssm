@@ -16,12 +16,12 @@ import javax.sql.DataSource;
  * @description
  */
 @Configuration
-public class SpringConfiguration2 {
+public class jdbcConfiguration {
 
 	/**
-	 * 我们之前都是管理内部的对象，只需要扫描就可以
-	 * 这里如果要管理第三方的对象，因为是在jar包中的
-	 * 所以需要构造的方式去获得
+	 * 这里是一个设计模式，我们一般将专门管理一类对象的bean，丢到同一个位置
+	 * 同时，为了能够扫描到其它类中的对象，我们会在一个统一的类中，设置componentScanner，
+	 * 从而实现，加载一个类，扫描到配置文件包下的所有类
 	 */
 	@Bean
 	public DataSource getDruid() {
@@ -34,8 +34,6 @@ public class SpringConfiguration2 {
 		demoBean.setPassword("LIU18959297292");
 		return demoBean;
 	}
-	// 这种管理bean的方式，实际上是工厂模式的体现
-	// 只需要一个方法，就可以管理我们范围内的bean对象
 
 
 }
