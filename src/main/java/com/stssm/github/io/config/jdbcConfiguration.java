@@ -34,6 +34,4 @@ public class jdbcConfiguration {
 		demoBean.setPassword("LIU18959297292");
 		return demoBean;
 	}
-
-
 }
