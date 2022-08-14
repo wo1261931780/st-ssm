@@ -7,6 +7,11 @@
 	      scope="prototype">
 		<!--默认都是单例对象，使用单例的设计模式-->
 		<!--如果设置为prototype，就是多例，在获取的过程中，可以拿到多个-->
+		<!--默认scope中，是单例-->
+		<!--如果修改，就可以生成不同的内存地址-->
+		<!--ioc的单例模式，主要为了方便管理-->
+		<!--但是，如果对象需要记录成员变量的属性值，那么就需要使用非单例的新建方式-->
+		<!--这种带有属性值的，一般都带有一定的业务状态-->
 		<property name="serviceDemoDao3" ref="xmlDemoDao3"/>
 	</bean>
 	<bean id="xmlDemoDao3" class="com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao3Impl"

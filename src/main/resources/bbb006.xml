@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--<bean id="xmlDemoService6" class="com.stssm.github.io.junw.bbb001spring20220730.service.Impl.DemoService6Impl"-->
+	<!--      scope="prototype">-->
+	<!--	<property name="serviceDemoDao6" ref="xmlDemoDao6"/>-->
+	<!--</bean>-->
+	<!--<bean id="xmlDemoDao6" class="com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao6Impl"-->
+	<!--      scope="prototype"/>-->
+
+
+	<bean id="xmlDemoDao6" factory-method="getDemoDao6"
+	      class="com.stssm.github.io.junw.bbb001spring20220730.dao.staticFactory.Impl.DemoDao6Factory"/>
+
+
+</beans>

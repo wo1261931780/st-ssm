@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--<bean id="xmlDemoService5" class="com.stssm.github.io.junw.bbb001spring20220730.service.Impl.DemoService5Impl"-->
+	<!--      scope="prototype">-->
+	<!--	<property name="serviceDemoDao5" ref="xmlDemoDao5"/>-->
+	<!--</bean>-->
+	<!--<bean id="xmlDemoDao5" class="com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao5Impl"-->
+	<!--      scope="prototype"/>-->
+
+
+	<!--在静态工厂的配置过程中-->
+	<!--上面的内容全部不需要，直接配置工厂方法，获取对应Dao即可-->
+	<bean id="xmlDemoDao5" factory-method="getDemoDao5"
+	      class="com.stssm.github.io.junw.bbb001spring20220730.dao.staticFactory.Impl.DemoDao5StaticFactory"/>
+	<!--但是，这里也需要说明生成对象的方法名称-->
+	<!--相当于，将映射对象，变成了映射静态工厂-->
+	<!--创建对象的过程，由静态工厂完成-->
+
+
+</beans>

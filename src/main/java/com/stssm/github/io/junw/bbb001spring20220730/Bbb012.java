@@ -18,16 +18,6 @@ import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
  */
 public class Bbb012 {
 	public static void main(String[] args) {
-		// 这里拿到的就是ioc对象
-		// SpringContext x = new ClassPathXmlApplicationContext("bbb101SpringContext.xml");
-		// BookDao0730 res1= x.getBean("demoBean");
-		// BookDao0730 res2= x.getBean("demoBean");
-		// -------------------------------------------------
-		// System.out.println(res1);
-		// System.out.println(res2);
-		// 通过打印多个对象的地址，可以发现，这是同一个对象
-		// 使用了单例设计模式
-		// res1.show();
 		// -------------------------------------------------
 		// 第二种方法，新建一个静态工厂来新建对象
 		FactoryStaticDao factoryStaticDao = new FactoryStaticDao();

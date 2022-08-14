@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb001spring20220730.service.Impl;
 
-import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
 import com.stssm.github.io.dao.UserDao;
+import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
 import com.stssm.github.io.junw.bbb001spring20220730.service.BookService0730;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
@@ -27,6 +27,7 @@ public class BookService0730Impl implements BookService0730, InitializingBean, D
 	private BookDao0730 serviceDao;// 最大的区别在于这里，通过IoC管理以后，这里不需要重新new 一个对象出来
 
 	private UserDao serviceUserDao;
+
 	/**
 	 * 测试方法
 	 */
@@ -48,7 +49,6 @@ public class BookService0730Impl implements BookService0730, InitializingBean, D
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		System.out.println("我是service的初始化过程");
-
 	}
 
 	/**
@@ -57,7 +57,6 @@ public class BookService0730Impl implements BookService0730, InitializingBean, D
 	@Override
 	public void destroy() throws Exception {
 		System.out.println("实现类完成销毁展示");
-
 	}
 
 	public void setXmlServiceDaoUser(UserDao xmlServiceDaoUser) {

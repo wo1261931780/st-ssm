@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="xmlDemoService4" class="com.stssm.github.io.junw.bbb001spring20220730.service.Impl.DemoService4Impl"
+	      scope="prototype">
+		<property name="serviceDemoDao4" ref="xmlDemoDao4"/>
+	</bean>
+	<!--我在IoC容器中，管理的对象，只要指定好了类型-->
+	<!--然后暴露id出去，外面就能根据id拿到对应的类型-->
+	<!--反过来说，外面拿到什么类型的对象，完全是根据我这里配置出来的id来决定的-->
+	<bean id="xmlDemoDao4" class="com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao4Impl"
+	      scope="prototype"/>
+
+</beans>
