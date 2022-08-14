@@ -9,6 +9,6 @@ package com.stssm.github.io.junw.bbb001spring20220730.service;
  * @Date 2022-08-15-03  星期日
  * @description
  */
-public interface DemoService2 {
-	void servieShow2();
+public interface DemoService3 {
+	void servieShow3();
 }

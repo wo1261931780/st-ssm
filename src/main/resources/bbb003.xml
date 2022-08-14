@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="demoService3" class="com.stssm.github.io.junw.bbb001spring20220730.service.Impl.DemoService3Impl"
+	      scope="prototype">
+		<!--默认都是单例对象，使用单例的设计模式-->
+		<!--如果设置为prototype，就是多例，在获取的过程中，可以拿到多个-->
+		<property name="serviceDemoDao3" ref="xmlDemoDao3"/>
+	</bean>
+	<bean id="xmlDemoDao3" class="com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao3Impl"
+	      scope="prototype"/>
+	<!--scope="prototype"这里的作用范围，是针对Dao而言的-->
+
+</beans>
