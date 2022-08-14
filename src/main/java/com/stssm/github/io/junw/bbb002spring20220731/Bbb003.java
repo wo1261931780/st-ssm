@@ -1,6 +1,6 @@
 package com.stssm.github.io.junw.bbb002spring20220731;
 
-import com.stssm.github.io.dao.BookDao;
+import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -24,7 +24,7 @@ public class Bbb003 {
 		// *****************************
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");
 		System.out.println("我是运行类中，手动的新建dao对象");
-		BookDao daoBeanXmlId = (BookDao) ctx.getBean("daoBeanXmlName");
+		BookDao0730 daoBeanXmlId = (BookDao0730) ctx.getBean("daoBeanXmlName");
 		daoBeanXmlId.daoShow();
 		// ctx.close();// 直接暴力关机
 		// 类似于system.exit
@@ -37,14 +37,14 @@ public class Bbb003 {
 	// 17:54:04.939 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@506e6d5e
 	// 17:54:05.074 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [bbb001SpringContext.xml]
 	// 17:54:05.101 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'serviceBeanXmlId'
-	// 我是dao构造方法，地址为：com.stssm.github.io.dao.impl.BookDaoImpl@291ae
+	// 我是dao构造方法，地址为：com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.BookDao0730Impl@291ae
 	// 我是dao初始化过程
 	// ***************************** 首先新建了一个对象，这个是默认新建的，所以会执行一次内部的初始化过程
 
 
 	// 17:54:05.142 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'staticFactoryDaoBean'
 	// 静态工厂新建一个dao对象
-	// 我是dao构造方法，地址为：com.stssm.github.io.dao.impl.BookDaoImpl@40a4337a
+	// 我是dao构造方法，地址为：com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.BookDao0730Impl@40a4337a
 	// ***************************** 这里是静态工厂新建对象的过程
 	// ***************************** 没有执行对象的初始化。直接新建
 
@@ -52,12 +52,12 @@ public class Bbb003 {
 	// 17:54:05.144 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'factoryDaoBean'
 	// 17:54:05.144 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'factoryDaoBeanName'
 	// 我是实例工厂
-	// 我是dao构造方法，地址为：com.stssm.github.io.dao.impl.BookDaoImpl@6025e1b6
+	// 我是dao构造方法，地址为：com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.BookDao0730Impl@6025e1b6
 	// ***************************** 实例工厂新建对象，和静态工厂一样，新建完成没有执行初始化
 
 
 	// 我是运行类中，手动的新建dao对象
-	// 我是dao构造方法，地址为：com.stssm.github.io.dao.impl.BookDaoImpl@40005471
+	// 我是dao构造方法，地址为：com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.BookDao0730Impl@40005471
 	// 我是dao初始化过程
 	// 我是dao层
 	// ***************************** 上面手动新建以后，进行了初始化，

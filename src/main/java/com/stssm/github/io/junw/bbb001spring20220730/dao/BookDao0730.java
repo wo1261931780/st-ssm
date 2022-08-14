@@ -1,4 +1,4 @@
-package com.stssm.github.io.dao;
+package com.stssm.github.io.junw.bbb001spring20220730.dao;
 
 /**
  * Created by Intellij IDEA.
@@ -12,7 +12,7 @@ package com.stssm.github.io.dao;
  * @return
  * @exception
  */
-public interface BookDao {
+public interface BookDao0730 {
 	/**
 	 * 数据层接口
 	 * 对应我们之前使用的model

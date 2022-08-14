@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<!--这里主要是配置bean文件-->
 	<!--需要配置的是实现类，因为要新建对象出来-->
-	<!--<bean id="daoBeanXmlId" class="com.stssm.github.io.dao.impl.BookDaoImpl" scope="prototype">-->
+	<!--<bean id="daoBeanXmlId" class="com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.BookDao0730ImplImpl" scope="prototype">-->
 	<!--注意一下，是否生成单例对象，是在dao的配置文件中设置的-->
 	<!--默认scope中，是单例-->
 	<!--如果修改，就可以生成不同的内存地址-->
@@ -14,7 +14,7 @@
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
-	<!--<bean id="daoBeanXmlId" name="daoBeanXmlName" class="com.stssm.github.io.dao.impl.BookDaoImpl" scope="prototype"-->
+	<!--<bean id="daoBeanXmlId" name="daoBeanXmlName" class="com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.BookDao0730ImplImpl" scope="prototype"-->
 	<!--      init-method="daoInit"-->
 	<!--      destroy-method="daoDestory">-->
 	<!--	&lt;!&ndash;上面是测试初始化和销毁的生命周期&ndash;&gt;-->
@@ -40,7 +40,7 @@
 	<!--********************************************************************************************************-->
 	<!--********************************************************************************************************-->
 	<!--<bean id="serviceBeanXmlId" name="serviceBeanXmlName bookServiceEbi"-->
-	<!--      class="com.stssm.github.io.service.impl.BookServiceImpl">-->
+	<!--      class="com.stssm.github.io.junw.bbb001spring20220730.service.Impl.BookService0730ImplImpl">-->
 	<!--	&lt;!&ndash;name中设置的是变量的自定义名称&ndash;&gt;-->
 	<!--	&lt;!&ndash;自定义名称可以多个，还可以同时生效&ndash;&gt;-->
 	<!--	<property name="xmlServiceDao" ref="daoBeanXmlId">-->

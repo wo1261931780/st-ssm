@@ -1,6 +1,6 @@
 package com.stssm.github.io.junw.bbb001spring20220730;
 
-import com.stssm.github.io.dao.BookDao;
+import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
 import com.stssm.github.io.factory.FactoryStaticDao;
 import com.stssm.github.io.factory.FactoryDao;
 
@@ -16,12 +16,12 @@ import com.stssm.github.io.factory.FactoryDao;
  * @return
  * @exception
  */
-public class Bbb002 {
+public class Bbb012 {
 	public static  void main(String[] args) {
 		// 这里拿到的就是ioc对象
 		// SpringContext x = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");
-		// BookDao res1= x.getBean("demoBean");
-		// BookDao res2= x.getBean("demoBean");
+		// BookDao0730 res1= x.getBean("demoBean");
+		// BookDao0730 res2= x.getBean("demoBean");
 		// -------------------------------------------------
 		// System.out.println(res1);
 		// System.out.println(res2);
@@ -31,8 +31,8 @@ public class Bbb002 {
 		// -------------------------------------------------
 		// 第二种方法，新建一个静态工厂来新建对象
 		FactoryStaticDao factoryStaticDao = new FactoryStaticDao();
-		BookDao bookDao = FactoryStaticDao.getBookDao();
-		bookDao.daoShow();
+		BookDao0730 bookDao0730 = FactoryStaticDao.getBookDao();
+		bookDao0730.daoShow();
 		// 以前的造对象方法
 		// 使用静态方式构造对象
 		// -------------------------------------------------

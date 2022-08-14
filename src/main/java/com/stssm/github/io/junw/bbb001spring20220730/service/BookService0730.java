@@ -1,4 +1,4 @@
-package com.stssm.github.io.service;
+package com.stssm.github.io.junw.bbb001spring20220730.service;
 
 /**
  * Created by Intellij IDEA.
@@ -12,7 +12,7 @@ package com.stssm.github.io.service;
  * @return
  * @exception
  */
-public interface BookService {
+public interface BookService0730 {
 
 	/**
 	 * 业务层，主要写运行的逻辑

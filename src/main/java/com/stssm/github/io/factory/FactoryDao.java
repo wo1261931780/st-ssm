@@ -1,7 +1,7 @@
 package com.stssm.github.io.factory;
 
-import com.stssm.github.io.dao.BookDao;
-import com.stssm.github.io.dao.impl.BookDaoImpl;
+import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
+import com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.BookDao0730Impl;
 
 /**
  * Created by Intellij IDEA.
@@ -16,8 +16,8 @@ import com.stssm.github.io.dao.impl.BookDaoImpl;
  * @exception
  */
 public class FactoryDao {
-	public BookDao getBookDao() {
+	public BookDao0730 getBookDao() {
 		System.out.println("我是实例工厂，我要新建一个对象");
-		return new BookDaoImpl();
+		return new BookDao0730Impl();
 	}
 }

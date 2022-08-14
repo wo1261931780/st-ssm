@@ -1,6 +1,6 @@
-package com.stssm.github.io.dao.impl;
+package com.stssm.github.io.junw.bbb001spring20220730.dao.Impl;
 
-import com.stssm.github.io.dao.BookDao;
+import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
 
 /**
  * Created by Intellij IDEA.
@@ -14,11 +14,11 @@ import com.stssm.github.io.dao.BookDao;
  * @return
  * @exception
  */
-public class BookDaoImpl implements BookDao {
-	// private BookDao demoObj = new BookDaoImpl();
+public class BookDao0730Impl implements BookDao0730 {
+	// private BookDao0730 demoObj = new BookDao0730Impl();
 	// 这里不需要这一行代码，否则会不断递归，导致内存溢出
 
-	public BookDaoImpl() {
+	public BookDao0730Impl() {
 		System.out.println("我是dao构造方法，地址为：" + this);
 		// 这里不管是公有还是私有，都可以打印结果
 		// 因为内部是通过反射的方式去实现构造

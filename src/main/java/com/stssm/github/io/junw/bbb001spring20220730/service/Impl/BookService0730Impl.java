@@ -1,8 +1,8 @@
-package com.stssm.github.io.service.impl;
+package com.stssm.github.io.junw.bbb001spring20220730.service.Impl;
 
-import com.stssm.github.io.dao.BookDao;
+import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
 import com.stssm.github.io.dao.UserDao;
-import com.stssm.github.io.service.BookService;
+import com.stssm.github.io.junw.bbb001spring20220730.service.BookService0730;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
@@ -18,18 +18,15 @@ import org.springframework.beans.factory.InitializingBean;
  * @return
  * @exception
  */
-public class BookServiceImpl implements BookService, InitializingBean, DisposableBean {
+public class BookService0730Impl implements BookService0730, InitializingBean, DisposableBean {
 	/**
 	 * 这里使用实现的方式，完成生命周期的测试
 	 * 左上角出现的小图标，对应的就是后面的spring配置出来的xml
-	 * private BookDao serviceDao = new BookDaoImpl();
+	 * private BookDao0730 serviceDao = new BookDao0730Impl();
 	 */
-	private BookDao serviceDao;
-	/**
-	 * private BookService serviceObj = new BookServiceImpl();
-	 */
-	private UserDao serviceUserDao;
+	private BookDao0730 serviceDao;// 最大的区别在于这里，通过IoC管理以后，这里不需要重新new 一个对象出来
 
+	private UserDao serviceUserDao;
 	/**
 	 * 测试方法
 	 */
@@ -39,7 +36,7 @@ public class BookServiceImpl implements BookService, InitializingBean, Disposabl
 		serviceDao.daoShow();
 	}
 
-	public void setXmlServiceDao(BookDao xmlServiceDao) {
+	public void setXmlServiceDao(BookDao0730 xmlServiceDao) {
 		System.out.println("我是service最先完成的初始化过程");
 
 		this.serviceDao = xmlServiceDao;
