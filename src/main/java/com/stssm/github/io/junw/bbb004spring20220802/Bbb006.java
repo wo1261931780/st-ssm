@@ -16,7 +16,7 @@ import javax.sql.DataSource;
  */
 public class Bbb006 {
 	public static void main(String[] args) {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb002SpringContext.xml");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb102SpringContext.xml");
 		DataSource dataSource = (DataSource) ctx.getBean("dataSource");
 		System.out.println(dataSource);
 		System.out.println("******************************************");

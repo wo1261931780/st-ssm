@@ -11,7 +11,7 @@ import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao1;
  * @Date 2022-08-15-02  星期日
  * @description
  */
-public class DemoDao1Impl implements DemoDao1 {
+public class DemoDao2Impl implements DemoDao1 {
 	/**
 	 *
 	 */

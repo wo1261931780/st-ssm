@@ -1,8 +1,8 @@
 package com.stssm.github.io.junw.bbb001spring20220730;
 
-import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
-import com.stssm.github.io.factory.FactoryStaticDao;
 import com.stssm.github.io.factory.FactoryDao;
+import com.stssm.github.io.factory.FactoryStaticDao;
+import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
 
 /**
  * Created by Intellij IDEA.
@@ -17,9 +17,9 @@ import com.stssm.github.io.factory.FactoryDao;
  * @exception
  */
 public class Bbb012 {
-	public static  void main(String[] args) {
+	public static void main(String[] args) {
 		// 这里拿到的就是ioc对象
-		// SpringContext x = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");
+		// SpringContext x = new ClassPathXmlApplicationContext("bbb101SpringContext.xml");
 		// BookDao0730 res1= x.getBean("demoBean");
 		// BookDao0730 res2= x.getBean("demoBean");
 		// -------------------------------------------------

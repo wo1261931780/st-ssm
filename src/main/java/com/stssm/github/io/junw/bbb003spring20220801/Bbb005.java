@@ -18,7 +18,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Bbb005 {
 	public static void main(String[] args) {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb001SpringContext.xml");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb101SpringContext.xml");
 		// UserDao4 UserDao4 = (UserDao4) ctx.getBean("UserDao4");
 		// 这里出错，因为名称对不上
 		// 这里需要装配的是xml中设置的对象名称

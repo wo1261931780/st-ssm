@@ -21,7 +21,7 @@ public class Bbb008 {
 		// 平时用的不多
 		// 目前spring从2.0开始提供注解
 		// 从2.5开始，注解就已经比较完善了
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Bbb004SpringContext.xml");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Bbb104SpringContext.xml");
 		UserDao6 bean = applicationContext.getBean(UserDao6.class);
 		System.out.println(bean);
 		// 我们刚刚是通过xml去配置对应的组件，由组件映射到实体类

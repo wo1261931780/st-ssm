@@ -17,11 +17,11 @@ public class Bbb007 {
 	public static void main(String[] args) {
 		// 加载容器的形式有很多
 		// 这是第一种：加载类路径下的配置文件
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb003SpringContext.xml");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb103SpringContext.xml");
 
 		// 如果从文件系统加载容器，就需要指定绝对路径
 		// 第二种，从文件系统下加载配置文件
-		// ApplicationContext ctx = new FileSystemXmlApplicationContext("C:\\Users\\1\\Documents\\GitHub\\st-ssm.github.io\\src\\main\\resources\\bbb003SpringContext.xml");
+		// ApplicationContext ctx = new FileSystemXmlApplicationContext("C:\\Users\\1\\Documents\\GitHub\\st-ssm.github.io\\src\\main\\resources\\bbb103SpringContext.xml");
 
 		// UserDao5 UserDao5 = (UserDao5) ctx.getBean("UserDao5");// 第一种
 		// 第一种有问题，每次都需要强制转换格式

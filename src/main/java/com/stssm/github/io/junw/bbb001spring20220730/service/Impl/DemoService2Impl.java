@@ -13,7 +13,7 @@ import com.stssm.github.io.junw.bbb001spring20220730.service.DemoService1;
  * @Date 2022-08-15-03  星期日
  * @description
  */
-public class DemoService1Impl implements DemoService1 {
+public class DemoService2Impl implements DemoService1 {
 	private final DemoDao1 demoDao1 = new DemoDao1Impl();
 
 	/**
