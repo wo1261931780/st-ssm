@@ -15,7 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @return
  * @exception
  */
-public class Bbb003 {
+public class Bbb103 {
 	public static void main(String[] args) {
 		// ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb101SpringContext.xml");
 		// ApplicationContext其实也是一个实现类，
