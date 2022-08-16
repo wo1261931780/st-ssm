@@ -1,6 +1,5 @@
 package com.stssm.github.io.junw.bbb002spring20220731;
 
-import com.stssm.github.io.junw.bbb001spring20220730.dao.BookDao0730;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -24,8 +23,8 @@ public class Bbb103 {
 		// *****************************
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("bbb101SpringContext.xml");
 		System.out.println("我是运行类中，手动的新建dao对象");
-		BookDao0730 daoBeanXmlId = (BookDao0730) ctx.getBean("daoBeanXmlName");
-		daoBeanXmlId.daoShow();
+		// BookDao0730 daoBeanXmlId = (BookDao0730) ctx.getBean("daoBeanXmlName");
+		// daoBeanXmlId.daoShow();
 		// ctx.close();// 直接暴力关机
 		// 类似于system.exit
 		// 一旦执行了代码，后续的功能都不能执行

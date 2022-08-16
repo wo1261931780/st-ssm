@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb001spring20220730;
 
-import com.stssm.github.io.junw.bbb001spring20220730.service.BookService0730;
-import com.stssm.github.io.junw.bbb001spring20220730.service.Impl.BookService0730Impl;
+import com.stssm.github.io.junw.bbb001spring20220730.service.DemoService1;
+import com.stssm.github.io.junw.bbb001spring20220730.service.Impl.DemoService1Impl;
 
 /**
  * Created by Intellij IDEA.
@@ -17,7 +17,7 @@ import com.stssm.github.io.junw.bbb001spring20220730.service.Impl.BookService073
  */
 public class Bbb001 {
 	public static void main(String[] args) {
-		BookService0730 bookService0730 = new BookService0730Impl();
+		DemoService1 bookService0730 = new DemoService1Impl();
 		bookService0730.serviceShow();
 		// 这里都是在没有设置的情况下，运行类的方法
 	}

@@ -36,7 +36,8 @@ public class Bbb007 {
 		// 首先是xml中配置的两个bean对象，被放入IoC统一管理。
 		// 1.构造方法被加载出来
 		// 2.service中配置的依赖注入出现
-
-
+		// 这一步，相当于两个被管理的对象都已经做好了映射关系，
+		// 已经完成了初始化，随时可以开始使用
+		// 3.必须配置ClassPathXmlApplicationContext类，然后才能手动关闭
 	}
 }

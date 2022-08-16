@@ -51,6 +51,5 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		System.out.println("我是service7中的初始化方法");
-
 	}
 }
