@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="xmlUserService001" class="com.stssm.github.io.junw.bbb002spring20220731.service.Impl.UserService001Impl"
+	      scope="prototype">
+		<property name="diUserDao001" ref="xmlUserDao001"/>
+	</bean>
+	<bean id="xmlUserDao001" class="com.stssm.github.io.junw.bbb002spring20220731.dao.Impl.UserDao001Impl"
+	      scope="prototype"/>
+</beans>

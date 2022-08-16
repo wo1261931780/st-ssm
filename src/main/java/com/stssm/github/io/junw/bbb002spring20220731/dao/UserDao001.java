@@ -17,5 +17,5 @@ public interface UserDao001 {
 	/**
 	 * 展示结果
 	 */
-	void showMeSetter();
+	void userDaoShow001();
 }

@@ -18,29 +18,13 @@ import org.springframework.beans.factory.InitializingBean;
  */
 public class UserDao001Impl implements UserDao001, InitializingBean, DisposableBean {
 
-	private int nums;
-	private String resultStr;
-
-	public void setNums(int nums) {
-		this.nums = nums;
-	}
-
-	public void setResultStr(String resultStr) {
-		this.resultStr = resultStr;
-	}
-
-	public void showMeSetter() {
-		System.out.println("我是传递过来的结果：" + nums + "," + resultStr);
-
-	}
-
 
 	/**
 	 * @throws Exception
 	 */
 	@Override
 	public void destroy() throws Exception {
-		System.out.println("我是销毁方法");
+		System.out.println("我是UserDao001销毁方法");
 	}
 
 	/**
@@ -48,7 +32,15 @@ public class UserDao001Impl implements UserDao001, InitializingBean, DisposableB
 	 */
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("我是初始化方法");
+		System.out.println("我是UserDao001初始化方法");
 
+	}
+
+	/**
+	 * 展示结果
+	 */
+	@Override
+	public void userDaoShow001() {
+		System.out.println("我是UserDao001中的构造方法");
 	}
 }
