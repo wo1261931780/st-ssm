@@ -31,4 +31,12 @@ public class UserService001Impl implements UserService001 {
 	public void serviceShow() {
 		System.out.println("我是UserService001中的show方法");
 	}
+
+	public void initTest1() {
+		System.out.println("我是serviceDao1中的初始化方法");
+	}
+
+	public void destoryTest1() {
+		System.out.println("我是serviceDao1中的销毁方法");
+	}
 }

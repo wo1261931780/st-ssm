@@ -4,9 +4,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="xmlUserService001" class="com.stssm.github.io.junw.bbb002spring20220731.service.Impl.UserService001Impl"
+	      init-method="initTest1" destroy-method="destoryTest1"
 	      scope="prototype">
+		<!--对于对象来说，初始化也有两种方式：-->
+		<!--一种方法是类似上面这样，直接使用xml配置对应的初始化-->
+		<!--如果没有实现两个接口，初始化和销毁的展示，都需要手动映射好对应的方法，否则不生效-->
+		<!--然后，我们就可以在实现类中展示-->
 		<property name="diUserDao001" ref="xmlUserDao001"/>
 	</bean>
 	<bean id="xmlUserDao001" class="com.stssm.github.io.junw.bbb002spring20220731.dao.Impl.UserDao001Impl"
 	      scope="prototype"/>
+	<!--还有一种就是直接实现对应的接口，完成标准流程的初始化-->
+
 </beans>

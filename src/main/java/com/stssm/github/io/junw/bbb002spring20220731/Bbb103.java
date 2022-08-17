@@ -13,9 +13,6 @@ package com.stssm.github.io.junw.bbb002spring20220731;
  * @exception
  */
 public class Bbb103 {
-	public static void main(String[] args) {
-
-	}
 	// *****************************
 	// 下面是所有的日志：
 	// 17:54:04.939 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@506e6d5e
