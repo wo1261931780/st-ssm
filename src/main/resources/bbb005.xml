@@ -14,7 +14,7 @@
 	<!--在静态工厂的配置过程中-->
 	<!--上面的内容全部不需要，直接配置工厂方法，获取对应Dao即可-->
 	<bean id="xmlDemoDao5" factory-method="getDemoDao5"
-	      class="com.stssm.github.io.junw.bbb001spring20220730.dao.staticFactory.DemoDao5StaticFactory"/>
+	      class="com.stssm.github.io.junw.bbb001spring20220730.staticFactory.DemoDao5StaticFactory"/>
 	<!--但是，这里也需要说明生成对象的方法名称-->
 	<!--相当于，将映射对象，变成了映射静态工厂-->
 	<!--创建对象的过程，由静态工厂完成-->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="xmlUserDao002" class="com.stssm.github.io.junw.bbb002spring20220731.dao.Impl.UserDao002Impl"/>
+	<bean id="xmlUserService002" class="com.stssm.github.io.junw.bbb002spring20220731.service.Impl.UserService002Impl">
+		<property name="diUserDao002" ref="xmlUserDao002"></property>
+	</bean>
+	<!--上面是IoC和DI的过程-->
+	<bean id="xmlFactory0731" class="com.stssm.github.io.junw.bbb002spring20220731.factory.factory0731"/>
+
+
+</beans>

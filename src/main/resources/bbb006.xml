@@ -12,7 +12,7 @@
 
 
 	<bean id="xmlDemoDao6Factroy"
-	      class="com.stssm.github.io.junw.bbb001spring20220730.dao.Factory.DemoDao6Factory"/>
+	      class="com.stssm.github.io.junw.bbb001spring20220730.Factory.DemoDao6Factory"/>
 	<!--实例工厂对象中，首先方法体就是非静态的-->
 	<!--然后在xml的配置文件中，需要先配置一个指向实例工厂对象的bean-->
 	<!--在底下，重新配置一个，使用该工厂对象的user对象-->

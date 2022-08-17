@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb001spring20220730;
 
 import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao5;
-import com.stssm.github.io.junw.bbb001spring20220730.dao.staticFactory.DemoDao5StaticFactory;
+import com.stssm.github.io.junw.bbb001spring20220730.staticFactory.DemoDao5StaticFactory;
 
 /**
  * Created by Intellij IDEA.
