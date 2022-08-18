@@ -16,7 +16,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @return
  * @exception
  */
-public class Bbb005 {
+public class Bbb010 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb101SpringContext.xml");
 		// UserDao4 UserDao4 = (UserDao4) ctx.getBean("UserDao4");
@@ -27,9 +27,5 @@ public class Bbb005 {
 		// 当时以为是这里出了问题，其实根本不需要执行对应的类
 		UserDao4 userDao4 = (UserDao4) ctx.getBean("userDao4BeanXmlId");
 		userDao4.show();
-
-
 	}
-
-
 }
