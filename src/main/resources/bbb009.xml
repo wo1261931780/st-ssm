@@ -15,6 +15,4 @@
 	<bean id="staticFactory0731" factory-method="factoryGetDao002"
 	      class="com.stssm.github.io.junw.bbb002spring20220731.staticFactory.StaticFactory0731"/>
 	<!--静态工厂-->
-
-
 </beans>

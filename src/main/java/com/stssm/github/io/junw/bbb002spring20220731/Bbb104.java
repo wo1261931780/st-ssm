@@ -20,8 +20,6 @@ public class Bbb104 {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("bbb101SpringContext.xml");
 		UserDao userDaoBeanXmlId = (UserDao) ctx.getBean("userDaoBeanXmlId");
 		userDaoBeanXmlId.showMeSetter();
-
 		ctx.registerShutdownHook();
-
 	}
 }
