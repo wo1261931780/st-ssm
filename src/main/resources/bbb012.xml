@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="xmlDemoDao003" class="com.stssm.github.io.junw.bbb003spring20220801.dao.Impl.DemoDao003Impl">
+		<!--其他地方和普通配置一样-->
+		<!--因为我们的简单类型变量在Dao中，所以就在Dao中配置对应的参数-->
+		<property name="age" value="123"/>
+		<property name="address" value="123"/>
+
+	</bean>
+	<bean id="xmlDemoService002" class="com.stssm.github.io.junw.bbb003spring20220801.service.Impl.DemoService002Impl">
+		<property name="demoDao003" ref="xmlDemoDao003"/>
+	</bean>
+
+</beans>

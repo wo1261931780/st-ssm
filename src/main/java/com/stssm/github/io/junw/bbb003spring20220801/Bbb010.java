@@ -1,6 +1,8 @@
 package com.stssm.github.io.junw.bbb003spring20220801;
 
-import com.stssm.github.io.dao.UserDao4;
+import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao001;
+import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao002;
+import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService001;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -18,14 +20,19 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Bbb010 {
 	public static void main(String[] args) {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb101SpringContext.xml");
-		// UserDao4 UserDao4 = (UserDao4) ctx.getBean("UserDao4");
-		// 这里出错，因为名称对不上
-		// 这里需要装配的是xml中设置的对象名称
-		// 相当于，去指定xml中具体的装配对象id
-		// UserDao4 UserDao4 = (UserDao4) ctx.getBean(UserDao4.class);
-		// 当时以为是这里出了问题，其实根本不需要执行对应的类
-		UserDao4 userDao4 = (UserDao4) ctx.getBean("userDao4BeanXmlId");
-		userDao4.show();
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb011.xml");
+		System.out.println("执行DemoDao001的获取过程：");
+		DemoDao001 xmlDemoDao001 = (DemoDao001) ctx.getBean("xmlDemoDao001");
+		System.out.println("执行DemoDao002的获取过程：");
+		DemoDao002 xmlDemoDao002 = (DemoDao002) ctx.getBean("xmlDemoDao002");
+		System.out.println("执行ServiceDao001的获取过程：");
+		DemoService001 xmlService001 = (DemoService001) ctx.getBean("xmlDemoService001");
+		System.out.println("===============================================");
+		xmlDemoDao001.dao001Show();
+		System.out.println("===============================================");
+		xmlDemoDao002.dao002Show();
+		System.out.println("===============================================");
+		xmlService001.service001Show();
+
 	}
 }

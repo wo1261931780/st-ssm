@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="xmlDemoDao001" class="com.stssm.github.io.junw.bbb003spring20220801.dao.Impl.DemoDao001Impl"/>
+	<bean id="xmlDemoDao002" class="com.stssm.github.io.junw.bbb003spring20220801.dao.Impl.DemoDao002Impl"/>
+	<bean id="xmlDemoService001" class="com.stssm.github.io.junw.bbb003spring20220801.service.Impl.DemoService001Impl">
+		<property name="demoDao001" ref="xmlDemoDao001"/>
+		<property name="demoDao002" ref="xmlDemoDao002"/>
+		<!--配置多个和配置一个一样，只要对应好映射关系就可以-->
+	</bean>
+
+</beans>
