@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="xmlDemoDao004" class="com.stssm.github.io.junw.bbb003spring20220801.dao.Impl.DemoDao004Impl">
+		<property name="age" value="333"/>
+		<property name="address" value="333"/>
+	</bean>
+	<bean id="xmlDemoService003" class="com.stssm.github.io.junw.bbb003spring20220801.service.Impl.DemoService003Impl">
+		<property name="demoDao004" ref="xmlDemoDao004"/>
+	</bean>
+
+</beans>
