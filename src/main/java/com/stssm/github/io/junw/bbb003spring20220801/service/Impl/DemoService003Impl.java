@@ -29,7 +29,7 @@ public class DemoService003Impl implements DemoService003 {
 	}
 
 	public void setDemoDao004(DemoDao004Impl demoDao004) {
-
+		System.out.println("我是set方法，通过按照类型装配完成了demoDao4对象的依赖注入");
 		this.demoDao004 = demoDao004;
 	}
 }

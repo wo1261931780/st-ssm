@@ -1,6 +1,6 @@
 package com.stssm.github.io.junw.bbb003spring20220801;
 
-import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService003;
+import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService004;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,10 +16,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @return
  * @exception
  */
-public class Bbb012 {
+public class Bbb013 {
 	public static void main(String[] args) {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb013.xml");
-		DemoService003 xmlDemoService003 = (DemoService003) ctx.getBean("xmlDemoService003");
-		xmlDemoService003.service003Show();
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb014.xml");
+		DemoService004 xmlDemoService004 = (DemoService004) ctx.getBean("xmlDemoService004");
+		xmlDemoService004.service004Show();
 	}
 }
