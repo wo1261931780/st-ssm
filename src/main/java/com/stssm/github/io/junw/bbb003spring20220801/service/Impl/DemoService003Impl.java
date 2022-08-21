@@ -1,6 +1,7 @@
 package com.stssm.github.io.junw.bbb003spring20220801.service.Impl;
 
 import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao004;
+import com.stssm.github.io.junw.bbb003spring20220801.dao.Impl.DemoDao004Impl;
 import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService003;
 
 /**
@@ -27,4 +28,8 @@ public class DemoService003Impl implements DemoService003 {
 		demoDao004.dao004Show();
 	}
 
+	public void setDemoDao004(DemoDao004Impl demoDao004) {
+
+		this.demoDao004 = demoDao004;
+	}
 }

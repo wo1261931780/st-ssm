@@ -22,4 +22,12 @@ public class DemoDao004Impl implements DemoDao004 {
 		System.out.println("传递age值：" + age);
 		System.out.println("传递address值：" + address);
 	}
+
+	public void setAge(String age) {
+		this.age = Integer.parseInt(age);
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
 }
