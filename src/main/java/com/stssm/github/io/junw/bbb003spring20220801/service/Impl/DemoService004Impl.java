@@ -1,7 +1,6 @@
 package com.stssm.github.io.junw.bbb003spring20220801.service.Impl;
 
 import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao005;
-import com.stssm.github.io.junw.bbb003spring20220801.dao.Impl.DemoDao005Impl;
 import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService004;
 
 /**
@@ -16,7 +15,16 @@ import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService004;
 public class DemoService004Impl implements DemoService004 {
 
 
-	private DemoDao005 demoDao005;
+	private DemoDao005 xmlDemoDao005;
+	private DemoDao005 xmlDemoDao006;
+
+	public void setXmlDemoDao005(DemoDao005 xmlDemoDao005) {
+		this.xmlDemoDao005 = xmlDemoDao005;
+	}
+
+	public void setXmlDemoDao006(DemoDao005 xmlDemoDao006) {
+		this.xmlDemoDao006 = xmlDemoDao006;
+	}
 
 	/**
 	 *
@@ -24,12 +32,9 @@ public class DemoService004Impl implements DemoService004 {
 	@Override
 	public void service004Show() {
 		System.out.println("我是service004show方法");
-		System.out.println("我是dao4中的show方法");
-		demoDao005.dao005Show();
-	}
-
-	public void setDemoDao005(DemoDao005Impl demoDao005) {
-		System.out.println("我是set方法，通过按照类型装配完成了demoDao4对象的依赖注入");
-		this.demoDao005 = demoDao005;
+		System.out.println("我是dao5中的show方法");
+		xmlDemoDao005.dao005Show();
+		System.out.println("我是dao6中的show方法");
+		xmlDemoDao006.dao005Show();
 	}
 }
