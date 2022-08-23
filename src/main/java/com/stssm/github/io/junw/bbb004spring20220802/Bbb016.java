@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Date 2022-08-20-30  星期二
  * @description
  */
-public class Bbb007 {
+public class Bbb016 {
 	public static void main(String[] args) {
 		// 加载容器的形式有很多
 		// 这是第一种：加载类路径下的配置文件
@@ -40,7 +40,5 @@ public class Bbb007 {
 		// 如果是applicationContext，就是立刻加载bean
 		// 延迟加载，主要是构造器在初始化的过程中，是否会立刻加载对象
 		// 如果是延迟加载，那么构造器完成构造，无参构造中间出现的方法不会立即执行
-
-
 	}
 }

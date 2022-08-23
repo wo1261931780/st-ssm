@@ -14,7 +14,7 @@ import javax.sql.DataSource;
  * @Date 2022-08-20-30  星期二
  * @description
  */
-public class Bbb006 {
+public class Bbb015 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb102SpringContext.xml");
 		DataSource dataSource = (DataSource) ctx.getBean("dataSource");
@@ -22,7 +22,5 @@ public class Bbb006 {
 		System.out.println("******************************************");
 		DataSource dataSource2 = (DataSource) ctx.getBean("dataSource2");
 		System.out.println(dataSource2);
-
-
 	}
 }
