@@ -18,7 +18,7 @@ public class Bbb014 {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb015.xml");
 		DemoDao006 xmlDemoDao006 = (DemoDao006) ctx.getBean("xmlDemoDao006");
 		xmlDemoDao006.dao006Show();
-		System.out.println("我是dao006：" + xmlDemoDao006); 阿萨德
+		System.out.println("我是dao006：" + xmlDemoDao006);
 		// 我是dao006：
 		// DemoDao006Impl
 		// {
