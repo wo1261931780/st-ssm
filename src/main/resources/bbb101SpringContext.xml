@@ -44,55 +44,5 @@
 	<!--如果两个名称一样，那么类型会提示错误，存在多个备选bean-->
 	<!--<bean id="userDao3BeanXmlId" class="com.stssm.github.io.dao.impl.UserDaoImpl3" autowire="byName"/>-->
 	<!--按名称-->
-	<!--********************************************************************************************************-->
-	<!--********************************************************************************************************-->
-	<!--********************************************************************************************************-->
-	<bean id="userDao4BeanXmlId" class="com.stssm.github.io.dao.impl.UserDaoImpl4">
-		<!--首先要设置一个bean进行注入-->
-		<property name="array">
-			<array>
-				<value>100</value>
-				<value>200</value>
-				<value>300</value>
-				<value>400</value>
-				<value>500</value>
-			</array>
-		</property>
-		<!--上面的array和list是可以混合使用的-->
-		<property name="list">
-			<list>
-				<value>list1</value>
-				<value>list2</value>
-				<value>list3</value>
-			</list>
-		</property>
-		<property name="set">
-			<set>
-				<value>set1</value>
-				<value>set1</value>
-				<value>set2</value>
-				<value>set3</value>
-				<value>set1</value>
-			</set>
-			<!--上面的set会对value进行自动过滤-->
-		</property>
-		<property name="map">
-			<map>
-				<entry key="demo1" value="demo100"></entry>
-				<entry key="demo2" value="demo200"></entry>
-				<entry key="demo3" value="demo300"></entry>
-				<entry key="demo1" value="demo100"></entry>
-			</map>
-		</property>
-		<property name="properties">
-			<props>
-				<prop key="p1">1</prop>
-				<prop key="p2">2</prop>
-				<prop key="p3">3</prop>
-				<prop key="p1">1</prop>
-			</props>
-		</property>
-	</bean>
-
 
 </beans>

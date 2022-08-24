@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<!--我们刚刚引入了德鲁伊的pom依赖-->
 	<!--这里对依赖进行配置-->
-	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+	<bean id="xmlDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<!--我们可以把这里的properties理解为对象中的属性-->
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
 		<property name="url" value="jdbc:mysql://localhost:3306/study002jdbc"/>
 		<property name="username" value="root"/>
 		<property name="password" value="LIU18959297292"/>
 	</bean>
 	<!--配置数据库连接池，都是固定的格式-->
-	<bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource2">
+	<bean id="dataSource2" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
 		<property name="password" value="LIU18959297292"/>
 		<property name="user" value="root"/>
