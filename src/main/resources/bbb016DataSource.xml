@@ -12,7 +12,7 @@
 		<property name="password" value="LIU18959297292"/>
 	</bean>
 	<!--配置数据库连接池，都是固定的格式-->
-	<bean id="dataSource2" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+	<bean id="xmlDataSourcePool" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
 		<property name="password" value="LIU18959297292"/>
 		<property name="user" value="root"/>
