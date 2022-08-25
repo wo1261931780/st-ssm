@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
+	<!--我们的配置文件，一般写在properties中-->
+	<!--但是这就产生了一个读取properties文件的问题-->
+	<!--在spring中，为了读取文件，一般会开辟一个空间-->
+	<!--xmlns:context="http://www.springframework.org/schema/context"-->
+	<!--表示新开了一个ns（name space）命名空间-->
+	<!--**********************************************-->
+	<!--xmlns:context="http://www.springframework.org/schema/context"-->
+	<!--xsi:schemaLocation="-->
+	<!--http://www.springframework.org/schema/beans-->
+	<!--http://www.springframework.org/schema/beans/spring-beans.xsd-->
+	<!--http://www.springframework.org/schema/context-->
+	<!--http://www.springframework.org/schema/context/spring-context.xsd-->
+	<!--**********************************************-->
+	<!--表示新开了一个context命名空间-->
+	<!--<context:property-placeholder location="classpath*:Bbb017Jdbc.properties"/>-->
+	<!--这里设置system-properties-mode-->
+	<!--**********************************************-->
+	<!--就是决定是否屏蔽系统变量-->
+	<!--<context:property-placeholder location="classpath*:Bbb017Jdbc.properties" system-properties-mode="NEVER"/>-->
+	<!--**********************************************-->
+	<!--除此以外，我们还可以加载多个配置文件-->
+	<!--<context:property-placeholder location="classpath*:Bbb017Jdbc.properties,Bbb018Jdbc.properties"-->
+	<!--system-properties-mode="NEVER"/>-->
+	<!--**********************************************-->
+	<!--但是就像上面这样，也不是最好的配置方式-->
+	<!--下面这样，实际上是使用通配符的方式，加载对应的配置文件-->
+	<!--<context:property-placeholder location="*.properties" system-properties-mode="NEVER"/>-->
+	<!--**********************************************-->
+	<!--更加规范的格式是：加上类路径-->
+	<!--<context:property-placeholder location="classpath:*.properties" system-properties-mode="NEVER"/>-->
+	<!--**********************************************-->
+	<!--上面这些方式，都只能加载当前项目中的所有配置文件-->
+	<!--但是要读取第三方的配置，就需要补充一个星号-->
+	<context:property-placeholder location="classpath*:*.properties" system-properties-mode="NEVER"/>
+	<!--我们创建命名空间，目的是为了解决配置文件的读取-->
+	<!--如果直接在xml中配置，只会导致相关属性被写死-->
+	<bean id="xmlDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<!--<property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+		<!--<property name="url" value="jdbc:mysql://localhost:3306/study002jdbc"/>-->
+		<!--<property name="username" value="root"/>-->
+		<!--<property name="password" value="LIU18959297292"/>-->
+		<property name="driverClassName" value="${jdbc.driver}"/>
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	<bean id="xmlDemo0802DaoImpl" class="com.stssm.github.io.junw.bbb004spring20220802.dao.Impl.Demo0802DaoImpl">
+		<!--<property name="demo0802DaoImplName" value="我是测试"/>-->
+		<!--其实可以写死，但是我们业务中需要读取对应的数值-->
+		<!--这里动态读取数据，一般都使用${}完成-->
+		<property name="demo0802DaoImplName" value="${jdbc.driver}"/>
+	</bean>
+</beans>
