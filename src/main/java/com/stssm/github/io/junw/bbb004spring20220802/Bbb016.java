@@ -14,7 +14,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Bbb016 {
 	public static void main(String[] args) {
-		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("bbb017DataSource.xml");
+		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("bbb018DataSource.xml");
 		Demo0802Dao demo0802DaoImpl = (Demo0802Dao) applicationContext.getBean("xmlDemo0802DaoImpl");
 		System.out.println("我是dao，即将开始执行方法：");
 		demo0802DaoImpl.daoShow();

@@ -21,14 +21,14 @@
 	<!--http://www.springframework.org/schema/context/spring-context.xsd-->
 	<!--**********************************************-->
 	<!--表示新开了一个context命名空间-->
-	<!--<context:property-placeholder location="classpath*:Bbb017Jdbc.properties"/>-->
+	<!--<context:property-placeholder location="classpath*:Bbb019Jdbc.properties"/>-->
 	<!--这里设置system-properties-mode-->
 	<!--**********************************************-->
 	<!--就是决定是否屏蔽系统变量-->
-	<!--<context:property-placeholder location="classpath*:Bbb017Jdbc.properties" system-properties-mode="NEVER"/>-->
+	<!--<context:property-placeholder location="classpath*:Bbb019Jdbc.properties" system-properties-mode="NEVER"/>-->
 	<!--**********************************************-->
 	<!--除此以外，我们还可以加载多个配置文件-->
-	<!--<context:property-placeholder location="classpath*:Bbb017Jdbc.properties,Bbb018Jdbc.properties"-->
+	<!--<context:property-placeholder location="classpath*:Bbb019Jdbc.properties,Bbb020Jdbc.properties"-->
 	<!--system-properties-mode="NEVER"/>-->
 	<!--**********************************************-->
 	<!--但是就像上面这样，也不是最好的配置方式-->

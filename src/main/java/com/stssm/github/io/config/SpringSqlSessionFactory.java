@@ -26,7 +26,7 @@ public class SpringSqlSessionFactory {
 		SqlSessionFactoryBean demo = new SqlSessionFactoryBean();
 		demo.setDataSource(dataSource);// 根据上面的自动装配，这里直接添加一个dataSource就可以
 		// 其实还有一个事物处理的内容：
-		// <properties resource="Bbb017Jdbc.properties"></properties>
+		// <properties resource="Bbb019Jdbc.properties"></properties>
 		// 这个事物处理，我们后面继续内容
 
 		return demo;
