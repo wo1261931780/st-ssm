@@ -1,6 +1,6 @@
-package com.stssm.github.io.dao2.impl;
+package com.stssm.github.io.junw.bbb006spring20220805.dao.Impl;
 
-import com.stssm.github.io.dao2.SpringDao1;
+import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao003;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
@@ -16,32 +16,31 @@ import javax.annotation.PreDestroy;
  * @Date 2022-08-20-55  星期五
  * @description
  */
-@Repository
+@Repository("Demo0805Dao003Impl")
 @Scope("prototype")
-public class SpringDaoImpl1 implements SpringDao1 {
+public class Demo0805Dao003Impl implements Demo0805Dao003 {
 	// 记得配置仓库的注解
 	// 同时，如果要修改为非单例创建
 	// 在scope中直接添加一个prototype就可以
+	// 如果是按照单例设置，这里是可以不写的
 
 	/**
 	 * 我是测试
 	 */
 	@Override
-	public void show() {
-		System.out.println("我是spring dao1中的show方法");
+	public void demo0805Dao003Show() {
+		System.out.println("我是Demo0805Dao003Impl中的demo0805Dao003Show方法");
 	}
 
 	@PostConstruct
 	public void initLife() {
 		// 注解的直译：在构造之前
-		System.out.println("SpringDao1中的初始化方法");
+		System.out.println("Demo0805Dao003Impl中的初始化方法");
 	}
 
 	@PreDestroy
 	public void destroyLife() {
 		// 注解直译：在销毁之前
-		System.out.println("SpringDao1中的销毁方法");
+		System.out.println("Demo0805Dao003Impl中的销毁方法");
 	}
-
-
 }

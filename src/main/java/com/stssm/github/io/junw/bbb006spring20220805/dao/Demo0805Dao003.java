@@ -1,4 +1,4 @@
-package com.stssm.github.io.dao2;
+package com.stssm.github.io.junw.bbb006spring20220805.dao;
 
 /**
  * Created by Intellij IDEA.
@@ -9,9 +9,10 @@ package com.stssm.github.io.dao2;
  * @Date 2022-08-20-50  星期五
  * @description
  */
-public interface SpringDao1 {
+
+public interface Demo0805Dao003 {
 	/**
 	 * 我是测试
 	 */
-	public void show();
+	void demo0805Dao003Show();
 }

@@ -1,6 +1,6 @@
 package com.stssm.github.io.dao2.impl;
 
-import com.stssm.github.io.dao2.SpringDao2;
+import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao003;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
@@ -19,7 +19,7 @@ import javax.annotation.PreDestroy;
  */
 @Repository("springDao3")
 @Scope("prototype")
-public class SpringDaoImpl3 implements SpringDao2 {
+public class SpringDaoImpl3 implements Demo0805Dao003 {
 
 	@Value("123")
 	private int age;
@@ -32,7 +32,7 @@ public class SpringDaoImpl3 implements SpringDao2 {
 	 * 我是测试
 	 */
 	@Override
-	public void show() {
+	public void demo0805Dao003Show() {
 		System.out.println("我是spring dao3中的show方法");
 		System.out.println("我是name：" + name);
 	}

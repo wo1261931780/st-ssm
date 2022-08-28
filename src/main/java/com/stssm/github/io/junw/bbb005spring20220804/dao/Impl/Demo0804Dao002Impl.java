@@ -12,6 +12,10 @@ public class Demo0804Dao002Impl implements Demo0804Dao002 {
 	// 添加@Component注解，就代表了这是一个bean，
 	// 相当于之前配置的<bean/>
 	// 括号内的名称，相当于value="123"
+	// @Repository("demo")
+	// 如果我在注解里面写了名称，那么就可以按照名称来访问
+	// 具体是在运行类中有不同体现
+
 
 	/**
 	 *

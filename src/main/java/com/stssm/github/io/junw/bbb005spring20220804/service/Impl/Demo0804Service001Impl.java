@@ -11,7 +11,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class Demo0804Service001Impl implements Demo0804Service001 {
-
+	// 用不同的注解直接说明问题
+	// 数据层就是repository
+	// 接口业务层就是controller
+	// 然后在表现层就是service
 	private Demo0804Dao002 demo0804Dao002;
 
 
