@@ -2,6 +2,7 @@ package com.stssm.github.io.junw.bbb005spring20220804.service.Impl;
 
 import com.stssm.github.io.junw.bbb005spring20220804.dao.Demo0804Dao002;
 import com.stssm.github.io.junw.bbb005spring20220804.service.Demo0804Service001;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
@@ -11,11 +12,15 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class Demo0804Service001Impl implements Demo0804Service001 {
-	// 用不同的注解直接说明问题
-	// 数据层就是repository
-	// 接口业务层就是controller
-	// 然后在表现层就是service
+	/**
+	 * 用不同的注解直接说明问题
+	 * 数据层就是repository
+	 * 接口业务层就是controller
+	 * 然后在表现层就是service
+	 */
+	@Autowired
 	private Demo0804Dao002 demo0804Dao002;
+	// 这里没有注入，就会报错空指针
 
 
 	public void setDemo0804Dao002(Demo0804Dao002 demo0804Dao002) {

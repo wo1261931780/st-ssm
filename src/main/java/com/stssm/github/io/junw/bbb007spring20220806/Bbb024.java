@@ -1,0 +1,23 @@
+package com.stssm.github.io.junw.bbb007spring20220806;
+
+import com.stssm.github.io.junw.bbb007spring20220806.config.Spring0806Config;
+import com.stssm.github.io.junw.bbb007spring20220806.service.Impl.Demo0806Service002Impl;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+/**
+ * Created by Intellij IDEA.
+ * Project:st-ssm.github.io
+ * Package:com.stssm.github.io.junw.bbb007spring20220806
+ *
+ * @author liujiajun_junw
+ * @Date 2022-08-08-05  星期六
+ * @description
+ */
+public class Bbb024 {
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0806Config.class);
+		Demo0806Service002Impl bean = ctx.getBean(Demo0806Service002Impl.class);
+		System.out.println("我是运行类" + bean);
+		bean.demo0806Service002Show();
+	}
+}

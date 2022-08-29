@@ -14,8 +14,10 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class Demo0806Dao001Impl implements Demo0806Dao001 {
+	// 我们找到dao就会发现
+	// 这里并没有对dao设置具体的名称
+	// 所以autowired就是按照类型完成装配的
 
-	
 	/**
 	 *
 	 */
