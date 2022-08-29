@@ -13,8 +13,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @Date 2022-08-08-05  星期六
  * @description
  */
-public class Bbb123 {
+public class Bbb023 {
 	public static void main(String[] args) {
+		// 这里就直接讲自动装配
+		// spring为了简化开发，只保留了必要的功能，一部分功能已经被阉割掉
+
+
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfiguration0805.class);
 		UserService3Impl bean = ctx.getBean(UserService3Impl.class);
 		System.out.println("我是运行类" + bean);

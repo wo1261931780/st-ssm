@@ -19,7 +19,7 @@ import org.springframework.context.annotation.PropertySource;
 public class SpringConfiguration4 {
 
 	// @Bean
-	// public DataSource dataSource(SpringDao4 springDao4) {
+	// public DataSource dataSource(Demo0805Dao004 springDao4) {
 	// 	// 这里是按照类型去寻找的，不是按照字节码文件
 	// 	System.out.println("我是springDao4：" + springDao4);
 	// 	// 这里，首先自动装配，获取了一个springDao4

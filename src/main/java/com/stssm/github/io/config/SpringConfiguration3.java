@@ -1,7 +1,7 @@
 package com.stssm.github.io.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.stssm.github.io.dao2.SpringDao4;
+import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao004;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -54,12 +54,12 @@ public class SpringConfiguration3 {
 	// 如果上面已经导入了对应的类，那么底下的注入就会自动进行
 
 	@Bean
-	public DataSource dataSource(SpringDao4 springDao4) {
+	public DataSource dataSource(Demo0805Dao004 demo0805Dao004) {
 		// 这里是按照类型去寻找的，不是按照字节码文件
-		System.out.println("我是springDao4：" + springDao4);
+		System.out.println("我是springDao4：" + demo0805Dao004);
 		// 这里，首先自动装配，获取了一个springDao4
 		// 然后又新建了一个德鲁伊数据源
-		DruidDataSource x=new DruidDataSource();
+		DruidDataSource x = new DruidDataSource();
 		// mybatis，实际上是管理SQLsessionFactory对象
 		return x;
 	}

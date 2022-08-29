@@ -1,7 +1,7 @@
 package com.stssm.github.io.service.impl;
 
-import com.stssm.github.io.dao2.SpringDao4;
 import com.stssm.github.io.domain.Account;
+import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao004;
 import com.stssm.github.io.service.UserService4;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,8 +20,8 @@ import org.springframework.stereotype.Service;
 public class UserService4Impl implements UserService4 {
 
 	@Autowired
-	@Qualifier("springDao4")
-	private SpringDao4 springDao4;
+	@Qualifier("demo0805Dao004")
+	private Demo0805Dao004 demo0805Dao004;
 
 	/**
 	 * 测试方法
@@ -37,7 +37,7 @@ public class UserService4Impl implements UserService4 {
 	 */
 	@Override
 	public Account selectById(int id) {
-		// return springDao4.selectById(id);
+		// return demo0805Dao004.selectById(id);
 		return null;
 	}
 }
