@@ -19,7 +19,6 @@ public class Bbb022 {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfiguration0805.class);
 		Demo0805Dao003 demo0805Dao003Impl = ctx.getBean(Demo0805Dao003Impl.class);
 		demo0805Dao003Impl.demo0805Dao003Show();
-
 		ctx.close();
 	}
 }

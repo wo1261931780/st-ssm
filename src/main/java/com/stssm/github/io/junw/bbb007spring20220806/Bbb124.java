@@ -14,16 +14,15 @@ import javax.sql.DataSource;
  * @Date 2022-08-09-06  星期六
  * @description
  */
-public class Bbb012 {
+public class Bbb124 {
 	public static void main(String[] args) {
 		System.out.println("我是测试装载外部bean对象的运行类");
 
-		AnnotationConfigApplicationContext ctx=new AnnotationConfigApplicationContext(SpringConfiguration2.class);
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfiguration2.class);
 		DataSource bean = ctx.getBean(DataSource.class);
 		// 这里比较奇妙，直接写获取数据库对象就可以
 		// 不需要写ctx.getDruid();然后直接拿到对应的
 		System.out.println(bean);
-
 
 
 	}

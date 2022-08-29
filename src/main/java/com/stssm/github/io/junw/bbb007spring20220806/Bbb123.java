@@ -13,7 +13,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @Date 2022-08-08-05  星期六
  * @description
  */
-public class Bbb011 {
+public class Bbb123 {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfiguration0805.class);
 		UserService3Impl bean = ctx.getBean(UserService3Impl.class);
