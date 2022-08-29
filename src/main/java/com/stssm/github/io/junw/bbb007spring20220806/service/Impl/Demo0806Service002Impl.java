@@ -3,6 +3,7 @@ package com.stssm.github.io.junw.bbb007spring20220806.service.Impl;
 import com.stssm.github.io.junw.bbb007spring20220806.dao.Demo0806Dao002;
 import com.stssm.github.io.junw.bbb007spring20220806.service.Demo0806Service002;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,8 +17,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class Demo0806Service002Impl implements Demo0806Service002 {
-	@Autowired
-	private Demo0806Dao002 demo0806Dao002;
+	// @Autowired
+	// private Demo0806Dao002 demo0806Dao002;
 	// 我们之前已经配置了自动装配
 	// 	但是这里出现了两个实现类
 	// 	如果没写名称，直接按类型装配，就会出现不唯一的情况
@@ -25,6 +26,19 @@ public class Demo0806Service002Impl implements Demo0806Service002 {
 	// 需要注意的是：
 	// 这里是按照对应名称完成的装配
 	// 比如我这里写demo0806Dao002，名称也必须是002，否则会报错
+	// *************************************************************
+
+	@Autowired
+	@Qualifier("demo0806Dao003")
+	private Demo0806Dao002 demo0806Dao002;
+	// 如果类型底下的实现类不唯一
+	// 那么可以这样指定名称，从而实现装配
+	// *************************************************************
+	// 这里拓展几个说明吧
+	// 1.@Autowired是通过暴力反射的方式拿到对应的对象，所以不需要添加setter方法
+	// 2.我们自动装配，使用的是无参构造，
+	// 因为无参构造方法是默认提供的，所以这里不需要添加
+
 
 	/**
 	 *
