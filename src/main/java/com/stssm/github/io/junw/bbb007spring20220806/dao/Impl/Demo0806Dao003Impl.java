@@ -21,6 +21,5 @@ public class Demo0806Dao003Impl implements Demo0806Dao002 {
 	@Override
 	public void demo0806DaoShow002() {
 		System.out.println("我是Demo0806Dao002Impl中的demo0806DaoShow方法");
-
 	}
 }
