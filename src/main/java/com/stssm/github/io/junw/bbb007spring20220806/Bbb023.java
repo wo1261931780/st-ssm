@@ -17,8 +17,6 @@ public class Bbb023 {
 	public static void main(String[] args) {
 		// 这里就直接讲自动装配
 		// spring为了简化开发，只保留了必要的功能，一部分功能已经被阉割掉
-
-
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0806Config.class);
 		Demo0806Service001Impl bean = ctx.getBean(Demo0806Service001Impl.class);
 		System.out.println("我是运行类" + bean);
