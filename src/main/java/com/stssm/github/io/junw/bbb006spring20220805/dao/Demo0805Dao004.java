@@ -15,6 +15,6 @@ public interface Demo0805Dao004 {
 	// @Select("select * from study002jdbc.account where id=#{id};")
 	// public Account selectById(int id);
 
-	void demo0805Dao004Show();
+	// --注释掉检查 (2022-09-01 12:48):void demo0805Dao004Show();
 
 }

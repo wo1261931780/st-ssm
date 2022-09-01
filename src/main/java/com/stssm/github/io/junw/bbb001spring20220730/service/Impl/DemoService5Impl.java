@@ -17,9 +17,11 @@ public class DemoService5Impl implements DemoService5 {
 
 	private DemoDao5 serviceDemoDao5;
 
-	public void setServiceDemoDao5(DemoDao5Impl innerDemoDao5) {
-		this.serviceDemoDao5 = innerDemoDao5;
-	}
+// --注释掉检查 START (2022-09-01 12:48):
+//	public void setServiceDemoDao5(DemoDao5Impl innerDemoDao5) {
+//		this.serviceDemoDao5 = innerDemoDao5;
+//	}
+// --注释掉检查 STOP (2022-09-01 12:48)
 
 	/**
 	 *

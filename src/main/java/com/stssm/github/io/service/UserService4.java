@@ -12,7 +12,7 @@ import com.stssm.github.io.domain.Account;
  * @description
  */
 public interface UserService4 {
-	public void show();
+	// --注释掉检查 (2022-09-01 12:48):void show();
 
-	public Account selectById(int id);
+	Account selectById(int id);
 }

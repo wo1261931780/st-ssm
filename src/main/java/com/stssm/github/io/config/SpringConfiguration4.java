@@ -14,7 +14,7 @@ import org.springframework.context.annotation.PropertySource;
  * @description 扫描内部的配置信息
  */
 @Configuration
-@ComponentScan({"com.stssm.github.io.dao2", "com.stssm.github.io.service"})
+@ComponentScan({"com.stssm.github.io", "com.stssm.github.io.service"})
 @PropertySource("jdbc4.properties")
 public class SpringConfiguration4 {
 

@@ -10,8 +10,10 @@ package com.stssm.github.io.junw.bbb002spring20220731.service;
  * @description
  */
 public interface UserService001 {
-	/**
-	 * 测试
-	 */
-	void serviceShow();
+// --注释掉检查 START (2022-09-01 12:48):
+//	/**
+//	 * 测试
+//	 */
+//	void serviceShow();
+// --注释掉检查 STOP (2022-09-01 12:48)
 }

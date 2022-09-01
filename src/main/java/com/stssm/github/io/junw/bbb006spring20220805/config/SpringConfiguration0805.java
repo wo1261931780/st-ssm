@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * @description
  */
 @Configuration
-@ComponentScan({"com.stssm.github.io.junw.bbb006spring20220805.dao", "com.stssm.github.io.junw.bbb006spring20220805.service"})
+@ComponentScan({"com.stssm.github.io.junw.bbb006spring20220805.dao"})
 // @PropertySource({"jdbc2.properties", "jdbc3.properties"})
 public class SpringConfiguration0805 {
 	// 加上Configuration的注解，代表是个配置类，代表了整个xml文件

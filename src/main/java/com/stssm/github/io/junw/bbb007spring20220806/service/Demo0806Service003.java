@@ -11,5 +11,5 @@ package com.stssm.github.io.junw.bbb007spring20220806.service;
  */
 public interface Demo0806Service003 {
 
-	void demo0806Service003Show();
+	// --注释掉检查 (2022-09-01 12:48):void demo0806Service003Show();
 }

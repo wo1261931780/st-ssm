@@ -20,18 +20,18 @@ public class UserDao002Impl implements UserDao002, InitializingBean, DisposableB
 
 
 	/**
-	 * @throws Exception
+	 *
 	 */
 	@Override
-	public void destroy() throws Exception {
+	public void destroy() {
 		System.out.println("我是UserDao002销毁方法");
 	}
 
 	/**
-	 * @throws Exception
+	 *
 	 */
 	@Override
-	public void afterPropertiesSet() throws Exception {
+	public void afterPropertiesSet() {
 		System.out.println("我是UserDao002初始化方法");
 	}
 

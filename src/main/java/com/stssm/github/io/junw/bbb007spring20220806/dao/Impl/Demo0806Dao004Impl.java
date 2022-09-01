@@ -15,7 +15,6 @@ import org.springframework.stereotype.Repository;
  */
 @Repository("demo0806Dao004")
 public class Demo0806Dao004Impl implements Demo0806Dao004 {
-	private final String dao004Name001 = "name001";
 	// 上面两种方式都可以设置变量的名称
 
 	@Value("name002")
@@ -28,6 +27,7 @@ public class Demo0806Dao004Impl implements Demo0806Dao004 {
 	@Override
 	public void demo0806DaoShow004() {
 		System.out.println("我是Demo0806Dao004Impl中的demo0806DaoShow方法");
+		String dao004Name001 = "name001";
 		System.out.println("我是内部的变量001:" + dao004Name001);
 		System.out.println("我是内部的变量002:" + dao004Name002);
 	}

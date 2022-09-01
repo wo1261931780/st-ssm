@@ -38,18 +38,18 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	}
 
 	/**
-	 * @throws Exception
+	 *
 	 */
 	@Override
-	public void destroy() throws Exception {
+	public void destroy() {
 		System.out.println("我是service7中的销毁方法");
 	}
 
 	/**
-	 * @throws Exception
+	 *
 	 */
 	@Override
-	public void afterPropertiesSet() throws Exception {
+	public void afterPropertiesSet() {
 		System.out.println("我是service7中的初始化方法");
 	}
 }

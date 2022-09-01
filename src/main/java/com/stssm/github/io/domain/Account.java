@@ -23,25 +23,37 @@ public class Account {
 				       '}';
 	}
 
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
+// --注释掉检查 START (2022-09-01 12:48):
+// --注释掉检查 START (2022-09-01 12:48):
+////	public int getAge() {
+////		return age;
+////	}
+// --注释掉检查 START (2022-09-01 12:48):
+////// --注释掉检查 START (2022-09-01 12:48):
+//// --注释掉检查 STOP (2022-09-01 12:48)
+// --注释掉检查 STOP (2022-09-01 12:48)
+//// --注释掉检查 STOP (2022-09-01 12:48)
+//
+//	public void setAge(int age) {
+// --注释掉检查 STOP (2022-09-01 12:48)
 		this.age = age;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
+// --注释掉检查 START (2022-09-01 12:48):
+//	public String getName() {
+//		return name;
+//	}
+//
+//	public void setName(String name) {
+// --注释掉检查 STOP (2022-09-01 12:48)
 		this.name = name;
 	}
 
-	public String getAddress() {
-		return address;
-	}
+// --注释掉检查 START (2022-09-01 12:48):
+//	public String getAddress() {
+//		return address;
+//	}
+// --注释掉检查 STOP (2022-09-01 12:48)
 
 	public void setAddress(String address) {
 		this.address = address;

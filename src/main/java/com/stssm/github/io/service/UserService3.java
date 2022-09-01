@@ -10,8 +10,10 @@ package com.stssm.github.io.service;
  * @description
  */
 public interface UserService3 {
-	/**
-	 * 我是service方法
-	 */
-	public void show();
+// --注释掉检查 START (2022-09-01 12:48):
+//	/**
+//	 * 我是service方法
+//	 */
+//	void show();
+// --注释掉检查 STOP (2022-09-01 12:48)
 }

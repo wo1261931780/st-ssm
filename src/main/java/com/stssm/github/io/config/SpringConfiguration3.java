@@ -19,7 +19,7 @@ import javax.sql.DataSource;
  * @description
  */
 @Configuration
-@ComponentScan({"com.stssm.github.io.dao2"})
+@ComponentScan({"com.stssm.github.io"})
 public class SpringConfiguration3 {
 	// 为了能够加载到其它包下面的类，就需要像上面一样，
 	// @ComponentScan("com.stssm.github.io.config")	设置一个包扫描器
@@ -59,9 +59,8 @@ public class SpringConfiguration3 {
 		System.out.println("我是springDao4：" + demo0805Dao004);
 		// 这里，首先自动装配，获取了一个springDao4
 		// 然后又新建了一个德鲁伊数据源
-		DruidDataSource x = new DruidDataSource();
 		// mybatis，实际上是管理SQLsessionFactory对象
-		return x;
+		return new DruidDataSource();
 	}
 
 }
