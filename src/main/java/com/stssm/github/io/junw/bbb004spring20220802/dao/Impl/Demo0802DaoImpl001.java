@@ -1,7 +1,5 @@
 package com.stssm.github.io.junw.bbb004spring20220802.dao.Impl;
 
-import com.stssm.github.io.junw.bbb004spring20220802.dao.Demo0802Dao001;
-
 // --注释掉检查 START (2022-09-01 12:48):
 ///**
 // * Created by Intellij IDEA.
@@ -12,7 +10,7 @@ import com.stssm.github.io.junw.bbb004spring20220802.dao.Demo0802Dao001;
 // * @Date 2022-08-21-18  星期四
 // * @description
 // */
-//public class Demo0802DaoImpl001 implements Demo0802Dao001 {
+// public class Demo0802DaoImpl001 implements Demo0802Dao001 {
 //	private String Demo0802DaoImplName;
 //
 //// --注释掉检查 START (2022-09-01 12:48):
@@ -32,4 +30,4 @@ import com.stssm.github.io.junw.bbb004spring20220802.dao.Demo0802Dao001;
 //		System.out.println("我是Demo0802Dao中的变量" + Demo0802DaoImplName);
 //	}
 // --注释掉检查 STOP (2022-09-01 12:48)
-}
+// }

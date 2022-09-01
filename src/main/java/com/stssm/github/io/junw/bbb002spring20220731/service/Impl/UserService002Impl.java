@@ -14,11 +14,11 @@ import com.stssm.github.io.junw.bbb002spring20220731.service.UserService002;
  * @description
  */
 public class UserService002Impl implements UserService002 {
-// --注释掉检查 START (2022-09-01 12:48):
+	// --注释掉检查 START (2022-09-01 12:48):
 //	/**
 //	 * 依赖注入
 //	 */
-//	private UserDao002 serviceUserDao002;
+	private UserDao002 serviceUserDao002;
 // --注释掉检查 STOP (2022-09-01 12:48)
 
 	public void setDiUserDao002(UserDao002Impl diUserDao002) {

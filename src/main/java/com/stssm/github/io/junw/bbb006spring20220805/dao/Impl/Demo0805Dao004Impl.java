@@ -1,5 +1,6 @@
 package com.stssm.github.io.junw.bbb006spring20220805.dao.Impl;
 
+import com.stssm.github.io.domain.Account;
 import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao004;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
@@ -27,6 +28,15 @@ public class Demo0805Dao004Impl implements Demo0805Dao004 {
 	private String name;
 	// 使用注解定义变量的值，好处在于，可以直接加载外部的文件，然后拿到文件中的属性值
 
+
+	/**
+	 * @param id
+	 * @return
+	 */
+	@Override
+	public Account selectById(int id) {
+		return null;
+	}
 
 	/**
 	 * 我是测试
