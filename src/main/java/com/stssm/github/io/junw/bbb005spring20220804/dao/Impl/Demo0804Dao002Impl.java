@@ -7,6 +7,15 @@ import org.springframework.stereotype.Repository;
 // @Component("demo0804Dao002Impl")
 // 同样的，为了区分数据层，这里设置了一个repository的名称
 
+/**
+ * Created by Intellij IDEA.
+ * Project:st-ssm.github.io
+ * Package:com.stssm.github.io.junw.bbb004spring20220802.dao.Impl
+ *
+ * @author liujiajun_junw
+ * @Date 2022-08-21-18  星期四
+ * @description
+ */
 @Repository("demo0804Dao002Impl")
 public class Demo0804Dao002Impl implements Demo0804Dao002 {
 	// 添加@Component注解，就代表了这是一个bean，

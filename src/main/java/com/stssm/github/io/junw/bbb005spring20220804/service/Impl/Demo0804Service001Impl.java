@@ -10,6 +10,15 @@ import org.springframework.stereotype.Service;
 // 上面这里的component和service作用完全相同
 // 只是spring官方为了区分不同的层级，来设置的名称而已
 
+/**
+ * Created by Intellij IDEA.
+ * Project:st-ssm.github.io
+ * Package:com.stssm.github.io.junw.bbb004spring20220802.dao.Impl
+ *
+ * @author liujiajun_junw
+ * @Date 2022-08-21-18  星期四
+ * @description
+ */
 @Service
 public class Demo0804Service001Impl implements Demo0804Service001 {
 	/**

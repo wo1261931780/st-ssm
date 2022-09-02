@@ -16,7 +16,7 @@ import javax.sql.DataSource;
  * @description
  */
 @Configuration
-public class jdbcConfiguration {
+public class JdbcConfiguration {
 
 	/**
 	 * 这里是一个设计模式，我们一般将专门管理一类对象的bean，丢到同一个位置

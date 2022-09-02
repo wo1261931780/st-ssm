@@ -3,16 +3,15 @@ package com.stssm.github.io.junw.bbb003spring20220801.service.Impl;
 import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao006;
 import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService006;
 
-// --注释掉检查 START (2022-09-01 12:48):
-///**
-// * Created by Intellij IDEA.
-// * Project:st-ssm.github.io
-// * Package:com.stssm.github.io.junw.bbb003spring20220801.service.Impl
-// *
-// * @author liujiajun_junw
-// * @Date 2022-08-07-50  星期五
-// * @description
-// */
+/**
+ * Created by Intellij IDEA.
+ * Project:st-ssm.github.io
+ * Package:com.stssm.github.io.junw.bbb003spring20220801.service.Impl
+ *
+ * @author liujiajun_junw
+ * @Date 2022-08-07-50  星期五
+ * @description
+ */
 public class DemoService006Impl implements DemoService006 {
 	private DemoDao006 xmlDemoDao006;
 

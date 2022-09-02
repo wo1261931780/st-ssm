@@ -12,10 +12,10 @@ import com.stssm.github.io.junw.bbb004spring20220802.dao.Demo0802Dao;
  * @description
  */
 public class Demo0802DaoImpl implements Demo0802Dao {
-	private String Demo0802DaoImplName;
+	private String demo0802DaoImplName;
 
 	public void setDemo0802DaoImplName(String demo0802DaoImplName) {
-		this.Demo0802DaoImplName = demo0802DaoImplName;
+		this.demo0802DaoImplName = demo0802DaoImplName;
 	}
 
 	/**
@@ -24,6 +24,6 @@ public class Demo0802DaoImpl implements Demo0802Dao {
 	@Override
 	public void daoShow() {
 		System.out.println("我是Demo0802Dao中的show方法");
-		System.out.println("我是Demo0802Dao中的变量" + Demo0802DaoImplName);
+		System.out.println("我是Demo0802Dao中的变量" + demo0802DaoImplName);
 	}
 }
