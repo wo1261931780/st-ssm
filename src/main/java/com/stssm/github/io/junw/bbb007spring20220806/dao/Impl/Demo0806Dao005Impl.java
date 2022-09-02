@@ -16,7 +16,7 @@ import org.springframework.stereotype.Repository;
 @Repository("demo0806Dao004")
 public class Demo0806Dao005Impl implements Demo0806Dao005 {
 
-	@Value("${username}")
+	@Value("${username024}")
 	private String dao005Name002;
 
 	/**
