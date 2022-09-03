@@ -10,10 +10,8 @@ package com.stssm.github.io.junw.bbb001spring20220730.service;
  * @description
  */
 public interface DemoService6 {
-	// --注释掉检查 START (2022-09-01 12:48):
-//	/**
-//	 * 业务层，主要写运行的逻辑
-//	 */
+	/**
+	 * 业务层，主要写运行的逻辑
+	 */
 	void servieShow6();
-// --注释掉检查 STOP (2022-09-01 12:48)
 }

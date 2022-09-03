@@ -14,11 +14,18 @@ import org.apache.ibatis.annotations.Select;
  */
 
 public interface Demo0805Dao004 {
-
+	/**
+	 * 测试方法
+	 *
+	 * @param id
+	 * @return id
+	 */
 	@Select("select * from study002jdbc.account where id=#{id};")
 	Account selectById(int id);
 
-	// --注释掉检查 (2022-09-01 12:48):
+	/**
+	 * 我是测试
+	 */
 	void demo0805Dao004Show();
 
 }

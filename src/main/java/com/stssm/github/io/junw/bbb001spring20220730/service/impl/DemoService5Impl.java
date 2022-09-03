@@ -14,17 +14,20 @@ import com.stssm.github.io.junw.bbb001spring20220730.service.DemoService5;
  * @description
  */
 public class DemoService5Impl implements DemoService5 {
-
+	/**
+	 * 测试方法
+	 */
 	private DemoDao5 serviceDemoDao5;
 
-	// --注释掉检查 START (2022-09-01 12:48):
+	/**
+	 * 测试方法
+	 */
 	public void setServiceDemoDao5(DemoDao5Impl innerDemoDao5) {
 		this.serviceDemoDao5 = innerDemoDao5;
 	}
-// --注释掉检查 STOP (2022-09-01 12:48)
 
 	/**
-	 *
+	 * 测试方法
 	 */
 	@Override
 	public void servieShow5() {

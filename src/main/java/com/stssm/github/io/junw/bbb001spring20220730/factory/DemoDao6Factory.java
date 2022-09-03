@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb001spring20220730.Factory;
+package com.stssm.github.io.junw.bbb001spring20220730.factory;
 
 import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao6;
 import com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao6Impl;

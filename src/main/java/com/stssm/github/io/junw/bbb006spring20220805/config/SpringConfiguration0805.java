@@ -2,6 +2,7 @@ package com.stssm.github.io.junw.bbb006spring20220805.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 /**
  * Created by Intellij IDEA.
@@ -14,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan({"com.stssm.github.io.junw.bbb006spring20220805.dao"})
-// @PropertySource({"jdbc2.properties", "jdbc3.properties"})
+@PropertySource({"jdbc2.properties", "jdbc3.properties"})
 public class SpringConfiguration0805 {
 	// 加上Configuration的注解，代表是个配置类，代表了整个xml文件
 	// 注解的作用，是替换已经存在的xml配置文件

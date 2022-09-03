@@ -10,5 +10,8 @@ package com.stssm.github.io.junw.bbb007spring20220806.service;
  * @description
  */
 public interface Demo0806Service004 {
+	/**
+	 * 我是测试
+	 */
 	void demo0806Service004Show();
 }

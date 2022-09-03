@@ -10,5 +10,8 @@ package com.stssm.github.io.junw.bbb001spring20220730.dao;
  * @description
  */
 public interface DemoDao1 {
+	/**
+	 * 我是测试
+	 */
 	void show();
 }

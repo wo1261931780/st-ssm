@@ -3,7 +3,7 @@ package com.stssm.github.io.junw.bbb002spring20220731;
 import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao002;
 import com.stssm.github.io.junw.bbb002spring20220731.factory.Factory0731;
 import com.stssm.github.io.junw.bbb002spring20220731.service.UserService002;
-import com.stssm.github.io.junw.bbb002spring20220731.staticFactory.StaticFactory0731;
+import com.stssm.github.io.junw.bbb002spring20220731.sfactory.StaticFactory0731;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -12,8 +12,17 @@ import com.stssm.github.io.domain.Account;
  * @description
  */
 public interface UserService4 {
-	// --注释掉检查 (2022-09-01 12:48):
+	/**
+	 * 我是测试
+	 */
 	void show();
+
+	/**
+	 * 登录功能
+	 *
+	 * @param id
+	 * @return id
+	 */
 
 	Account selectById(int id);
 }

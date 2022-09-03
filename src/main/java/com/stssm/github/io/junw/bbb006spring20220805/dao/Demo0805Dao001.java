@@ -10,10 +10,8 @@ package com.stssm.github.io.junw.bbb006spring20220805.dao;
  * @description
  */
 public interface Demo0805Dao001 {
-	// --注释掉检查 START (2022-09-01 12:48):
-//	/**
-//	 * 测试方法
-//	 */
+	/**
+	 * 测试方法
+	 */
 	void demo0805Dao001Show();
-// --注释掉检查 STOP (2022-09-01 12:48)
 }

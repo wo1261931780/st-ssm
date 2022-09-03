@@ -13,6 +13,6 @@
 	<bean id="xmlFactory" factory-bean="xmlFactory0731" factory-method="factoryGetDao001"/>
 	<!--实例工厂-->
 	<bean id="staticFactory0731" factory-method="factoryGetDao002"
-	      class="com.stssm.github.io.junw.bbb002spring20220731.staticFactory.StaticFactory0731"/>
+	      class="com.stssm.github.io.junw.bbb002spring20220731.sfactory.StaticFactory0731"/>
 	<!--静态工厂-->
 </beans>
