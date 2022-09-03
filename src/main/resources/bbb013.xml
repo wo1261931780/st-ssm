@@ -2,16 +2,16 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<!--<bean id="xmlDemoDao004" class="com.stssm.github.io.junw.bbb003spring20220801.dao.Impl.DemoDao004Impl">-->
+	<!--<bean id="xmlDemoDao004" class="com.stssm.github.io.junw.bbb003spring20220801.dao.impl.DemoDao004Impl">-->
 	<!--按照类型装配的好处：-->
 	<!--配置好映射关系以后，甚至连id都不需要设置-->
-	<bean class="com.stssm.github.io.junw.bbb003spring20220801.dao.Impl.DemoDao004Impl">
+	<bean class="com.stssm.github.io.junw.bbb003spring20220801.dao.impl.DemoDao004Impl">
 		<!--这里我们讲自动装配-->
 		<!--首先dao是固定的类型-->
 		<property name="age" value="333"/>
 		<property name="address" value="333"/>
 	</bean>
-	<bean id="xmlDemoService003" class="com.stssm.github.io.junw.bbb003spring20220801.service.Impl.DemoService003Impl"
+	<bean id="xmlDemoService003" class="com.stssm.github.io.junw.bbb003spring20220801.service.impl.DemoService003Impl"
 	      autowire="byType">
 		<!--配置autowire="byType"-->
 		<!--表示按照类型完成自动装配的过程-->
@@ -24,7 +24,7 @@
 		<!--其次，我的bean配置必须是唯一的-->
 		<!--不能存在两个bean指向同一个dao的过程-->
 		<!--如果我上面新增了一个:-->
-		<!--<bean id="xmlDemo2Dao004" class="com.stssm.github.io.junw.bbb003spring20220801.dao.Impl.DemoDao004Impl"/>-->
+		<!--<bean id="xmlDemo2Dao004" class="com.stssm.github.io.junw.bbb003spring20220801.dao.impl.DemoDao004Impl"/>-->
 		<!--会出现报错:NoUniqueBeanDefinitionException-->
 		<!--===============================================-->
 	</bean>

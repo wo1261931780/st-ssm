@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="demoService2" class="com.stssm.github.io.junw.bbb001spring20220730.service.Impl.DemoService2Impl">
+	<bean id="demoService2" class="com.stssm.github.io.junw.bbb001spring20220730.service.impl.DemoService2Impl">
 		<property name="serviceDemoDao2" ref="xmlDemoDao2"/>
 		<!--ref表示参考，reference-->
 		<!--这里就是对应到上面配置文件中管理的xmlDao-->
@@ -12,6 +12,6 @@
 	</bean>
 	<!--根据这里，对象的映射过程-->
 	<!--还是把Dao按照顺序，放到底下去-->
-	<bean id="xmlDemoDao2" class="com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao2Impl"/>
+	<bean id="xmlDemoDao2" class="com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao2Impl"/>
 
 </beans>

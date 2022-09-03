@@ -1,6 +1,6 @@
 package com.stssm.github.io.junw.bbb002spring20220731.staticFactory;
 
-import com.stssm.github.io.junw.bbb002spring20220731.dao.Impl.UserDao002Impl;
+import com.stssm.github.io.junw.bbb002spring20220731.dao.impl.UserDao002Impl;
 import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao002;
 
 /**

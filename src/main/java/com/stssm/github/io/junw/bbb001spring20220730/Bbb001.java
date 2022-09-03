@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb001spring20220730;
 
 import com.stssm.github.io.junw.bbb001spring20220730.service.DemoService1;
-import com.stssm.github.io.junw.bbb001spring20220730.service.Impl.DemoService1Impl;
+import com.stssm.github.io.junw.bbb001spring20220730.service.impl.DemoService1Impl;
 
 /**
  * Created by Intellij IDEA.

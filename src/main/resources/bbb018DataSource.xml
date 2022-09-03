@@ -53,7 +53,7 @@
 		<property name="username" value="${jdbc.username}"/>
 		<property name="password" value="${jdbc.password}"/>
 	</bean>
-	<bean id="xmlDemo0802DaoImpl" class="com.stssm.github.io.junw.bbb004spring20220802.dao.Impl.Demo0802DaoImpl">
+	<bean id="xmlDemo0802DaoImpl" class="com.stssm.github.io.junw.bbb004spring20220802.dao.impl.Demo0802DaoImpl">
 		<!--<property name="demo0802DaoImplName" value="我是测试"/>-->
 		<!--其实可以写死，但是我们业务中需要读取对应的数值-->
 		<!--这里动态读取数据，一般都使用${}完成-->

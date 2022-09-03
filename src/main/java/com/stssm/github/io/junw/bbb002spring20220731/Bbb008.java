@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb002spring20220731;
 
 import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao001;
-import com.stssm.github.io.junw.bbb002spring20220731.service.Impl.UserService001Impl;
+import com.stssm.github.io.junw.bbb002spring20220731.service.impl.UserService001Impl;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**

@@ -2,7 +2,7 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean id="xmlDemoService1" class="com.stssm.github.io.junw.bbb001spring20220730.service.Impl.DemoService1Impl"/>
+	<bean id="xmlDemoService1" class="com.stssm.github.io.junw.bbb001spring20220730.service.impl.DemoService1Impl"/>
 	<!--我指定的service对象，就是IoC容器管理的对象-->
 	<!--只要通过IoC容器来管理，就不需要手动new一个对象出来-->
 </beans>

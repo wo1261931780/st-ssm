@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb001spring20220730.Factory;
 
 import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao6;
-import com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao6Impl;
+import com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao6Impl;
 
 /**
  * Created by Intellij IDEA.

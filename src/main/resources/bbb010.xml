@@ -2,8 +2,8 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean id="xmlUserDao002" class="com.stssm.github.io.junw.bbb002spring20220731.dao.Impl.UserDao002Impl"/>
-	<bean id="xmlUserService002" class="com.stssm.github.io.junw.bbb002spring20220731.service.Impl.UserService002Impl"
+	<bean id="xmlUserDao002" class="com.stssm.github.io.junw.bbb002spring20220731.dao.impl.UserDao002Impl"/>
+	<bean id="xmlUserService002" class="com.stssm.github.io.junw.bbb002spring20220731.service.impl.UserService002Impl"
 	      init-method="initTest1" destroy-method="destoryTest1">
 		<property name="diUserDao002" ref="xmlUserDao002"/>
 	</bean>

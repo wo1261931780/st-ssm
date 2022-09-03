@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb007spring20220806;
 
 import com.stssm.github.io.junw.bbb007spring20220806.config.Spring0806Config002;
-import com.stssm.github.io.junw.bbb007spring20220806.service.Impl.Demo0806Service004Impl;
+import com.stssm.github.io.junw.bbb007spring20220806.service.impl.Demo0806Service004Impl;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

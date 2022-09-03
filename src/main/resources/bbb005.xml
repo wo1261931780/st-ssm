@@ -3,11 +3,11 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<!--<bean id="xmlDemoService5" class="com.stssm.github.io.junw.bbb001spring20220730.service.Impl.DemoService5Impl"-->
+	<!--<bean id="xmlDemoService5" class="com.stssm.github.io.junw.bbb001spring20220730.service.impl.DemoService5Impl"-->
 	<!--      scope="prototype">-->
 	<!--	<property name="serviceDemoDao5" ref="xmlDemoDao5"/>-->
 	<!--</bean>-->
-	<!--<bean id="xmlDemoDao5" class="com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao5Impl"-->
+	<!--<bean id="xmlDemoDao5" class="com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao5Impl"-->
 	<!--      scope="prototype"/>-->
 
 
