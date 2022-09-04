@@ -32,14 +32,12 @@ public class Demo0804Service001Impl implements Demo0804Service001 {
 	// 这里没有注入，就会报错空指针
 
 
-// --注释掉检查 START (2022-09-01 12:48):
-//	public void setDemo0804Dao002(Demo0804Dao002 demo0804Dao002) {
-//		this.demo0804Dao002 = demo0804Dao002;
-//		// 所有的set，实际上都是将对象作为一个变量来操作
-//		// 如果没有set方法完成注入，就会出现报错
-//		// Exception in thread "main" java.lang.NullPointerException: Cannot invoke "com.stssm.github.io.junw.bbb005spring20220804.dao.Demo0804Dao002.demoDaoShow002()" because "this.demo0804Dao002" is null
-//	}
-// --注释掉检查 STOP (2022-09-01 12:48)
+	public void setDemo0804Dao002(Demo0804Dao002 demo0804Dao002) {
+		this.demo0804Dao002 = demo0804Dao002;
+		// 所有的set，实际上都是将对象作为一个变量来操作
+		// 如果没有set方法完成注入，就会出现报错
+		// Exception in thread "main" java.lang.NullPointerException: Cannot invoke "com.stssm.github.io.junw.bbb005spring20220804.dao.Demo0804Dao002.demoDaoShow002()" because "this.demo0804Dao002" is null
+	}
 
 	/**
 	 *
