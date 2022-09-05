@@ -14,7 +14,7 @@ import javax.sql.DataSource;
  * @Date 2022-08-09-06  星期六
  * @description
  */
-public class Bbb124 {
+public class Bbb027 {
 	public static void main(String[] args) {
 		System.out.println("我是测试装载外部bean对象的运行类");
 
