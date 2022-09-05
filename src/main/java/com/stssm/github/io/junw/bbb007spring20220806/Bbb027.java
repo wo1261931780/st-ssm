@@ -23,7 +23,5 @@ public class Bbb027 {
 		// 这里比较奇妙，直接写获取数据库对象就可以
 		// 不需要写ctx.getDruid();然后直接拿到对应的
 		System.out.println(bean);
-
-
 	}
 }
