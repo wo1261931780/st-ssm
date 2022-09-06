@@ -15,7 +15,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @Date 2022-08-14-33  星期日
  * @description
  */
-public class Bbb014 {
+public class Bbb114 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfiguration4.class);
 		UserService4 bean = ctx.getBean(UserService4.class);
