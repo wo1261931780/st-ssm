@@ -1,4 +1,4 @@
-package com.stssm.github.io.config;
+package com.stssm.github.io.junw.bbb008spring20220807.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +16,7 @@ import javax.sql.DataSource;
  * @description
  */
 @Configuration
-public class SpringConfiguration2 {
+public class Spring0807Configuration001 {
 
 	/**
 	 * 我们之前都是管理内部的对象，只需要扫描就可以
@@ -25,7 +25,8 @@ public class SpringConfiguration2 {
 	 */
 	@Bean
 	public DataSource getDruid() {
-		// 这里需要添加一个bean的注解，代表我返回的是一个对象
+		// 这里，实际上就是使用方法获得了一个DataSource对象
+		// 需要添加一个bean的注解，代表我返回的是一个对象
 		DruidDataSource demoBean = new DruidDataSource();
 		// 如果这样考虑，那么在对应的jar包中，也都提供了内部的构造方法
 		demoBean.setDriverClassName("com.mysql.jdbc.Driver");
@@ -36,6 +37,4 @@ public class SpringConfiguration2 {
 	}
 	// 这种管理bean的方式，实际上是工厂模式的体现
 	// 只需要一个方法，就可以管理我们范围内的bean对象
-
-
 }

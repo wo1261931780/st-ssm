@@ -17,4 +17,6 @@ import org.springframework.context.annotation.PropertySource;
 @ComponentScan("com.stssm.github.io.junw.bbb007spring20220806")
 @PropertySource("Bbb024Jdbc.properties")
 public class Spring0806Config002 {
+	// 上面的配置文件，只能指定加载，
+	// 不接受星号通配符
 }

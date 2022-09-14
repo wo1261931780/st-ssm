@@ -1,4 +1,4 @@
-package com.stssm.github.io.config;
+package com.stssm.github.io.junw.bbb008spring20220807.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +16,7 @@ import javax.sql.DataSource;
  * @description
  */
 @Configuration
-public class JdbcConfiguration {
+public class Jdbc0807Configuration001 {
 
 	/**
 	 * 这里是一个设计模式，我们一般将专门管理一类对象的bean，丢到同一个位置
