@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * @description
  */
 @Configuration
-@ComponentScan({"com.stssm.github.io"})
+@ComponentScan({"com.stssm.github.io.junw.bbb008spring20220807"})
 public class Spring0807Configuration002 {
 	// 为了能够加载到其它包下面的类，就需要像上面一样，
 	// @ComponentScan("com.stssm.github.io.config")	设置一个包扫描器

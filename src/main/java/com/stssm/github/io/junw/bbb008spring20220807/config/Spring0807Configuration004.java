@@ -5,7 +5,6 @@ import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao004;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 
 import javax.sql.DataSource;
 
@@ -19,12 +18,16 @@ import javax.sql.DataSource;
  * @description
  */
 @Configuration
-@Import({Jdbc0807Configuration002.class})
 public class Spring0807Configuration004 {
 
-	/**
+	/*
+	 * 在不考虑导入外部jdbc配置的情况下，
 	 * 还有一种简单类型的注入
+	 * 将所有的数据，保存到变量中，然后再次赋值就可以
+	 * ======================================
+	 * 简单类型的配置，本质上是为了补充原来没有配置完成的参数
 	 */
+
 	@Value("jdbc:mysql://localhost:3306/study002jdbc")
 	private String url;
 	@Value("root")
@@ -33,7 +36,6 @@ public class Spring0807Configuration004 {
 	private String paw;
 
 	// 使用简单类型的变量，来补充数据库连接池中设置的属性
-
 
 	@Bean
 	public DataSource dataSource() {
@@ -45,6 +47,9 @@ public class Spring0807Configuration004 {
 	}
 	// 上面其实都是简单类型的注入
 	// 只要我设置了变量和对应的变量值，那么注入会自动完成
+
+
+	// =============================================
 	// 接下来是引用类型
 	// 首先需要设置扫描器，只要扫描可以找到对应的类
 	// 那么容器加载的时候，就会自动将类进行装配的操作

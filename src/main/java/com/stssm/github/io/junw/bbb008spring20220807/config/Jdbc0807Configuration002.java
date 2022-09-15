@@ -18,7 +18,8 @@ import javax.sql.DataSource;
 public class Jdbc0807Configuration002 {
 	// 需要注意的是：
 	// 如果上面已经添加了Configuration
-	// 外部就不能添加包扫描器
+	// 真正具有configuration的类，就不能添加@Import({Jdbc0807Configuration002.class})来导入配置
+	// 否则会报错
 
 	@Bean
 	public DataSource getDruid() {

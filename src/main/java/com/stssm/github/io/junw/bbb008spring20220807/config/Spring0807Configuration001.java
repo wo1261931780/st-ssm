@@ -28,7 +28,7 @@ public class Spring0807Configuration001 {
 		// 这里，实际上就是使用方法获得了一个DataSource对象
 		// 需要添加一个bean的注解，代表我返回的是一个对象
 		DruidDataSource demoBean = new DruidDataSource();
-		// 如果这样考虑，那么在对应的jar包中，也都提供了内部的构造方法
+		// 如果反过来考虑，那么在对应的jar包中，也都提供了内部的构造方法
 		demoBean.setDriverClassName("com.mysql.jdbc.Driver");
 		demoBean.setUrl("jdbc:mysql://localhost:3306/study002jdbc");
 		demoBean.setUsername("root");
