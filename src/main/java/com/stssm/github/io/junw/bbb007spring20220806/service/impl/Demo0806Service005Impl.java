@@ -1,7 +1,7 @@
-package com.stssm.github.io.service.impl;
+package com.stssm.github.io.junw.bbb007spring20220806.service.impl;
 
 import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao003;
-import com.stssm.github.io.service.UserService3;
+import com.stssm.github.io.junw.bbb007spring20220806.service.Demo0806Service005;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
  * @description
  */
 @Service
-public class UserService3Impl implements UserService3 {
+public class Demo0806Service005Impl implements Demo0806Service005 {
 	/**
 	 * 用不同的注解直接说明问题
 	 * 数据层就是repository

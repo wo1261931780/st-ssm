@@ -1,4 +1,4 @@
-package com.stssm.github.io.service;
+package com.stssm.github.io.junw.bbb007spring20220806.service;
 
 /**
  * Created by Intellij IDEA.
@@ -9,7 +9,7 @@ package com.stssm.github.io.service;
  * @Date 2022-08-23-13  星期四
  * @description
  */
-public interface UserService3 {
+public interface Demo0806Service005 {
 	/**
 	 * 我是service方法
 	 */

@@ -1,4 +1,4 @@
-package com.stssm.github.io.domain;
+package com.stssm.github.io.junw.bbb009spring20220919.domain;
 
 /**
  * Created by Intellij IDEA.

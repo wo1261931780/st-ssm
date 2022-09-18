@@ -1,6 +1,6 @@
 package com.stssm.github.io.junw.bbb006spring20220805.dao;
 
-import com.stssm.github.io.domain.Account;
+import com.stssm.github.io.junw.bbb009spring20220919.domain.Account;
 import org.apache.ibatis.annotations.Select;
 
 /**

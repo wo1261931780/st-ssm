@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb006spring20220805.dao.impl;
 
-import com.stssm.github.io.domain.Account;
 import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao004;
+import com.stssm.github.io.junw.bbb009spring20220919.domain.Account;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;

@@ -1,8 +1,8 @@
-package com.stssm.github.io.service.impl;
+package com.stssm.github.io.junw.bbb009spring20220919.service.Impl;
 
-import com.stssm.github.io.domain.Account;
 import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao004;
-import com.stssm.github.io.service.UserService4;
+import com.stssm.github.io.junw.bbb009spring20220919.domain.Account;
+import com.stssm.github.io.junw.bbb009spring20220919.service.Demo0919Service006;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
  * @description
  */
 @Service
-public class UserService4Impl implements UserService4 {
+public class Demo0919Service006Impl implements Demo0919Service006 {
 
 	@Autowired
 	@Qualifier("demo0805Dao004")
@@ -29,7 +29,6 @@ public class UserService4Impl implements UserService4 {
 	@Override
 	public void show() {
 		System.out.println("我是user service 4");
-
 	}
 
 	/**
