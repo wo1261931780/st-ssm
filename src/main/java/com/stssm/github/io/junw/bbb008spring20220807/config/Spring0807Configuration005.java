@@ -35,5 +35,4 @@ public class Spring0807Configuration005 {
 		DruidDataSource druidDataSource = new DruidDataSource();
 		return null;
 	}
-
 }
