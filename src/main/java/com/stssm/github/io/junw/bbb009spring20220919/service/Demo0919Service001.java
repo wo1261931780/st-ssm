@@ -11,7 +11,7 @@ import com.stssm.github.io.junw.bbb009spring20220919.domain.Account;
  * @Date 2022-08-14-30  星期日
  * @description
  */
-public interface Demo0919Service006 {
+public interface Demo0919Service001 {
 	/**
 	 * 我是测试
 	 */

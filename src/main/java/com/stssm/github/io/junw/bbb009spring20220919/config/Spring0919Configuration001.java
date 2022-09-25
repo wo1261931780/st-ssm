@@ -16,7 +16,7 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration
 @ComponentScan({"com.stssm.github.io", "com.stssm.github.io"})
 @PropertySource("jdbc4.properties")
-public class SpringConfiguration4 {
+public class Spring0919Configuration001 {
 
 	// @Bean
 	// public DataSource dataSource(Demo0805Dao004 springDao4) {

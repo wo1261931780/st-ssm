@@ -22,7 +22,7 @@ public class Bbb030 {
 		// 如果我手动获取了一个DataSource对象
 		// 那么就会报错，不是单例的，内部已经存在了一个datasource
 		System.out.println(ctx);
-		// Demo0919Service006 bean = ctx.getBean(Demo0919Service006.class);
+		// Demo0919Service001 bean = ctx.getBean(Demo0919Service001.class);
 		// bean.show();
 		// Account account = bean.selectById(2);
 		// System.out.println("我是SQL找到的对象：" + account);
