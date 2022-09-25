@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb009spring20220919.service.Impl;
 
 import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao004;
-import com.stssm.github.io.junw.bbb009spring20220919.domain.Account;
+import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919Dao;
 import com.stssm.github.io.junw.bbb009spring20220919.service.Demo0919Service001;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -35,8 +35,8 @@ public class Demo0919Service001Impl implements Demo0919Service001 {
 	 *
 	 */
 	@Override
-	public Account selectById(int id) {
-		// return demo0805Dao004.selectById(id);
-		return null;
+	public Account0919Dao selectById(int id) {
+		return demo0805Dao004.selectById(id);
+		// return null;
 	}
 }

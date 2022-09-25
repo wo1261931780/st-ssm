@@ -1,6 +1,6 @@
 package com.stssm.github.io.junw.bbb006spring20220805.dao;
 
-import com.stssm.github.io.junw.bbb009spring20220919.domain.Account;
+import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919Dao;
 import org.apache.ibatis.annotations.Select;
 
 /**
@@ -21,7 +21,7 @@ public interface Demo0805Dao004 {
 	 * @return id
 	 */
 	@Select("select * from study002jdbc.account where id=#{id};")
-	Account selectById(int id);
+	Account0919Dao selectById(int id);
 
 	/**
 	 * 我是测试

@@ -1,6 +1,6 @@
 package com.stssm.github.io.junw.bbb009spring20220919.service;
 
-import com.stssm.github.io.junw.bbb009spring20220919.domain.Account;
+import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919Dao;
 
 /**
  * Created by Intellij IDEA.
@@ -24,5 +24,5 @@ public interface Demo0919Service001 {
 	 * @return id
 	 */
 
-	Account selectById(int id);
+	Account0919Dao selectById(int id);
 }

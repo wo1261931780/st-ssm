@@ -24,7 +24,7 @@ public class Bbb030 {
 		System.out.println(ctx);
 		// Demo0919Service001 bean = ctx.getBean(Demo0919Service001.class);
 		// bean.show();
-		// Account account = bean.selectById(2);
+		// Account0919Dao account = bean.selectById(2);
 		// System.out.println("我是SQL找到的对象：" + account);
 	}
 }
