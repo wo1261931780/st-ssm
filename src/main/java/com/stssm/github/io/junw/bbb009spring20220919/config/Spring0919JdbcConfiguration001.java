@@ -17,7 +17,11 @@ import javax.sql.DataSource;
  * @Description 这里主要是配置mybatis的连接。是无法避免的，必须添加
  */
 @Configuration
-public class SpringJdbcConfiguration5 {
+public class Spring0919JdbcConfiguration001 {
+	// @Configuration
+	// 如果不添加这个注解，就需要手动使用import来完成导入
+
+
 	@Value("${jdbc.username}")
 	private String name;
 	@Value("${jdbc.url}")

@@ -11,6 +11,8 @@ package com.stssm.github.io.junw.bbb008spring20220807.dao;
  */
 
 public interface Demo0807Dao001 {
-
+	/**
+	 * 测试
+	 */
 	void dao0807show();
 }

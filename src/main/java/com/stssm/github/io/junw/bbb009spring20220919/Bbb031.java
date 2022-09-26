@@ -9,7 +9,7 @@ package com.stssm.github.io.junw.bbb009spring20220919;
  * @Date 2022-09-21-48  星期日
  * @description
  */
-public class bbb031 {
+public class Bbb031 {
 
 
 }

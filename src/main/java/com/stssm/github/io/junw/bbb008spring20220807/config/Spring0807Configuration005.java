@@ -25,10 +25,10 @@ public class Spring0807Configuration005 {
 	// 如果上面已经导入了对应的类，那么底下的注入就会自动进行
 
 	@Bean
-	public DruidDataSource dataSource(Demo0807Dao001 Demo0807Dao001) {
+	public DruidDataSource dataSource(Demo0807Dao001 demo0807Dao001) {
 		// 这里是按照类型去寻找的，不是按照字节码文件
-		System.out.println("我是springDao5：" + Demo0807Dao001);
-		Demo0807Dao001.dao0807show();
+		System.out.println("我是springDao5：" + demo0807Dao001);
+		demo0807Dao001.dao0807show();
 		// 这里，首先自动装配，获取了一个springDao5
 		// 然后又新建了一个德鲁伊数据源
 		// mybatis，实际上是管理SQLsessionFactory对象
