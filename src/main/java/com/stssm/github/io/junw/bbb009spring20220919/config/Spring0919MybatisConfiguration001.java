@@ -16,7 +16,10 @@ import org.springframework.context.annotation.Configuration;
  * @description 配置SQLsession的工厂方法
  */
 @Configuration
-public class SpringSqlSessionFactory {
+public class Spring0919MybatisConfiguration001 {
+	// 这里实际上就是整合mybatis的位置
+	// 我们上面已经整合了jdbc来操作数据库
+	
 
 	@Bean
 	public SqlSessionFactoryBean getSqlSessionFactory(DruidDataSource dataSource) {
