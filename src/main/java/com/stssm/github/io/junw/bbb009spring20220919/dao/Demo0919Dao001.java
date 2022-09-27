@@ -10,5 +10,5 @@ package com.stssm.github.io.junw.bbb009spring20220919.dao;
  * @description
  */
 public interface Demo0919Dao001 {
-
+	void daoShow001();
 }
