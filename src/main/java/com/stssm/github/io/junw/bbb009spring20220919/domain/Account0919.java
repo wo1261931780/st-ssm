@@ -9,7 +9,7 @@ package com.stssm.github.io.junw.bbb009spring20220919.domain;
  * @Date 2022-08-14-28  星期日
  * @description
  */
-public class Account0919Dao {
+public class Account0919 {
 
 	private int age;
 	private String name;
@@ -17,7 +17,7 @@ public class Account0919Dao {
 
 	@Override
 	public String toString() {
-		return "Account0919Dao{" +
+		return "Account0919{" +
 				       "age=" + age +
 				       ", name='" + name + '\'' +
 				       ", address='" + address + '\'' +

@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb006spring20220805.dao.impl;
 
 import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao004;
-import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919Dao;
+import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
@@ -34,7 +34,7 @@ public class Demo0805Dao004Impl implements Demo0805Dao004 {
 	 * @return
 	 */
 	@Override
-	public Account0919Dao selectById(int id) {
+	public Account0919 selectById(int id) {
 		return null;
 	}
 
