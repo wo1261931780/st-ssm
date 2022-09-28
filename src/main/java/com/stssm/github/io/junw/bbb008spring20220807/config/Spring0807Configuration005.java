@@ -33,6 +33,6 @@ public class Spring0807Configuration005 {
 		// 然后又新建了一个德鲁伊数据源
 		// mybatis，实际上是管理SQLsessionFactory对象
 		DruidDataSource druidDataSource = new DruidDataSource();
-		return null;
+		return druidDataSource;
 	}
 }
