@@ -25,23 +25,23 @@ public class Bbb019 {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Bbb023.xml");
 		Demo0804Dao001 dao001 = (Demo0804Dao001) applicationContext.getBean("xmlDemo0804Dao001Impl");
 		dao001.demoDaoShow();
-		System.out.println("我是dao001" + dao001);
+		demorun.debug("我是dao001" + dao001);
 		// ***********************************************************
 		Demo0804Dao002 dao002 = (Demo0804Dao002) applicationContext.getBean("demo0804Dao002Impl");
 		dao002.demoDaoShow002();
-		System.out.println("我是dao002" + dao002);
+		demorun.debug("我是dao002" + dao002);
 		// ***********************************************************
 		// 以上都是使用名称来直接访问的
 		Demo0804Service001 service001 = applicationContext.getBean(Demo0804Service001.class);
 		service001.demo0804Service001Show();
 		// 我们刚刚是通过xml去配置对应的组件，由组件映射到实体类
 		// 现在通过注解的形式去设置一个新的
-		
+
 		// 我们也可以直接在service上面添加对应的注解
 		// 但是获取对象的方法需要发生变化
 		// UserService1 bean2 = applicationContext.getBean(UserService1.class);
 		// 这里寻找的全部都是接口，不是具体的实现类
 		// 但是注解又是写在实现类上面的
-		// System.out.println("我是service1中的对象：" + bean2);
+		// demorun.debug("我是service1中的对象：" + bean2);
 	}
 }

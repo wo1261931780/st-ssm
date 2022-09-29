@@ -6,6 +6,8 @@ import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService001;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -21,17 +23,17 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Bbb010 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb011.xml");
-		System.out.println("执行DemoDao001的获取过程：");
+		demorun.debug("执行DemoDao001的获取过程：");
 		DemoDao001 xmlDemoDao001 = (DemoDao001) ctx.getBean("xmlDemoDao001");
-		System.out.println("执行DemoDao002的获取过程：");
+		demorun.debug("执行DemoDao002的获取过程：");
 		DemoDao002 xmlDemoDao002 = (DemoDao002) ctx.getBean("xmlDemoDao002");
-		System.out.println("执行ServiceDao001的获取过程：");
+		demorun.debug("执行ServiceDao001的获取过程：");
 		DemoService001 xmlService001 = (DemoService001) ctx.getBean("xmlDemoService001");
-		System.out.println("===============================================");
+		demorun.debug("===============================================");
 		xmlDemoDao001.dao001Show();
-		System.out.println("===============================================");
+		demorun.debug("===============================================");
 		xmlDemoDao002.dao002Show();
-		System.out.println("===============================================");
+		demorun.debug("===============================================");
 		xmlService001.service001Show();
 
 	}

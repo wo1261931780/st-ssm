@@ -22,10 +22,10 @@ public class Bbb020 {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfiguration0805.class);
 		Demo0805Dao001Impl bean = ctx.getBean(Demo0805Dao001Impl.class);
 		Demo0805Dao001Impl bean2 = ctx.getBean(Demo0805Dao001Impl.class);
-		System.out.println("我调用了内部的方法");
+		demorun.debug("我调用了内部的方法");
 		// bean.show();
-		System.out.println(bean);
-		System.out.println(bean2);
+		demorun.debug(bean);
+		demorun.debug(bean2);
 		// 这里的两个对象，内存地址一样
 		// 换句话来说，这是一种单例设计模式
 	}

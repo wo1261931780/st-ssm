@@ -22,6 +22,7 @@ public class Bbb002 {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb002.xml");
 		DemoService2 demoService2 = (DemoService2) ctx.getBean("demoService2");
 		demoService2.servieShow2();
-		demorun.info("我是运行类：现在打印xml给我的service对象：" + demoService2);
+		demorun.debug("我是运行类：现在打印xml给我的service对象：" + demoService2);
+		demorun.debug("我是运行类：现在打印xml给我的service对象：{demoService2}");
 	}
 }

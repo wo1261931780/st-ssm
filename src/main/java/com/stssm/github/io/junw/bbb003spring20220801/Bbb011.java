@@ -26,7 +26,7 @@ public class Bbb011 {
 		// 我是Dao003中的show方法
 		// 传递age值：123
 		// 传递address值：123
-		System.out.println("------------------------");
+		demorun.debug("------------------------");
 		DemoService002 xmlDemoService003 = (DemoService002) ctx.getBean("xmlDemoService002");
 		xmlDemoService003.service002Show();
 		// 我是service002show方法
