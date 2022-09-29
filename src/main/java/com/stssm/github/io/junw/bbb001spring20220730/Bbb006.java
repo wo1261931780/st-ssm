@@ -1,8 +1,10 @@
 package com.stssm.github.io.junw.bbb001spring20220730;
 
-import com.stssm.github.io.junw.bbb001spring20220730.factory.DemoDao6Factory;
 import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao6;
+import com.stssm.github.io.junw.bbb001spring20220730.factory.DemoDao6Factory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -23,7 +25,7 @@ public class Bbb006 {
 		// 按照老的方式，直接拿到对应的对象就可以
 		DemoDao6 demoDao6 = userDemoDao6Factory.getDemoDao6();
 		demoDao6.show6();
-		System.out.println(demoDao6);
+		demorun.info(demoDao6.toString());
 
 		// DemoDao6 demoDao7 = userDemoDao6Factory.getDemoDao6();
 		// System.out.println(demoDao7);
