@@ -2,6 +2,8 @@ package com.stssm.github.io.junw.bbb001spring20220730.dao.impl;
 
 import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao6;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -14,7 +16,7 @@ import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao6;
 public class DemoDao6Impl implements DemoDao6 {
 
 	public DemoDao6Impl() {
-		System.out.println("我是dao6构造方法，地址为：" + this);
+		demorun.debug("我是dao6构造方法，地址为：" + this);
 	}
 
 	/**
@@ -22,6 +24,6 @@ public class DemoDao6Impl implements DemoDao6 {
 	 */
 	@Override
 	public void show6() {
-		System.out.println("我是dao方法中的show6");
+		demorun.debug("我是dao方法中的show6");
 	}
 }

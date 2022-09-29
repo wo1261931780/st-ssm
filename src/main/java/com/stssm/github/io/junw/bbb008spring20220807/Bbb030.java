@@ -21,10 +21,10 @@ public class Bbb030 {
 		// 这里有点不理解
 		// 如果我手动获取了一个DataSource对象
 		// 那么就会报错，不是单例的，内部已经存在了一个datasource
-		System.out.println(ctx);
+		demorun.debug(ctx);
 		// Demo0919Service001 bean = ctx.getBean(Demo0919Service001.class);
 		// bean.show();
 		// Account0919 account = bean.selectById(2);
-		// System.out.println("我是SQL找到的对象：" + account);
+		// demorun.debug("我是SQL找到的对象：" + account);
 	}
 }

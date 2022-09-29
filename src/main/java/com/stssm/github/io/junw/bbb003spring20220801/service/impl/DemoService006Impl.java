@@ -30,8 +30,8 @@ public class DemoService006Impl implements DemoService006 {
 	 */
 	@Override
 	public void service006Show() {
-		System.out.println("我是service006show方法");
-		System.out.println("我是dao6中的show方法");
+		demorun.debug("我是service006show方法");
+		demorun.debug("我是dao6中的show方法");
 		xmlDemoDao006.dao006Show();
 	}
 }

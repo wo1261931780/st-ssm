@@ -26,9 +26,9 @@ public class Demo0806Dao004Impl implements Demo0806Dao004 {
 	 */
 	@Override
 	public void demo0806DaoShow004() {
-		System.out.println("我是Demo0806Dao004Impl中的demo0806DaoShow方法");
+		demorun.debug("我是Demo0806Dao004Impl中的demo0806DaoShow方法");
 		String dao004Name001 = "name001";
-		System.out.println("我是内部的变量001:" + dao004Name001);
-		System.out.println("我是内部的变量002:" + dao004Name002);
+		demorun.debug("我是内部的变量001:" + dao004Name001);
+		demorun.debug("我是内部的变量002:" + dao004Name002);
 	}
 }

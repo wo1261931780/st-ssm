@@ -24,7 +24,7 @@ public class UserService001Impl implements UserService001 {
 	 */
 
 	public void setDiUserDao001(UserDao001Impl diUserDao001) {
-		System.out.println("已经完成了UserService001Impl中对UserDao001Impl的依赖注入");
+		demorun.debug("已经完成了UserService001Impl中对UserDao001Impl的依赖注入");
 		this.serviceUserDao001 = diUserDao001;
 	}
 
@@ -33,7 +33,7 @@ public class UserService001Impl implements UserService001 {
 	 */
 	@Override
 	public void serviceShow() {
-		System.out.println("我是UserService001中的show方法");
+		demorun.debug("我是UserService001中的show方法");
 	}
 
 	/**
@@ -41,7 +41,7 @@ public class UserService001Impl implements UserService001 {
 	 */
 
 	public void initTest1() {
-		System.out.println("我是serviceDao1中的初始化方法");
+		demorun.debug("我是serviceDao1中的初始化方法");
 	}
 
 	/**
@@ -49,6 +49,6 @@ public class UserService001Impl implements UserService001 {
 	 */
 
 	public void destoryTest1() {
-		System.out.println("我是serviceDao1中的销毁方法");
+		demorun.debug("我是serviceDao1中的销毁方法");
 	}
 }

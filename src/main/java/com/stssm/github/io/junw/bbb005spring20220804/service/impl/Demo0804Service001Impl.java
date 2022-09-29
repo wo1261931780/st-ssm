@@ -44,8 +44,8 @@ public class Demo0804Service001Impl implements Demo0804Service001 {
 	 */
 	@Override
 	public void demo0804Service001Show() {
-		System.out.println("我是demo0804");
-		System.out.println("开始调用dao中的方法");
+		demorun.debug("我是demo0804");
+		demorun.debug("开始调用dao中的方法");
 		// demo0804Dao002.demoDaoShow002();
 		// 这里一直报错，不知道为什么
 	}

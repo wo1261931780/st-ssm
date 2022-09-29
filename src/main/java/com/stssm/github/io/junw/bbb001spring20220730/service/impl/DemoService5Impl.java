@@ -31,9 +31,9 @@ public class DemoService5Impl implements DemoService5 {
 	 */
 	@Override
 	public void servieShow5() {
-		System.out.println("我是service中的show5方法");
-		System.out.println("我是service中的Dao5对象：" + serviceDemoDao5);
-		System.out.println("开始调用Dao中的show方法：--------------------------------------");
+		demorun.debug("我是service中的show5方法");
+		demorun.debug("我是service中的Dao5对象：" + serviceDemoDao5);
+		demorun.debug("开始调用Dao中的show方法：--------------------------------------");
 		serviceDemoDao5.show5();
 	}
 }

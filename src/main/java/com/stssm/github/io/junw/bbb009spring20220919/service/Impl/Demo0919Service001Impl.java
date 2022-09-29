@@ -28,7 +28,7 @@ public class Demo0919Service001Impl implements Demo0919Service001 {
 	 */
 	@Override
 	public void show() {
-		System.out.println("我是user service 4");
+		demorun.debug("我是user service 4");
 	}
 
 	/**

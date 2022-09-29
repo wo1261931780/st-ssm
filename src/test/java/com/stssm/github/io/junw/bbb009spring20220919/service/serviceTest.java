@@ -25,8 +25,8 @@ public class serviceTest {
 
 	@Test
 	public void selectById() {
-		System.out.println("我是测试方法");
-		System.out.println(demo0919Service001.selectById(2));
+		demorun.debug("我是测试方法");
+		demorun.debug(demo0919Service001.selectById(2));
 	}
 
 }

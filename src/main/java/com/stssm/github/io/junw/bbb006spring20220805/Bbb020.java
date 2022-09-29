@@ -5,6 +5,8 @@ import com.stssm.github.io.junw.bbb006spring20220805.dao.impl.Demo0805Dao001Impl
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -24,8 +26,8 @@ public class Bbb020 {
 		Demo0805Dao001Impl bean2 = ctx.getBean(Demo0805Dao001Impl.class);
 		demorun.debug("我调用了内部的方法");
 		// bean.show();
-		demorun.debug(bean);
-		demorun.debug(bean2);
+		demorun.debug(bean.toString());
+		demorun.debug(bean2.toString());
 		// 这里的两个对象，内存地址一样
 		// 换句话来说，这是一种单例设计模式
 	}

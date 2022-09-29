@@ -20,10 +20,10 @@ public class Bbb029 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0807Configuration003.class);
 		DataSource bean = ctx.getBean(DataSource.class);
-		System.out.println("我是扫描得到的对象：" + bean);
-		System.out.println("***********************************************************");
+		demorun.debug("我是扫描得到的对象：" + bean);
+		demorun.debug("***********************************************************");
 		ApplicationContext ctx004 = new AnnotationConfigApplicationContext(Spring0807Configuration004.class);
 		DataSource bean004 = ctx004.getBean(DataSource.class);
-		System.out.println("我是扫描得到的对象：" + bean004);
+		demorun.debug("我是扫描得到的对象：" + bean004);
 	}
 }

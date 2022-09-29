@@ -47,8 +47,8 @@ public class Demo0806Service005Impl implements Demo0806Service005 {
 	 */
 	@Override
 	public void show() {
-		System.out.println("我是service3中的show方法");
+		demorun.debug("我是service3中的show方法");
 		springDao2.demo0805Dao003Show();
-		System.out.println("现在service调用了springDao2中的show方法");
+		demorun.debug("现在service调用了springDao2中的show方法");
 	}
 }

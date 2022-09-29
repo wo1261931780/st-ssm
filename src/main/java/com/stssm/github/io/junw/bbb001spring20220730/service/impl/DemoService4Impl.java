@@ -26,9 +26,9 @@ public class DemoService4Impl implements DemoService4 {
 	 */
 	@Override
 	public void servieShow4() {
-		System.out.println("我是service中的show4方法");
-		System.out.println("我是service中的Dao4对象：" + serviceDemoDao4);
-		System.out.println("开始调用Dao中的show方法：--------------------------------------");
+		demorun.debug("我是service中的show4方法");
+		demorun.debug("我是service中的Dao4对象：" + serviceDemoDao4);
+		demorun.debug("开始调用Dao中的show方法：--------------------------------------");
 		serviceDemoDao4.show4();
 	}
 }

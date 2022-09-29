@@ -25,7 +25,7 @@ public class Spring0919Configuration001 {
 	// @Bean
 	// public DataSource dataSource(Demo0805Dao004 springDao4) {
 	// 	// 这里是按照类型去寻找的，不是按照字节码文件
-	// 	System.out.println("我是springDao4：" + springDao4);
+	// 	demorun.debug("我是springDao4：" + springDao4);
 	// 	// 这里，首先自动装配，获取了一个springDao4
 	// 	// 然后又新建了一个德鲁伊数据源
 	// 	DruidDataSource x = new DruidDataSource();

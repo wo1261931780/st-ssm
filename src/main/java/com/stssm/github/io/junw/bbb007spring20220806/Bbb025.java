@@ -17,7 +17,7 @@ public class Bbb025 {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0806Config.class);
 		Demo0806Service003Impl bean = ctx.getBean(Demo0806Service003Impl.class);
-		System.out.println("我是运行类" + bean);
+		demorun.debug("我是运行类" + bean);
 		bean.demo0806Service003Show();
 	}
 }

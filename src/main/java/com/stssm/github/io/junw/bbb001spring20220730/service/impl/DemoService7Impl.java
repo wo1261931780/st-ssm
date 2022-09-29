@@ -22,7 +22,7 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	private DemoDao7 serviceDemoDao7;
 
 	public void setServiceDemoDao7(DemoDao7Impl innerDemoDao7) {
-		System.out.println("我是service7中的DI注入");
+		demorun.debug("我是service7中的DI注入");
 		this.serviceDemoDao7 = innerDemoDao7;
 	}
 
@@ -31,9 +31,9 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	 */
 	@Override
 	public void servieShow7() {
-		System.out.println("我是service中的show7方法");
-		System.out.println("我是service中的Dao7对象：" + serviceDemoDao7);
-		System.out.println("开始调用Dao中的show方法：--------------------------------------");
+		demorun.debug("我是service中的show7方法");
+		demorun.debug("我是service中的Dao7对象：" + serviceDemoDao7);
+		demorun.debug("开始调用Dao中的show方法：--------------------------------------");
 		serviceDemoDao7.show7();
 	}
 
@@ -42,7 +42,7 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	 */
 	@Override
 	public void destroy() {
-		System.out.println("我是service7中的销毁方法");
+		demorun.debug("我是service7中的销毁方法");
 	}
 
 	/**
@@ -50,6 +50,6 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	 */
 	@Override
 	public void afterPropertiesSet() {
-		System.out.println("我是service7中的初始化方法");
+		demorun.debug("我是service7中的初始化方法");
 	}
 }

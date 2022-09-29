@@ -16,12 +16,12 @@ import javax.sql.DataSource;
  */
 public class Bbb027 {
 	public static void main(String[] args) {
-		System.out.println("我是测试装载外部bean对象的运行类");
+		demorun.debug("我是测试装载外部bean对象的运行类");
 
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0807Configuration001.class);
 		DataSource bean = ctx.getBean(DataSource.class);
 		// 这里比较奇妙，直接写获取数据库对象就可以
 		// 不需要写ctx.getDruid();然后直接拿到对应的
-		System.out.println(bean);
+		demorun.debug(bean);
 	}
 }

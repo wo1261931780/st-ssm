@@ -33,7 +33,7 @@ public class Demo0806Service001Impl implements Demo0806Service001 {
 	 */
 	@Override
 	public void demo0806Service001Show() {
-		System.out.println("我是Demo0806Service001中的demo0806Service001Show方法");
+		demorun.debug("我是Demo0806Service001中的demo0806Service001Show方法");
 		demo0806Dao001.demo0806DaoShow();
 	}
 }

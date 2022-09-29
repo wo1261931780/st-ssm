@@ -14,7 +14,7 @@ import com.stssm.github.io.junw.bbb002spring20220731.dao.impl.UserDao002Impl;
  */
 public class StaticFactory0731 {
 	public static UserDao002 factoryGetDao002() {
-		System.out.println("已经通过静态工厂staticFactory0731获得一个UserDao002Impl");
+		demorun.debug("已经通过静态工厂staticFactory0731获得一个UserDao002Impl");
 		return new UserDao002Impl();
 	}
 }

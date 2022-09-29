@@ -31,10 +31,10 @@ public class DemoService004Impl implements DemoService004 {
 	 */
 	@Override
 	public void service004Show() {
-		System.out.println("我是service004show方法");
-		System.out.println("我是dao5中的show方法");
+		demorun.debug("我是service004show方法");
+		demorun.debug("我是dao5中的show方法");
 		xmlDemoDao005.dao005Show();
-		System.out.println("我是dao6中的show方法");
+		demorun.debug("我是dao6中的show方法");
 		xmlDemoDao006.dao005Show();
 	}
 }

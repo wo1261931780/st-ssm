@@ -22,9 +22,9 @@ public class DemoDao003Impl implements DemoDao003 {
 	 */
 	@Override
 	public void dao003Show() {
-		System.out.println("我是Dao003中的show方法");
-		System.out.println("传递age值：" + age);
-		System.out.println("传递address值：" + address);
+		demorun.debug("我是Dao003中的show方法");
+		demorun.debug("传递age值：" + age);
+		demorun.debug("传递address值：" + address);
 	}
 
 	public void setAddress(String address) {

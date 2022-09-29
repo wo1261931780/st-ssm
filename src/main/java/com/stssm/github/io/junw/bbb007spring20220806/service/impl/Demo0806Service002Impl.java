@@ -45,7 +45,7 @@ public class Demo0806Service002Impl implements Demo0806Service002 {
 	 */
 	@Override
 	public void demo0806Service002Show() {
-		System.out.println("我是Demo0806Service002中的demo0806Service002Show002方法");
+		demorun.debug("我是Demo0806Service002中的demo0806Service002Show002方法");
 		demo0806Dao002.demo0806DaoShow002();
 	}
 }

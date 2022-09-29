@@ -24,7 +24,7 @@ public class UserDao001Impl implements UserDao001, InitializingBean, DisposableB
 	 */
 	@Override
 	public void destroy() {
-		System.out.println("我是UserDao001销毁方法");
+		demorun.debug("我是UserDao001销毁方法");
 	}
 
 	/**
@@ -32,7 +32,7 @@ public class UserDao001Impl implements UserDao001, InitializingBean, DisposableB
 	 */
 	@Override
 	public void afterPropertiesSet() {
-		System.out.println("我是UserDao001初始化方法");
+		demorun.debug("我是UserDao001初始化方法");
 
 	}
 
@@ -41,6 +41,6 @@ public class UserDao001Impl implements UserDao001, InitializingBean, DisposableB
 	 */
 	@Override
 	public void userDaoShow001() {
-		System.out.println("我是UserDao001中的构造方法");
+		demorun.debug("我是UserDao001中的构造方法");
 	}
 }

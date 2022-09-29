@@ -29,19 +29,19 @@ public class Demo0805Dao002Impl implements Demo0805Dao002 {
 	 */
 	@Override
 	public void demo0805Dao002Show() {
-		System.out.println("我是Demo0805Dao002Impl中的demo0805Dao002Show方法");
+		demorun.debug("我是Demo0805Dao002Impl中的demo0805Dao002Show方法");
 	}
 
 	@PostConstruct
 	public void initLife() {
 		// 注解的直译：在构造之前
-		System.out.println("Demo0805Dao002Impl中的初始化方法");
+		demorun.debug("Demo0805Dao002Impl中的初始化方法");
 	}
 
 	@PreDestroy
 	public void destroyLife() {
 		// 注解直译：在销毁之前
-		System.out.println("Demo0805Dao002Impl中的销毁方法");
+		demorun.debug("Demo0805Dao002Impl中的销毁方法");
 	}
 
 

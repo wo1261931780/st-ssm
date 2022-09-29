@@ -18,7 +18,7 @@ public class DemoDao4Impl implements DemoDao4 {
 	// 通过构造方法，完成对象实例化
 
 	public DemoDao4Impl() {
-		System.out.println("我是dao4构造方法，地址为：" + this);
+		demorun.debug("我是dao4构造方法，地址为：" + this);
 		// 这里不管是公有还是私有，都可以打印结果
 		// 因为内部是通过反射的方式去实现构造
 		// 而且，spring去创建对象的时候，都是使用无参构造的方法
@@ -29,6 +29,6 @@ public class DemoDao4Impl implements DemoDao4 {
 	 */
 	@Override
 	public void show4() {
-		System.out.println("我是dao方法中的show4");
+		demorun.debug("我是dao方法中的show4");
 	}
 }

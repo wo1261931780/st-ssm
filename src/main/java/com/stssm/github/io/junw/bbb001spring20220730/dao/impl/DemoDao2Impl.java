@@ -17,6 +17,6 @@ public class DemoDao2Impl implements DemoDao2 {
 	 */
 	@Override
 	public void show2() {
-		System.out.println("我是dao方法中的show2");
+		demorun.debug("我是dao方法中的show2");
 	}
 }

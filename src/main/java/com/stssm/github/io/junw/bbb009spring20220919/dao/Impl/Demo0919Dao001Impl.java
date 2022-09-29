@@ -17,6 +17,6 @@ public class Demo0919Dao001Impl implements Demo0919Dao001 {
 	 */
 	@Override
 	public void daoShow001() {
-		System.out.println("我是daoShow001中的show方法");
+		demorun.debug("我是daoShow001中的show方法");
 	}
 }

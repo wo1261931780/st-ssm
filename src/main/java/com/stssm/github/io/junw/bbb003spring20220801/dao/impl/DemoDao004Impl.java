@@ -18,9 +18,9 @@ public class DemoDao004Impl implements DemoDao004 {
 
 	@Override
 	public void dao004Show() {
-		System.out.println("我是Dao004中的show方法");
-		System.out.println("传递age值：" + age);
-		System.out.println("传递address值：" + address);
+		demorun.debug("我是Dao004中的show方法");
+		demorun.debug("传递age值：" + age);
+		demorun.debug("传递address值：" + address);
 	}
 
 	public void setAge(String age) {

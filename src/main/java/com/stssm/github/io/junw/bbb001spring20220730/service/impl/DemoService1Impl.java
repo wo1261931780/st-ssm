@@ -21,9 +21,9 @@ public class DemoService1Impl implements DemoService1 {
 	 */
 	@Override
 	public void serviceShow() {
-		System.out.println("我是demoService中的show方法");
-		System.out.println(demoDao1);
-		System.out.println(demoDao1 + "调用了dao中的show方法");
+		demorun.debug("我是demoService中的show方法");
+		demorun.debug(demoDao1);
+		demorun.debug(demoDao1 + "调用了dao中的show方法");
 		demoDao1.show();
 	}
 }

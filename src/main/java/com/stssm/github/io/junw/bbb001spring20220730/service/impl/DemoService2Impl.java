@@ -48,9 +48,9 @@ public class DemoService2Impl implements DemoService2 {
 	 */
 	@Override
 	public void servieShow2() {
-		System.out.println("我是service中的show2方法");
-		System.out.println("我是service中的Dao2对象：" + serviceDemoDao2);
-		System.out.println("开始调用Dao中的show方法：--------------------------------------");
+		demorun.debug("我是service中的show2方法");
+		demorun.debug("我是service中的Dao2对象：" + serviceDemoDao2);
+		demorun.debug("开始调用Dao中的show方法：--------------------------------------");
 		serviceDemoDao2.show2();
 	}
 }

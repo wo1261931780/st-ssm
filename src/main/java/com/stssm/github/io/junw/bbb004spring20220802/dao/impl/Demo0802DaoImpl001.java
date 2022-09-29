@@ -23,7 +23,7 @@ public class Demo0802DaoImpl001 implements Demo0802Dao001 {
 //	 */
 //	@Override
 	public void daoShow001() {
-		System.out.println("我是Demo0802Dao中的show方法");
-		System.out.println("我是Demo0802Dao中的变量" + Demo0802DaoImplName);
+		demorun.debug("我是Demo0802Dao中的show方法");
+		demorun.debug("我是Demo0802Dao中的变量" + Demo0802DaoImplName);
 	}
 }

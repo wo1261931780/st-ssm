@@ -18,6 +18,6 @@ public class DemoDao002Impl implements DemoDao002 {
 	 */
 	@Override
 	public void dao002Show() {
-		System.out.println("我是Dao002中的show方法");
+		demorun.debug("我是Dao002中的show方法");
 	}
 }
