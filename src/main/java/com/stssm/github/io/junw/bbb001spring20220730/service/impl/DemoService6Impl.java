@@ -4,6 +4,8 @@ import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao6;
 import com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao6Impl;
 import com.stssm.github.io.junw.bbb001spring20220730.service.DemoService6;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io

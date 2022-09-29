@@ -4,6 +4,8 @@ import com.stssm.github.io.junw.bbb007spring20220806.dao.Demo0806Dao004;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
