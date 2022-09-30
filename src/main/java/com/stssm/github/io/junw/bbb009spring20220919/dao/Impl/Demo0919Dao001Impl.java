@@ -2,6 +2,8 @@ package com.stssm.github.io.junw.bbb009spring20220919.dao.Impl;
 
 import com.stssm.github.io.junw.bbb009spring20220919.dao.Demo0919Dao001;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io

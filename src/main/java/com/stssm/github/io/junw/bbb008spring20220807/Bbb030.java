@@ -4,6 +4,8 @@ import com.stssm.github.io.junw.bbb008spring20220807.config.Spring0807Configurat
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 
 /**
  * Created by Intellij IDEA.
@@ -21,7 +23,7 @@ public class Bbb030 {
 		// 这里有点不理解
 		// 如果我手动获取了一个DataSource对象
 		// 那么就会报错，不是单例的，内部已经存在了一个datasource
-		demorun.debug(ctx);
+		demorun.debug(ctx.toString());
 		// Demo0919Service001 bean = ctx.getBean(Demo0919Service001.class);
 		// bean.show();
 		// Account0919 account = bean.selectById(2);

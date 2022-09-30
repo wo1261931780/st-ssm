@@ -4,6 +4,8 @@ import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao1;
 import com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao1Impl;
 import com.stssm.github.io.junw.bbb001spring20220730.service.DemoService1;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -22,8 +24,9 @@ public class DemoService1Impl implements DemoService1 {
 	@Override
 	public void serviceShow() {
 		demorun.debug("我是demoService中的show方法");
-		demorun.debug(demoDao1);
-		demorun.debug(demoDao1 + "调用了dao中的show方法");
+		demorun.debug(demoDao1.toString());
+		String format = String.format("调用了dao中的show方法%s", demoDao1);
+		demorun.debug(format);
 		demoDao1.show();
 	}
 }

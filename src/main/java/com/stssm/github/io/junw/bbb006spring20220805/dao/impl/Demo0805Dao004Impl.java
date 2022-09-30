@@ -46,7 +46,8 @@ public class Demo0805Dao004Impl implements Demo0805Dao004 {
 	@Override
 	public void demo0805Dao004Show() {
 		demorun.debug("我是spring dao3中的show方法");
-		demorun.debug("我是name：" + name);
+		String format = String.format("我是name：%s", name);
+		demorun.debug(format);
 	}
 
 	@PostConstruct

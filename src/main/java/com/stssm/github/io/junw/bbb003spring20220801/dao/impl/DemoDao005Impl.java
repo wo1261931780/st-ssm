@@ -21,8 +21,10 @@ public class DemoDao005Impl implements DemoDao005 {
 	@Override
 	public void dao005Show() {
 		demorun.debug("我是Dao005中的show方法");
-		demorun.debug("传递age值：" + age);
-		demorun.debug("传递address值：" + address);
+		String format = String.format("传递age值：%s", age);
+		demorun.debug(format);
+		String format1 = String.format("传递address值：%s", address);
+		demorun.debug(format1);
 	}
 
 	public void setAge(String age) {

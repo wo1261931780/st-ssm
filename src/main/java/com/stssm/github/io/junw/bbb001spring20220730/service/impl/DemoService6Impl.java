@@ -35,7 +35,8 @@ public class DemoService6Impl implements DemoService6 {
 	@Override
 	public void servieShow6() {
 		demorun.debug("我是service中的show6方法");
-		demorun.debug("我是service中的Dao6对象：" + serviceDemoDao6);
+		String format = String.format("我是service中的Dao6对象：%s", serviceDemoDao6);
+		demorun.debug(format);
 		demorun.debug("开始调用Dao中的show方法：--------------------------------------");
 		serviceDemoDao6.show6();
 	}

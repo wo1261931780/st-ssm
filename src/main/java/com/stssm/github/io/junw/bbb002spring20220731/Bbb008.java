@@ -4,6 +4,7 @@ import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao001;
 import com.stssm.github.io.junw.bbb002spring20220731.service.impl.UserService001Impl;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
@@ -24,14 +25,15 @@ public class Bbb008 {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("bbb008.xml");
 		demorun.debug("我是Bbb008运行类中，手动的新建dao对象");
 		ctx.getBean("xmlUserDao001");// 获得对象以后，执行初始化方法
-		demorun.debug("=============================================");
+		demorun.debug(FINAL_SPLIT);
 		demorun.debug("获得对应的service对象：");
 		UserService001Impl xmlUserService001 = (UserService001Impl) ctx.getBean("xmlUserService001");// 获得对象以后，就开始执行初始化和依赖注入的过程
 		// 我是UserDao001初始化方法
 		// 已经完成了UserService001Impl中对UserDao001Impl的依赖注入
-		demorun.debug(xmlUserService001 + "对象开始执行serviceShow方法：");
+		String format = String.format("对象开始执行serviceShow方法：%s", xmlUserService001);
+		demorun.debug(format);
 		xmlUserService001.serviceShow();// 我是UserService001中的show方法
-		demorun.debug("=============================================");
+		demorun.debug(FINAL_SPLIT);
 
 		// 如果我在这里重新获得一个dao对象
 		UserDao001 xmlUserDao001 = (UserDao001) ctx.getBean("xmlUserDao001");

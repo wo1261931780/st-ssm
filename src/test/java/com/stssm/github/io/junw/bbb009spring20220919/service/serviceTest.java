@@ -3,9 +3,10 @@ package com.stssm.github.io.junw.bbb009spring20220919.service;
 import com.stssm.github.io.junw.bbb009spring20220919.config.Spring0919Configuration001;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -20,7 +21,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(classes = Spring0919Configuration001.class)
 public class serviceTest {
 
-	@Autowired
 	private Demo0919Service001 demo0919Service001;
 
 	@Test

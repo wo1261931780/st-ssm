@@ -22,6 +22,6 @@ public class Bbb028 {
 		DataSource bean = ctx.getBean(DataSource.class);
 		// 这里如果配置了多个datasource类，会出现报错
 		// 因为默认是单例对象
-		demorun.debug(bean);
+		demorun.debug(bean.toString());
 	}
 }

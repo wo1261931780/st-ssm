@@ -6,6 +6,7 @@ import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService001;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
@@ -29,11 +30,11 @@ public class Bbb010 {
 		DemoDao002 xmlDemoDao002 = (DemoDao002) ctx.getBean("xmlDemoDao002");
 		demorun.debug("执行ServiceDao001的获取过程：");
 		DemoService001 xmlService001 = (DemoService001) ctx.getBean("xmlDemoService001");
-		demorun.debug("===============================================");
+		demorun.debug(FINAL_SPLIT);
 		xmlDemoDao001.dao001Show();
-		demorun.debug("===============================================");
+		demorun.debug(FINAL_SPLIT);
 		xmlDemoDao002.dao002Show();
-		demorun.debug("===============================================");
+		demorun.debug(FINAL_SPLIT);
 		xmlService001.service001Show();
 
 	}

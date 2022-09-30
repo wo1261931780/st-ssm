@@ -16,7 +16,8 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 public class DemoDao5Impl implements DemoDao5 {
 
 	public DemoDao5Impl() {
-		demorun.debug("我是dao5构造方法，地址为：" + this);
+		String format = String.format("我是dao5构造方法，地址为：%s", this);
+		demorun.debug(format);
 	}
 
 	/**

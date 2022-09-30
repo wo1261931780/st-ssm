@@ -2,6 +2,8 @@ package com.stssm.github.io.junw.bbb001spring20220730.dao.impl;
 
 import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao4;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -18,7 +20,8 @@ public class DemoDao4Impl implements DemoDao4 {
 	// 通过构造方法，完成对象实例化
 
 	public DemoDao4Impl() {
-		demorun.debug("我是dao4构造方法，地址为：" + this);
+		String format = String.format("我是dao4构造方法，地址为：%s", this);
+		demorun.debug(format);
 		// 这里不管是公有还是私有，都可以打印结果
 		// 因为内部是通过反射的方式去实现构造
 		// 而且，spring去创建对象的时候，都是使用无参构造的方法

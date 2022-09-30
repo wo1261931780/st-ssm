@@ -20,7 +20,8 @@ public class Bbb014 {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb015.xml");
 		DemoDao006 xmlDemoDao006 = (DemoDao006) ctx.getBean("xmlDemoDao006");
 		xmlDemoDao006.dao006Show();
-		demorun.debug("我是dao006：" + xmlDemoDao006);
+		String format = String.format("我是dao006：%s", xmlDemoDao006);
+		demorun.debug(format);
 		// 我是dao006：
 		// DemoDao006Impl
 		// {

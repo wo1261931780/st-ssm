@@ -2,6 +2,8 @@ package com.stssm.github.io.junw.bbb004spring20220802.dao.impl;
 
 import com.stssm.github.io.junw.bbb004spring20220802.dao.Demo0802Dao002;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -33,6 +35,7 @@ public class Demo0802DaoImpl002 implements Demo0802Dao002 {
 	@Override
 	public void daoShow002() {
 		demorun.debug("我是Demo0802Dao中的show方法");
-		demorun.debug("我是Demo0802Dao中的变量" + demo0802DaoImplName);
+		String format = String.format("我是Demo0802Dao中的变量%s", demo0802DaoImplName);
+		demorun.debug(format);
 	}
 }

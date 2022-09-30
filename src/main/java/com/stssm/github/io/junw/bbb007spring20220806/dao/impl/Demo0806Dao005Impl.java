@@ -4,6 +4,8 @@ import com.stssm.github.io.junw.bbb007spring20220806.dao.Demo0806Dao005;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -25,6 +27,7 @@ public class Demo0806Dao005Impl implements Demo0806Dao005 {
 	@Override
 	public void demo0806DaoShow005() {
 		demorun.debug("我是Demo0806Dao005Impl中的demo0806DaoShow方法");
-		demorun.debug("我是内部的变量002:" + dao005Name002);
+		String format = String.format("我是内部的变量002:%s", dao005Name002);
+		demorun.debug(format);
 	}
 }

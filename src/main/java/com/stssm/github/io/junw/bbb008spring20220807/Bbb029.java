@@ -22,10 +22,12 @@ public class Bbb029 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0807Configuration003.class);
 		DataSource bean = ctx.getBean(DataSource.class);
-		demorun.debug("我是扫描得到的对象：" + bean);
+		String format = String.format("我是扫描得到的对象：%s", bean);
+		demorun.debug(format);
 		demorun.debug("***********************************************************");
 		ApplicationContext ctx004 = new AnnotationConfigApplicationContext(Spring0807Configuration004.class);
 		DataSource bean004 = ctx004.getBean(DataSource.class);
-		demorun.debug("我是扫描得到的对象：" + bean004);
+		String format1 = String.format("我是扫描得到的对象：%s", bean004);
+		demorun.debug(format1);
 	}
 }

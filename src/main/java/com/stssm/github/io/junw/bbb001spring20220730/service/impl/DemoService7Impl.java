@@ -34,7 +34,8 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	@Override
 	public void servieShow7() {
 		demorun.debug("我是service中的show7方法");
-		demorun.debug("我是service中的Dao7对象：" + serviceDemoDao7);
+		String format = String.format("我是service中的Dao7对象：%s", serviceDemoDao7);
+		demorun.debug(format);
 		demorun.debug("开始调用Dao中的show方法：--------------------------------------");
 		serviceDemoDao7.show7();
 	}

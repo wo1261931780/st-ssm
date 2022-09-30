@@ -7,6 +7,8 @@ import com.stssm.github.io.junw.bbb009spring20220919.service.Demo0919Service001;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -24,7 +26,7 @@ public class Bbb031 {
 		bean.daoShow001();
 		Demo0919Service001 bean1 = x.getBean(Demo0919Service001.class);
 		Account0919 account0919Dao = bean1.selectById(2);
-		demorun.debug(account0919Dao);
+		demorun.debug(account0919Dao.toString());
 
 	}
 

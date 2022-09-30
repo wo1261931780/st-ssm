@@ -3,6 +3,7 @@ package com.stssm.github.io.junw.bbb002spring20220731.service.impl;
 import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao001;
 import com.stssm.github.io.junw.bbb002spring20220731.dao.impl.UserDao001Impl;
 import com.stssm.github.io.junw.bbb002spring20220731.service.UserService001;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
@@ -19,6 +20,7 @@ public class UserService001Impl implements UserService001 {
 	/**
 	 * 依赖注入
 	 */
+	@Autowired
 	private UserDao001 serviceUserDao001;
 
 	/**

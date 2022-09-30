@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -27,7 +29,8 @@ public class Spring0807Configuration005 {
 	@Bean
 	public DruidDataSource dataSource(Demo0807Dao001 demo0807Dao001) {
 		// 这里是按照类型去寻找的，不是按照字节码文件
-		demorun.debug("我是springDao5：" + demo0807Dao001);
+		String format = String.format("我是springDao5：%s", demo0807Dao001);
+		demorun.debug(format);
 		demo0807Dao001.dao0807show();
 		// 这里，首先自动装配，获取了一个springDao5
 		// 然后又新建了一个德鲁伊数据源

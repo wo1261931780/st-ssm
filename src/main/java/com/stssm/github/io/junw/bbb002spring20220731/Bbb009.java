@@ -7,6 +7,7 @@ import com.stssm.github.io.junw.bbb002spring20220731.sfactory.StaticFactory0731;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
@@ -47,7 +48,7 @@ public class Bbb009 {
 		demorun.debug("实例工厂获得Dao001对象");
 		UserDao002 factoryGetDao001 = factory0731.factoryGetDao001();
 		factoryGetDao001.userDaoShow002();
-		demorun.debug("=============================================");
+		demorun.debug(FINAL_SPLIT);
 		// 获得一个实例工厂对象：
 		// 实例工厂获得Dao001对象
 		// 已经通过实例工厂Factory0731获得一个UserDao002Impl
@@ -57,7 +58,7 @@ public class Bbb009 {
 		UserDao002 staticFactoryGetDao002 = StaticFactory0731.factoryGetDao002();
 		demorun.debug("静态工厂获得Dao001对象：");
 		staticFactoryGetDao002.userDaoShow002();
-		demorun.debug("=============================================");
+		demorun.debug(FINAL_SPLIT);
 		// 获得一个静态工厂：
 		// 已经通过静态工厂staticFactory0731获得一个UserDao002Impl
 		// 静态工厂获得Dao001对象：
@@ -66,7 +67,7 @@ public class Bbb009 {
 		demorun.debug("手动构造了一个xmlUserService002：");
 		UserService002 xmlUserService002 = (UserService002) ctx.getBean("xmlUserService002");
 		xmlUserService002.serviceShow();
-		demorun.debug("=============================================");
+		demorun.debug(FINAL_SPLIT);
 		// 手动构造了一个xmlUserService002：
 		// 我是UserService002中的show方法
 		// =============================================

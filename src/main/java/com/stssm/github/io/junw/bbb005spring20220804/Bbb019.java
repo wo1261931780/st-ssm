@@ -27,11 +27,13 @@ public class Bbb019 {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Bbb023.xml");
 		Demo0804Dao001 dao001 = (Demo0804Dao001) applicationContext.getBean("xmlDemo0804Dao001Impl");
 		dao001.demoDaoShow();
-		demorun.debug("我是dao001" + dao001);
+		String format = String.format("我是dao001%s", dao001);
+		demorun.debug(format);
 		// ***********************************************************
 		Demo0804Dao002 dao002 = (Demo0804Dao002) applicationContext.getBean("demo0804Dao002Impl");
 		dao002.demoDaoShow002();
-		demorun.debug("我是dao002" + dao002);
+		String format1 = String.format("我是dao002%s", dao002);
+		demorun.debug(format1);
 		// ***********************************************************
 		// 以上都是使用名称来直接访问的
 		Demo0804Service001 service001 = applicationContext.getBean(Demo0804Service001.class);

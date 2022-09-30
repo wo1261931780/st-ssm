@@ -3,6 +3,8 @@ package com.stssm.github.io.junw.bbb005spring20220804.dao.impl;
 import com.stssm.github.io.junw.bbb005spring20220804.dao.Demo0804Dao002;
 import org.springframework.stereotype.Repository;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 
 // @Component("demo0804Dao002Impl")
 // 同样的，为了区分数据层，这里设置了一个repository的名称

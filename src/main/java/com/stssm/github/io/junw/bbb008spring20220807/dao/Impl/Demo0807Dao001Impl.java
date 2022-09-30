@@ -3,6 +3,8 @@ package com.stssm.github.io.junw.bbb008spring20220807.dao.Impl;
 import com.stssm.github.io.junw.bbb008spring20220807.dao.Demo0807Dao001;
 import org.springframework.stereotype.Repository;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io

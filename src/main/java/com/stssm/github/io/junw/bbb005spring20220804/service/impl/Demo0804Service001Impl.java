@@ -5,6 +5,8 @@ import com.stssm.github.io.junw.bbb005spring20220804.service.Demo0804Service001;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 
 // @Component
 // 上面这里的component和service作用完全相同

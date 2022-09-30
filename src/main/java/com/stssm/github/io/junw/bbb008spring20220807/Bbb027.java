@@ -5,6 +5,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import javax.sql.DataSource;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -22,6 +24,6 @@ public class Bbb027 {
 		DataSource bean = ctx.getBean(DataSource.class);
 		// 这里比较奇妙，直接写获取数据库对象就可以
 		// 不需要写ctx.getDruid();然后直接拿到对应的
-		demorun.debug(bean);
+		demorun.debug(bean.toString());
 	}
 }

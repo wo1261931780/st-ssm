@@ -25,7 +25,8 @@ public class Bbb006 {
 		// 按照老的方式，直接拿到对应的对象就可以
 		DemoDao6 demoDao6 = userDemoDao6Factory.getDemoDao6();
 		demoDao6.show6();
-		demorun.info(demoDao6.toString());
+		String s = demoDao6.toString();
+		demorun.info(s);
 
 		// DemoDao6 demoDao7 = userDemoDao6Factory.getDemoDao6();
 		// demorun.debug(demoDao7);

@@ -1,7 +1,9 @@
 package com.stssm.github.io.junw.bbb002spring20220731.factory;
 
-import com.stssm.github.io.junw.bbb002spring20220731.dao.impl.UserDao002Impl;
 import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao002;
+import com.stssm.github.io.junw.bbb002spring20220731.dao.impl.UserDao002Impl;
+
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
