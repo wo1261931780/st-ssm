@@ -19,14 +19,14 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = Spring0919Configuration001.class)
-public class serviceTest {
+public class TestService001 {
 
 	private Demo0919Service001 demo0919Service001;
 
 	@Test
 	public void selectById() {
 		demorun.debug("我是测试方法");
-		demorun.debug(demo0919Service001.selectById(2));
+		// demorun.debug(demo0919Service001.selectById(2));
 	}
 
 }
