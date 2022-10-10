@@ -27,8 +27,5 @@ public class Bbb031 {
 		Demo0919Service001 bean1 = x.getBean(Demo0919Service001.class);
 		Account0919 account0919Dao = bean1.selectById(2);
 		demorun.debug(account0919Dao.toString());
-
 	}
-
-
 }
