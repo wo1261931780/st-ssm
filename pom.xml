@@ -45,7 +45,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
-			<version>2.7.4</version>
+			<version>2.7.5</version>
 		</dependency>
 		<dependency>
 			<!--这里是mybatis按照spring的标准，开发出来的整合包-->
