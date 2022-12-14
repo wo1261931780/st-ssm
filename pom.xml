@@ -118,7 +118,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>5.3.23</version>
+			<version>5.3.24</version>
 		</dependency>
 		<!--底下的是spring整合mybatis的包-->
 		<!--这里，会根据mybatis的版本出现差异-->
