@@ -10,4 +10,5 @@ package com.stssm.github.io.junw.bbb010spring20221220.dao;
  * @description
  */
 public interface Book1221Dao {
+	void show();
 }

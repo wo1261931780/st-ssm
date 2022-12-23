@@ -15,9 +15,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class Bbb032 {
 	// ===================================================================
-	// aop，面向切面编程
-	ApplicationContext ctx = new AnnotationConfigApplicationContext(Spring1221Configuration001.class);
-	// ctx.get
+
 
 
 }
