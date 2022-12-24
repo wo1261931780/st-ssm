@@ -44,7 +44,7 @@ public class UserService002Impl implements UserService002 {
 	/**
 	 * 完成销毁方法
 	 */
-	public void destoryTest1() {
+	public void destroyTest1() {
 		demorun.debug("我是serviceDao1中的销毁方法");
 	}
 }

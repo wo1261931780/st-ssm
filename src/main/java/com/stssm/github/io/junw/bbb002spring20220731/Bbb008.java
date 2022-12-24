@@ -46,6 +46,7 @@ public class Bbb008 {
 		// 类似于system.exit
 		// 一旦执行了代码，后续的容器功能都不能执行，而且控制台没有对应说明出现
 		demorun.debug("开始关闭ioc");
-		ctx.registerShutdownHook();// 关闭钩子，关闭前自动执行
+		ctx.registerShutdownHook();// 关闭钩子，关闭前自动执行，
+		// 自动执行的意思是，在任何地方都是可以生效的
 	}
 }

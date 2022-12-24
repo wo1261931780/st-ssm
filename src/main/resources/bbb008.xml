@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="xmlUserService001" class="com.stssm.github.io.junw.bbb002spring20220731.service.impl.UserService001Impl"
-	      init-method="initTest1" destroy-method="destoryTest1"
+	      init-method="initTest1" destroy-method="destroyTest1"
 	      scope="prototype">
 		<!--对于对象来说，初始化也有两种方式：-->
 		<!--一种方法是类似上面这样，直接使用xml配置对应的初始化-->
