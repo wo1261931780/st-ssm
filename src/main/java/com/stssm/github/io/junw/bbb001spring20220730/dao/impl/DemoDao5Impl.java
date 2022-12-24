@@ -18,6 +18,9 @@ public class DemoDao5Impl implements DemoDao5 {
 	public DemoDao5Impl() {
 		String format = String.format("我是dao5构造方法，地址为：%s", this);
 		demorun.debug(format);
+		// dao中的构造方法是这样的
+		// 同时,因为是构造方法,我们也可以通过修改private的方式,将其变成一个私有的
+		// 而且,spring创建对象的时候,默认都是调用无参构造方法
 	}
 
 	/**

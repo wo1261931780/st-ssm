@@ -9,6 +9,4 @@
 	</bean>
 	<bean id="xmlDemoDao7" class="com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao7Impl"
 	      scope="prototype"/>
-
-
 </beans>

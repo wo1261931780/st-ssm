@@ -20,5 +20,7 @@ public class Bbb004 {
 		// 从这里也可以看出，我获取什么样的对象，完全是xml中提供的对象叫什么名字
 		// 如果是xmlDemo定位到service4，那就是获取service4
 		demoService4.servieShow4();
+		// 这里获取的对象完全都是单例的
+		// 每个对象的内存地址一模一样
 	}
 }

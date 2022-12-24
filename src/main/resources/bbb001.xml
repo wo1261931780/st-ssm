@@ -5,4 +5,6 @@
 	<bean id="xmlDemoService1" class="com.stssm.github.io.junw.bbb001spring20220730.service.impl.DemoService1Impl"/>
 	<!--我指定的service对象，就是IoC容器管理的对象-->
 	<!--只要通过IoC容器来管理，就不需要手动new一个对象出来-->
+	<!--这里，实际上，就是把指定的对象，放到了IoC容器中-->
+	<!--放进去以后，就可以避免手动new对象，同时存在映射关系-->
 </beans>

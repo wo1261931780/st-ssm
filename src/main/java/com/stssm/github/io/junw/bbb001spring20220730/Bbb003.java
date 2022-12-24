@@ -19,6 +19,9 @@ public class Bbb003 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb003.xml");
 		DemoService3 demoService3 = (DemoService3) ctx.getBean("demoService3");
+		// 这里的差别在于:
+		// 我需要在service中new一个dao出来,然后调用dao对应的方法
+		// 所以就引入了di的概念:依赖注入
 		demoService3.servieShow3();
 		String format = String.format("我是运行类：现在打印xml给我的service对象：%s", demoService3);
 		demorun.info(format);

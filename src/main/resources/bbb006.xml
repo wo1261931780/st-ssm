@@ -11,13 +11,17 @@
 	<!--      scope="prototype"/>-->
 
 
-	<bean id="xmlDemoDao6Factroy"
+	<bean id="xmlDemoDao6Factory"
 	      class="com.stssm.github.io.junw.bbb001spring20220730.factory.DemoDao6Factory"/>
 	<!--实例工厂对象中，首先方法体就是非静态的-->
 	<!--然后在xml的配置文件中，需要先配置一个指向实例工厂对象的bean-->
 	<!--在底下，重新配置一个，使用该工厂对象的user对象-->
 	<!--在对象中设置工厂方法和工厂bean-->
-	<bean id="userDemoDao6Factory" factory-method="getDemoDao6" factory-bean="xmlDemoDao6Factroy"/>
+	<bean id="userDemoDao6Factory" factory-method="getDemoDao6" factory-bean="xmlDemoDao6Factory"/>
+	<!--工厂有两种类型,一种是静态工厂,一种是实例工厂-->
+	<!--静态工厂,不需要设置factorybean,直接配置工厂方法即可-->
+	<!--===================================================================-->
+
 
 
 </beans>

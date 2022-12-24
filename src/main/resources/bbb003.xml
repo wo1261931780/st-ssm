@@ -13,9 +13,13 @@
 		<!--但是，如果对象需要记录成员变量的属性值，那么就需要使用非单例的新建方式-->
 		<!--这种带有属性值的，一般都带有一定的业务状态-->
 		<property name="serviceDemoDao3" ref="xmlDemoDao3"/>
+		<!--这一步，相当于，我的service中需要新建一个dao-->
+		<!--而这个dao的名称就是serviceDemoDao3-->
+		<!--还有一个ref，表示我需要从ioc中管理的对象中将其拿出来-->
+		<!--所以就对应到了底下的xmlDemoDao3-->
+		<!--这里的dao和service都是需要ioc去管理的,也就都需要在ioc中完成配置-->
 	</bean>
 	<bean id="xmlDemoDao3" class="com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao3Impl"
 	      scope="prototype"/>
 	<!--scope="prototype"这里的作用范围，是针对Dao而言的-->
-
 </beans>
