@@ -24,13 +24,13 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>5.3.24</version>
+			<version>6.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<!--spring操作数据库的包-->
 			<artifactId>spring-boot-starter-data-jdbc</artifactId>
-			<version>2.7.6</version>
+			<version>3.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -45,13 +45,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
-			<version>2.7.6</version>
+			<version>3.0.0</version>
 		</dependency>
 		<dependency>
 			<!--这里是mybatis按照spring的标准，开发出来的整合包-->
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>2.3.0</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.experimental</groupId>
@@ -62,7 +62,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<version>2.7.6</version>
+			<version>3.0.0</version>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
@@ -75,7 +75,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
-			<version>2.7.6</version>
+			<version>3.0.0</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -86,7 +86,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<version>2.7.4</version>
+			<version>3.0.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -118,7 +118,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>5.3.24</version>
+			<version>6.0.3</version>
 		</dependency>
 		<!--底下的是spring整合mybatis的包-->
 		<!--这里，会根据mybatis的版本出现差异-->
@@ -139,7 +139,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>5.3.24</version>
+			<version>6.0.3</version>
 		</dependency>
 	</dependencies>
 
