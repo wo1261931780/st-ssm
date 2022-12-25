@@ -2,6 +2,7 @@ package com.stssm.github.io.junw.bbb007spring20220806;
 
 import com.stssm.github.io.junw.bbb007spring20220806.config.Spring0806Config;
 import com.stssm.github.io.junw.bbb007spring20220806.service.impl.Demo0806Service002Impl;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
@@ -17,7 +18,8 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  */
 public class Bbb024 {
 	public static void main(String[] args) {
-		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0806Config.class);
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0806Config.class);
+
 		Demo0806Service002Impl bean = ctx.getBean(Demo0806Service002Impl.class);
 		String format = String.format("我是运行类%s", bean);
 		demorun.debug(format);

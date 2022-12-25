@@ -11,13 +11,13 @@
 		<!--有多少，设置多少个就可以了-->
 		<property name="url" value="jdbc:mysql://localhost:3306/study002jdbc"/>
 		<property name="username" value="root"/>
-		<property name="password" value="LIU18959297292"/>
+		<property name="password" value="junw555"/>
 	</bean>
 	<!--配置数据库连接池，都是固定的格式-->
 	<bean id="xmlDataSourcePool" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 		<!--因为无法使用setter注入，这里使用构造器注入-->
 		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
-		<property name="password" value="LIU18959297292"/>
+		<property name="password" value="junw555"/>
 		<property name="user" value="root"/>
 		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/study002jdbc"/>
 	</bean>

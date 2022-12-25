@@ -45,6 +45,4 @@ public class Demo0805Dao002Impl implements Demo0805Dao002 {
 		// 注解直译：在销毁之前
 		demorun.debug("Demo0805Dao002Impl中的销毁方法");
 	}
-
-
 }

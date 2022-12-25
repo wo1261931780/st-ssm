@@ -32,7 +32,7 @@ public class Spring0807Configuration001 {
 		demoBean.setDriverClassName("com.mysql.jdbc.Driver");
 		demoBean.setUrl("jdbc:mysql://localhost:3306/study002jdbc");
 		demoBean.setUsername("root");
-		demoBean.setPassword("LIU18959297292");
+		demoBean.setPassword("junw555");
 		return demoBean;
 	}
 	// 这种管理bean的方式，实际上是工厂模式的体现

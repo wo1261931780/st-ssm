@@ -31,7 +31,7 @@ public class Spring0807Configuration004 {
 	private String url;
 	@Value("root")
 	private String account;
-	@Value("LIU18959297292")
+	@Value("junw555")
 	private String paw;
 
 	// 使用简单类型的变量，来补充数据库连接池中设置的属性

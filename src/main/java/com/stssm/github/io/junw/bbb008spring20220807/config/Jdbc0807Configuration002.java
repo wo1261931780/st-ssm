@@ -27,7 +27,7 @@ public class Jdbc0807Configuration002 {
 		demoBean.setDriverClassName("com.mysql.jdbc.Driver");
 		demoBean.setUrl("jdbc:mysql://localhost:3306/study002jdbc");
 		demoBean.setUsername("root");
-		demoBean.setPassword("LIU18959297292");
+		demoBean.setPassword("junw555");
 		return demoBean;
 	}
 }

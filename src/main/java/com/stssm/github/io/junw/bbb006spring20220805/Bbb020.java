@@ -22,6 +22,7 @@ public class Bbb020 {
 		// 原来是在上面写我们的xml配置文件
 		// 这里直接配置到对应的配置类就可以
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfiguration0805.class);
+		// 配置类中，就包含了包扫描，扫描到了需要的dao和service
 		Demo0805Dao001Impl bean = ctx.getBean(Demo0805Dao001Impl.class);
 		Demo0805Dao001Impl bean2 = ctx.getBean(Demo0805Dao001Impl.class);
 		demorun.debug("我调用了内部的方法");
