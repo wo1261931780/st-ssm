@@ -17,8 +17,8 @@ import org.springframework.core.io.Resource;
  */
 public class Bbb018 {
 	public static void main(String[] args) {
-		Resource resource = new ClassPathResource("bbb021DataSource.xml");
-		BeanFactory demo = new XmlBeanFactory(resource);
+		Resource resource = new ClassPathResource("bbb021DataSource.xml");// 先加载配置文件
+		BeanFactory demo = new XmlBeanFactory(resource);// 然后将得到的资源文件，作为参数传递到xml工厂中
 		Demo0802Dao002 xmlDemo0802DaoImpl002 = (Demo0802Dao002) demo.getBean("xmlDemo0802DaoImpl002");
 		xmlDemo0802DaoImpl002.daoShow002();
 		// 这里大部分内容都一样，不同之处在于加载的时机
@@ -31,6 +31,5 @@ public class Bbb018 {
 		// 如果是延迟加载，那么构造器完成构造，无参构造中间出现的方法不会立即执行
 		// 本质差别在于，是否立刻加载好了对应的Bean对象
 		// *****************************************************
-
 	}
 }

@@ -7,12 +7,15 @@
 	<bean id="xmlDataSource" class="com.alibaba.druid.pool.DruidDataSource">
 		<!--我们可以把这里的properties理解为对象中的属性-->
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+		<!--类似于set和list中的对象属性-->
+		<!--有多少，设置多少个就可以了-->
 		<property name="url" value="jdbc:mysql://localhost:3306/study002jdbc"/>
 		<property name="username" value="root"/>
 		<property name="password" value="LIU18959297292"/>
 	</bean>
 	<!--配置数据库连接池，都是固定的格式-->
 	<bean id="xmlDataSourcePool" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<!--因为无法使用setter注入，这里使用构造器注入-->
 		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
 		<property name="password" value="LIU18959297292"/>
 		<property name="user" value="root"/>

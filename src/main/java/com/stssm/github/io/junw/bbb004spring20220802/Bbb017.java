@@ -17,7 +17,7 @@ public class Bbb017 {
 	public static void main(String[] args) {
 		// 加载容器的形式有很多
 		// 这是第一种：加载类路径下的配置文件
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb018SpringContext.xml");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb018SpringContext.xml");// 可以一次性加载多个配置文件
 		// 如果从文件系统加载容器，就需要指定绝对路径
 		// 第二种，从文件系统下加载配置文件
 		// ApplicationContext ctx = new FileSystemXmlApplicationContext("C:\\Users\\1\\Documents\\GitHub\\st-ssm.github.io\\src\\main\\resources\\bbb018SpringContext.xml");

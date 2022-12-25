@@ -10,13 +10,13 @@
 
 	<!--上面的操作，相当于新开了一个命名空间-->
 	<!--ns，就是namespace的意思-->
-	<!--<context:property-placeholder location="jdbc3.properties" system-properties-mode="NEVER"/>-->\
+	<!--<context:property-placeholder location="jdbc3.properties" system-properties-mode="NEVER"/>-->
 	<!--要配置多个文件同时加载，中间用逗号间隔-->
 	<!--<context:property-placeholder location="Bbb019Jdbc.properties,jdbc3.properties" system-properties-mode="NEVER"/>-->
 	<!--标准的写法，直接添加一个类路径，但是这样只能读取当前的-->
 	<!--<context:property-placeholder location="classpath*:Bbb019Jdbc.properties,jdbc3.properties" system-properties-mode="NEVER"/>-->
 	<!--如果添加了两个星号，那么所有的配置都可以被加载出来，但是也会加载jar包内的-->
-	<context:property-placeholder location="classpath*:Bbb019Jdbc.properties,jdbc2.properties"
+	<context:property-placeholder location="classpath*:Bbb019Jdbc.properties,Bbb020Jdbc.properties"
 	                              system-properties-mode="NEVER"/>
 	<!--禁止系统属性加载，避免配置过程中，不规范命名，导致了数据展示错误-->
 	<bean id="dataSource002" class="com.alibaba.druid.pool.DruidDataSource">
@@ -25,7 +25,9 @@
 		<property name="username" value="${jdbc.username}"/>
 		<property name="password" value="${jdbc.password}"/>
 	</bean>
-	<bean id="userDao5" class="com.stssm.github.io.dao.impl.UserDaoImpl5">
-		<property name="name" value="${jdbc.username}"/>
+	<bean id="demo0802DaoImpl001" class="com.stssm.github.io.junw.bbb004spring20220802.dao.impl.Demo0802DaoImpl001">
+		<property name="demo0802DaoImplName" value="${jdbc.username}"/>
+		<!--注意一下这里的name，不能和properties中的name冲突，否则会报错-->
+		<!--简单来说，系统中的name优先级更高-->
 	</bean>
 </beans>
