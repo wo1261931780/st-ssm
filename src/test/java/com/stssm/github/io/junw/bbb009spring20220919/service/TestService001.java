@@ -28,5 +28,4 @@ public class TestService001 {
 		demorun.debug("我是测试方法");
 		// demorun.debug(demo0919Service001.selectById(2));
 	}
-
 }
