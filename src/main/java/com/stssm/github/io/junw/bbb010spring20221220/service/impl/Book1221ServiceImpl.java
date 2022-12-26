@@ -1,7 +1,11 @@
 package com.stssm.github.io.junw.bbb010spring20221220.service.impl;
 
 import com.stssm.github.io.junw.bbb010spring20221220.dao.Book1221Dao;
+import com.stssm.github.io.junw.bbb010spring20221220.domain.Account1221;
 import com.stssm.github.io.junw.bbb010spring20221220.service.Book1221Service;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
@@ -15,7 +19,30 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @description
  */
 public class Book1221ServiceImpl implements Book1221Service {
+	@Autowired
 	private Book1221Dao book1221Dao;
+
+
+	public void save(Account1221 demo) {
+		book1221Dao.save(demo);
+	}
+
+	public void update(Account1221 demo) {
+		book1221Dao.update(demo);
+	}
+
+	public void delete(Integer id) {
+		book1221Dao.delete(id);
+	}
+
+	public Account1221 findById(Integer id) {
+		return book1221Dao.queryById(id);
+	}
+
+	// public List<Account1221> findAll(String name) {
+	// 	return book1221Dao.queryAll(name);
+	// }
+
 
 	@Override
 	public void serviceShow() {

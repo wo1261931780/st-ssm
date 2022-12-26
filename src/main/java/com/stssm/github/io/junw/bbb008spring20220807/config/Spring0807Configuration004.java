@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 @Configuration
 public class Spring0807Configuration004 {
 
-	/*
+	/**
 	 * 在不考虑导入外部jdbc配置的情况下，
 	 * 还有一种简单类型的注入
 	 * 将所有的数据，保存到变量中，然后再次赋值就可以

@@ -30,4 +30,5 @@ public class Jdbc0807Configuration002 {
 		demoBean.setPassword("junw555");
 		return demoBean;
 	}
+	// 这就是管理第三方bean的方式
 }

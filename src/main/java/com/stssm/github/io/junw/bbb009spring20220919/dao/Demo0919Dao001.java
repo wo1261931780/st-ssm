@@ -19,13 +19,13 @@ public interface Demo0919Dao001 {
 	void daoShow001();
 
 
-	@Insert("insert into study001sql.demo1(id, name, age, sex, address, math, english, hire_date) VALUES(#{})")
+	@Insert("insert into study001sql.DEMO_1(id,  age, sex, address, math, english, hire_date) VALUES(#{})")
 	void addDao0919();
 
-	@Delete("delete from study001sql.demo1 where id=#{demoId}")
+	@Delete("delete from study001sql.DEMO_1 where id=#{demoId}")
 	Integer deleteById(Integer demoId);
 
-	@Update("update study001sql.demo1 set name  =#{demoName}  where id =#{demoId} ;")
+	@Update("update study001sql.DEMO_1 set E_NAME  =#{demoName}  where id =#{demoId} ;")
 	Integer updateByCondition(Integer demoId, String demoName);
 
 
@@ -34,7 +34,7 @@ public interface Demo0919Dao001 {
 	 *
 	 * @param demoId
 	 */
-	@Select("select * from study001sql.demo1 where id=#{demoId};")
+	@Select("select * from study001sql.DEMO_1 where id=#{demoId};")
 	Account0919 daoSelectById(Integer demoId);
 
 

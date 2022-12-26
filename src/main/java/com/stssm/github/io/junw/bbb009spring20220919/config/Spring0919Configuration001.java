@@ -17,10 +17,8 @@ import org.springframework.context.annotation.PropertySource;
 @ComponentScan({"com.stssm.github.io", "com.stssm.github.io"})
 @PropertySource("classpath:Bbb024Jdbc.properties")
 public class Spring0919Configuration001 {
-	// 2022年9月26日21:33:20，哎，我好菜啊
 	// 这里@PropertySource("classpath:Bbb024Jdbc.properties")
 	// 如果没有添加classpath，就会导致无法找到对应的文件位置
-
 
 	// @Bean
 	// public DataSource dataSource(Demo0805Dao004 springDao4) {
@@ -32,6 +30,4 @@ public class Spring0919Configuration001 {
 	// 	// mybatis，实际上是管理SQLsessionFactory对象
 	// 	return x;
 	// }
-
-
 }

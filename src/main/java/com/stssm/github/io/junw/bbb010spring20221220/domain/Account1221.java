@@ -1,27 +1,36 @@
-package com.stssm.github.io.junw.bbb009spring20220919.domain;
+package com.stssm.github.io.junw.bbb010spring20221220.domain;
+
+import java.io.Serializable;
 
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
- * Package:com.stssm.github.io.domain
+ * Package:com.stssm.github.io.junw.bbb010spring20221220.domain
  *
  * @author liujiajun_junw
- * @Date 2022-08-14-28  星期日
+ * @Date 2022-12-14-57  星期一
  * @description
  */
-public class Account0919 {
-
-	private int age;
+public class Account1221 implements Serializable {
 	private String name;
+	private int age;
 	private String address;
 
 	@Override
 	public String toString() {
-		return "Account0919{" +
-				       "age=" + age +
-				       ", name='" + name + '\'' +
+		return "Account1221{" +
+				       "name='" + name + '\'' +
+				       ", age=" + age +
 				       ", address='" + address + '\'' +
 				       '}';
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public int getAge() {
@@ -30,15 +39,6 @@ public class Account0919 {
 
 	public void setAge(int age) {
 		this.age = age;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		// --注释掉检查 STOP (2022-09-01 12:48)
-		this.name = name;
 	}
 
 	public String getAddress() {
