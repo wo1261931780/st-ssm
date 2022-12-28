@@ -5,6 +5,7 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
@@ -19,7 +20,10 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 @Component
 @Aspect
 public class MyAdvice {
-	@Pointcut("execution(void com.stssm.github.io.junw.bbb011spring20221226.dao.impl.demo1226daoImpl.show())")
+	// 使用Component，表示变成了spring可以控制的bean对象
+
+
+	@Pointcut("execution(void com.stssm.github.io.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.show())")
 	private void cutIn() {
 	}
 	// 执行到这个方法的时候，就是到达切入点，在切入点执行
@@ -30,7 +34,9 @@ public class MyAdvice {
 	@Before("cutIn()")
 	private void commonMethod() {
 		demorun.debug("我是共享方法");
+		demorun.debug(FINAL_SPLIT);
 	}
+	// 在show方法之前执行上面这个共享方法
 
 
 	public void showTime() {

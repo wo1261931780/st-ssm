@@ -25,6 +25,7 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>5.3.24</version>
+			<!--这里不能修改context版本到6.0，否则aop会找不到class文件-->
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -144,7 +145,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>6.0.3</version>
+			<version>5.3.24</version>
 		</dependency>
 	</dependencies>
 

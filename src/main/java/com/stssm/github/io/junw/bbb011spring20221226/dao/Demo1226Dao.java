@@ -9,12 +9,7 @@ package com.stssm.github.io.junw.bbb011spring20221226.dao;
  * @Date 2022-12-16-21  星期一
  * @description
  */
-public interface demo1226dao {
+public interface Demo1226Dao {
 
 	void show();
-	void update();
-	void select();
-	void delete();
-	void save();
-
 }
