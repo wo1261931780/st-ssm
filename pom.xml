@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>6.0.3</version>
+			<version>5.3.24</version>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -35,22 +35,22 @@
 			<groupId>org.springframework.boot</groupId>
 			<!--spring操作数据库的包-->
 			<artifactId>spring-boot-starter-data-jdbc</artifactId>
-			<version>3.0.0</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-			<version>3.0.0</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<version>3.0.0</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
-			<version>3.0.0</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<!--这里是mybatis按照spring的标准，开发出来的整合包-->
@@ -67,7 +67,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<version>3.0.0</version>
+			<version>3.0.1</version>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
@@ -80,7 +80,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
-			<version>3.0.0</version>
+			<version>3.0.1</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -91,7 +91,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<version>3.0.0</version>
+			<version>3.0.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
