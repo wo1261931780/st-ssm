@@ -28,18 +28,22 @@ public class Demo1226DaoImpl implements Demo1226Dao {
 		demorun.debug("执行一万次消耗时间：" + duringTime + "ms");
 	}
 
+	@Override
+	public void delete(int demo) {
+		demorun.debug("我是delete方法");
+	}
+
+	@Override
 	public void update() {
 		demorun.debug("我是update方法");
 	}
 
+	@Override
 	public void select() {
 		demorun.debug("我是select方法");
 	}
 
-	public void delete() {
-		demorun.debug("我是delete方法");
-	}
-
+	@Override
 	public void save() {
 		demorun.debug("我是save方法");
 	}

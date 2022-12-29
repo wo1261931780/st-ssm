@@ -45,8 +45,8 @@
 	<!--我们创建命名空间，目的是为了解决配置文件的读取-->
 	<!--如果直接在xml中配置，只会导致相关属性被写死-->
 	<bean id="xmlDataSource" class="com.alibaba.druid.pool.DruidDataSource">
-		<!--<property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
-		<!--<property name="url" value="jdbc:mysql://localhost:3306/study002jdbc"/>-->
+		<!--<property name="driverClassName" value="com.mysql.Jdbc1229Configuration.Driver"/>-->
+		<!--<property name="url" value="Jdbc1229Configuration:mysql://localhost:3306/study002jdbc"/>-->
 		<!--<property name="username" value="root"/>-->
 		<!--<property name="password" value="junw555"/>-->
 		<property name="driverClassName" value="${jdbc.driver}"/>

@@ -22,13 +22,13 @@ public class Spring0919JdbcConfiguration001 {
 	// 如果不添加这个注解，就需要手动使用import来完成导入
 
 
-	@Value("${jdbc.username}")
+	@Value("${Jdbc1229Configuration.username}")
 	private String name;
-	@Value("${jdbc.url}")
+	@Value("${Jdbc1229Configuration.url}")
 	private String url;
-	@Value("${jdbc.password}")
+	@Value("${Jdbc1229Configuration.password}")
 	private String password;
-	@Value("${jdbc.driver}")
+	@Value("${Jdbc1229Configuration.driver}")
 	private String driver;
 
 	@Bean

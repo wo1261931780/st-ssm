@@ -27,7 +27,7 @@ public class Spring0807Configuration004 {
 	 * 简单类型的配置，本质上是为了补充原来没有配置完成的参数
 	 */
 
-	@Value("jdbc:mysql://localhost:3306/study002jdbc")
+	@Value("Jdbc1229Configuration:mysql://localhost:3306/study002jdbc")
 	private String url;
 	@Value("root")
 	private String account;

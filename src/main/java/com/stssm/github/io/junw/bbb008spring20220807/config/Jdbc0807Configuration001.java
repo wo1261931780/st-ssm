@@ -28,8 +28,8 @@ public class Jdbc0807Configuration001 {
 		// 这里需要添加一个bean的注解，代表我返回的是一个对象
 		DruidDataSource demoBean = new DruidDataSource();
 		// 如果这样考虑，那么在对应的jar包中，也都提供了内部的构造方法
-		demoBean.setDriverClassName("com.mysql.jdbc.Driver");
-		demoBean.setUrl("jdbc:mysql://localhost:3306/study002jdbc");
+		demoBean.setDriverClassName("com.mysql.Jdbc1229Configuration.Driver");
+		demoBean.setUrl("Jdbc1229Configuration:mysql://localhost:3306/study002jdbc");
 		demoBean.setUsername("root");
 		demoBean.setPassword("junw555");
 		return demoBean;

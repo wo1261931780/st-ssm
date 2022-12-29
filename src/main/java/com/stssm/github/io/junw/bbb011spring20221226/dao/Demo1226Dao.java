@@ -12,4 +12,11 @@ package com.stssm.github.io.junw.bbb011spring20221226.dao;
 public interface Demo1226Dao {
 
 	void show();
+
+	void delete(int demo);
+
+	void update();
+	void select();
+	void save();
+
 }

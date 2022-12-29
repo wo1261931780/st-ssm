@@ -24,8 +24,8 @@ public class Jdbc0807Configuration002 {
 	@Bean
 	public DataSource getDruid() {
 		DruidDataSource demoBean = new DruidDataSource();
-		demoBean.setDriverClassName("com.mysql.jdbc.Driver");
-		demoBean.setUrl("jdbc:mysql://localhost:3306/study002jdbc");
+		demoBean.setDriverClassName("com.mysql.Jdbc1229Configuration.Driver");
+		demoBean.setUrl("Jdbc1229Configuration:mysql://localhost:3306/study002jdbc");
 		demoBean.setUsername("root");
 		demoBean.setPassword("junw555");
 		return demoBean;

@@ -21,7 +21,7 @@ public class Bbb016 {
 		demorun.debug("我是dao，即将开始执行方法：");
 		demo0802DaoImpl.daoShow();
 		// 我是Demo0802Dao中的show方法
-		// 我是Demo0802Dao中的变量com.mysql.jdbc.Driver
+		// 我是Demo0802Dao中的变量com.mysql.Jdbc1229Configuration.Driver
 
 	}
 }
