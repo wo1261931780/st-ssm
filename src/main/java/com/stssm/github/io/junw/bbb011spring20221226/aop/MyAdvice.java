@@ -22,6 +22,11 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 public class MyAdvice {
 	// 使用Component，表示变成了spring可以控制的bean对象
 
+	// 下面这里的描述方法，有两种
+	// 可以描述抽象类中的方法，也可以描述实现类中的方法
+	// 描述的方法，都是无参数的
+
+
 
 	@Pointcut("execution(void com.stssm.github.io.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.show())")
 	private void cutIn() {
