@@ -26,6 +26,6 @@ public class TestService001 {
 	@Test
 	public void selectById() {
 		demorun.debug("我是测试方法");
-		// demorun.debug(demo0919Service001.selectById(2));
+		// TestService002.debug(demo0919Service001.selectById(2));
 	}
 }
