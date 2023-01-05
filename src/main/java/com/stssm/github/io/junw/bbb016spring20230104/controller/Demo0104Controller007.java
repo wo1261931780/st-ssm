@@ -10,7 +10,7 @@ import java.util.Date;
 
 @Controller
 @RequestMapping("/Demo0105Controller002")
-public class Demo0105Controller002 {
+public class Demo0104Controller007 {
 	@RequestMapping("/getDateParams")
 	@ResponseBody
 	public String getDateParams(@RequestParam Date demoDate,

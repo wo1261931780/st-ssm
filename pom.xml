@@ -14,6 +14,11 @@
 	<name>st-ssm.github.io</name>
 	<description>st-ssm.GitHub.io project for Spring Boot</description>
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+		<!--<java.version>1.8</java.version>-->
+		<!--<maven.compiler.source>1.8</maven.compiler.source>-->
+		<!--<maven.compiler.target>1.8</maven.compiler.target>-->
 		<java.version>17</java.version>
 		<repackage.classifier/>
 		<spring-native.version>0.12.1</spring-native.version>
@@ -58,6 +63,25 @@
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>3.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+			<!--必须把scope变成provide，否则会和tomcat发生冲突-->
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>5.3.24</version>
+			<!--mvc是一个整合包-->
+			<!--除了基础的context包以外，还会有web包作为web开发的整合包-->
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.14.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.experimental</groupId>

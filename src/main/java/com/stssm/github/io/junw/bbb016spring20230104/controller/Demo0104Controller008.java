@@ -1,6 +1,6 @@
 package com.stssm.github.io.junw.bbb016spring20230104.controller;
 
-import junw555.doamin.Demo0104DomainUser;
+import com.stssm.github.io.junw.bbb016spring20230104.doamin.Demo0104DomainUser;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class Demo0105Controller003 {
+public class Demo0104Controller008 {
 	@RequestMapping("/toJumpPage")
 	public String toJumpPage() {
 		System.out.println("我是Demo0105Controller003中的toJumpPage方法");
