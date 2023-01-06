@@ -1,6 +1,6 @@
 package com.stssm.github.io.junw.bbb016spring20230104.controller;
 
-import junw555.doamin.Demo0104DomainUser;
+import com.stssm.github.io.junw.bbb016spring20230104.doamin.Demo0104DomainUser;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
