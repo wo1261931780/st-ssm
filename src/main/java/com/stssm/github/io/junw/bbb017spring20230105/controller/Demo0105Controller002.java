@@ -10,15 +10,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 @Controller
-public class Demo0105Controller001 {
-	@RequestMapping(value = "/insert", method = RequestMethod.POST)
+@RequestMapping("/Book")
+public class Demo0105Controller002 {
+	@RequestMapping(method = RequestMethod.POST)
 	@ResponseBody
 	public String toInsert(@RequestBody Demo0105DomainUser001 Demo0105DomainUser001) {
 		System.out.println("我是Demo0105Controller001中的toInsert方法");
 		return "";
 	}
 
-	@RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+	@RequestMapping(method = RequestMethod.DELETE)
 	@ResponseBody
 	public String toDelete(@PathVariable int id) {
 		System.out.println("我是Demo0105Controller001中的toDelete方法");
@@ -26,21 +27,21 @@ public class Demo0105Controller001 {
 		return "";
 	}
 
-	@RequestMapping(value = "/change", method = RequestMethod.POST)
+	@RequestMapping(method = RequestMethod.POST)
 	@ResponseBody
 	public String toChange(@RequestBody Demo0105DomainUser001 Demo0105DomainUser001) {
 		System.out.println("我是Demo0105Controller001中的toChange方法");
 		return "";
 	}
 
-	@RequestMapping(value = "/getOne", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	@ResponseBody
 	public String toGetOneById(@RequestBody Demo0105DomainUser001 Demo0105DomainUser001) {
 		System.out.println("我是Demo0105Controller001中的toGetOneById方法");
 		return "";
 	}
 
-	@RequestMapping(value = "/query", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	@ResponseBody
 	public String toQuery(@RequestBody Demo0105DomainUser001 Demo0105DomainUser001) {
 		System.out.println("我是Demo0105Controller001中的toQuery方法");
