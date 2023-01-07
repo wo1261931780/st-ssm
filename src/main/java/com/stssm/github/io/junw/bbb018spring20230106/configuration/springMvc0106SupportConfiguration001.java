@@ -13,6 +13,7 @@ public class springMvc0106SupportConfiguration001 extends WebMvcConfigurationSup
 		registry.addResourceHandler("/pages/**").addResourceLocations("/pages");
 		// 添加一个拦截器
 		// 访问pages下面的任意文件
+		// 2023年1月7日23:30:07摸鱼，没写代码
 		// 就访问指定的目录
 	}
 }
