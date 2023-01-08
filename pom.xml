@@ -122,7 +122,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
-			<version>1.2.15</version>
+			<version>1.2.14</version>
 		</dependency>
 		<!--c3p0相关包-->
 		<dependency>
