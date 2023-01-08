@@ -1,13 +1,10 @@
 package com.stssm.github.io.junw.bbb018spring20230106.controller;
 
-import com.stssm.github.io.junw.bbb018spring20230106.doamin.Demo0106DomainUser001;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Controller;
+import com.stssm.github.io.junw.bbb018spring20230106.domain.Demo0106DomainUser001;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController

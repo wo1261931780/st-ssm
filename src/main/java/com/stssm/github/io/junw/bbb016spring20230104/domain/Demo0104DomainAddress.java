@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb016spring20230104.doamin;
+package com.stssm.github.io.junw.bbb016spring20230104.domain;
 
 public class Demo0104DomainAddress {
 	private String localPlace;

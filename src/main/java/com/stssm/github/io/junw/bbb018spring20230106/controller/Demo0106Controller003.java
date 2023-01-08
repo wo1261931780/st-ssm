@@ -1,15 +1,11 @@
 package com.stssm.github.io.junw.bbb018spring20230106.controller;
 
-import com.stssm.github.io.junw.bbb018spring20230106.doamin.Demo0106DomainBook001;
-import com.stssm.github.io.junw.bbb018spring20230106.doamin.Demo0106DomainUser001;
-import org.springframework.web.bind.annotation.DeleteMapping;
+import com.stssm.github.io.junw.bbb018spring20230106.domain.Demo0106DomainBook001;
+import com.stssm.github.io.junw.bbb018spring20230106.domain.Demo0106DomainUser001;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;

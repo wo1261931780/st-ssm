@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb016spring20230104.doamin;
+package com.stssm.github.io.junw.bbb016spring20230104.domain;
 
 import java.util.Arrays;
 

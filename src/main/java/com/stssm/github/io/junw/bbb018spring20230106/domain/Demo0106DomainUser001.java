@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb018spring20230106.doamin;
+package com.stssm.github.io.junw.bbb018spring20230106.domain;
 
 public class Demo0106DomainUser001 {
 	private String name;
