@@ -231,6 +231,23 @@
 			</plugin>
 		</plugins>
 	</build>
+	<!--<build>-->
+	<!--下面是使用tomcat来启动项目的配置-->
+	<!--因为课程中使用的是tomcat服务器-->
+	<!--但是我们这里使用的是spring作为容器-->
+	<!--所以先保留一下，后面自己测试的时候说不定要使用-->
+	<!--	<plugins>-->
+	<!--		<plugin>-->
+	<!--			<groupId>org.apache.tomcat.maven</groupId>-->
+	<!--			<artifactId>tomcat7-maven-plugin</artifactId>-->
+	<!--			<version>2.1</version>-->
+	<!--			<configuration>-->
+	<!--				<port>80</port>-->
+	<!--				<path>/</path>-->
+	<!--			</configuration>-->
+	<!--		</plugin>-->
+	<!--	</plugins>-->
+	<!--</build>-->
 	<repositories>
 		<repository>
 			<id>spring-releases</id>
