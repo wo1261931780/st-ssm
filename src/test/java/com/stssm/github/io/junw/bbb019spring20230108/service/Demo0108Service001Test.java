@@ -32,7 +32,7 @@ public class Demo0108Service001Test {
 
 	@Test
 	public void testDelete() {
-		int byId = demo0108Service001.deleteById(1);
+		Boolean byId = demo0108Service001.deleteById(1);
 		System.out.println(byId);
 	}
 
