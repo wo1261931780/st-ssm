@@ -29,7 +29,7 @@ public interface Demo0108Service001 {
 	 * @param demo0108DomainTblBook 实例对象
 	 * @return 影响行数
 	 */
-	int update(Demo0108DomainTblBook demo0108DomainTblBook);
+	Boolean update(Demo0108DomainTblBook demo0108DomainTblBook);
 
 	/**
 	 * 通过主键删除数据
@@ -37,7 +37,7 @@ public interface Demo0108Service001 {
 	 * @param id 主键
 	 * @return 影响行数
 	 */
-	int deleteById(Integer id);
+	Boolean deleteById(Integer id);
 
 
 	/**

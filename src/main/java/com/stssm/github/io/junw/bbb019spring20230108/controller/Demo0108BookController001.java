@@ -22,7 +22,7 @@ import java.util.List;
  * @since 2023-01-08 11:37:04
  */
 @RestController
-@RequestMapping("/TblBookController")
+@RequestMapping("/Demo0108BookController001")
 public class Demo0108BookController001 {
 	// 这里注意一下，业务层的接口需要使用Junit去完成测试
 	// 然后表现层的，需要使用postman做测试
@@ -70,11 +70,11 @@ public class Demo0108BookController001 {
 	 * @return 编辑结果
 	 */
 	@PutMapping
-	public int update(@RequestBody Demo0108DomainTblBook demo0108DomainTblBook) {
+	public Boolean update(@RequestBody Demo0108DomainTblBook demo0108DomainTblBook) {
 		// 上面的实体类，都是从请求体中获取
 		// 有的时候是json格式的字符串
 		// 所以这里需要添加@RequestBody这个注解
-		int update = demo0108Service001.update(demo0108DomainTblBook);
+		Boolean update = demo0108Service001.update(demo0108DomainTblBook);
 		return update;
 	}
 
@@ -85,17 +85,17 @@ public class Demo0108BookController001 {
 	 * @return 删除是否成功
 	 */
 	@DeleteMapping("/{id}")
-	public int deleteById(@PathVariable Integer id) {
-		int id1 = demo0108Service001.deleteById(id);
+	public Boolean deleteById(@PathVariable Integer id) {
+		Boolean id1 = demo0108Service001.deleteById(id);
 		return id1;
 	}
 
-// 强调完表现层数据的封装模型以后，
-// 我们就大概确定了和前端人员，联调的结果
-// 根据封装好的模型，我们可以确定里面需要填充什么样的信息
-// 因为我们这里查询，get出来的结果，也全部都是给表现层使用的
+	// 强调完表现层数据的封装模型以后，
+	// 我们就大概确定了和前端人员，联调的结果
+	// 根据封装好的模型，我们可以确定里面需要填充什么样的信息
+	// 因为我们这里查询，get出来的结果，也全部都是给表现层使用的
 
-	//
+
 	// /**
 	//  * 分页查询
 	//  *

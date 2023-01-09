@@ -31,10 +31,8 @@ import static com.stssm.github.io.junw.bbb019spring20230108.controller.Demo0108C
  * @since 2023-01-08 11:37:04
  */
 @RestController
-@RequestMapping("/TblBookController")
+@RequestMapping("/Demo0108BookController002")
 public class Demo0108BookController002 {
-	// 这里注意一下，业务层的接口需要使用Junit去完成测试
-	// 然后表现层的，需要使用postman做测试
 
 	/**
 	 * 服务对象
@@ -51,9 +49,6 @@ public class Demo0108BookController002 {
 	@PostMapping
 	public Demo0108ResultController001 saveOne(@RequestBody Demo0108DomainTblBook demo0108DomainTblBook) {
 		Boolean aBoolean = demo0108Service001.saveOne(demo0108DomainTblBook);
-		// 我们默认返回的都是经过统一包装的返回体
-		// 这样前端解析的时候就可以直接去拿data数据，
-		// 同时，前端解析数据的时候，直接根据我们定义出来的标准消息，就可以判断请求是否成功
 		return new Demo0108ResultController001(aBoolean, aBoolean.equals(Boolean.TRUE) ? POST_INSERT_CODE_OK : POST_INSERT_CODE_ERR);
 	}
 
@@ -66,13 +61,23 @@ public class Demo0108BookController002 {
 	@GetMapping("/{id}")
 	public Demo0108ResultController001 queryById(@PathVariable Integer id) {
 		Demo0108DomainTblBook demo0108DomainTblBook = demo0108Service001.queryById(id);
-		return new Demo0108ResultController001(demo0108DomainTblBook, GET_QUERY_CODE_OK);
+		Integer integer = demo0108DomainTblBook != null ? GET_QUERY_CODE_OK : GET_QUERY_CODE_ERR;
+		String returnMsg = demo0108DomainTblBook != null ? "查询成功" : "查询失败";
+		Demo0108ResultController001 resultController001 = new Demo0108ResultController001();
+		resultController001.setReturnCode(integer);
+		resultController001.setReturnMessage(returnMsg);
+		resultController001.setReturnData(demo0108DomainTblBook);
+		return resultController001;
 	}
 
 	@GetMapping("/{id}")
 	public Demo0108ResultController001 selectAll(@PathVariable Integer id) {
 		List<Demo0108DomainTblBook> demo0108DomainTblBookList = demo0108Service001.selectAll(id);
-		return new Demo0108ResultController001(demo0108DomainTblBookList, demo0108DomainTblBookList.size() == 0 ? GET_QUERY_CODE_OK : GET_QUERY_CODE_ERR);
+		Demo0108ResultController001 resultController001 = new Demo0108ResultController001();
+		resultController001.setReturnData(resultController001);
+		resultController001.setReturnMessage(demo0108DomainTblBookList != null ? "查询列表成功" : "查询列表失败");
+		resultController001.setReturnCode(demo0108DomainTblBookList != null ? GET_QUERY_CODE_OK : GET_QUERY_CODE_ERR);
+		return resultController001;
 	}
 
 	/**
@@ -83,11 +88,9 @@ public class Demo0108BookController002 {
 	 */
 	@PutMapping
 	public Demo0108ResultController001 update(@RequestBody Demo0108DomainTblBook demo0108DomainTblBook) {
-		// 上面的实体类，都是从请求体中获取
-		// 有的时候是json格式的字符串
-		// 所以这里需要添加@RequestBody这个注解
-		int update = demo0108Service001.update(demo0108DomainTblBook);
-		return new Demo0108ResultController001(update, update == 0 ? POST_UPDATE_CODE_OK : POST_UPDATE_CODE_ERR);
+		Boolean update = demo0108Service001.update(demo0108DomainTblBook);
+		// return new Demo0108ResultController001(update, update == 0 ? POST_UPDATE_CODE_OK : POST_UPDATE_CODE_ERR);
+		return new Demo0108ResultController001(update, update ? POST_UPDATE_CODE_OK : POST_UPDATE_CODE_ERR);
 	}
 
 	/**
@@ -98,7 +101,7 @@ public class Demo0108BookController002 {
 	 */
 	@DeleteMapping("/{id}")
 	public Demo0108ResultController001 deleteById(@PathVariable Integer id) {
-		int id1 = demo0108Service001.deleteById(id);
-		return new Demo0108ResultController001(id1, id1 == 0 ? DELETE_CODE_OK : DELETE_CODE_ERR);
+		Boolean id1 = demo0108Service001.deleteById(id);
+		return new Demo0108ResultController001(id1, id1 ? DELETE_CODE_OK : DELETE_CODE_ERR);
 	}
 }

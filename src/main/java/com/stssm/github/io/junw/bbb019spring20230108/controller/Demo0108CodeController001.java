@@ -9,4 +9,8 @@ public class Demo0108CodeController001 {
 	public static final Integer DELETE_CODE_ERR = 20020;
 	public static final Integer POST_UPDATE_CODE_ERR = 20030;
 	public static final Integer GET_QUERY_CODE_ERR = 20040;
+	public static final Integer EXCEPTION_CODE_ERR = 50010;
+	public static final Integer UNKNOWN_EXCEPTION_CODE_ERR = 50099;
+	public static final Integer POST_EXCEPTION_CODE_ERR = 50020;
+	public static final Integer GET_EXCEPTION_CODE_ERR = 50030;
 }
