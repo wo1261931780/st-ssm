@@ -17,7 +17,6 @@ public class Demo0108Service001Test {
 	@Autowired
 	private Demo0108Service001 demo0108Service001;
 
-
 	@Test
 	public void testById() {
 		Demo0108DomainTblBook demo0108DomainTblBook = demo0108Service001.queryById(1);
@@ -35,6 +34,4 @@ public class Demo0108Service001Test {
 		Boolean byId = demo0108Service001.deleteById(1);
 		System.out.println(byId);
 	}
-
-
 }
