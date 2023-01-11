@@ -1,0 +1,67 @@
+spring:
+  profiles:
+    active: dev
+
+#这里其实是一模一样的配置文件
+#如果我的配置同时存在
+#那么这里的配置文件，优先级会高于外面的配置文件
+# Path: src\main\resources\config\application-dev.yml
+
+#这里可以顺带说一下配置文件的生效优先级：
+#首先是jar包所在目录
+#然后是classpath下的config目录
+#然后是classpath下的application.yml
+#然后是classpath下的application.properties
+
+#我们可以根据生效的优先级，来进行配置文件的覆盖
+#比如我上了一个新项目，要临时修改配置，就直接用jar包所在目录的配置文件覆盖掉
+
+
+---
+server:
+  port: 8090
+
+
+logging:
+  level:
+    root: debug
+
+
+name:
+  data:
+    name1: 123
+    name2: 222
+    subject:
+      - math
+      - chinese
+      - chemistry
+
+spring:
+  config:
+    activate:
+      on-profile: ${spring.profiles.active}
+
+---
+
+server:
+  port: 8090
+logging:
+  level:
+    root: debug
+spring:
+  config:
+    activate:
+      on-profile: test
+
+
+---
+
+server:
+  port: 8080
+logging:
+  level:
+    root: debug
+spring:
+  config:
+    activate:
+      on-profile: prod

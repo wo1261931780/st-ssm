@@ -1,0 +1,18 @@
+#spring:
+#  datasource:
+#    name: root
+#    password: root
+#    url: jdbc:mysql://localhost:3306/employee
+#    driver-class-name: com.mysql.jdbc.Driver
+#我们使用druid数据源的时候
+#直接设置type就可以解决
+
+
+spring:
+  datasource:
+    name: root
+    password: root
+    url: jdbc:mysql://localhost:3306/employee?serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+#  ?serverTimezone=UTC这个问题，是因为mysql8.0版本的时候，时区的问题，需要加上这个参数
