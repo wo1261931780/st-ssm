@@ -1,9 +1,6 @@
 package com.stssm.github.io.junw.bbb005spring20220804.dao.impl;
 
 import com.stssm.github.io.junw.bbb005spring20220804.dao.Demo0804Dao001;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 

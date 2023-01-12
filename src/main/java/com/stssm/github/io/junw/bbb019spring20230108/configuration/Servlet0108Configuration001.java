@@ -2,7 +2,7 @@ package com.stssm.github.io.junw.bbb019spring20230108.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class servlet0108configuration001 extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class Servlet0108Configuration001 extends AbstractAnnotationConfigDispatcherServletInitializer {
 	protected Class<?>[] getRootConfigClasses() {
 		return new Class[]{Spring0108Configuration001.class};
 		// 上下两个方法制造出来的对象不是同一个

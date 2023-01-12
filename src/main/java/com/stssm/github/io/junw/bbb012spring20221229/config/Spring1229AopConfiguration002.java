@@ -3,8 +3,6 @@ package com.stssm.github.io.junw.bbb012spring20221229.config;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.PropertySource;
 
 /**
  * Created by Intellij IDEA.

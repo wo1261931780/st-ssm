@@ -7,6 +7,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * @author junw
  */
@@ -18,7 +21,7 @@ public class Demo0108Interceptor002 implements HandlerInterceptor {
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		String contentType = request.getContentType();
-		System.out.println("我是preHandle方法" + contentType);
+		demorun.debug("我是preHandle方法" + contentType);
 		// 这里可以根据api，直接拿到原始的数据
 		System.out.println(handler);
 		// 这里返回的结果：控制器类+方法+参数
@@ -31,11 +34,11 @@ public class Demo0108Interceptor002 implements HandlerInterceptor {
 
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-		System.out.println("我是postHandle方法");
+		demorun.debug("我是postHandle方法");
 	}
 
 	@Override
 	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-		System.out.println("我是afterCompletion方法");
+		demorun.debug("我是afterCompletion方法");
 	}
 }

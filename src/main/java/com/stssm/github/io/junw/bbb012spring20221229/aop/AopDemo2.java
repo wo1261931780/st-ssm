@@ -1,15 +1,7 @@
 package com.stssm.github.io.junw.bbb012spring20221229.aop;
 
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.Signature;
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
-
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
