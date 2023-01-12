@@ -1,6 +1,6 @@
 package com.stssm.github.io.junw.bbb015spring20230103;
 
-import com.stssm.github.io.junw.bbb015spring20230103.configuration.spring0103Configuration001;
+import com.stssm.github.io.junw.bbb015spring20230103.configuration.Spring0103Configuration001;
 import com.stssm.github.io.junw.bbb015spring20230103.dao.Demo0103Dao001;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -11,8 +11,8 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  */
 public class Bbb042 {
 	public static void main(String[] args) {
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(spring0103Configuration001.class);
-		// context.register(spring0103Configuration001.class);
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Spring0103Configuration001.class);
+		// context.register(Spring0103Configuration001.class);
 		// 这里的注册和上面的一模一样，都是进入spring的管理
 		Demo0103Dao001 demo0103Dao001 = context.getBean(Demo0103Dao001.class);
 		demorun.debug("我是获取到的demo0104Dao001对象：" + demo0103Dao001);

@@ -1,7 +1,7 @@
 package com.stssm.github.io.junw.bbb019spring20230108.service;
 
 
-import com.stssm.github.io.junw.bbb019spring20230108.configuration.spring0108configuration001;
+import com.stssm.github.io.junw.bbb019spring20230108.configuration.Spring0108Configuration001;
 import com.stssm.github.io.junw.bbb019spring20230108.domain.Demo0108DomainTblBook;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = spring0108configuration001.class)
+@ContextConfiguration(classes = Spring0108Configuration001.class)
 public class Demo0108Service001Test {
 	@Autowired
 	private Demo0108Service001 demo0108Service001;

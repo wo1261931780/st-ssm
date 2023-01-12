@@ -5,7 +5,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 /**
  * @author junw
  */
-public class springMvc0106SupportConfiguration001 extends WebMvcConfigurationSupport {
+public class SpringMvc0106SupportConfiguration001 extends WebMvcConfigurationSupport {
 	// 在这里启用webMvc的支持
 
 	@Override

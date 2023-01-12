@@ -15,7 +15,7 @@ import javax.sql.DataSource;
  * @Date 2022-12-14-52  星期一
  * @description
  */
-public class mybatis1221configuration {
+public class Mybatis1221Configuration {
 	@Bean
 	public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
 		SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();

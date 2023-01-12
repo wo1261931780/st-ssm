@@ -8,7 +8,7 @@ import javax.servlet.Filter;
 /**
  * @author junw
  */
-public class servletContainerInit0106configuration extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class ServletContainerInit0106configuration extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected String[] getServletMappings() {
@@ -29,6 +29,6 @@ public class servletContainerInit0106configuration extends AbstractAnnotationCon
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[]{springMvc0106Configuration001.class};
+		return new Class[]{SpringMvc0106Configuration001.class};
 	}
 }

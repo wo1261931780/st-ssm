@@ -8,7 +8,7 @@ import javax.sql.DataSource;
 /**
  * @author junw
  */
-public class mybatis0108configuration001 {
+public class Mybatis0108Configuration001 {
 
 
 	@Bean

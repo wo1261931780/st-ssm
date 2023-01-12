@@ -10,5 +10,5 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 @ComponentScan({"com.stssm.github.io.junw.bbb019spring20230108.controller","com.stssm.github.io.junw.bbb019spring20230108.configuration"})
 @EnableWebMvc
-public class springMvc0108configuration001 {
+public class SpringMvc0108configuration001 {
 }

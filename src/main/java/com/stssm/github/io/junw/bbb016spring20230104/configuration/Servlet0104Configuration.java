@@ -1,7 +1,5 @@
-package com.stssm.github.io.junw.bbb017spring20230105.configuration;
+package com.stssm.github.io.junw.bbb016spring20230104.configuration;
 
-import com.stssm.github.io.junw.bbb016spring20230104.configuration.spring0104Configuration001;
-import com.stssm.github.io.junw.bbb016spring20230104.configuration.springMvc0104Configuration001;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -9,15 +7,15 @@ import javax.servlet.Filter;
 /**
  * @author junw
  */
-public class servlet0105configuration extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class Servlet0104Configuration extends AbstractAnnotationConfigDispatcherServletInitializer {
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class[]{spring0104Configuration001.class};
+		return new Class[]{Spring0104Configuration001.class};
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[]{springMvc0104Configuration001.class};
+		return new Class[]{SpringMvc0104Configuration001.class};
 	}
 
 	@Override

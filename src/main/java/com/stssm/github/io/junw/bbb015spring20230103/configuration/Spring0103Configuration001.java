@@ -15,7 +15,7 @@ import org.springframework.stereotype.Controller;
 				classes = Controller.class
 		)
 )
-public class spring0103Configuration001 {
+public class Spring0103Configuration001 {
 // @ComponentScan({"com.stssm.github.io.junw.bbb016spring20230104.service", "com.stssm.github.io.junw.bbb016spring20230104.dao"})
 // 解释一下上面的两种类型
 // 首先我设置全部扫描

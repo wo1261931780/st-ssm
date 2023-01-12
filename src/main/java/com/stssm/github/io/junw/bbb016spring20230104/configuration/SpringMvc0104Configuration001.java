@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 @ComponentScan({"com.stssm.github.io.junw.bbb016spring20230104.controller"})
 @EnableWebMvc
-public class springMvc0104Configuration001 {
+public class SpringMvc0104Configuration001 {
 	// @EnableWebMvc
 	// 开启由json数据转化为对象的功能
 

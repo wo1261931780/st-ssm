@@ -15,7 +15,7 @@ import javax.sql.DataSource;
  * @Date 2022-12-14-42  星期一
  * @description
  */
-public class jdbc1221Configuration001 {
+public class Jdbc1221Configuration001 {
 
 	@Value("${jdbc1221.driver}")
 	private String driver;

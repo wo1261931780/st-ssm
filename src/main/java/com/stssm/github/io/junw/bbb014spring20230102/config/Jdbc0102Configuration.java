@@ -5,11 +5,11 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
-import java.lang.management.PlatformLoggingMXBean;
+
 /**
  * @author junw
  */
-public class jdbc0102configuration {
+public class Jdbc0102Configuration {
 	// 底下配置了jdbc的参数和mybatis的参数，否则不能生效
 
 	@Bean

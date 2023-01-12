@@ -7,5 +7,5 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan("com.stssm.github.io.junw.bbb016spring20230104.controller")
-public class springMvc0103Configuration001 {
+public class SpringMvc0103Configuration001 {
 }
