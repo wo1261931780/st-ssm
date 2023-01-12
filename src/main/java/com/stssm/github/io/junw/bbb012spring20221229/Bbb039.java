@@ -2,12 +2,8 @@ package com.stssm.github.io.junw.bbb012spring20221229;
 
 import com.stssm.github.io.junw.bbb012spring20221229.config.Spring1229AopConfiguration002;
 import com.stssm.github.io.junw.bbb012spring20221229.dao.Demo1229Dao;
-import com.stssm.github.io.junw.bbb012spring20221229.dao.impl.Demo1229DaoImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.

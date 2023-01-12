@@ -2,7 +2,6 @@ package com.stssm.github.io.junw.bbb011spring20221226;
 
 import com.stssm.github.io.junw.bbb011spring20221226.config.Spring1226Configuration001;
 import com.stssm.github.io.junw.bbb011spring20221226.dao.Demo1226Dao;
-import com.stssm.github.io.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

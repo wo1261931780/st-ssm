@@ -5,7 +5,6 @@ import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102LogService0
 import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102Service002;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 /**

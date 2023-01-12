@@ -5,7 +5,6 @@ import com.stssm.github.io.junw.bbb010spring20221220.domain.Account1221;
 import com.stssm.github.io.junw.bbb010spring20221220.service.Book1221Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.List;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 

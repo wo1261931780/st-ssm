@@ -2,7 +2,6 @@ package com.stssm.github.io.junw.bbb010spring20221220.dao;
 
 import com.stssm.github.io.junw.bbb010spring20221220.domain.Account1221;
 import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Delete.List;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;

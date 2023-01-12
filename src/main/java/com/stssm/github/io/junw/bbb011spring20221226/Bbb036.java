@@ -5,7 +5,6 @@ import com.stssm.github.io.junw.bbb011spring20221226.dao.Demo1226Dao;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**

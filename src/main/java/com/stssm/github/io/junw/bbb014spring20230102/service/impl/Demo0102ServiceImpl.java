@@ -5,7 +5,6 @@ import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * @author junw
