@@ -19,7 +19,7 @@ public class Demo0106Controller003 {
 
 	@PostMapping
 	public String toSave(@RequestBody Demo0106DomainUser001 demo0106DomainUser001) {
-		System.out.println(demo0106DomainUser001);
+		demorun.debug(""+demo0106DomainUser001);
 		return "toSave 方法执行";
 	}
 

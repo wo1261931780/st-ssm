@@ -23,10 +23,10 @@ public class Demo0108Interceptor002 implements HandlerInterceptor {
 		String contentType = request.getContentType();
 		demorun.debug("我是preHandle方法" + contentType);
 		// 这里可以根据api，直接拿到原始的数据
-		System.out.println(handler);
+		demorun.debug(""+handler);
 		// 这里返回的结果：控制器类+方法+参数
 		HandlerMethod demoHandlerMethod = (HandlerMethod) handler;
-		System.out.println(demoHandlerMethod);// 通过反射拿到原始执行的对象
+		demorun.debug(""+demoHandlerMethod);// 通过反射拿到原始执行的对象
 		// demoHandlerMethod.getMethod();
 		// 拿到对象以后，执行任何方法都是可以的
 		return true;

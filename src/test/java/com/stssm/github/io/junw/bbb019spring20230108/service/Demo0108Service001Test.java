@@ -20,18 +20,18 @@ public class Demo0108Service001Test {
 	@Test
 	public void testById() {
 		Demo0108DomainTblBook demo0108DomainTblBook = demo0108Service001.queryById(1);
-		System.out.println(demo0108DomainTblBook);
+		demorun.debug(""+demo0108DomainTblBook);
 	}
 
 	@Test
 	public void testGetAll() {
 		List<Demo0108DomainTblBook> demo0108DomainTblBooks = demo0108Service001.selectAll(1);
-		System.out.println(demo0108DomainTblBooks);
+		demorun.debug(""+demo0108DomainTblBooks);
 	}
 
 	@Test
 	public void testDelete() {
 		Boolean byId = demo0108Service001.deleteById(1);
-		System.out.println(byId);
+		demorun.debug(""+byId);
 	}
 }

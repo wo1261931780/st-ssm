@@ -21,10 +21,10 @@ public class Bbb035 {
 		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Spring1226Configuration001.class);
 		Demo1226Dao demo1226Dao = applicationContext.getBean(Demo1226Dao.class);
 		demo1226Dao.show();
-		System.out.println(demo1226Dao);
+		demorun.debug(""+demo1226Dao);
 		// com.stssm.github.io.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl@babafc2
 		// 不管后面有没有匹配上我们的aop方法，这里都会创建一个实现类对应的对象
-		System.out.println(demo1226Dao.getClass());// class jdk.proxy2.$Proxy20
+		demorun.debug(""+demo1226Dao.getClass());// class jdk.proxy2.$Proxy20
 		// 这里创建的就是一个代理对象
 		// aop本质上，就是通过代理实现的
 	}

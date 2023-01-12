@@ -5,6 +5,8 @@ import com.stssm.github.io.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
@@ -27,6 +29,6 @@ public class Bbb033 {
 		// 切入点在连接点中
 		// 一定是连接点的范围更大
 		// ===================================================================
-		System.out.println(demo1226dao);
+		demorun.debug("" + demo1226dao);
 	}
 }

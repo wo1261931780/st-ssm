@@ -20,25 +20,25 @@ public class Demo0106Controller002 {
 
 	@RequestMapping(method = RequestMethod.POST)
 	public String toSave(@RequestBody Demo0106DomainUser001 demo0106DomainUser001) {
-		System.out.println(demo0106DomainUser001);
+		demorun.debug(""+demo0106DomainUser001);
 		return "toSave 方法执行";
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	public String toDelete(@PathVariable int id) {
-		System.out.println(id);
+		demorun.debug(""+id);
 		return "toDelete 方法执行";
 	}
 
 	@RequestMapping(method = RequestMethod.PUT)
 	public String toUpdate(@RequestBody Demo0106DomainUser001 demo0106DomainUser001) {
-		System.out.println(demo0106DomainUser001);
+		demorun.debug(""+demo0106DomainUser001);
 		return "toUpdate 方法执行";
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public String toGetById(@PathVariable int id) {
-		System.out.println(id);
+		demorun.debug(""+id);
 		return "toGetById 方法执行";
 	}
 }

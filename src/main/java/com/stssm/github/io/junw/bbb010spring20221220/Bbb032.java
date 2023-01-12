@@ -4,7 +4,6 @@ import com.stssm.github.io.junw.bbb010spring20221220.config.Spring1221Configurat
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
