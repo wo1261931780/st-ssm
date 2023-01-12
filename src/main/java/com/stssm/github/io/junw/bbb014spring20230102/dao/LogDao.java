@@ -7,6 +7,10 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface LogDao {
+	/**
+	 * 新增日志
+	 * @param info 等级
+	 */
 	@Insert("insert into tbl_log (info,createDate) values(#{info,jdbcType=VARCHAR},now())")
 	void insertLog(String info);
 }

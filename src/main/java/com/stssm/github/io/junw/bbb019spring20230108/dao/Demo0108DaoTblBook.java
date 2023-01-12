@@ -28,9 +28,10 @@ public interface Demo0108DaoTblBook {
 	Demo0108DomainTblBook queryById(Integer id);
 
 	/**
-	 * 查询所有数据
+	 * 查询所有
 	 *
-	 * @return list
+	 * @param id id
+	 * @return 返回一个list对象集合
 	 */
 	@Select("select * from study001sql.tbl_book;")
 	List<Demo0108DomainTblBook> selectAll(Integer id);

@@ -10,13 +10,31 @@ package com.stssm.github.io.junw.bbb011spring20221226.dao;
  * @description
  */
 public interface Demo1226Dao {
-
+	/**
+	 * show方法
+	 */
 	void show();
 
+	/**
+	 * 删除
+	 *
+	 * @param demo 对象id
+	 */
 	void delete(int demo);
 
+	/**
+	 * 更新
+	 */
 	void update();
+
+	/**
+	 * 选择一个对象
+	 */
 	void select();
+
+	/**
+	 * 保存一个对象
+	 */
 	void save();
 
 }

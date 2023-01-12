@@ -4,6 +4,7 @@ import com.stssm.github.io.junw.bbb019spring20230108.domain.Demo0108DomainTblBoo
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+
 /**
  * @author junw
  */
@@ -18,9 +19,10 @@ public interface Demo0108Service001 {
 	Demo0108DomainTblBook queryById(Integer id);
 
 	/**
-	 * 查询所有数据
+	 * 返回所有数据
 	 *
-	 * @return list
+	 * @param id id
+	 * @return 返回一个list对象集合
 	 */
 	List<Demo0108DomainTblBook> selectAll(Integer id);
 

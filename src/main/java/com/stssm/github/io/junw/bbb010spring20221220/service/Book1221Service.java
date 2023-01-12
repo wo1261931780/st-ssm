@@ -10,5 +10,8 @@ package com.stssm.github.io.junw.bbb010spring20221220.service;
  * @description
  */
 public interface Book1221Service {
+	/**
+	 * show方法
+	 */
 	void serviceShow();
 }
