@@ -11,7 +11,9 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
-
+/**
+ * @author junw
+ */
 @Aspect
 @Component
 public class Demo0102Aop {
@@ -19,7 +21,7 @@ public class Demo0102Aop {
 	private void cutIn() {
 	}
 
-	/*
+	/**
 	* 环绕通知是最核心的通知，
 	* 因为环绕通知可以模拟出其他的通知类型
 	* */

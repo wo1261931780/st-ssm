@@ -1,5 +1,8 @@
 package com.stssm.github.io.junw.bbb016spring20230104.domain;
 
+/**
+ * @author junw
+ */
 public class Demo0104DomainAddress {
 	private String localPlace;
 	private int localPrice;

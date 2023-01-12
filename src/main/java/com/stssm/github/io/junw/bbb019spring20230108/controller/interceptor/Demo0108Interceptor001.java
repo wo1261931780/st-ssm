@@ -6,7 +6,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+/**
+ * @author junw
+ */
 @Component
 public class Demo0108Interceptor001 implements HandlerInterceptor {
 	// 拦截器是在spring环境中工作的

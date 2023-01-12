@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
+/**
+ * @author junw
+ */
 @Controller
 @RequestMapping("/Demo0104Controller004")
 public class Demo0104Controller004 {

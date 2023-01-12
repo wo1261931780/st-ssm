@@ -4,7 +4,9 @@ import com.stssm.github.io.junw.bbb019spring20230108.domain.Demo0108DomainTblBoo
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-
+/**
+ * @author junw
+ */
 @Transactional
 public interface Demo0108Service001 {
 	/**

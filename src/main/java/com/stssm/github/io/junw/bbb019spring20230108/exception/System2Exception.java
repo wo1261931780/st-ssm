@@ -1,6 +1,8 @@
 package com.stssm.github.io.junw.bbb019spring20230108.exception;
-
-public class SystemExceptions2 extends RuntimeException{
+/**
+ * @author junw
+ */
+public class System2Exception extends RuntimeException{
 	private Integer exceptionCode;
 
 	public Integer getExceptionCode() {
@@ -11,15 +13,15 @@ public class SystemExceptions2 extends RuntimeException{
 		this.exceptionCode = exceptionCode;
 	}
 
-	public SystemExceptions2() {
+	public System2Exception() {
 	}
 
-	public SystemExceptions2(String message, Integer exceptionCode) {
+	public System2Exception(String message, Integer exceptionCode) {
 		super(message);
 		this.exceptionCode = exceptionCode;
 	}
 
-	public SystemExceptions2(String message, Throwable cause, Integer exceptionCode) {
+	public System2Exception(String message, Throwable cause, Integer exceptionCode) {
 		super(message, cause);
 		this.exceptionCode = exceptionCode;
 	}

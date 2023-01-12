@@ -2,7 +2,9 @@ package com.stssm.github.io.junw.bbb018spring20230106.configuration;
 
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
-
+/**
+ * @author junw
+ */
 public class springMvc0106SupportConfiguration001 extends WebMvcConfigurationSupport {
 	// 在这里启用webMvc的支持
 

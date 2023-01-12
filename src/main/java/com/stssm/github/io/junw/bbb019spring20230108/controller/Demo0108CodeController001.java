@@ -1,5 +1,7 @@
 package com.stssm.github.io.junw.bbb019spring20230108.controller;
-
+/**
+ * @author junw
+ */
 public class Demo0108CodeController001 {
 	public static final Integer POST_INSERT_CODE_OK = 20011;
 	public static final Integer DELETE_CODE_OK = 20021;

@@ -9,7 +9,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
+/**
+ * @author junw
+ */
 @Configuration
 @ComponentScan({"com.stssm.github.io.junw.bbb019spring20230108.controller","com.stssm.github.io.junw.bbb019spring20230108.configuration"})
 @EnableWebMvc

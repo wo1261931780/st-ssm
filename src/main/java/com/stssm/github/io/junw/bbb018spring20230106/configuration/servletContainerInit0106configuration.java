@@ -5,6 +5,9 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 import javax.servlet.Filter;
 
+/**
+ * @author junw
+ */
 public class servletContainerInit0106configuration extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override

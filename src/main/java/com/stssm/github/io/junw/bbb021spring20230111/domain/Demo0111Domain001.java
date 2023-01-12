@@ -1,5 +1,8 @@
 package com.stssm.github.io.junw.bbb021spring20230111.domain;
 
+/**
+ * @author junw
+ */
 public class Demo0111Domain001 {
 	private int age;
 	private String name;

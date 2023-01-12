@@ -1,5 +1,7 @@
 package com.stssm.github.io.junw.bbb019spring20230108.domain;
-
+/**
+ * @author junw
+ */
 public class Demo0108DomainTblBook {
 	private Integer id;
 

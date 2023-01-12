@@ -5,6 +5,9 @@ import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102LogService0
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author junw
+ */
 @Service
 public class Demo0102LogService001Impl implements Demo0102LogService001 {
 	@Autowired

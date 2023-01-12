@@ -1,5 +1,7 @@
 package com.stssm.github.io.junw.bbb018spring20230106.domain;
-
+/**
+ * @author junw
+ */
 public class Demo0106DomainBook001 {
 	private String bookName;
 	private int bookPrice;

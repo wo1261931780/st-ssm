@@ -4,6 +4,9 @@ import com.stssm.github.io.junw.bbb021spring20230111.domain.Demo0111Domain001;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
+/**
+ * @author junw
+ */
 @Mapper
 public interface Demo0111Dao001 {
 	// 这里的Mapper，也就是需要给spring去完成管理

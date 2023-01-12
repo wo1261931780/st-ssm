@@ -6,6 +6,9 @@ import org.springframework.stereotype.Repository;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
+/**
+ * @author junw
+ */
 @Repository
 public class Demo0102DaoImpl implements Demo0102Dao {
 	@Override

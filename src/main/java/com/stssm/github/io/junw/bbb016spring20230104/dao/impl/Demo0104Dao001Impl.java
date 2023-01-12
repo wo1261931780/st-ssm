@@ -5,6 +5,9 @@ import org.springframework.stereotype.Repository;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
+/**
+ * @author junw
+ */
 @Repository
 public class Demo0104Dao001Impl implements Demo0104Dao001 {
 	@Override

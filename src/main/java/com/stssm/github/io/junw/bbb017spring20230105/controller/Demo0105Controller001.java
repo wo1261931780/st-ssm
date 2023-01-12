@@ -9,11 +9,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
+/**
+ * @author junw
+ */
 @Controller
 public class Demo0105Controller001 {
 	@RequestMapping(value = "/insert", method = RequestMethod.POST)
 	@ResponseBody
-	public String toInsert(@RequestBody Demo0105DomainUser001 Demo0105DomainUser001) {
+	public String toInsert(@RequestBody Demo0105DomainUser001 demo0105DomainUser001) {
 		System.out.println("我是Demo0105Controller001中的toInsert方法");
 		return "";
 	}
@@ -28,21 +31,21 @@ public class Demo0105Controller001 {
 
 	@RequestMapping(value = "/change", method = RequestMethod.POST)
 	@ResponseBody
-	public String toChange(@RequestBody Demo0105DomainUser001 Demo0105DomainUser001) {
+	public String toChange(@RequestBody Demo0105DomainUser001 demo0105DomainUser001) {
 		System.out.println("我是Demo0105Controller001中的toChange方法");
 		return "";
 	}
 
 	@RequestMapping(value = "/getOne", method = RequestMethod.GET)
 	@ResponseBody
-	public String toGetOneById(@RequestBody Demo0105DomainUser001 Demo0105DomainUser001) {
+	public String toGetOneById(@RequestBody Demo0105DomainUser001 demo0105DomainUser001) {
 		System.out.println("我是Demo0105Controller001中的toGetOneById方法");
 		return "";
 	}
 
 	@RequestMapping(value = "/query", method = RequestMethod.GET)
 	@ResponseBody
-	public String toQuery(@RequestBody Demo0105DomainUser001 Demo0105DomainUser001) {
+	public String toQuery(@RequestBody Demo0105DomainUser001 demo0105DomainUser001) {
 		System.out.println("我是Demo0105Controller001中的toQuery方法");
 		return "";
 	}

@@ -7,7 +7,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+/**
+ * @author junw
+ */
 @Component
 public class Demo0108Interceptor002 implements HandlerInterceptor {
 	// 三个方法中，实用性最强大的还是preHandle

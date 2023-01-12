@@ -8,7 +8,9 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
 
-
+/**
+ * @author junw
+ */
 public class jdbc0108configuration001 {
 	@Value("${jdbc.password}")
 	private String password;

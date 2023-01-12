@@ -5,7 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-
+/**
+ * @author junw
+ */
 @Configuration
 @ComponentScan({"com.stssm.github.io.junw.bbb019spring20230108.service"})
 @PropertySource("jdbc20230108.properties")

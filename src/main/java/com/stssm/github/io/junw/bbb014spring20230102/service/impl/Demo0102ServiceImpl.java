@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
+/**
+ * @author junw
+ */
 @Service
 public class Demo0102ServiceImpl implements Demo0102Service {
 	@Autowired
@@ -14,7 +17,8 @@ public class Demo0102ServiceImpl implements Demo0102Service {
 
 	@Override
 	public Boolean show0102service(String url, String paw) {
-		if (url.equals("123")) {
+		String demo="123";
+		if (demo.equals(url)) {
 			// demorun.debug("我是paw");
 			// paw = paw.trim();
 			// demorun.debug("我是paw:" + paw + "====");

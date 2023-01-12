@@ -20,7 +20,8 @@ public class Demo1226DaoImpl implements Demo1226Dao {
 	public void show() {
 		// demorun.debug("我是show方法");
 		long startTimeMillis = System.currentTimeMillis();
-		for (int i = 0; i < 10; i++) {
+		int demo = 10;
+		for (int i = 0; i < demo; i++) {
 			demorun.debug("我是show方法");
 		}
 		long endTimeMillis = System.currentTimeMillis();

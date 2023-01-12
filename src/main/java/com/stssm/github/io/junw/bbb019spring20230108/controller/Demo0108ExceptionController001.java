@@ -1,8 +1,8 @@
 package com.stssm.github.io.junw.bbb019spring20230108.controller;
 
 
-import com.stssm.github.io.junw.bbb019spring20230108.exception.SystemExceptions;
-import com.stssm.github.io.junw.bbb019spring20230108.exception.SystemExceptions2;
+import com.stssm.github.io.junw.bbb019spring20230108.exception.SystemException;
+import com.stssm.github.io.junw.bbb019spring20230108.exception.System2Exception;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class Demo0108ExceptionController001 {
 
 	@ExceptionHandler(Exception.class)
-	public Demo0108ResultController001 systemExceptionHandle(SystemExceptions systemExceptionHandle) {
+	public Demo0108ResultController001 systemExceptionHandle(SystemException systemExceptionHandle) {
 		System.out.println("出现了系统级别的异常，信息：" + systemExceptionHandle);
 		Demo0108ResultController001 resultController001 = new Demo0108ResultController001();
 		resultController001.setReturnMessage(systemExceptionHandle.getMessage());
@@ -29,7 +29,7 @@ public class Demo0108ExceptionController001 {
 	}
 
 	@ExceptionHandler(Exception.class)
-	public Demo0108ResultController001 systemExceptionHandle2(SystemExceptions2 systemExceptionHandle2) {
+	public Demo0108ResultController001 systemExceptionHandle2(System2Exception systemExceptionHandle2) {
 		System.out.println("出现了业务异常，信息：" + systemExceptionHandle2);
 		Demo0108ResultController001 resultController001 = new Demo0108ResultController001();
 		resultController001.setReturnMessage(systemExceptionHandle2.getMessage());

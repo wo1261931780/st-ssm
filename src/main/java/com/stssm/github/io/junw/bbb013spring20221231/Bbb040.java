@@ -9,6 +9,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
+
+/**
+ * @author junw
+ */
 public class Bbb040 {
 	public static void main(String[] args) {
 		ApplicationContext context = new AnnotationConfigApplicationContext(Spring1231Configuration.class);

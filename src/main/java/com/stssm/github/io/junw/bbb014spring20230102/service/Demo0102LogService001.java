@@ -3,7 +3,9 @@ package com.stssm.github.io.junw.bbb014spring20230102.service;
 
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-
+/**
+ * @author junw
+ */
 public interface Demo0102LogService001 {
 
 	@Transactional(propagation = Propagation.REQUIRES_NEW)

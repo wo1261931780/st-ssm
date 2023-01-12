@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * @author junw
+ */
 @Configuration
 @ComponentScan("com.stssm.github.io.junw.bbb014spring20230102")
 @EnableAspectJAutoProxy

@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb009spring20220919.service.Impl;
+package com.stssm.github.io.junw.bbb009spring20220919.service.impl;
 
 import com.stssm.github.io.junw.bbb009spring20220919.dao.Demo0919Dao001;
 import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919;

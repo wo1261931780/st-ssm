@@ -15,7 +15,9 @@ import java.util.Arrays;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
-
+/**
+ * @author junw
+ */
 @Component
 @Aspect
 public class Demo1231Aop {

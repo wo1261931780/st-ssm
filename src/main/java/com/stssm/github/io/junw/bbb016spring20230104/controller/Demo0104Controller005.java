@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Arrays;
 import java.util.List;
 
-
+/**
+ * @author junw
+ */
 @Controller
 @RequestMapping("/Demo0104Controller005")
 public class Demo0104Controller005 {
@@ -48,9 +50,9 @@ public class Demo0104Controller005 {
 
 	@RequestMapping("/getListHabits")
 	@ResponseBody
-	public String getListHabits(@RequestParam List<String> ListHabits) {
+	public String getListHabits(@RequestParam List<String> listHabits) {
 		// 如果不添加RequestParam，会导致报错
-		System.out.println("我是实体类中获取的list兴趣列表" + ListHabits);
+		System.out.println("我是实体类中获取的list兴趣列表" + listHabits);
 		return "list类型的结果返回成功";
 	}
 }

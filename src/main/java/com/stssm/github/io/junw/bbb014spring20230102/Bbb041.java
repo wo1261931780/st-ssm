@@ -1,13 +1,15 @@
 package com.stssm.github.io.junw.bbb014spring20230102;
 
 import com.stssm.github.io.junw.bbb014spring20230102.config.Spring0102configuration;
-import com.stssm.github.io.junw.bbb014spring20230102.dao.Demo0102Dao;
 import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102Service;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
+/**
+ * @author junw
+ */
 public class Bbb041 {
 	public static void main(String[] args) {
 		ApplicationContext context = new AnnotationConfigApplicationContext(Spring0102configuration.class);

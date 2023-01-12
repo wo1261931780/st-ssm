@@ -2,6 +2,9 @@ package com.stssm.github.io.junw.bbb015spring20230103.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+/**
+ * @author junw
+ */
 public class servletContainer0103InitConfiguration002 extends AbstractAnnotationConfigDispatcherServletInitializer {
 	@Override
 	protected Class<?>[] getRootConfigClasses() {

@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.stereotype.Controller;
 
+/**
+ * @author junw
+ */
 @Configuration
 @ComponentScan(value = "com.stssm.github.io.junw.bbb015spring20230103",
 		excludeFilters = @ComponentScan.Filter(

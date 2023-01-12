@@ -6,7 +6,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
-
+/**
+ * @author junw
+ */
 public class Bbb043 {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(spring0104Configuration001.class);

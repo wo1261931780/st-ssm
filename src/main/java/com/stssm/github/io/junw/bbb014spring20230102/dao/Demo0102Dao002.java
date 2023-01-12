@@ -4,6 +4,9 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
+/**
+ * @author junw
+ */
 @Repository
 public interface Demo0102Dao002 {
 	@Update("update tbl_account set money=money+#{money,jdbcType=DOUBLE} where name=#{inputName,jdbcType=VARCHAR}")

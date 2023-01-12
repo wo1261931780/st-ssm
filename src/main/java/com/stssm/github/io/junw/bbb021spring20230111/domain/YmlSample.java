@@ -5,7 +5,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
-
+/**
+ * @author junw
+ */
 @Component
 @ConfigurationProperties(prefix = "name.data")
 public class YmlSample {

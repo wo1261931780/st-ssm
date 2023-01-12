@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
-
+/**
+ * @author junw
+ */
 @Service
 public class Demo0102ServiceImpl002 implements Demo0102Service002 {
 	@Autowired

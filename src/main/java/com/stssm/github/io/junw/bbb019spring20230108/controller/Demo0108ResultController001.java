@@ -1,10 +1,13 @@
 package com.stssm.github.io.junw.bbb019spring20230108.controller;
-
+/**
+ * @author junw
+ */
 public class Demo0108ResultController001 {
 	// 这里面实际就是封装具体的返回结果
 	// 前端从这三个返回结果里面去拿具体的信息
 	// 这里面需要定义三个属性
 	// data，msg信息，请求和返回的类型
+
 	private Object returnData;
 	private Integer returnCode;
 	private String returnMessage;

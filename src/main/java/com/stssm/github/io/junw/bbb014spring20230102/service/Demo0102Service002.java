@@ -2,6 +2,9 @@ package com.stssm.github.io.junw.bbb014spring20230102.service;
 
 import org.springframework.transaction.annotation.Transactional;
 
+/**
+ * @author junw
+ */
 public interface Demo0102Service002 {
 	/**
 	 * 完成一次转账，汇入汇出操作合并

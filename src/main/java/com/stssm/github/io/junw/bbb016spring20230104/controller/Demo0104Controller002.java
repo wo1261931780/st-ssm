@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
+/**
+ * @author junw
+ */
 @Controller
 public class Demo0104Controller002 {
 	@RequestMapping("/Demo0104Controller002/delete")
