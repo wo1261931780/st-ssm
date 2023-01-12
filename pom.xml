@@ -11,8 +11,15 @@
 	<groupId>com.st-ssm.github.io</groupId>
 	<artifactId>st-ssm.github.io</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<!--boot程序可以不依赖tomcat和idea，直接打包为jar然后运行-->
+	<!--但是数据库是独立的，只要在jar项目中，指定好数据库连接，就可以直接使用了-->
+	<!--这就是所谓的前后端分离项目-->
 	<name>st-ssm.github.io</name>
 	<description>st-ssm.GitHub.io project for Spring Boot</description>
+	<!--复习之前学习的-->
+	<!--这里继承了一个项目-->
+	<!--而我们需要使用的pom依赖，在对应的项目中已经包含了，所以这里不需要再重复添加太多东西-->
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
@@ -23,6 +30,11 @@
 		<repackage.classifier/>
 		<spring-native.version>0.12.1</spring-native.version>
 	</properties>
+	<!--跟着父项目走，直接去找上面的依赖-->
+	<!--最后找到的是spring-boot-dependencies-->
+	<!--所有的依赖中，已经配置好了最佳的版本号，直接在这里继承就可以直接使用-->
+	<!--但是在父项目中，只是完成了配置，具体是否使用，是没有直接强制要求的-->
+	<!--所以，在spring boot项目中，部分依赖是不需要指定版本的，只需要说明具体的依赖种类，就可以完成导入-->
 	<dependencies>
 		<!--2022年7月30日15:24:38，手动导入这个依赖项-->
 		<!--才能去新建一个spring的xml配置-->
@@ -52,7 +64,27 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 			<version>3.0.1</version>
+			<!--起步依赖，这里就包含了spring web和spring mvc的依赖-->
+			<!--<exclusions>-->
+			<!--	<exclusion>-->
+			<!--		<groupId>org.springframework.boot</groupId>-->
+			<!--		<artifactId>spring-boot-starter-tomcat</artifactId>-->
+			<!--	</exclusion>-->
+			<!--这里又回到可选依赖和排除依赖的问题-->
+			<!--可选依赖是不透明的-->
+			<!--排除依赖是透明的-->
+			<!--我们要修改父类中的依赖，不使用tomcat，而使用jetty-->
+			<!--就需要使用排除依赖-->
+			<!--</exclusions>-->
 		</dependency>
+		<!--<dependency>-->
+		<!--	<groupId>org.springframework.boot</groupId>-->
+		<!--	<artifactId>spring-boot-starter-jetty</artifactId>-->
+		<!--因为starter-web中是没有jetty存在的，所以这里暂时不修改启动服务器-->
+		<!--</dependency>-->
+		<!--相比来说，jetty更加轻量，而且拓展性更强-->
+		<!--tomcat是apache的，而jetty是eclipse的-->
+		<!--以后可能jetty是开发的主流-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
@@ -117,7 +149,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<version>3.0.1</version>
+			<!--<version>3.0.1</version>-->
+			<!--这里的测试，实际上也是使用了依赖继承-->
+			<!--最终的目的，是简化开发-->
+			<!--如果这里没有直接说明，那么我们实际使用的是父项目中的依赖，直接导入就可以了-->
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -212,6 +247,17 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.3.0</version>
+				<!--添加这个插件以后，我们就可以直接使用pom中的配置文件-->
+				<!--接着，其它地方就可以解析这里的配置参数-->
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<useDefaultDelimiters>true</useDefaultDelimiters>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.experimental</groupId>
 				<artifactId>spring-aot-maven-plugin</artifactId>
 				<version>${spring-native.version}</version>
@@ -303,6 +349,8 @@
 	</pluginRepositories>
 
 	<profiles>
+		<!--下面实际上就是配置多环境运行的配置-->
+
 		<profile>
 			<id>native</id>
 			<properties>
@@ -342,6 +390,34 @@
 					</plugin>
 				</plugins>
 			</build>
+		</profile>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<spring.profiles.active>dev</spring.profiles.active>
+				<!--我们上面配置的文件，实际上也只能在pom文件中使用-->
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<spring.profiles.active>prod</spring.profiles.active>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<spring.profiles.active>test</spring.profiles.active>
+			</properties>
 		</profile>
 	</profiles>
 
