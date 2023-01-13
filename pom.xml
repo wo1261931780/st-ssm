@@ -53,7 +53,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<!--spring操作数据库的包-->
 			<artifactId>spring-boot-starter-data-jdbc</artifactId>
-			<version>2.7.6</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -90,16 +90,37 @@
 			<artifactId>spring-boot-starter-web-services</artifactId>
 			<version>3.0.1</version>
 		</dependency>
+		<!--<dependency>-->
+		<!--	&lt;!&ndash;这里是mybatis按照spring的标准，开发出来的整合包&ndash;&gt;-->
+		<!--	<groupId>org.mybatis.spring.boot</groupId>-->
+		<!--	<artifactId>mybatis-spring-boot-starter</artifactId>-->
+		<!--	<version>3.0.1</version>-->
+		<!--</dependency>-->
+		<!--使用mybatis-plus以后，这些东西就不需要了-->
 		<dependency>
-			<!--这里是mybatis按照spring的标准，开发出来的整合包-->
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>3.0.1</version>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>3.5.3.1</version>
+			<!--依赖中一共两个jar包-->
+			<!--一个是mybatis和spring整合包-->
+			<!--一个是mybatis包-->
+		</dependency>
+		<!--mybatis-plus的代码生成器-->
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-generator</artifactId>
+			<version>3.5.3.1</version>
+		</dependency>
+		<!--生成器对应的模板技术-->
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity-engine-core</artifactId>
+			<version>2.3</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
+			<version>4.0.1</version>
 			<scope>provided</scope>
 			<!--必须把scope变成provide，否则会和tomcat发生冲突-->
 		</dependency>
@@ -137,18 +158,23 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
-			<version>2.7.6</version>
+			<version>3.0.1</version>
 			<optional>true</optional>
 			<!--添加以后，可以避免自动装配报错-->
 		</dependency>
+		<!--lombok就是便捷开发实体类的依赖-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+			<scope>provided</scope>
+			<!--因为只是源代码中提供了对应的功能-->
+			<!--所以其实不需要参与源代码的打包-->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<version>3.0.1</version>
 			<!--<version>3.0.1</version>-->
 			<!--这里的测试，实际上也是使用了依赖继承-->
 			<!--最终的目的，是简化开发-->
@@ -210,6 +236,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+			<version>3.0.1</version>
 		</dependency>
 	</dependencies>
 

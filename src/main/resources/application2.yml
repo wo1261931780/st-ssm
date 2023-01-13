@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatisplus_db
+    username: root
+    password: 'LIU189592927292'
+  main:
+    banner-mode: off
+#关闭spring的控制台头文件
+mybatis-plus:
+  configuration:
+    #这里输入mybatisPlus的执行日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false
+    #设置控制台不打印mybatis的文件头
+    db-config:
+      id-type: assign_id
+      #设置全局使用这个id策略
+      #如果在配置中写好了这个，那么在domain中就不再需要重复设置
+      table-prefix: tbl_
+      #设置全局表头的前缀
+      logic-delete-field: deleted
+      #其实我们所有的操作，只要涉及到通用的配置，那么就可以在这里配置，然后统一生效
+      logic-delete-value: 1
+      logic-not-delete-value: 0
