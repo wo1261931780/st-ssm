@@ -1,8 +1,8 @@
 package com.stssm.github.io.junw.bbb023spring20230113;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.example.springbootdemo2.dao.Demo0113UserDao002;
-import com.example.springbootdemo2.domain.Demo0113Domain001;
+import com.stssm.github.io.junw.bbb023spring20230113.dao.Demo0113UserDao002;
+import com.stssm.github.io.junw.bbb023spring20230113.domain.Demo0113Domain001;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
