@@ -41,7 +41,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>5.3.24</version>
+			<version>6.0.3</version>
 			<!--这里不能修改context版本到6.0，否则aop会找不到class文件-->
 		</dependency>
 		<dependency>
@@ -127,7 +127,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>5.3.24</version>
+			<version>6.0.3</version>
 			<!--mvc是一个整合包-->
 			<!--除了基础的context包以外，还会有web包作为web开发的整合包-->
 		</dependency>
@@ -210,7 +210,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>5.3.24</version>
+			<version>6.0.3</version>
 		</dependency>
 		<!--底下的是spring整合mybatis的包-->
 		<!--这里，会根据mybatis的版本出现差异-->
@@ -231,7 +231,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>5.3.24</version>
+			<version>6.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
