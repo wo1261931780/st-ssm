@@ -41,7 +41,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>6.0.3</version>
+			<version>6.0.4</version>
 			<!--这里不能修改context版本到6.0，否则aop会找不到class文件-->
 		</dependency>
 		<dependency>
