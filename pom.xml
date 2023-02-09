@@ -127,7 +127,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>6.0.3</version>
+			<version>6.0.4</version>
 			<!--mvc是一个整合包-->
 			<!--除了基础的context包以外，还会有web包作为web开发的整合包-->
 		</dependency>
