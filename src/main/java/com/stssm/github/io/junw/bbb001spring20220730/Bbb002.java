@@ -18,7 +18,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Bbb002 {
 	public static final Logger demorun = LoggerFactory.getLogger("demorun.class");
 	public static final String FINAL_SPLIT = "=============================================";
-
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb002.xml");// 去xml中寻找，我已经配置好的文件
 		// 而这个文件，对应的就是一个已经配置好的ioc容器
