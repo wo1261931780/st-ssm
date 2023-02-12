@@ -53,12 +53,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<!--spring操作数据库的包-->
 			<artifactId>spring-boot-starter-data-jdbc</artifactId>
-			<version>3.0.2</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-			<version>3.0.2</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -88,7 +88,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
-			<version>3.0.1</version>
+			<version>3.0.2</version>
 		</dependency>
 		<!--<dependency>-->
 		<!--	&lt;!&ndash;这里是mybatis按照spring的标准，开发出来的整合包&ndash;&gt;-->
@@ -145,7 +145,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<version>3.0.2</version>
+			<version>3.0.1</version>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
@@ -158,7 +158,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
-			<version>3.0.2</version>
+			<version>3.0.1</version>
 			<optional>true</optional>
 			<!--添加以后，可以避免自动装配报错-->
 		</dependency>
@@ -236,7 +236,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-			<version>3.0.2</version>
+			<version>3.0.1</version>
 		</dependency>
 	</dependencies>
 
