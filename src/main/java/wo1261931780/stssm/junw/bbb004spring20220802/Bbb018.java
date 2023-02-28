@@ -1,8 +1,7 @@
-package com.stssm.github.io.junw.bbb004spring20220802;
+package wo1261931780.stssm.junw.bbb004spring20220802;
 
 import com.stssm.github.io.junw.bbb004spring20220802.dao.Demo0802Dao002;
 import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
