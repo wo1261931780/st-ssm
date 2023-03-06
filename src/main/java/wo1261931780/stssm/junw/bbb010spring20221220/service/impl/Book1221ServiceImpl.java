@@ -6,7 +6,7 @@ import wo1261931780.stssm.junw.bbb010spring20221220.dao.Book1221Dao;
 import wo1261931780.stssm.junw.bbb010spring20221220.domain.Account1221;
 import wo1261931780.stssm.junw.bbb010spring20221220.service.Book1221Service;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 
 /**
@@ -46,7 +46,7 @@ public class Book1221ServiceImpl implements Book1221Service {
 
 	@Override
 	public void serviceShow() {
-		demorun.debug("我是service中的show方法");
+		SHOW_LOG.debug("我是service中的show方法");
 		book1221Dao.show();// ioc的思想，控制反转
 		// 不通过new的方式新建一个对象，最终的目的都是解耦
 		// 实际上，我们这里没有通过this的方式访问上面的对象

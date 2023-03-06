@@ -19,7 +19,7 @@ import wo1261931780.stssm.junw.bbb001spring20220730.service.DemoService2;
  * @description
  */
 public class Bbb002 {
-	public static final Logger demorun = LoggerFactory.getLogger("demorun.class");
+	public static final Logger SHOW_LOG = LoggerFactory.getLogger("showLog.class");
 	public static final String FINAL_SPLIT = "=============================================";
 
 	public static void main(String[] args) {
@@ -29,6 +29,6 @@ public class Bbb002 {
 		DemoService2 demoService2 = (DemoService2) ctx.getBean("demoService2");// 根据xml中的id,直接获得对应的对象
 		demoService2.servieShow2();
 		String format = String.format("我是运行类：现在打印xml给我的service对象：%s", demoService2);
-		demorun.debug(format);
+		SHOW_LOG.debug(format);
 	}
 }

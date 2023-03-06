@@ -4,7 +4,7 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import wo1261931780.stssm.junw.bbb002spring20220731.dao.UserDao001;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 
 /**
@@ -24,7 +24,7 @@ public class UserDao001Impl implements UserDao001, InitializingBean, DisposableB
 	 */
 	@Override
 	public void destroy() {
-		demorun.debug("我是UserDao001销毁方法");
+		SHOW_LOG.debug("我是UserDao001销毁方法");
 		// 默认是不会执行这里的销毁方法
 		// 因为虚拟机退出的时候，ioc容器不会主动关闭，只会随着虚拟机一起退出
 	}
@@ -34,7 +34,7 @@ public class UserDao001Impl implements UserDao001, InitializingBean, DisposableB
 	 */
 	@Override
 	public void afterPropertiesSet() {
-		demorun.debug("我是UserDao001初始化方法");
+		SHOW_LOG.debug("我是UserDao001初始化方法");
 	}
 
 	/**
@@ -42,6 +42,6 @@ public class UserDao001Impl implements UserDao001, InitializingBean, DisposableB
 	 */
 	@Override
 	public void userDaoShow001() {
-		demorun.debug("我是UserDao001中的构造方法");
+		SHOW_LOG.debug("我是UserDao001中的构造方法");
 	}
 }

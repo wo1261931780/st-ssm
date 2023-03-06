@@ -5,7 +5,7 @@ import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao4;
 import wo1261931780.stssm.junw.bbb001spring20220730.dao.impl.DemoDao4Impl;
 import wo1261931780.stssm.junw.bbb001spring20220730.service.DemoService4;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -29,10 +29,10 @@ public class DemoService4Impl implements DemoService4 {
 	 */
 	@Override
 	public void servieShow4() {
-		demorun.debug("我是service中的show4方法");
+		SHOW_LOG.debug("我是service中的show4方法");
 		String format = String.format("我是service中的Dao4对象：%s", serviceDemoDao4);
-		demorun.debug(format);
-		demorun.debug("开始调用Dao中的show方法：--------------------------------------");
+		SHOW_LOG.debug(format);
+		SHOW_LOG.debug("开始调用Dao中的show方法：--------------------------------------");
 		serviceDemoDao4.show4();
 	}
 }

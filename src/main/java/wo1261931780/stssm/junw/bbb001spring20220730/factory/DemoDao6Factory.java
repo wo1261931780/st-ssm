@@ -4,7 +4,7 @@ package wo1261931780.stssm.junw.bbb001spring20220730.factory;
 import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao6;
 import wo1261931780.stssm.junw.bbb001spring20220730.dao.impl.DemoDao6Impl;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -17,7 +17,7 @@ import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
  */
 public class DemoDao6Factory {
 	public DemoDao6 getDemoDao6() {
-		demorun.debug("我是实例工厂中获取Dao6的方法");
+		SHOW_LOG.debug("我是实例工厂中获取Dao6的方法");
 		return new DemoDao6Impl();
 	}
 }

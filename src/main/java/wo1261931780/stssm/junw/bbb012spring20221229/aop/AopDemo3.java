@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 
 import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -33,19 +33,19 @@ public class AopDemo3 {
 
 	@Around("AopDemo3.cutIn1()")
 	private Object around1(ProceedingJoinPoint pjp) throws Throwable {
-		demorun.debug("我是切入点周围的方法");
+		SHOW_LOG.debug("我是切入点周围的方法");
 		pjp.proceed();
-		demorun.debug(FINAL_SPLIT);
+		SHOW_LOG.debug(FINAL_SPLIT);
 		return null;
 	}
 
 	@Before("cutIn1()")
 	private void before1(ProceedingJoinPoint pjp) {
 		Object[] pjpArgs = pjp.getArgs();// 获取对象信息
-		demorun.debug(Arrays.toString(pjpArgs));
+		SHOW_LOG.debug(Arrays.toString(pjpArgs));
 		Signature pjpSignature = pjp.getSignature();
-		demorun.debug("我是代理对象：" + pjpSignature.getDeclaringType());
-		demorun.debug("我是对象名称：" + pjpSignature.getDeclaringTypeName());
-		demorun.debug("我是代理方法：" + pjpSignature.getName());
+		SHOW_LOG.debug("我是代理对象：" + pjpSignature.getDeclaringType());
+		SHOW_LOG.debug("我是对象名称：" + pjpSignature.getDeclaringTypeName());
+		SHOW_LOG.debug("我是代理方法：" + pjpSignature.getName());
 	}
 }

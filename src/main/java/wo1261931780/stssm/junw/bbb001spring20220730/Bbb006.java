@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao6;
 import wo1261931780.stssm.junw.bbb001spring20220730.factory.DemoDao6Factory;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 
 /**
@@ -27,7 +27,7 @@ public class Bbb006 {
 		DemoDao6 demoDao6 = userDemoDao6Factory.getDemoDao6();
 		demoDao6.show6();
 		String s = demoDao6.toString();
-		demorun.info(s);
+		SHOW_LOG.info(s);
 
 		// DemoDao6 demoDao7 = userDemoDao6Factory.getDemoDao6();
 		// demorun.debug(demoDao7);

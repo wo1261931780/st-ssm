@@ -3,7 +3,7 @@ package wo1261931780.stssm.junw.bbb001spring20220730.dao.impl;
 
 import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao4;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -22,7 +22,7 @@ public class DemoDao4Impl implements DemoDao4 {
 
 	public DemoDao4Impl() {
 		String format = String.format("我是dao4构造方法，地址为：%s", this);
-		demorun.debug(format);
+		SHOW_LOG.debug(format);
 		// 这里不管是公有还是私有，都可以打印结果
 		// 因为内部是通过反射的方式去实现构造
 		// 而且，spring去创建对象的时候，都是使用无参构造的方法
@@ -33,6 +33,6 @@ public class DemoDao4Impl implements DemoDao4 {
 	 */
 	@Override
 	public void show4() {
-		demorun.debug("我是dao方法中的show4");
+		SHOW_LOG.debug("我是dao方法中的show4");
 	}
 }

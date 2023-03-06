@@ -3,7 +3,7 @@ package wo1261931780.stssm.junw.bbb001spring20220730.dao.impl;
 
 import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao6;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -18,7 +18,7 @@ public class DemoDao6Impl implements DemoDao6 {
 
 	public DemoDao6Impl() {
 		String format = String.format("我是dao6构造方法，地址为：%s", this);
-		demorun.debug(format);
+		SHOW_LOG.debug(format);
 	}
 
 	/**
@@ -26,6 +26,6 @@ public class DemoDao6Impl implements DemoDao6 {
 	 */
 	@Override
 	public void show6() {
-		demorun.debug("我是dao方法中的show6");
+		SHOW_LOG.debug("我是dao方法中的show6");
 	}
 }

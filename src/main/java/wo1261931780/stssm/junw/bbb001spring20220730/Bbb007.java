@@ -4,7 +4,7 @@ package wo1261931780.stssm.junw.bbb001spring20220730;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import wo1261931780.stssm.junw.bbb001spring20220730.service.DemoService7;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -20,7 +20,7 @@ public class Bbb007 {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bbb007.xml");
 		DemoService7 xmlDemoService7 = (DemoService7) context.getBean("xmlDemoService7");
 		xmlDemoService7.servieShow7();
-		demorun.debug("下面开始执行关闭=============================================");
+		SHOW_LOG.debug("下面开始执行关闭=============================================");
 		context.close();
 		// 完整的过程如下：
 		// 我是dao7构造方法，地址为：com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao7Impl@49ec71f8

@@ -4,7 +4,7 @@ package wo1261931780.stssm.junw.bbb010spring20221220.dao.impl;
 import wo1261931780.stssm.junw.bbb010spring20221220.dao.Book1221Dao;
 import wo1261931780.stssm.junw.bbb010spring20221220.domain.Account1221;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -18,7 +18,7 @@ import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
 public class Book1221DaoImpl implements Book1221Dao {
 	@Override
 	public void show() {
-		demorun.debug("我是dao对应的实现类");
+		SHOW_LOG.debug("我是dao对应的实现类");
 	}
 
 	@Override

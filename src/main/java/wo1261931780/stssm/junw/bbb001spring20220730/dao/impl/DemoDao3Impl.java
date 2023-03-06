@@ -3,7 +3,7 @@ package wo1261931780.stssm.junw.bbb001spring20220730.dao.impl;
 
 import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao3;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -20,6 +20,6 @@ public class DemoDao3Impl implements DemoDao3 {
 	 */
 	@Override
 	public void show3() {
-		demorun.debug("我是dao方法中的show3");
+		SHOW_LOG.debug("我是dao方法中的show3");
 	}
 }

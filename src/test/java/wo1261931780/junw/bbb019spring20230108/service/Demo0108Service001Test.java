@@ -12,7 +12,7 @@ import wo1261931780.stssm.junw.bbb019spring20230108.service.Demo0108Service001;
 
 import java.util.List;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = Spring0108Configuration001.class)
@@ -23,18 +23,18 @@ public class Demo0108Service001Test {
 	@Test
 	public void testById() {
 		Demo0108DomainTblBook demo0108DomainTblBook = demo0108Service001.queryById(1);
-		demorun.debug(""+demo0108DomainTblBook);
+		SHOW_LOG.debug(""+demo0108DomainTblBook);
 	}
 
 	@Test
 	public void testGetAll() {
 		List<Demo0108DomainTblBook> demo0108DomainTblBooks = demo0108Service001.selectAll(1);
-		demorun.debug(""+demo0108DomainTblBooks);
+		SHOW_LOG.debug(""+demo0108DomainTblBooks);
 	}
 
 	@Test
 	public void testDelete() {
 		Boolean byId = demo0108Service001.deleteById(1);
-		demorun.debug(""+byId);
+		SHOW_LOG.debug(""+byId);
 	}
 }

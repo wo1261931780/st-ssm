@@ -3,7 +3,7 @@ package wo1261931780.stssm.junw.bbb001spring20220730.dao.impl;
 
 import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao5;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -18,7 +18,7 @@ public class DemoDao5Impl implements DemoDao5 {
 
 	public DemoDao5Impl() {
 		String format = String.format("我是dao5构造方法，地址为：%s", this);
-		demorun.debug(format);
+		SHOW_LOG.debug(format);
 		// dao中的构造方法是这样的
 		// 同时,因为是构造方法,我们也可以通过修改private的方式,将其变成一个私有的
 		// 而且,spring创建对象的时候,默认都是调用无参构造方法
@@ -29,6 +29,6 @@ public class DemoDao5Impl implements DemoDao5 {
 	 */
 	@Override
 	public void show5() {
-		demorun.debug("我是dao方法中的show5");
+		SHOW_LOG.debug("我是dao方法中的show5");
 	}
 }

@@ -9,7 +9,7 @@ import wo1261931780.stssm.junw.bbb002spring20220731.service.UserService002;
 import wo1261931780.stssm.junw.bbb002spring20220731.sfactory.StaticFactory0731;
 
 import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 
 /**
@@ -45,35 +45,35 @@ public class Bbb009 {
 		// 这里可以根据控制台信息来分析结果：
 		// 在加载完成配置文件以后，就会自动获取对应的实例工厂和静态工厂
 		// 因为内部只有一个构造器方法，所以会自动完成单例的构造
-		demorun.debug("获得一个实例工厂对象：");
+		SHOW_LOG.debug("获得一个实例工厂对象：");
 		Factory0731 factory0731 = (Factory0731) ctx.getBean("xmlFactory0731");
-		demorun.debug("实例工厂获得Dao001对象");
+		SHOW_LOG.debug("实例工厂获得Dao001对象");
 		UserDao002 factoryGetDao001 = factory0731.factoryGetDao001();
 		factoryGetDao001.userDaoShow002();
-		demorun.debug(FINAL_SPLIT);
+		SHOW_LOG.debug(FINAL_SPLIT);
 		// 获得一个实例工厂对象：
 		// 实例工厂获得Dao001对象
 		// 已经通过实例工厂Factory0731获得一个UserDao002Impl
 		// 我是UserDao002中的构造方法
 		// =============================================
-		demorun.debug("获得一个静态工厂：");
+		SHOW_LOG.debug("获得一个静态工厂：");
 		UserDao002 staticFactoryGetDao002 = StaticFactory0731.factoryGetDao002();
-		demorun.debug("静态工厂获得Dao001对象：");
+		SHOW_LOG.debug("静态工厂获得Dao001对象：");
 		staticFactoryGetDao002.userDaoShow002();
-		demorun.debug(FINAL_SPLIT);
+		SHOW_LOG.debug(FINAL_SPLIT);
 		// 获得一个静态工厂：
 		// 已经通过静态工厂staticFactory0731获得一个UserDao002Impl
 		// 静态工厂获得Dao001对象：
 		// 我是UserDao002中的构造方法
 		// =============================================
-		demorun.debug("手动构造了一个xmlUserService002：");
+		SHOW_LOG.debug("手动构造了一个xmlUserService002：");
 		UserService002 xmlUserService002 = (UserService002) ctx.getBean("xmlUserService002");
 		xmlUserService002.serviceShow();
-		demorun.debug(FINAL_SPLIT);
+		SHOW_LOG.debug(FINAL_SPLIT);
 		// 手动构造了一个xmlUserService002：
 		// 我是UserService002中的show方法
 		// =============================================
-		demorun.debug("手动构造了一个xmlUserDao002：");
+		SHOW_LOG.debug("手动构造了一个xmlUserDao002：");
 		UserDao002 xmlUserDao002 = (UserDao002) ctx.getBean("xmlUserDao002");
 		xmlUserDao002.userDaoShow002();
 		// 手动构造了一个xmlUserDao002：
@@ -83,6 +83,4 @@ public class Bbb009 {
 		// 因为在xml获得bean映射关系的时候，就已经做好了初始化的过程
 		// 又因为对象是单例的，所以不需要重复做初始化
 	}
-
-
 }

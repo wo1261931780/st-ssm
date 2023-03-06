@@ -7,7 +7,7 @@ import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao7;
 import wo1261931780.stssm.junw.bbb001spring20220730.dao.impl.DemoDao7Impl;
 import wo1261931780.stssm.junw.bbb001spring20220730.service.DemoService7;
 
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -25,7 +25,7 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	private DemoDao7 serviceDemoDao7;
 
 	public void setServiceDemoDao7(DemoDao7Impl innerDemoDao7) {
-		demorun.debug("我是service7中的DI注入");
+		SHOW_LOG.debug("我是service7中的DI注入");
 		this.serviceDemoDao7 = innerDemoDao7;
 	}
 
@@ -34,10 +34,10 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	 */
 	@Override
 	public void servieShow7() {
-		demorun.debug("我是service中的show7方法");
+		SHOW_LOG.debug("我是service中的show7方法");
 		String format = String.format("我是service中的Dao7对象：%s", serviceDemoDao7);
-		demorun.debug(format);
-		demorun.debug("开始调用Dao中的show方法：--------------------------------------");
+		SHOW_LOG.debug(format);
+		SHOW_LOG.debug("开始调用Dao中的show方法：--------------------------------------");
 		serviceDemoDao7.show7();
 	}
 
@@ -46,7 +46,7 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	 */
 	@Override
 	public void destroy() {
-		demorun.debug("我是service7中的销毁方法");
+		SHOW_LOG.debug("我是service7中的销毁方法");
 	}
 
 	/**
@@ -54,6 +54,6 @@ public class DemoService7Impl implements DemoService7, InitializingBean, Disposa
 	 */
 	@Override
 	public void afterPropertiesSet() {
-		demorun.debug("我是service7中的初始化方法");
+		SHOW_LOG.debug("我是service7中的初始化方法");
 	}
 }
