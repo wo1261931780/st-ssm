@@ -1,7 +1,7 @@
-package com.stssm.github.io.junw.bbb019spring20230108.service;
+package wo1261931780.stssm.junw.bbb019spring20230108.service;
 
-import com.stssm.github.io.junw.bbb019spring20230108.domain.Demo0108DomainTblBook;
 import org.springframework.transaction.annotation.Transactional;
+import wo1261931780.stssm.junw.bbb019spring20230108.domain.Demo0108DomainTblBook;
 
 import java.util.List;
 

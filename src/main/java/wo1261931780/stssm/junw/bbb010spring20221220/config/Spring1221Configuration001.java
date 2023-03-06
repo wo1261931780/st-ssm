@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb010spring20221220.config;
+package wo1261931780.stssm.junw.bbb010spring20221220.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -17,6 +17,6 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration
 @ComponentScan("com.stssm.github.io.junw.bbb010spring20221220")
 @PropertySource("classpath:jdbc1221.properties")
-@Import({Jdbc1221Configuration001.class})
+@Import({com.stssm.github.io.junw.bbb010spring20221220.config.Jdbc1221Configuration001.class})
 public class Spring1221Configuration001 {
 }

@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb014spring20230102.service.impl;
+package wo1261931780.stssm.junw.bbb014spring20230102.service.impl;
 
 import com.stssm.github.io.junw.bbb014spring20230102.dao.LogDao;
 import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102LogService001;

@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb001spring20220730.factory;
+package wo1261931780.stssm.junw.bbb001spring20220730.factory;
 
 import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao6;
 import com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao6Impl;
@@ -19,7 +19,7 @@ public class DemoDao6FactoryBean implements FactoryBean<DemoDao6> {
 	// 但是现在,只需要实现对应的FactoryBean就可以,因为泛型中间填入了对应的类
 
 	@Override
-	public DemoDao6 getObject() throws Exception {
+	public DemoDao6 getObject() {
 		return new DemoDao6Impl();
 		// 这里替代了之前的dao方法,返回的是一个dao对应的实现类
 	}

@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb007spring20220806.service.impl;
+package wo1261931780.stssm.junw.bbb007spring20220806.service.impl;
 
 import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao003;
 import com.stssm.github.io.junw.bbb007spring20220806.service.Demo0806Service005;

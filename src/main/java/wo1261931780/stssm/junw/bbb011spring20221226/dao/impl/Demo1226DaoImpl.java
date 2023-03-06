@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb011spring20221226.dao.impl;
+package wo1261931780.stssm.junw.bbb011spring20221226.dao.impl;
 
 import com.stssm.github.io.junw.bbb011spring20221226.dao.Demo1226Dao;
 import org.springframework.stereotype.Repository;

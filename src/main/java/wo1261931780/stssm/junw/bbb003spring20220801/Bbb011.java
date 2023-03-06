@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb003spring20220801;
+package wo1261931780.stssm.junw.bbb003spring20220801;
 
 import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao003;
 import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService002;
@@ -12,12 +12,9 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * Project:st-ssm.github.io
  * Package:com.stssm.github.io.junw.bbb003spring20220801
  *
- * @param
  * @author liujiajun_junw
  * @Date 2022-08-19-43  星期一
  * @description
- * @return
- * @exception
  */
 public class Bbb011 {
 	public static void main(String[] args) {

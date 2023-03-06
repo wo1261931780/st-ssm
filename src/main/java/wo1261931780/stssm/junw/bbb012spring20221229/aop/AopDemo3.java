@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb012spring20221229.aop;
+package wo1261931780.stssm.junw.bbb012spring20221229.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -27,15 +27,16 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 @Aspect
 public class AopDemo3 {
 
-	@Pointcut("execution(void com.stssm.github.io.junw.bbb012spring20221229.dao.impl.Demo1229DaoImpl.show())")
+	@Pointcut("Demo1229DaoImpl.show()")
 	private void cutIn1() {
 	}
 
-	@Around("com.stssm.github.io.junw.bbb012spring20221229.aop.AopDemo3.cutIn1()")
-	private void around1(ProceedingJoinPoint pjp) throws Throwable {
+	@Around("AopDemo3.cutIn1()")
+	private Object around1(ProceedingJoinPoint pjp) throws Throwable {
 		demorun.debug("我是切入点周围的方法");
 		pjp.proceed();
 		demorun.debug(FINAL_SPLIT);
+		return null;
 	}
 
 	@Before("cutIn1()")

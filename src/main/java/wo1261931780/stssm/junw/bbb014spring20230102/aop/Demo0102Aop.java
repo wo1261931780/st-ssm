@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb014spring20230102.aop;
+package wo1261931780.stssm.junw.bbb014spring20230102.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * @author junw
  */
@@ -20,9 +21,9 @@ public class Demo0102Aop {
 	}
 
 	/**
-	* 环绕通知是最核心的通知，
-	* 因为环绕通知可以模拟出其他的通知类型
-	* */
+	 * 环绕通知是最核心的通知，
+	 * 因为环绕通知可以模拟出其他的通知类型
+	 */
 	@Around("Demo0102Aop.cutIn()")
 	private Object cutInAround(ProceedingJoinPoint pjp) throws Throwable {
 		demorun.debug("我是around方法");

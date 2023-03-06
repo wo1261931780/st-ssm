@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb010spring20221220.domain;
+package wo1261931780.stssm.junw.bbb010spring20221220.domain;
 
 import java.io.Serializable;
 

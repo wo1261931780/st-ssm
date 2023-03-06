@@ -1,7 +1,8 @@
-package com.stssm.github.io.junw.bbb018spring20230106.configuration;
+package wo1261931780.stssm.junw.bbb018spring20230106.configuration;
 
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+
 /**
  * @author junw
  */

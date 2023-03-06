@@ -1,4 +1,4 @@
-package com.stssm.github.io.stssm.github.io;
+package wo1261931780;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

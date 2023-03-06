@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb018spring20230106.controller;
+package wo1261931780.stssm.junw.bbb018spring20230106.controller;
 
 import com.stssm.github.io.junw.bbb018spring20230106.domain.Demo0106DomainBook001;
 import com.stssm.github.io.junw.bbb018spring20230106.domain.Demo0106DomainUser001;
@@ -22,7 +22,7 @@ public class Demo0106Controller003 {
 
 	@PostMapping
 	public String toSave(@RequestBody Demo0106DomainUser001 demo0106DomainUser001) {
-		demorun.debug(""+demo0106DomainUser001);
+		demorun.debug("" + demo0106DomainUser001);
 		return "toSave 方法执行";
 	}
 

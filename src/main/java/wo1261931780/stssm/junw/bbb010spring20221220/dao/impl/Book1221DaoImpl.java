@@ -1,9 +1,10 @@
-package com.stssm.github.io.junw.bbb010spring20221220.dao.impl;
+package wo1261931780.stssm.junw.bbb010spring20221220.dao.impl;
 
-import com.stssm.github.io.junw.bbb010spring20221220.dao.Book1221Dao;
-import com.stssm.github.io.junw.bbb010spring20221220.domain.Account1221;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import wo1261931780.stssm.junw.bbb010spring20221220.dao.Book1221Dao;
+import wo1261931780.stssm.junw.bbb010spring20221220.domain.Account1221;
+
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.

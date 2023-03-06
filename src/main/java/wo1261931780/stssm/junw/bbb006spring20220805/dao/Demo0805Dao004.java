@@ -16,7 +16,6 @@ public interface Demo0805Dao004 {
 	/**
 	 * 测试方法
 	 *
-	 * @param id
 	 * @return id
 	 */
 	@Select("select * from study002jdbc.account where id=#{id};")

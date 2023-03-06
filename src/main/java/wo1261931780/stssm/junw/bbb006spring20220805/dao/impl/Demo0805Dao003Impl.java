@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb006spring20220805.dao.impl;
+package wo1261931780.stssm.junw.bbb006spring20220805.dao.impl;
 
 import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao003;
 import org.springframework.context.annotation.Scope;

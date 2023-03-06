@@ -1,12 +1,11 @@
-package com.stssm.github.io.junw.bbb023spring20230113;
+package wo1261931780.junw.bbb023spring20230113;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.stssm.github.io.junw.bbb023spring20230113.dao.Demo0113UserDao002;
-import com.stssm.github.io.junw.bbb023spring20230113.domain.Demo0113Domain001;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import wo1261931780.stssm.junw.bbb023spring20230113.dao.Demo0113UserDao002;
+import wo1261931780.stssm.junw.bbb023spring20230113.domain.Demo0113Domain001;
 
 import java.util.List;
 import java.util.Map;
@@ -52,8 +51,5 @@ class SpringBootDemo2ApplicationTests2 {
 		List<Map<String, Object>> selectMaps = demo0113UserDao002.selectMaps(queryWrapper);
 		// 这里的Map<String, Object>，就分别代表了key和value
 		System.out.println(selectMaps);// 返回得到的就是map类型的格式
-
 	}
-
-
 }

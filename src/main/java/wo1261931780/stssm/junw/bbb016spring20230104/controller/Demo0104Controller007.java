@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb016spring20230104.controller;
+package wo1261931780.stssm.junw.bbb016spring20230104.controller;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;

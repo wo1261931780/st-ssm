@@ -1,7 +1,8 @@
-package com.stssm.github.io.junw.bbb017spring20230105.service.impl;
+package wo1261931780.stssm.junw.bbb017spring20230105.service.impl;
 
 import com.stssm.github.io.junw.bbb017spring20230105.service.Demo0105Service001;
 import org.springframework.stereotype.Service;
+
 /**
  * @author junw
  */

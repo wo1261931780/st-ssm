@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb007spring20220806;
+package wo1261931780.stssm.junw.bbb007spring20220806;
 
 import com.stssm.github.io.junw.bbb007spring20220806.config.Spring0806Config;
 import com.stssm.github.io.junw.bbb007spring20220806.service.impl.Demo0806Service001Impl;

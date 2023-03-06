@@ -1,17 +1,19 @@
-package com.stssm.github.io.junw.bbb014spring20230102.service;
+package wo1261931780.stssm.junw.bbb014spring20230102.service;
 
 
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+
 /**
  * @author junw
  */
 public interface Demo0102LogService001 {
 	/**
 	 * 新增日志
+	 *
 	 * @param output 汇出
-	 * @param input 汇入
-	 * @param money 金额
+	 * @param input  汇入
+	 * @param money  金额
 	 */
 	@Transactional(propagation = Propagation.REQUIRES_NEW)
 	void insertLog(String output, String input, Double money);

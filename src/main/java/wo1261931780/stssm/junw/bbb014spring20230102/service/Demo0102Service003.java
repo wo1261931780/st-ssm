@@ -1,8 +1,9 @@
-package com.stssm.github.io.junw.bbb014spring20230102.service;
+package wo1261931780.stssm.junw.bbb014spring20230102.service;
 
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
+
 /**
  * @author junw
  */
@@ -14,7 +15,7 @@ public interface Demo0102Service003 {
 	 * @param outputPerson 汇出人
 	 * @param balance      账户金额
 	 */
-	@Transactional(readOnly = true, timeout = -1, rollbackFor = {IOException.class})
+	@Transactional(readOnly = true, rollbackFor = {IOException.class})
 	void show0102service003(String inputPerson, String outputPerson, Double balance);
 	// 是否为只读事务
 	// 是否用不超时

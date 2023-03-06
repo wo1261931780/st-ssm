@@ -1,10 +1,10 @@
-package com.stssm.github.io.junw.bbb010spring20221220.dao;
+package wo1261931780.stssm.junw.bbb010spring20221220.dao;
 
-import com.stssm.github.io.junw.bbb010spring20221220.domain.Account1221;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import wo1261931780.stssm.junw.bbb010spring20221220.domain.Account1221;
 
 /**
  * Created by Intellij IDEA.
@@ -31,6 +31,7 @@ public interface Book1221Dao {
 
 	/**
 	 * 删除一条数据
+	 *
 	 * @param id id
 	 */
 	@Delete("delete from study001sql.demo_1 where id=#{id}")
@@ -38,6 +39,7 @@ public interface Book1221Dao {
 
 	/**
 	 * 更新记录
+	 *
 	 * @param demoAccount 对象
 	 */
 	@Update("update study001sql.demo_1 set E_NAME=#{name},address=#{address},age=#{age}")
@@ -45,6 +47,7 @@ public interface Book1221Dao {
 
 	/**
 	 * 根据id查询一条记录
+	 *
 	 * @param id id
 	 * @return 返回对象
 	 */

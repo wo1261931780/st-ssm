@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb016spring20230104;
+package wo1261931780.stssm.junw.bbb016spring20230104;
 
 import com.stssm.github.io.junw.bbb016spring20230104.configuration.Spring0104Configuration001;
 import com.stssm.github.io.junw.bbb016spring20230104.dao.Demo0104Dao001;
@@ -6,6 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * @author junw
  */

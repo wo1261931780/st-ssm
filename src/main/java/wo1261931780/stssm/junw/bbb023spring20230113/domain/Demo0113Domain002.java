@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb023spring20230113.domain;
+package wo1261931780.stssm.junw.bbb023spring20230113.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb019spring20230108.configuration;
+package wo1261931780.stssm.junw.bbb019spring20230108.configuration;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Value;
@@ -30,8 +30,9 @@ public class Jdbc0108Configuration001 {
 		dataSource.setPassword(password);
 		return dataSource;
 	}
+
 	@Bean
-	public PlatformTransactionManager platformTransactionManager(DataSource dataSource){
+	public PlatformTransactionManager platformTransactionManager(DataSource dataSource) {
 		DataSourceTransactionManager transactionManager = new DataSourceTransactionManager();
 		transactionManager.setDataSource(dataSource);
 		return transactionManager;

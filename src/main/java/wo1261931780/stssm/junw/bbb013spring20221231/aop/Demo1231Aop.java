@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb013spring20221231.aop;
+package wo1261931780.stssm.junw.bbb013spring20221231.aop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -15,6 +15,7 @@ import java.util.Arrays;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * @author junw
  */

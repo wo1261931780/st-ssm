@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb004spring20220802;
+package wo1261931780.stssm.junw.bbb004spring20220802;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

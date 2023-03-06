@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb001spring20220730.service;
+package wo1261931780.stssm.junw.bbb001spring20220730.service;
 
 /**
  * Created by Intellij IDEA.

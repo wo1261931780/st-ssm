@@ -1,16 +1,17 @@
-package com.stssm.github.io.junw.bbb018spring20230106.domain;
+package wo1261931780.stssm.junw.bbb018spring20230106.domain;
+
 /**
  * @author junw
  */
 public class Demo0106DomainUser001 {
 	private String name;
 	private int age;
-	private Demo0106DomainBook001 demo0106DomainBook001;
+	private com.stssm.github.io.junw.bbb018spring20230106.domain.Demo0106DomainBook001 demo0106DomainBook001;
 
 	public Demo0106DomainUser001() {
 	}
 
-	public Demo0106DomainUser001(String name, int age, Demo0106DomainBook001 demo0106DomainBook001) {
+	public Demo0106DomainUser001(String name, int age, com.stssm.github.io.junw.bbb018spring20230106.domain.Demo0106DomainBook001 demo0106DomainBook001) {
 		this.name = name;
 		this.age = age;
 		this.demo0106DomainBook001 = demo0106DomainBook001;
@@ -41,11 +42,11 @@ public class Demo0106DomainUser001 {
 		this.age = age;
 	}
 
-	public Demo0106DomainBook001 getDemo0105DomainBook001() {
+	public com.stssm.github.io.junw.bbb018spring20230106.domain.Demo0106DomainBook001 getDemo0105DomainBook001() {
 		return demo0106DomainBook001;
 	}
 
-	public void setDemo0105DomainBook001(Demo0106DomainBook001 demo0106DomainBook001) {
+	public void setDemo0105DomainBook001(com.stssm.github.io.junw.bbb018spring20230106.domain.Demo0106DomainBook001 demo0106DomainBook001) {
 		this.demo0106DomainBook001 = demo0106DomainBook001;
 	}
 }

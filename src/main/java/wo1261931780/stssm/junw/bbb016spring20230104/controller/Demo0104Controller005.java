@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb016spring20230104.controller;
+package wo1261931780.stssm.junw.bbb016spring20230104.controller;
 
 import com.stssm.github.io.junw.bbb016spring20230104.domain.Demo0104DomainUser;
 import org.springframework.stereotype.Controller;

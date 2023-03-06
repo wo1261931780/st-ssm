@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb014spring20230102.service;
+package wo1261931780.stssm.junw.bbb014spring20230102.service;
 
 /**
  * @author junw
@@ -6,6 +6,7 @@ package com.stssm.github.io.junw.bbb014spring20230102.service;
 public interface Demo0102Service {
 	/**
 	 * 展示service
+	 *
 	 * @param url 链接
 	 * @param paw 密码
 	 * @return 返回TF

@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb015spring20230103.dao.impl;
+package wo1261931780.stssm.junw.bbb015spring20230103.dao.impl;
 
 import com.stssm.github.io.junw.bbb015spring20230103.dao.Demo0103Dao001;
 import com.stssm.github.io.junw.bbb015spring20230103.domain.Demo0103Domain001;

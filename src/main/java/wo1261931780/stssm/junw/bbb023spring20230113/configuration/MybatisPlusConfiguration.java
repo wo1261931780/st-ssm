@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb023spring20230113.configuration;
+package wo1261931780.stssm.junw.bbb023spring20230113.configuration;
 
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.OptimisticLockerInnerInterceptor;

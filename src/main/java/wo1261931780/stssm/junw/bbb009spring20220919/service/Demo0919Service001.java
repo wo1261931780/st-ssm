@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb009spring20220919.service;
+package wo1261931780.stssm.junw.bbb009spring20220919.service;
 
 import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919;
 
@@ -20,7 +20,6 @@ public interface Demo0919Service001 {
 	/**
 	 * 登录功能
 	 *
-	 * @param id
 	 * @return id
 	 */
 

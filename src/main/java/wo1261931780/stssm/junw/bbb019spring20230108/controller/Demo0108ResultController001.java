@@ -1,4 +1,5 @@
-package com.stssm.github.io.junw.bbb019spring20230108.controller;
+package wo1261931780.stssm.junw.bbb019spring20230108.controller;
+
 /**
  * @author junw
  */
@@ -26,6 +27,12 @@ public class Demo0108ResultController001 {
 		this.returnCode = returnCode;
 	}
 
+	public Demo0108ResultController001(Object returnData, Integer returnCode, String returnMessage) {
+		this.returnData = returnData;
+		this.returnCode = returnCode;
+		this.returnMessage = returnMessage;
+	}
+
 	@Override
 	public String toString() {
 		return "Demo0108ResultController001{" +
@@ -33,12 +40,6 @@ public class Demo0108ResultController001 {
 				       ", returnCode=" + returnCode +
 				       ", returnMessage='" + returnMessage + '\'' +
 				       '}';
-	}
-
-	public Demo0108ResultController001(Object returnData, Integer returnCode, String returnMessage) {
-		this.returnData = returnData;
-		this.returnCode = returnCode;
-		this.returnMessage = returnMessage;
 	}
 
 	public Object getReturnData() {

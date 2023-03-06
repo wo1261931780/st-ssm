@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb011spring20221226.aop;
+package wo1261931780.stssm.junw.bbb011spring20221226.aop;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;

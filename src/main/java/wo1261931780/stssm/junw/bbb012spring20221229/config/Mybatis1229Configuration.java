@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb012spring20221229.config;
+package wo1261931780.stssm.junw.bbb012spring20221229.config;
 
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;

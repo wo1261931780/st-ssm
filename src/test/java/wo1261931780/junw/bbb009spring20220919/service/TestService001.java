@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb009spring20220919.service;
+package wo1261931780.junw.bbb009spring20220919.service;
 
 import com.stssm.github.io.junw.bbb009spring20220919.config.Spring0919Configuration001;
 import org.junit.Test;

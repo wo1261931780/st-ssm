@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb008spring20220807;
+package wo1261931780.stssm.junw.bbb008spring20220807;
 
 import com.stssm.github.io.junw.bbb008spring20220807.config.Spring0807Configuration005;
 import org.springframework.context.ApplicationContext;

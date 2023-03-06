@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb021spring20230111.controller;
+package wo1261931780.stssm.junw.bbb021spring20230111.controller;
 
 import com.stssm.github.io.junw.bbb021spring20230111.domain.YmlSample;
 import org.springframework.beans.factory.annotation.Autowired;

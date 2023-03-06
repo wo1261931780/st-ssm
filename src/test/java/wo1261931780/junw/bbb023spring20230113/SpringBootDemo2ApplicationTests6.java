@@ -1,10 +1,10 @@
-package com.stssm.github.io.junw.bbb023spring20230113;
+package wo1261931780.junw.bbb023spring20230113;
 
-import com.stssm.github.io.junw.bbb023spring20230113.dao.Demo0113UserDao003;
-import com.stssm.github.io.junw.bbb023spring20230113.domain.Demo0113Domain005;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import wo1261931780.stssm.junw.bbb023spring20230113.dao.Demo0113UserDao003;
+import wo1261931780.stssm.junw.bbb023spring20230113.domain.Demo0113Domain005;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb004spring20220802;
+package wo1261931780.stssm.junw.bbb004spring20220802;
 
 import com.stssm.github.io.junw.bbb004spring20220802.dao.Demo0802Dao;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

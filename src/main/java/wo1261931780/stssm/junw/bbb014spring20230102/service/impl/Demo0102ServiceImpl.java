@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb014spring20230102.service.impl;
+package wo1261931780.stssm.junw.bbb014spring20230102.service.impl;
 
 import com.stssm.github.io.junw.bbb014spring20230102.dao.Demo0102Dao;
 import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102Service;
@@ -16,7 +16,7 @@ public class Demo0102ServiceImpl implements Demo0102Service {
 
 	@Override
 	public Boolean show0102service(String url, String paw) {
-		String demo="123";
+		String demo = "123";
 		if (demo.equals(url)) {
 			// demorun.debug("我是paw");
 			// paw = paw.trim();

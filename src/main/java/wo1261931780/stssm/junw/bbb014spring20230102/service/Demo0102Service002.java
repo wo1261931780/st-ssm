@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb014spring20230102.service;
+package wo1261931780.stssm.junw.bbb014spring20230102.service;
 
 import org.springframework.transaction.annotation.Transactional;
 

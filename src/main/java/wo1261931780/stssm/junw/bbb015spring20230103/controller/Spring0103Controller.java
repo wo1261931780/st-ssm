@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb015spring20230103.controller;
+package wo1261931780.stssm.junw.bbb015spring20230103.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +22,7 @@ public class Spring0103Controller {
 		return "123";
 		// 直接返回会出现报错，但是出现了上面的打印结果
 	}
+
 	@RequestMapping("/save2")
 	@ResponseBody
 	public String save2() {

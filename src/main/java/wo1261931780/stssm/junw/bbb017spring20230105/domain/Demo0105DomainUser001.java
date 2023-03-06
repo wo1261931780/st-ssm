@@ -1,4 +1,5 @@
-package com.stssm.github.io.junw.bbb017spring20230105.domain;
+package wo1261931780.stssm.junw.bbb017spring20230105.domain;
+
 /**
  * @author junw
  */

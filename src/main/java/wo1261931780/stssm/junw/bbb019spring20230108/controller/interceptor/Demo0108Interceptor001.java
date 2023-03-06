@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb019spring20230108.controller.interceptor;
+package wo1261931780.stssm.junw.bbb019spring20230108.controller.interceptor;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -19,7 +19,7 @@ public class Demo0108Interceptor001 implements HandlerInterceptor {
 	// 直接添加一个组件就可以
 
 	@Override
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
 		// return HandlerInterceptor.super.preHandle(request, response, handler);
 		// 在方法执行前拦截
 		demorun.debug("我是preHandle方法");
@@ -31,14 +31,14 @@ public class Demo0108Interceptor001 implements HandlerInterceptor {
 	}
 
 	@Override
-	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) {
 		// HandlerInterceptor.super.postHandle(request, response, handler, modelAndView);
 		// 在方法执行后拦截
 		demorun.debug("我是postHandle方法");
 	}
 
 	@Override
-	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
 		// HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
 		// 在方法完成的时候拦截
 		demorun.debug("我是afterCompletion方法");

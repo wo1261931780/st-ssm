@@ -1,7 +1,5 @@
-package com.stssm.github.io.junw.bbb019spring20230108.controller;
+package wo1261931780.stssm.junw.bbb019spring20230108.controller;
 
-import com.stssm.github.io.junw.bbb019spring20230108.domain.Demo0108DomainTblBook;
-import com.stssm.github.io.junw.bbb019spring20230108.service.Demo0108Service001;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,17 +9,19 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import wo1261931780.stssm.junw.bbb019spring20230108.domain.Demo0108DomainTblBook;
+import wo1261931780.stssm.junw.bbb019spring20230108.service.Demo0108Service001;
 
 import java.util.List;
 
-import static com.stssm.github.io.junw.bbb019spring20230108.controller.Demo0108CodeController001.DELETE_CODE_ERR;
-import static com.stssm.github.io.junw.bbb019spring20230108.controller.Demo0108CodeController001.DELETE_CODE_OK;
-import static com.stssm.github.io.junw.bbb019spring20230108.controller.Demo0108CodeController001.GET_QUERY_CODE_ERR;
-import static com.stssm.github.io.junw.bbb019spring20230108.controller.Demo0108CodeController001.GET_QUERY_CODE_OK;
-import static com.stssm.github.io.junw.bbb019spring20230108.controller.Demo0108CodeController001.POST_INSERT_CODE_ERR;
-import static com.stssm.github.io.junw.bbb019spring20230108.controller.Demo0108CodeController001.POST_INSERT_CODE_OK;
-import static com.stssm.github.io.junw.bbb019spring20230108.controller.Demo0108CodeController001.POST_UPDATE_CODE_ERR;
-import static com.stssm.github.io.junw.bbb019spring20230108.controller.Demo0108CodeController001.POST_UPDATE_CODE_OK;
+import static wo1261931780.stssm.junw.bbb019spring20230108.controller.Demo0108CodeController001.DELETE_CODE_ERR;
+import static wo1261931780.stssm.junw.bbb019spring20230108.controller.Demo0108CodeController001.DELETE_CODE_OK;
+import static wo1261931780.stssm.junw.bbb019spring20230108.controller.Demo0108CodeController001.GET_QUERY_CODE_ERR;
+import static wo1261931780.stssm.junw.bbb019spring20230108.controller.Demo0108CodeController001.GET_QUERY_CODE_OK;
+import static wo1261931780.stssm.junw.bbb019spring20230108.controller.Demo0108CodeController001.POST_INSERT_CODE_ERR;
+import static wo1261931780.stssm.junw.bbb019spring20230108.controller.Demo0108CodeController001.POST_INSERT_CODE_OK;
+import static wo1261931780.stssm.junw.bbb019spring20230108.controller.Demo0108CodeController001.POST_UPDATE_CODE_ERR;
+import static wo1261931780.stssm.junw.bbb019spring20230108.controller.Demo0108CodeController001.POST_UPDATE_CODE_OK;
 
 
 /**

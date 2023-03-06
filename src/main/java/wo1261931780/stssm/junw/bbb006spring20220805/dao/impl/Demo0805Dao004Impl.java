@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb006spring20220805.dao.impl;
+package wo1261931780.stssm.junw.bbb006spring20220805.dao.impl;
 
 import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao004;
 import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919;
@@ -32,8 +32,6 @@ public class Demo0805Dao004Impl implements Demo0805Dao004 {
 
 
 	/**
-	 * @param id
-	 * @return
 	 */
 	@Override
 	public Account0919 selectById(int id) {

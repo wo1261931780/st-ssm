@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb011spring20221226;
+package wo1261931780.stssm.junw.bbb011spring20221226;
 
 import com.stssm.github.io.junw.bbb011spring20221226.config.Spring1226Configuration001;
 import com.stssm.github.io.junw.bbb011spring20221226.dao.Demo1226Dao;

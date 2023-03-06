@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb012spring20221229.config;
+package wo1261931780.stssm.junw.bbb012spring20221229.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

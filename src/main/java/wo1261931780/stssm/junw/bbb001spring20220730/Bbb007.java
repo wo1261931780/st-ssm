@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb001spring20220730;
+package wo1261931780.stssm.junw.bbb001spring20220730;
 
 import com.stssm.github.io.junw.bbb001spring20220730.service.DemoService7;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

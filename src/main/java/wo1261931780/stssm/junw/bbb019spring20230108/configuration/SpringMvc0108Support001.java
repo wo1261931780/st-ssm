@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb019spring20230108.configuration;
+package wo1261931780.stssm.junw.bbb019spring20230108.configuration;
 
 import com.stssm.github.io.junw.bbb019spring20230108.controller.interceptor.Demo0108Interceptor001;
 import com.stssm.github.io.junw.bbb019spring20230108.controller.interceptor.Demo0108Interceptor002;
@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+
 /**
  * @author junw
  */
@@ -16,15 +17,6 @@ public class SpringMvc0108Support001 extends WebMvcConfigurationSupport {
 	private Demo0108Interceptor001 demo0108Interceptor001;
 	@Autowired
 	private Demo0108Interceptor002 demo0108Interceptor002;
-
-	@Override
-	protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/plugins/**").addResourceLocations("/plugins/");
-		registry.addResourceHandler("/pages/**").addResourceLocations("/pages/");
-		registry.addResourceHandler("/css/**").addResourceLocations("/css/");
-		registry.addResourceHandler("/js/**").addResourceLocations("/js/");
-		// super.addResourceHandlers(registry);
-	}
 
 	@Override
 	protected void addInterceptors(InterceptorRegistry registry) {
@@ -42,5 +34,14 @@ public class SpringMvc0108Support001 extends WebMvcConfigurationSupport {
 		// 首先执行preHandle001，然后执行preHandle002
 		// 接着执行postHandle002，然后执行postHandle001
 		// afterCompletion002和afterCompletion001同理
+	}
+
+	@Override
+	protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/plugins/**").addResourceLocations("/plugins/");
+		registry.addResourceHandler("/pages/**").addResourceLocations("/pages/");
+		registry.addResourceHandler("/css/**").addResourceLocations("/css/");
+		registry.addResourceHandler("/js/**").addResourceLocations("/js/");
+		// super.addResourceHandlers(registry);
 	}
 }

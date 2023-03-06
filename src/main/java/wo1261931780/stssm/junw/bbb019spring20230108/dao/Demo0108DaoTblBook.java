@@ -1,10 +1,10 @@
-package com.stssm.github.io.junw.bbb019spring20230108.dao;
+package wo1261931780.stssm.junw.bbb019spring20230108.dao;
 
-import com.stssm.github.io.junw.bbb019spring20230108.domain.Demo0108DomainTblBook;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import wo1261931780.stssm.junw.bbb019spring20230108.domain.Demo0108DomainTblBook;
 
 import java.util.List;
 
@@ -61,7 +61,6 @@ public interface Demo0108DaoTblBook {
 	 * 新增数据
 	 *
 	 * @param demo0108DomainTblBook 实例对象
-	 * @return 影响行数
 	 */
 	@Insert("insert into study001sql.tbl_book (type,name,description) values (#{type},#{name},#{description})")
 	void saveOne(Demo0108DomainTblBook demo0108DomainTblBook);

@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb006spring20220805.dao;
+package wo1261931780.stssm.junw.bbb006spring20220805.dao;
 
 /**
  * Created by Intellij IDEA.

@@ -1,10 +1,11 @@
-package com.stssm.github.io.junw.bbb021spring20230111.domain;
+package wo1261931780.stssm.junw.bbb021spring20230111.domain;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
+
 /**
  * @author junw
  */

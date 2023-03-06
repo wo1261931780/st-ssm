@@ -1,8 +1,9 @@
-package com.stssm.github.io.junw.bbb021spring20230111.dao;
+package wo1261931780.stssm.junw.bbb021spring20230111.dao;
 
-import com.stssm.github.io.junw.bbb021spring20230111.domain.Demo0111Domain001;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import wo1261931780.stssm.junw.bbb021spring20230111.domain.Demo0111Domain001;
 
 /**
  * @author junw
@@ -19,5 +20,5 @@ public interface Demo0111Dao001 {
 	 * @return 返回结果
 	 */
 	@Select("select * from tbl_book where id=#{id}")
-	public Demo0111Domain001 getById(Integer id);
+	Demo0111Domain001 getById(Integer id);
 }

@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb003spring20220801;
+package wo1261931780.stssm.junw.bbb003spring20220801;
 
 import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao006;
 import org.springframework.context.ApplicationContext;

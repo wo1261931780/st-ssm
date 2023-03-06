@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb023spring20230113.dao;
+package wo1261931780.stssm.junw.bbb023spring20230113.dao;
 
 import com.stssm.github.io.junw.bbb023spring20230113.domain.Demo0113Domain001;
 import org.apache.ibatis.annotations.Mapper;
@@ -23,6 +23,6 @@ public interface Demo0113UserDao001 {
 	 * @return 对象
 	 */
 	@Select("select * from mybatisplus_db.tbl_user where id=#{id,jdbcType=INTEGER};")
-	public Demo0113Domain001 getOneById(Integer id);
+	Demo0113Domain001 getOneById(Integer id);
 	// 这是原始的mybatis开发模式
 }

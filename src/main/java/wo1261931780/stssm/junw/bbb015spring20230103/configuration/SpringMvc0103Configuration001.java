@@ -1,7 +1,8 @@
-package com.stssm.github.io.junw.bbb015spring20230103.configuration;
+package wo1261931780.stssm.junw.bbb015spring20230103.configuration;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+
 /**
  * @author junw
  */

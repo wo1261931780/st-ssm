@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb014spring20230102.service.impl;
+package wo1261931780.stssm.junw.bbb014spring20230102.service.impl;
 
 import com.stssm.github.io.junw.bbb014spring20230102.dao.Demo0102Dao002;
 import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102LogService001;
@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+
 /**
  * @author junw
  */

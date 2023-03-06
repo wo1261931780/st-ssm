@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb018spring20230106.configuration;
+package wo1261931780.stssm.junw.bbb018spring20230106.configuration;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -29,6 +29,6 @@ public class ServletContainerInit0106configuration extends AbstractAnnotationCon
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[]{SpringMvc0106Configuration001.class};
+		return new Class[]{com.stssm.github.io.junw.bbb018spring20230106.configuration.SpringMvc0106Configuration001.class};
 	}
 }

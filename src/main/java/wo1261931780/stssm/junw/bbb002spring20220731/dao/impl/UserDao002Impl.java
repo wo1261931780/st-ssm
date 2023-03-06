@@ -1,4 +1,4 @@
-package com.stssm.github.io.junw.bbb002spring20220731.dao.impl;
+package wo1261931780.stssm.junw.bbb002spring20220731.dao.impl;
 
 import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao002;
 import org.springframework.beans.factory.DisposableBean;
@@ -11,12 +11,9 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * Project:st-ssm.github.io
  * Package:com.stssm.github.io.dao.impl
  *
- * @param
  * @author liujiajun_junw
  * @Date 2022-07-20-05  星期日
  * @description
- * @return
- * @exception
  */
 public class UserDao002Impl implements UserDao002, InitializingBean, DisposableBean {
 

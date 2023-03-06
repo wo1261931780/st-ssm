@@ -1,8 +1,7 @@
-package com.stssm.github.io.junw.bbb023spring20230113.dao;
+package wo1261931780.stssm.junw.bbb023spring20230113.dao;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.stssm.github.io.junw.bbb023spring20230113.domain.Demo0113Domain005;
-import org.apache.ibatis.annotations.Mapper;
+
+import wo1261931780.stssm.junw.bbb023spring20230113.domain.Demo0113Domain005;
 
 /**
  * Created by Intellij IDEA.
