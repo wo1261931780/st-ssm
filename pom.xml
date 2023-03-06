@@ -178,19 +178,19 @@
 		<!--JDBC API SQL-->
 		<!--数据库连接API，定义了客户端如何连接和查询数据库。-->
 		<!--没有配置，项目报错，启动失败-->
-		<!--<dependency>-->
-		<!--	<groupId>org.springframework.boot</groupId>-->
-		<!--	&lt;!&ndash;spring操作数据库的包&ndash;&gt;-->
-		<!--	<artifactId>spring-boot-starter-data-jdbc</artifactId>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<!--spring操作数据库的包-->
+			<artifactId>spring-boot-starter-data-jdbc</artifactId>
+		</dependency>
 
 		<!--Spring Data JDBC SQL-->
 		<!--使用Spring Data，用普通的JDBC在SQL存储中保存数据。-->
 		<!--没有配置，项目报错，启动失败-->
-		<!--<dependency>-->
-		<!--	<groupId>org.springframework.boot</groupId>-->
-		<!--	<artifactId>spring-boot-starter-jdbc</artifactId>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
 		<!--MySQL JDBC driver.驱动-->
 		<!--mysql的驱动-->
 		<dependency>
@@ -214,13 +214,14 @@
 		<!--持久性框架，支持自定义SQL，存储过程和高级映射。MyBatis使用XML描述符或注解将对象与存储程序或SQL语句结合起来。-->
 		<!--这里是mybatis按照spring的标准，开发出来的整合包-->
 		<!--没有配置，项目报错，启动失败-->
-		<!--<dependency>-->
-		<!--	<groupId>org.mybatis.spring.boot</groupId>-->
-		<!--	<artifactId>mybatis-spring-boot-starter</artifactId>-->
-		<!--	<version>3.0.1</version>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>3.0.1</version>
+		</dependency>
 
 		<!--使用mybatis-plus以后，这些东西就不需要了-->
+		<!--目前mybatis-plus只支持到2.0.7，直接放开-->
 		<!--没有配置，项目报错，启动失败-->
 		<!--<dependency>-->
 		<!--	<groupId>com.baomidou</groupId>-->
@@ -251,12 +252,12 @@
 		<!--=============================================================================================-->
 		<!--c3p0相关包-->
 		<!--没有配置，项目报错，启动失败-->
-		<!--<dependency>-->
-		<!--	&lt;!&ndash;c3p0是一个连接池对象&ndash;&gt;-->
-		<!--	<groupId>c3p0</groupId>-->
-		<!--	<artifactId>c3p0</artifactId>-->
-		<!--	<version>0.9.1.2</version>-->
-		<!--</dependency>-->
+		<dependency>
+			<!--c3p0是一个连接池对象-->
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+		</dependency>
 
 		<!--阿里巴巴德鲁伊连接池-->
 		<dependency>
