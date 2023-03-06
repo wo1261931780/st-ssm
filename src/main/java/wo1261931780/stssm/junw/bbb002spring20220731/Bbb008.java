@@ -1,11 +1,11 @@
 package wo1261931780.stssm.junw.bbb002spring20220731;
 
-import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao001;
-import com.stssm.github.io.junw.bbb002spring20220731.service.impl.UserService001Impl;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import wo1261931780.stssm.junw.bbb002spring20220731.dao.UserDao001;
+import wo1261931780.stssm.junw.bbb002spring20220731.service.impl.UserService001Impl;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.

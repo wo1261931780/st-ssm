@@ -1,8 +1,9 @@
 package wo1261931780.stssm.junw.bbb001spring20220730.dao.impl;
 
-import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao4;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao4;
+
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.

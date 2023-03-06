@@ -1,6 +1,7 @@
 package wo1261931780.stssm.junw.bbb006spring20220805.dao;
 
 import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * Created by Intellij IDEA.

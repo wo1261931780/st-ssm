@@ -1,7 +1,8 @@
 package wo1261931780.stssm.junw.bbb001spring20220730;
 
-import com.stssm.github.io.junw.bbb001spring20220730.service.DemoService1;
-import com.stssm.github.io.junw.bbb001spring20220730.service.impl.DemoService1Impl;
+
+import wo1261931780.stssm.junw.bbb001spring20220730.service.DemoService1;
+import wo1261931780.stssm.junw.bbb001spring20220730.service.impl.DemoService1Impl;
 
 /**
  * Created by Intellij IDEA.

@@ -1,8 +1,8 @@
 package wo1261931780.stssm.junw.bbb001spring20220730.factory;
 
-import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao6;
-import com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao6Impl;
 import org.springframework.beans.factory.FactoryBean;
+import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao6;
+import wo1261931780.stssm.junw.bbb001spring20220730.dao.impl.DemoDao6Impl;
 
 /**
  * Created by Intellij IDEA.

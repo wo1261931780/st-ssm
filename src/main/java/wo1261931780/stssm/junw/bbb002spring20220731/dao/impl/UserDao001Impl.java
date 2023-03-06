@@ -1,10 +1,11 @@
 package wo1261931780.stssm.junw.bbb002spring20220731.dao.impl;
 
-import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao001;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
+import wo1261931780.stssm.junw.bbb002spring20220731.dao.UserDao001;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
+
 
 /**
  * Created by Intellij IDEA.

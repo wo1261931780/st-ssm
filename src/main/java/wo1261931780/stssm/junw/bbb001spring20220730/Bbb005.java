@@ -2,7 +2,6 @@ package wo1261931780.stssm.junw.bbb001spring20220730;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao5;
 import wo1261931780.stssm.junw.bbb001spring20220730.sfactory.DemoDao5StaticFactory;
 
 /**

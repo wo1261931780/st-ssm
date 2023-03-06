@@ -1,10 +1,11 @@
 package wo1261931780.stssm.junw.bbb001spring20220730.service.impl;
 
-import com.stssm.github.io.junw.bbb001spring20220730.dao.DemoDao2;
-import com.stssm.github.io.junw.bbb001spring20220730.dao.impl.DemoDao2Impl;
-import com.stssm.github.io.junw.bbb001spring20220730.service.DemoService2;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import wo1261931780.stssm.junw.bbb001spring20220730.dao.DemoDao2;
+import wo1261931780.stssm.junw.bbb001spring20220730.dao.impl.DemoDao2Impl;
+import wo1261931780.stssm.junw.bbb001spring20220730.service.DemoService2;
+
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
