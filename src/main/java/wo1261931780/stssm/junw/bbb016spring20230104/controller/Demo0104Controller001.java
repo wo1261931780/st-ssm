@@ -18,7 +18,7 @@ public class Demo0104Controller001 {
 		// 在多人开发的场景下
 		// 这种调配方式会出现问题
 		// 我们为了避免名称重复和冲突，就会在里面添加上已经存在的类名作为路径
-		demorun.debug("我是Demo0104Controller001中的showMe方法");
+		info.debug("我是Demo0104Controller001中的showMe方法");
 		return "show me the money";
 	}
 }

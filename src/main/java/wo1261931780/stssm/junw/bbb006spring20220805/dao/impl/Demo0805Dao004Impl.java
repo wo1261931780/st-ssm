@@ -43,21 +43,21 @@ public class Demo0805Dao004Impl implements Demo0805Dao004 {
 	 */
 	@Override
 	public void demo0805Dao004Show() {
-		demorun.debug("我是spring dao3中的show方法");
+		info.debug("我是spring dao3中的show方法");
 		String format = String.format("我是name：%s", name);
-		demorun.debug(format);
+		info.debug(format);
 	}
 
 	@PostConstruct
 	public void initLife() {
 		// 注解的直译：在构造之前
-		demorun.debug("SpringDao3中的初始化方法");
+		info.debug("SpringDao3中的初始化方法");
 	}
 
 	@PreDestroy
 	public void destroyLife() {
 		// 注解直译：在销毁之前
-		demorun.debug("SpringDao3中的销毁方法");
+		info.debug("SpringDao3中的销毁方法");
 	}
 
 

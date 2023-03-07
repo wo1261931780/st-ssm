@@ -1,8 +1,9 @@
 package wo1261931780.stssm.junw.bbb003spring20220801;
 
-import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService004;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import wo1261931780.stssm.junw.bbb003spring20220801.service.DemoService004;
 
 /**
  * Created by Intellij IDEA.

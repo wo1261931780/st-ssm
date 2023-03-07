@@ -23,11 +23,11 @@ public class Bbb029 {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0807Configuration003.class);
 		DataSource bean = ctx.getBean(DataSource.class);
 		String format = String.format("我是扫描得到的对象：%s", bean);
-		demorun.debug(format);
-		demorun.debug("***********************************************************");
+		info.debug(format);
+		info.debug("***********************************************************");
 		ApplicationContext ctx004 = new AnnotationConfigApplicationContext(Spring0807Configuration004.class);
 		DataSource bean004 = ctx004.getBean(DataSource.class);
 		String format1 = String.format("我是扫描得到的对象：%s", bean004);
-		demorun.debug(format1);
+		info.debug(format1);
 	}
 }

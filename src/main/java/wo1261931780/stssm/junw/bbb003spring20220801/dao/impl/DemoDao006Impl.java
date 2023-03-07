@@ -1,14 +1,14 @@
 package wo1261931780.stssm.junw.bbb003spring20220801.dao.impl;
 
-import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao006;
+
+import lombok.extern.slf4j.Slf4j;
+import wo1261931780.stssm.junw.bbb003spring20220801.dao.DemoDao006;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
-
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -19,6 +19,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-21-08  星期四
  * @description
  */
+@Slf4j
 public class DemoDao006Impl implements DemoDao006 {
 	private int[] dao006Array;
 	private List<String> dao006List;
@@ -31,7 +32,7 @@ public class DemoDao006Impl implements DemoDao006 {
 	 */
 	@Override
 	public void dao006Show() {
-		demorun.debug("我是Dao006中的show方法");
+		log.debug("我是Dao006中的show方法");
 	}
 
 	public void setDao006Array(int[] dao006Array) {

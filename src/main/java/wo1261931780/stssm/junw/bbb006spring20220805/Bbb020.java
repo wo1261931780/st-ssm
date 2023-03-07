@@ -25,10 +25,10 @@ public class Bbb020 {
 		// 配置类中，就包含了包扫描，扫描到了需要的dao和service
 		Demo0805Dao001Impl bean = ctx.getBean(Demo0805Dao001Impl.class);
 		Demo0805Dao001Impl bean2 = ctx.getBean(Demo0805Dao001Impl.class);
-		demorun.debug("我调用了内部的方法");
+		info.debug("我调用了内部的方法");
 		// bean.show();
-		demorun.debug(bean.toString());
-		demorun.debug(bean2.toString());
+		info.debug(bean.toString());
+		info.debug(bean2.toString());
 		// 这里的两个对象，内存地址一样
 		// 换句话来说，这是一种单例设计模式
 	}

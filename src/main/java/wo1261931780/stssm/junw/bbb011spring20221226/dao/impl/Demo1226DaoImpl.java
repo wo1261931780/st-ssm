@@ -18,34 +18,34 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 public class Demo1226DaoImpl implements Demo1226Dao {
 	@Override
 	public void show() {
-		// demorun.debug("我是show方法");
+		// info.debug("我是show方法");
 		long startTimeMillis = System.currentTimeMillis();
 		int demo = 10;
 		for (int i = 0; i < demo; i++) {
-			demorun.debug("我是show方法");
+			info.debug("我是show方法");
 		}
 		long endTimeMillis = System.currentTimeMillis();
 		long duringTime = endTimeMillis - startTimeMillis;
-		demorun.debug("执行一万次消耗时间：" + duringTime + "ms");
+		info.debug("执行一万次消耗时间：" + duringTime + "ms");
 	}
 
 	@Override
 	public void delete(int demo) {
-		demorun.debug("我是delete方法");
+		info.debug("我是delete方法");
 	}
 
 	@Override
 	public void update() {
-		demorun.debug("我是update方法");
+		info.debug("我是update方法");
 	}
 
 	@Override
 	public void select() {
-		demorun.debug("我是select方法");
+		info.debug("我是select方法");
 	}
 
 	@Override
 	public void save() {
-		demorun.debug("我是save方法");
+		info.debug("我是save方法");
 	}
 }

@@ -1,8 +1,8 @@
 package wo1261931780.stssm.junw.bbb003spring20220801.dao.impl;
 
-import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao002;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import lombok.extern.slf4j.Slf4j;
+import wo1261931780.stssm.junw.bbb003spring20220801.dao.DemoDao002;
 
 /**
  * Created by Intellij IDEA.
@@ -13,6 +13,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-21-08  星期四
  * @description
  */
+@Slf4j
 public class DemoDao002Impl implements DemoDao002 {
 
 	/**
@@ -20,6 +21,6 @@ public class DemoDao002Impl implements DemoDao002 {
 	 */
 	@Override
 	public void dao002Show() {
-		demorun.debug("我是Dao002中的show方法");
+		log.debug("我是Dao002中的show方法");
 	}
 }

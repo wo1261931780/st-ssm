@@ -1,11 +1,11 @@
 package wo1261931780.stssm.junw.bbb003spring20220801;
 
-import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao003;
-import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService002;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import wo1261931780.stssm.junw.bbb003spring20220801.dao.DemoDao003;
+import wo1261931780.stssm.junw.bbb003spring20220801.service.DemoService002;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -16,6 +16,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-19-43  星期一
  * @description
  */
+@Slf4j
 public class Bbb011 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb012.xml");
@@ -25,7 +26,7 @@ public class Bbb011 {
 		// 我是Dao003中的show方法
 		// 传递age值：123
 		// 传递address值：123
-		demorun.debug("------------------------");
+		log.debug("------------------------");
 		DemoService002 xmlDemoService003 = (DemoService002) ctx.getBean("xmlDemoService002");
 		xmlDemoService003.service002Show();
 		// 我是service002show方法

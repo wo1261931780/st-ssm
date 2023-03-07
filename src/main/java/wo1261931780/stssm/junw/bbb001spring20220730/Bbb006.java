@@ -30,7 +30,7 @@ public class Bbb006 {
 		SHOW_LOG.info(s);
 
 		// DemoDao6 demoDao7 = userDemoDao6Factory.getDemoDao6();
-		// demorun.debug(demoDao7);
+		// info.debug(demoDao7);
 		// 不修改配置的情况下，还是单例对象
 		// 直接运行上面两行会报错
 		// Creating shared instance of singleton bean 'xmlDemoDao6Factroy'

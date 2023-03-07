@@ -27,7 +27,8 @@ public class Bbb008 {
 		ctx.getBean("xmlUserDao001");// 获得对象以后，执行初始化方法
 		SHOW_LOG.debug(FINAL_SPLIT);
 		SHOW_LOG.debug("获得对应的service对象：");
-		UserService001Impl xmlUserService001 = (UserService001Impl) ctx.getBean("xmlUserService001");// 获得对象以后，就开始执行初始化和依赖注入的过程
+		UserService001Impl xmlUserService001 = (UserService001Impl) ctx.getBean("xmlUserService001");
+		// 获得对象以后，就开始执行初始化和依赖注入的过程
 		// 我是UserDao001初始化方法
 		// 已经完成了UserService001Impl中对UserDao001Impl的依赖注入
 		String format = String.format("对象开始执行serviceShow方法：%s", xmlUserService001);
@@ -42,7 +43,7 @@ public class Bbb008 {
 		// 在获得对象的过程中，先完成容器中对象的初始化，然后才进行构造过程
 		xmlUserDao001.userDaoShow001();
 		// ctx.close();// 直接暴力关机
-		// demorun.debug("我是关机后的方法");
+		// info.debug("我是关机后的方法");
 		// 类似于system.exit
 		// 一旦执行了代码，后续的容器功能都不能执行，而且控制台没有对应说明出现
 		SHOW_LOG.debug("开始关闭ioc");

@@ -10,7 +10,7 @@ class ApplicationTests {
 
 	@Test
 	void contextLoads() {
-		demorun.debug("测试方法");
+		info.debug("测试方法");
 	}
 
 }

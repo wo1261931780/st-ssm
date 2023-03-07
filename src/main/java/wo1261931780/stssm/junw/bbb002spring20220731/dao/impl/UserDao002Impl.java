@@ -1,10 +1,10 @@
 package wo1261931780.stssm.junw.bbb002spring20220731.dao.impl;
 
-import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao002;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
+import wo1261931780.stssm.junw.bbb002spring20220731.dao.UserDao002;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -15,6 +15,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-07-20-05  星期日
  * @description
  */
+@Slf4j
 public class UserDao002Impl implements UserDao002, InitializingBean, DisposableBean {
 
 
@@ -23,7 +24,7 @@ public class UserDao002Impl implements UserDao002, InitializingBean, DisposableB
 	 */
 	@Override
 	public void destroy() {
-		demorun.debug("我是UserDao002销毁方法");
+		log.debug("我是UserDao002销毁方法");
 	}
 
 	/**
@@ -31,7 +32,7 @@ public class UserDao002Impl implements UserDao002, InitializingBean, DisposableB
 	 */
 	@Override
 	public void afterPropertiesSet() {
-		demorun.debug("我是UserDao002初始化方法");
+		log.debug("我是UserDao002初始化方法");
 	}
 
 	/**
@@ -39,6 +40,6 @@ public class UserDao002Impl implements UserDao002, InitializingBean, DisposableB
 	 */
 	@Override
 	public void userDaoShow002() {
-		demorun.debug("我是UserDao002中的构造方法");
+		log.debug("我是UserDao002中的构造方法");
 	}
 }

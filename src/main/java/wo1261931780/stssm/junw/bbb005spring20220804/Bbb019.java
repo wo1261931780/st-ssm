@@ -28,12 +28,12 @@ public class Bbb019 {
 		Demo0804Dao001 dao001 = (Demo0804Dao001) applicationContext.getBean("xmlDemo0804Dao001Impl");
 		dao001.demoDaoShow();
 		String format = String.format("我是dao001%s", dao001);
-		demorun.debug(format);
+		info.debug(format);
 		// ***********************************************************
 		Demo0804Dao002 dao002 = (Demo0804Dao002) applicationContext.getBean("demo0804Dao002Impl");
 		dao002.demoDaoShow002();
 		String format1 = String.format("我是dao002%s", dao002);
-		demorun.debug(format1);
+		info.debug(format1);
 		// ***********************************************************
 		// 以上都是使用名称来直接访问的
 		Demo0804Service001 service001 = applicationContext.getBean(Demo0804Service001.class);
@@ -46,6 +46,6 @@ public class Bbb019 {
 		// UserService1 bean2 = applicationContext.getBean(UserService1.class);
 		// 这里寻找的全部都是接口，不是具体的实现类
 		// 但是注解又是写在实现类上面的
-		// demorun.debug("我是service1中的对象：" + bean2);
+		// info.debug("我是service1中的对象：" + bean2);
 	}
 }

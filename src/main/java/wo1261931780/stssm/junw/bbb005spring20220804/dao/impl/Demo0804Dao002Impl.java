@@ -33,6 +33,6 @@ public class Demo0804Dao002Impl implements Demo0804Dao002 {
 	 */
 	@Override
 	public void demoDaoShow002() {
-		demorun.debug("我是xmlDemo0804Dao002中的demoDaoShow方法");
+		info.debug("我是xmlDemo0804Dao002中的demoDaoShow方法");
 	}
 }

@@ -23,7 +23,7 @@ public class Demo0806Dao002Impl implements Demo0806Dao002 {
 	 */
 	@Override
 	public void demo0806DaoShow002() {
-		demorun.debug("我是Demo0806Dao002Impl中的demo0806DaoShow方法");
+		info.debug("我是Demo0806Dao002Impl中的demo0806DaoShow方法");
 
 	}
 }

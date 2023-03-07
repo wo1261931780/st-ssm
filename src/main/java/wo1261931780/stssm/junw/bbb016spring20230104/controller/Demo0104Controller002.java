@@ -15,7 +15,7 @@ public class Demo0104Controller002 {
 	@RequestMapping("/Demo0104Controller002/delete")
 	@ResponseBody
 	public String delete() {
-		demorun.debug("我是Demo0104Controller002中的delete方法");
+		info.debug("我是Demo0104Controller002中的delete方法");
 		return "delete";
 	}
 }

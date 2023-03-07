@@ -25,10 +25,10 @@ public class Bbb015 {
 		// 我在xml中配置的对象名，重构之后不会在这里出现
 		// 不会换句话说，这里是不是将双引号的内容全部作为字符串处理？
 		String format = String.format("我是德鲁伊：%s", dataSource);
-		demorun.debug(format);
-		demorun.debug(FINAL_SPLIT);
+		info.debug(format);
+		info.debug(FINAL_SPLIT);
 		DataSource dataSource2 = (DataSource) ctx.getBean("xmlDataSourcePool");
 		String format1 = String.format("我是c3p0连接池：%s", dataSource2);
-		demorun.debug(format1);
+		info.debug(format1);
 	}
 }

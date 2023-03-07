@@ -1,9 +1,9 @@
 package wo1261931780.stssm.junw.bbb002spring20220731.factory;
 
-import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao002;
-import com.stssm.github.io.junw.bbb002spring20220731.dao.impl.UserDao002Impl;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import lombok.extern.slf4j.Slf4j;
+import wo1261931780.stssm.junw.bbb002spring20220731.dao.UserDao002;
+import wo1261931780.stssm.junw.bbb002spring20220731.dao.impl.UserDao002Impl;
 
 /**
  * Created by Intellij IDEA.
@@ -14,9 +14,10 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-18-47  星期三
  * @description
  */
+@Slf4j
 public class Factory0731 {
 	public UserDao002 factoryGetDao001() {
-		demorun.debug("已经通过实例工厂Factory0731获得一个UserDao002Impl");
+		log.debug("已经通过实例工厂Factory0731获得一个UserDao002Impl");
 		return new UserDao002Impl();
 	}
 }

@@ -1,10 +1,10 @@
 package wo1261931780.stssm.junw.bbb003spring20220801;
 
-import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao006;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import wo1261931780.stssm.junw.bbb003spring20220801.dao.DemoDao006;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -15,13 +15,14 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-21-14  星期一
  * @description
  */
+@Slf4j
 public class Bbb014 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb015.xml");
 		DemoDao006 xmlDemoDao006 = (DemoDao006) ctx.getBean("xmlDemoDao006");
 		xmlDemoDao006.dao006Show();
 		String format = String.format("我是dao006：%s", xmlDemoDao006);
-		demorun.debug(format);
+		log.debug(format);
 		// 我是dao006：
 		// DemoDao006Impl
 		// {

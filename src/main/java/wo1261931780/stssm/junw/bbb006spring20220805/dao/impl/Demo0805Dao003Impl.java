@@ -31,18 +31,18 @@ public class Demo0805Dao003Impl implements Demo0805Dao003 {
 	 */
 	@Override
 	public void demo0805Dao003Show() {
-		demorun.debug("我是Demo0805Dao003Impl中的demo0805Dao003Show方法");
+		info.debug("我是Demo0805Dao003Impl中的demo0805Dao003Show方法");
 	}
 
 	@PostConstruct
 	public void initLife() {
 		// 注解的直译：在构造之前
-		demorun.debug("Demo0805Dao003Impl中的初始化方法");
+		info.debug("Demo0805Dao003Impl中的初始化方法");
 	}
 
 	@PreDestroy
 	public void destroyLife() {
 		// 注解直译：在销毁之前
-		demorun.debug("Demo0805Dao003Impl中的销毁方法");
+		info.debug("Demo0805Dao003Impl中的销毁方法");
 	}
 }

@@ -22,7 +22,7 @@ public class Bbb024 {
 
 		Demo0806Service002Impl bean = ctx.getBean(Demo0806Service002Impl.class);
 		String format = String.format("我是运行类%s", bean);
-		demorun.debug(format);
+		info.debug(format);
 		bean.demo0806Service002Show();
 	}
 }

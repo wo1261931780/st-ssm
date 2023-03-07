@@ -22,7 +22,7 @@ public class Bbb023 {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0806Config.class);
 		Demo0806Service001Impl bean = ctx.getBean(Demo0806Service001Impl.class);
 		String format = String.format("我是运行类%s", bean);
-		demorun.debug(format);
+		info.debug(format);
 		bean.demo0806Service001Show(); // Cannot invoke "com.stssm.github.io.junw.bbb007spring20220806.dao.Demo0806Dao001.demo0806DaoShow()" because "this.demo0806Dao001" is null
 		// 直接使用会导致报错
 		// 这里是因为没有注入成功，正好解释了昨天的报错问题

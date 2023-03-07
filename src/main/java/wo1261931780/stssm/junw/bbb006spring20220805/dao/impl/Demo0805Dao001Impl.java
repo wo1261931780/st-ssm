@@ -22,6 +22,6 @@ public class Demo0805Dao001Impl implements Demo0805Dao001 {
 	 */
 	@Override
 	public void demo0805Dao001Show() {
-		demorun.debug("我是demo0805Dao001中demo0805Dao001Show方法");
+		info.debug("我是demo0805Dao001中demo0805Dao001Show方法");
 	}
 }

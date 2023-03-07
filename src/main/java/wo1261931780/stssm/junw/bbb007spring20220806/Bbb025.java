@@ -20,7 +20,7 @@ public class Bbb025 {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0806Config.class);
 		Demo0806Service003Impl bean = ctx.getBean(Demo0806Service003Impl.class);
 		String format = String.format("我是运行类%s", bean);
-		demorun.debug(format);
+		info.debug(format);
 		bean.demo0806Service003Show();
 	}
 }

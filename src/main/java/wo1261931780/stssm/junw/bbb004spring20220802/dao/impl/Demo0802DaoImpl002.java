@@ -18,11 +18,11 @@ public class Demo0802DaoImpl002 implements Demo0802Dao002 {
 
 	public Demo0802DaoImpl002(String demo0802DaoImplName) {
 		this.demo0802DaoImplName = demo0802DaoImplName;
-		demorun.debug("我是带参构造方法");
+		info.debug("我是带参构造方法");
 	}
 
 	public Demo0802DaoImpl002() {
-		demorun.debug("我是无参构造方法");
+		info.debug("我是无参构造方法");
 	}
 
 	public void setDemo0802DaoImplName(String demo0802DaoImplName) {
@@ -34,8 +34,8 @@ public class Demo0802DaoImpl002 implements Demo0802Dao002 {
 	 */
 	@Override
 	public void daoShow002() {
-		demorun.debug("我是Demo0802Dao中的show方法");
+		info.debug("我是Demo0802Dao中的show方法");
 		String format = String.format("我是Demo0802Dao中的变量%s", demo0802DaoImplName);
-		demorun.debug(format);
+		info.debug(format);
 	}
 }

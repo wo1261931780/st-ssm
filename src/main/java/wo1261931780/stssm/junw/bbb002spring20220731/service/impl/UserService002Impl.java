@@ -1,10 +1,10 @@
 package wo1261931780.stssm.junw.bbb002spring20220731.service.impl;
 
-import com.stssm.github.io.junw.bbb002spring20220731.dao.UserDao002;
-import com.stssm.github.io.junw.bbb002spring20220731.dao.impl.UserDao002Impl;
-import com.stssm.github.io.junw.bbb002spring20220731.service.UserService002;
+import lombok.extern.slf4j.Slf4j;
+import wo1261931780.stssm.junw.bbb002spring20220731.dao.UserDao002;
+import wo1261931780.stssm.junw.bbb002spring20220731.dao.impl.UserDao002Impl;
+import wo1261931780.stssm.junw.bbb002spring20220731.service.UserService002;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -15,6 +15,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-08-04  星期二
  * @description
  */
+@Slf4j
 public class UserService002Impl implements UserService002 {
 	/**
 	 * 依赖注入
@@ -22,7 +23,7 @@ public class UserService002Impl implements UserService002 {
 	private UserDao002 serviceUserDao002;
 
 	public void setDiUserDao002(UserDao002Impl diUserDao002) {
-		demorun.debug("已经完成了UserService002Impl中对UserDao002Impl的依赖注入");
+		log.debug("已经完成了UserService002Impl中对UserDao002Impl的依赖注入");
 		this.serviceUserDao002 = diUserDao002;
 	}
 
@@ -31,20 +32,20 @@ public class UserService002Impl implements UserService002 {
 	 */
 	@Override
 	public void serviceShow() {
-		demorun.debug("我是UserService002中的show方法");
+		log.debug("我是UserService002中的show方法");
 	}
 
 	/**
 	 * 完成初始化
 	 */
 	public void initTest1() {
-		demorun.debug("我是serviceDao1中的初始化方法");
+		log.debug("我是serviceDao1中的初始化方法");
 	}
 
 	/**
 	 * 完成销毁方法
 	 */
 	public void destroyTest1() {
-		demorun.debug("我是serviceDao1中的销毁方法");
+		log.debug("我是serviceDao1中的销毁方法");
 	}
 }

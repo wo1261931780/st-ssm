@@ -1,8 +1,8 @@
 package wo1261931780.stssm.junw.bbb003spring20220801.dao.impl;
 
-import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao004;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import lombok.extern.slf4j.Slf4j;
+import wo1261931780.stssm.junw.bbb003spring20220801.dao.DemoDao004;
 
 /**
  * Created by Intellij IDEA.
@@ -13,6 +13,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-21-08  星期四
  * @description
  */
+@Slf4j
 public class DemoDao004Impl implements DemoDao004 {
 	private int age;
 	private String address;
@@ -20,11 +21,11 @@ public class DemoDao004Impl implements DemoDao004 {
 
 	@Override
 	public void dao004Show() {
-		demorun.debug("我是Dao004中的show方法");
+		log.debug("我是Dao004中的show方法");
 		String format = String.format("传递age值：%s", age);
-		demorun.debug(format);
+		log.debug(format);
 		String format1 = String.format("传递address值：%s", address);
-		demorun.debug(format1);
+		log.debug(format1);
 	}
 
 	public void setAge(String age) {

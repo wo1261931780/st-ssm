@@ -30,7 +30,7 @@ public class Demo1231Aop {
 
 	@Around("cutIn()")
 	private Object cutInAround(ProceedingJoinPoint pjp) throws Throwable {
-		demorun.debug("我是aop中的around方法体");
+		info.debug("我是aop中的around方法体");
 		Object[] args = pjp.getArgs();
 		args[0] = 111;
 		return pjp.proceed(args);
@@ -41,8 +41,8 @@ public class Demo1231Aop {
 
 	@Before("cutIn()")
 	private void beforeCutIn(JoinPoint jp) {
-		demorun.debug("我是切入点后的before方法");
-		demorun.debug("我是参数集合：" + Arrays.toString(jp.getArgs()));
+		info.debug("我是切入点后的before方法");
+		info.debug("我是参数集合：" + Arrays.toString(jp.getArgs()));
 		// 这里找到的参数，实际上是方法中的实参
 		// 比如我的show(11,12)
 		// 如果这里打印了对应的参数，就会出现[11,12]这样的结果
@@ -52,10 +52,10 @@ public class Demo1231Aop {
 
 	@After("cutIn()")
 	private void cutInAfter(JoinPoint jp) {
-		demorun.debug("我是切入点后的after方法");
+		info.debug("我是切入点后的after方法");
 		Object[] args = jp.getArgs();
 		args[0] = 1111;
-		demorun.debug("我是after参数集合：" + Arrays.toString(jp.getArgs()));
+		info.debug("我是after参数集合：" + Arrays.toString(jp.getArgs()));
 		// 这里可以手动修改参数
 		// 意味着，本质上这些数据都可以进一步完成处理
 	}
@@ -71,14 +71,14 @@ public class Demo1231Aop {
 		//     String argNames() default "";
 		// 上面的注解中，定义了以上四个变量
 		// 返回来说，就是四个变量可以用参数的形式在我们的注解中存在
-		demorun.debug(FINAL_SPLIT);
-		demorun.debug("我是afterReturning返回值" + obj);
+		info.debug(FINAL_SPLIT);
+		info.debug("我是afterReturning返回值" + obj);
 		// 这里也需要说明：如果JoinPoint jp存在，那就必须作为第一个参数
 	}
 
 	@AfterThrowing(value = "cutIn()", throwing = "throwable")
 	private void afterThrowing(Throwable throwable) {
-		demorun.debug("我是afterThrowing返回值：" + throwable);// java.lang.NullPointerException
+		info.debug("我是afterThrowing返回值：" + throwable);// java.lang.NullPointerException
 		// 这里和上面的参数接收方式也是不一样的
 	}
 }

@@ -1,13 +1,14 @@
 package wo1261931780.stssm.junw.bbb003spring20220801;
 
-import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao001;
-import com.stssm.github.io.junw.bbb003spring20220801.dao.DemoDao002;
-import com.stssm.github.io.junw.bbb003spring20220801.service.DemoService001;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import wo1261931780.stssm.junw.bbb003spring20220801.dao.DemoDao001;
+import wo1261931780.stssm.junw.bbb003spring20220801.dao.DemoDao002;
+import wo1261931780.stssm.junw.bbb003spring20220801.service.DemoService001;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
+
 
 /**
  * Created by Intellij IDEA.
@@ -18,21 +19,21 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-19-43  星期一
  * @description
  */
+@Slf4j
 public class Bbb010 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("bbb011.xml");
-		demorun.debug("执行DemoDao001的获取过程：");
+		log.debug("执行DemoDao001的获取过程：");
 		DemoDao001 xmlDemoDao001 = (DemoDao001) ctx.getBean("xmlDemoDao001");
-		demorun.debug("执行DemoDao002的获取过程：");
+		log.debug("执行DemoDao002的获取过程：");
 		DemoDao002 xmlDemoDao002 = (DemoDao002) ctx.getBean("xmlDemoDao002");
-		demorun.debug("执行ServiceDao001的获取过程：");
+		log.debug("执行ServiceDao001的获取过程：");
 		DemoService001 xmlService001 = (DemoService001) ctx.getBean("xmlDemoService001");
-		demorun.debug(FINAL_SPLIT);
+		log.debug(FINAL_SPLIT);
 		xmlDemoDao001.dao001Show();
-		demorun.debug(FINAL_SPLIT);
+		log.debug(FINAL_SPLIT);
 		xmlDemoDao002.dao002Show();
-		demorun.debug(FINAL_SPLIT);
+		log.debug(FINAL_SPLIT);
 		xmlService001.service001Show();
-
 	}
 }
