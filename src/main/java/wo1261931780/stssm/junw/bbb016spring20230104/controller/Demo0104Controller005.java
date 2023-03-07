@@ -18,7 +18,6 @@ import java.util.List;
 @Slf4j
 @RequestMapping("/Demo0104Controller005")
 public class Demo0104Controller005 {
-
 	@RequestMapping("/getParams")
 	@ResponseBody
 	public String getParams(@RequestParam("name") String demoName, @RequestParam("age") String demoAge, @RequestParam("address") String demoAddress) {

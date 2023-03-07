@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Configuration;
  * @author junw
  */
 @Configuration
-@ComponentScan({"com.stssm.github.io.junw.bbb016spring20230104.dao", "com.stssm.github.io.junw.bbb016spring20230104.service"})
+@ComponentScan({"wo1261931780.stssm.junw.bbb016spring20230104.dao", "wo1261931780.stssm.junw.bbb016spring20230104.service"})
 public class Spring0104Configuration001 {
 }
