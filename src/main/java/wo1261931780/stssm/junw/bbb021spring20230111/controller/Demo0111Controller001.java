@@ -47,6 +47,7 @@ public class Demo0111Controller001 {
 		log.debug("我是形参数据：" + ymlData1);
 		// log.debug("我是配置文件中的数据：" + ymlData);
 		// log.debug("我是配置文件中的数据：" + ymlData2);
+
 		log.debug("我是配置文件中的数据0：" + ymlEnvironment);
 		log.debug("我是配置文件中的数据1：" + ymlEnvironment.getProperty("name.data"));
 		// 我是配置文件中的数据1：null

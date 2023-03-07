@@ -151,5 +151,4 @@ public class Demo0108BookController001 {
 	// public ResponseEntity<Boolean> deleteById(Integer id) {
 	//     return ResponseEntity.ok(this.demo0108Service001.deleteById(id));
 // }
-
 }

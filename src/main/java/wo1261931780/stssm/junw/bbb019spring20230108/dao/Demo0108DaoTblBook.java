@@ -64,5 +64,4 @@ public interface Demo0108DaoTblBook {
 	 */
 	@Insert("insert into study001sql.tbl_book (type,name,description) values (#{type},#{name},#{description})")
 	void saveOne(Demo0108DomainTblBook demo0108DomainTblBook);
-
 }

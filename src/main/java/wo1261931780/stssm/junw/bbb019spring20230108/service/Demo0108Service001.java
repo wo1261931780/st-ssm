@@ -51,6 +51,4 @@ public interface Demo0108Service001 {
 	 * @return 影响行数
 	 */
 	Boolean saveOne(Demo0108DomainTblBook demo0108DomainTblBook);
-
-
 }
