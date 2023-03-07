@@ -15,12 +15,12 @@ public class ServletContainerInit0106configuration extends AbstractAnnotationCon
 		return new String[]{"/"};
 	}
 
-	@Override
-	protected Filter[] getServletFilters() {
-		CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter();
-		encodingFilter.setEncoding("UTF-8");
-		return new Filter[]{encodingFilter};
-	}
+	// @Override
+	// protected Filter[] getServletFilters() {
+	// 	CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter();
+	// 	encodingFilter.setEncoding("UTF-8");
+	// 	return new Filter[]{encodingFilter};
+	// }
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
@@ -29,6 +29,6 @@ public class ServletContainerInit0106configuration extends AbstractAnnotationCon
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[]{com.stssm.github.io.junw.bbb018spring20230106.configuration.SpringMvc0106Configuration001.class};
+		return new Class[]{SpringMvc0106Configuration001.class};
 	}
 }

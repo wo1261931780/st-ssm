@@ -22,6 +22,7 @@ public class Demo0102ServiceImpl implements Demo0102Service {
 			// demorun.debug("我是paw");
 			// paw = paw.trim();
 			// demorun.debug("我是paw:" + paw + "====");
+
 			demo0102Dao.show0102dao(url, paw);
 			return Boolean.TRUE;
 		}

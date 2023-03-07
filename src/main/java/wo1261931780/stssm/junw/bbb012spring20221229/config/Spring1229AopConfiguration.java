@@ -14,7 +14,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * @description
  */
 @Configuration
-@ComponentScan("com.stssm.github.io.junw.bbb012spring20221229")
+@ComponentScan("wo1261931780.stssm.junw.bbb012spring20221229")
 @EnableAspectJAutoProxy
 public class Spring1229AopConfiguration {
 }

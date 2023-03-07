@@ -24,7 +24,7 @@ import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 @Aspect
 @Slf4j
 public class Demo1231Aop {
-	@Pointcut("execution(* com.stssm.github.io.junw.bbb013spring20221231.dao.impl.Demo1231DaoImpl.findName(..))")
+	@Pointcut("execution(* wo1261931780.stssm.junw.bbb013spring20221231.dao.impl.Demo1231DaoImpl.findName(..))")
 	private void cutIn() {
 		// 需要说明一点，如果这里的方法是有参数的，我们不需要把参数加进去
 		// 但是，需要加入通配符，表示参数的存在

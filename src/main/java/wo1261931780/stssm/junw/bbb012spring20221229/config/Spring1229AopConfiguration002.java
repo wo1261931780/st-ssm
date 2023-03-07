@@ -15,7 +15,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  */
 @Configuration
 @EnableAspectJAutoProxy
-@ComponentScan("com.stssm.github.io.junw.bbb012spring20221229")
+@ComponentScan("wo1261931780.stssm.junw.bbb012spring20221229")
 public class Spring1229AopConfiguration002 {
 	// @Import({Jdbc1229Configuration.class, Mybatis1229Configuration.class})
 	// @PropertySource("classpath:jdbc1229.properties")

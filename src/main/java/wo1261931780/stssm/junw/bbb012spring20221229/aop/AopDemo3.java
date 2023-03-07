@@ -1,5 +1,6 @@
 package wo1261931780.stssm.junw.bbb012spring20221229.aop;
 
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
@@ -11,7 +12,6 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 
 import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 /**
  * Created by Intellij IDEA.
@@ -25,27 +25,28 @@ import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
 @Component
 @Aspect
+@Slf4j
 public class AopDemo3 {
 
-	@Pointcut("Demo1229DaoImpl.show()")
-	private void cutIn1() {
-	}
-
-	@Around("AopDemo3.cutIn1()")
-	private Object around1(ProceedingJoinPoint pjp) throws Throwable {
-		SHOW_LOG.debug("我是切入点周围的方法");
-		pjp.proceed();
-		SHOW_LOG.debug(FINAL_SPLIT);
-		return null;
-	}
-
-	@Before("cutIn1()")
-	private void before1(ProceedingJoinPoint pjp) {
-		Object[] pjpArgs = pjp.getArgs();// 获取对象信息
-		SHOW_LOG.debug(Arrays.toString(pjpArgs));
-		Signature pjpSignature = pjp.getSignature();
-		SHOW_LOG.debug("我是代理对象：" + pjpSignature.getDeclaringType());
-		SHOW_LOG.debug("我是对象名称：" + pjpSignature.getDeclaringTypeName());
-		SHOW_LOG.debug("我是代理方法：" + pjpSignature.getName());
-	}
+	// @Pointcut("execution(void wo1261931780.stssm.junw.bbb012spring20221229.dao.impl.Demo1229DaoImpl.show())")
+	// private void cutIn1() {
+	// }
+	//
+	// @Around("AopDemo3.cutIn1()")
+	// private Object around1(ProceedingJoinPoint pjp) throws Throwable {
+	// 	log.debug("我是切入点周围的方法");
+	// 	pjp.proceed();
+	// 	log.debug(FINAL_SPLIT);
+	// 	return null;
+	// }
+	//
+	// @Before("cutIn1()")
+	// private void before1(ProceedingJoinPoint pjp) {
+	// 	Object[] pjpArgs = pjp.getArgs();// 获取对象信息
+	// 	log.debug(Arrays.toString(pjpArgs));
+	// 	Signature pjpSignature = pjp.getSignature();
+	// 	log.debug("我是代理对象：" + pjpSignature.getDeclaringType());
+	// 	log.debug("我是对象名称：" + pjpSignature.getDeclaringTypeName());
+	// 	log.debug("我是代理方法：" + pjpSignature.getName());
+	// }
 }

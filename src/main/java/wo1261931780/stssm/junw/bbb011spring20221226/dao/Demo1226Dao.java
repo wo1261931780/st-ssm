@@ -36,5 +36,4 @@ public interface Demo1226Dao {
 	 * 保存一个对象
 	 */
 	void save();
-
 }

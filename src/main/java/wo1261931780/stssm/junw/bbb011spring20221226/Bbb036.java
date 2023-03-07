@@ -23,8 +23,6 @@ public class Bbb036 {
 		Demo1226Dao demo1226Dao = applicationContext.getBean(Demo1226Dao.class);
 		demo1226Dao.delete(1);
 		log.debug("我是新的方法");
-		// demorun.debug(FINAL_SPLIT);
-
 		demo1226Dao.update();
 	}
 }

@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @author junw
  */
 @Configuration
-@ComponentScan("com.stssm.github.io.junw.bbb014spring20230102")
+@ComponentScan("wo1261931780.stssm.junw.bbb014spring20230102")
 @EnableAspectJAutoProxy
 @EnableTransactionManagement
 public class Spring0102configuration {

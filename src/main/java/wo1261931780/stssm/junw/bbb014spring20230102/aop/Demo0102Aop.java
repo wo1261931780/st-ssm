@@ -17,7 +17,7 @@ import java.util.Arrays;
 @Slf4j
 @Component
 public class Demo0102Aop {
-	@Pointcut("execution(* com.stssm.github.io.junw.bbb014spring20230102.service.impl.Demo0102ServiceImpl.show0102service(..))")
+	@Pointcut("execution(* wo1261931780.stssm.junw.bbb014spring20230102.service.impl.Demo0102ServiceImpl.show0102service(..))")
 	private void cutIn() {
 	}
 

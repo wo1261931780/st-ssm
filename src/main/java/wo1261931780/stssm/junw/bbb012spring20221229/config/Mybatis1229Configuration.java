@@ -19,7 +19,7 @@ public class Mybatis1229Configuration {
 	@Bean
 	public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
 		SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
-		factoryBean.setTypeAliasesPackage("com.stssm.github.io.junw.bbb012spring20221229.dao.impl");
+		factoryBean.setTypeAliasesPackage("wo1261931780.stssm.junw.bbb012spring20221229.dao.impl");
 		factoryBean.setDataSource(dataSource);
 		return factoryBean;
 	}
@@ -27,7 +27,7 @@ public class Mybatis1229Configuration {
 	@Bean
 	public MapperScannerConfigurer mapperScannerConfigurer() {
 		MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
-		mapperScannerConfigurer.setBasePackage("com.stssm.github.io.junw.bbb012spring20221229.dao.impl");
+		mapperScannerConfigurer.setBasePackage("wo1261931780.stssm.junw.bbb012spring20221229.dao.impl");
 		return mapperScannerConfigurer;
 	}
 }

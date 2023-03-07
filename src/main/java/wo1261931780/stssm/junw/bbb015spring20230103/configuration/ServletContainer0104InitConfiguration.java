@@ -3,6 +3,8 @@ package com.stssm.github.io.junw.bbb015spring20230103.configuration;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.support.AbstractDispatcherServletInitializer;
+import wo1261931780.stssm.junw.bbb015spring20230103.configuration.Spring0103Configuration001;
+import wo1261931780.stssm.junw.bbb015spring20230103.configuration.SpringMvc0103Configuration001;
 
 public class ServletContainer0104InitConfiguration extends AbstractDispatcherServletInitializer {
 	protected WebApplicationContext createServletApplicationContext() {
@@ -10,7 +12,7 @@ public class ServletContainer0104InitConfiguration extends AbstractDispatcherSer
 		AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
 		// 因为普通的容器不能使用在web环境，所以这里需要使用不一样的配置
 		// 因为容器刚刚出现，没有初始化
-		context.register(com.stssm.github.io.junw.bbb015spring20230103.configuration.SpringMvc0103Configuration001.class);
+		context.register(SpringMvc0103Configuration001.class);
 		// tomcat容器启动的时候就会使用这个配置
 		return context;
 	}
@@ -27,7 +29,7 @@ public class ServletContainer0104InitConfiguration extends AbstractDispatcherSer
 		// return null;
 		// 和上面的配置一模一样，唯一需要修改的就是加载的配置种类
 		AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-		context.register(com.stssm.github.io.junw.bbb015spring20230103.configuration.Spring0103Configuration001.class);
+		context.register(Spring0103Configuration001.class);
 		return context;
 	}
 	// 定义一个tomcat的启动容器配置

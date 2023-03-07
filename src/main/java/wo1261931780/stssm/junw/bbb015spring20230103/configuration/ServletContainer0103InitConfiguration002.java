@@ -11,12 +11,12 @@ public class ServletContainer0103InitConfiguration002 extends AbstractAnnotation
 		// 这里和001的配置一样
 		// 但是需要返回的是一个字节码文件
 		// 因此，我们直接返回对应的配置类就是可以的
-		return new Class[]{com.stssm.github.io.junw.bbb015spring20230103.configuration.Spring0103Configuration001.class};
+		return new Class[]{Spring0103Configuration001.class};
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[]{com.stssm.github.io.junw.bbb015spring20230103.configuration.SpringMvc0103Configuration001.class};
+		return new Class[]{SpringMvc0103Configuration001.class};
 	}
 
 	@Override

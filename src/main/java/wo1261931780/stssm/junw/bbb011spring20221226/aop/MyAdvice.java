@@ -18,7 +18,7 @@ import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
  * @Date 2022-12-17-53  星期一
  * @description
  */
-@Component
+@Component("MyAdvice")
 @Aspect
 @Slf4j
 public class MyAdvice {
@@ -30,7 +30,7 @@ public class MyAdvice {
 	// 第三种方法，使用通配符完成
 	// ===================================================================
 
-	@Pointcut("execution(void wo1261931780.stssm.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.show())")
+	@Pointcut(value = "execution(void wo1261931780.stssm.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.show())")
 	private void cutIn() {
 	}
 
@@ -46,7 +46,7 @@ public class MyAdvice {
 	}
 	// 在show方法之前执行上面这个共享方法
 
-	@Pointcut("execution(* wo1261931780.stssm.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.delete(*))")
+	@Pointcut(value = "execution(* wo1261931780.stssm.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.delete(*))")
 	private void cutIn2() {
 	}
 
