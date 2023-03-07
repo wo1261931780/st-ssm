@@ -1,7 +1,7 @@
 package wo1261931780.stssm.junw.bbb023spring20230113.domain.query;
 
-import com.stssm.github.io.junw.bbb023spring20230113.domain.Demo0113Domain002;
 import lombok.Data;
+import wo1261931780.stssm.junw.bbb023spring20230113.domain.Demo0113Domain002;
 
 /**
  * Created by Intellij IDEA.
