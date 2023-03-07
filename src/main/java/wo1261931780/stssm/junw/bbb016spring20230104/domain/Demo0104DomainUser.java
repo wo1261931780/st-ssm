@@ -9,7 +9,7 @@ public class Demo0104DomainUser {
 
 	private String name;
 	private int age;
-	private com.stssm.github.io.junw.bbb016spring20230104.domain.Demo0104DomainAddress demo0104DomainAddress;
+	private Demo0104DomainAddress demo0104DomainAddress;
 	// 这里添加完成以后，
 	// 需要手动进行get和set操作
 
@@ -18,7 +18,7 @@ public class Demo0104DomainUser {
 	public Demo0104DomainUser() {
 	}
 
-	public Demo0104DomainUser(String name, int age, com.stssm.github.io.junw.bbb016spring20230104.domain.Demo0104DomainAddress demo0104DomainAddress, String[] habits) {
+	public Demo0104DomainUser(String name, int age, Demo0104DomainAddress demo0104DomainAddress, String[] habits) {
 		this.name = name;
 		this.age = age;
 		this.demo0104DomainAddress = demo0104DomainAddress;
@@ -33,11 +33,11 @@ public class Demo0104DomainUser {
 		this.habits = habits;
 	}
 
-	public com.stssm.github.io.junw.bbb016spring20230104.domain.Demo0104DomainAddress getDemo0104DomainAddress() {
+	public Demo0104DomainAddress getDemo0104DomainAddress() {
 		return demo0104DomainAddress;
 	}
 
-	public void setDemo0104DomainAddress(com.stssm.github.io.junw.bbb016spring20230104.domain.Demo0104DomainAddress demo0104DomainAddress) {
+	public void setDemo0104DomainAddress(Demo0104DomainAddress demo0104DomainAddress) {
 		this.demo0104DomainAddress = demo0104DomainAddress;
 	}
 

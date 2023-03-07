@@ -1,6 +1,7 @@
 package wo1261931780.stssm.junw.bbb023spring20230113.dao;
 
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import wo1261931780.stssm.junw.bbb023spring20230113.domain.Demo0113Domain005;
 

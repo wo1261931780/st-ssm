@@ -1,9 +1,9 @@
 package wo1261931780.stssm.junw.bbb014spring20230102.service.impl;
 
-import com.stssm.github.io.junw.bbb014spring20230102.dao.LogDao;
-import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102LogService001;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import wo1261931780.stssm.junw.bbb014spring20230102.dao.LogDao;
+import wo1261931780.stssm.junw.bbb014spring20230102.service.Demo0102LogService001;
 
 /**
  * @author junw

@@ -41,6 +41,7 @@
 		<!--=============================================================================================-->
 
 		<!--Spring Aspects将Spring与AspectJ整合在一起。-->
+		<!--AOP切面编程的依赖-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
@@ -214,23 +215,23 @@
 		<!--持久性框架，支持自定义SQL，存储过程和高级映射。MyBatis使用XML描述符或注解将对象与存储程序或SQL语句结合起来。-->
 		<!--这里是mybatis按照spring的标准，开发出来的整合包-->
 		<!--没有配置，项目报错，启动失败-->
-		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>3.0.1</version>
-		</dependency>
+		<!--<dependency>-->
+		<!--	<groupId>org.mybatis.spring.boot</groupId>-->
+		<!--	<artifactId>mybatis-spring-boot-starter</artifactId>-->
+		<!--	<version>3.0.1</version>-->
+		<!--</dependency>-->
 
 		<!--使用mybatis-plus以后，这些东西就不需要了-->
 		<!--目前mybatis-plus只支持到2.0.7，直接放开-->
 		<!--没有配置，项目报错，启动失败-->
-		<!--<dependency>-->
-		<!--	<groupId>com.baomidou</groupId>-->
-		<!--	<artifactId>mybatis-plus-boot-starter</artifactId>-->
-		<!--	<version>3.5.3.1</version>-->
-		<!--	&lt;!&ndash;依赖中一共两个jar包&ndash;&gt;-->
-		<!--	&lt;!&ndash;一个是mybatis和spring整合包&ndash;&gt;-->
-		<!--	&lt;!&ndash;一个是mybatis包&ndash;&gt;-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>3.5.3.1</version>
+			<!--依赖中一共两个jar包-->
+			<!--一个是mybatis和spring整合包-->
+			<!--一个是mybatis包-->
+		</dependency>
 
 		<!--mybatis-plus的代码生成器-->
 		<dependency>
@@ -621,5 +622,4 @@
 			</properties>
 		</profile>
 	</profiles>
-
 </project>

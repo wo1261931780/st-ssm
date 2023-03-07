@@ -1,16 +1,17 @@
 package wo1261931780.stssm.junw.bbb016spring20230104.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 
 /**
  * @author junw
  */
 @Controller
+@Slf4j
 @RequestMapping("/Demo0104Controller003")
 public class Demo0104Controller003 {
 	// 如果一个controller中存在着很多的方法
@@ -20,26 +21,26 @@ public class Demo0104Controller003 {
 	@RequestMapping("/showMe")
 	@ResponseBody
 	public String showMe() {
-		demorun.debug("我是Demo0104Controller003中的showMe方法");
+		log.debug("我是Demo0104Controller003中的showMe方法");
 		return "show me the money";
 	}
 
 	@RequestMapping("/delete")
 	@ResponseBody
 	public String delete() {
-		demorun.debug("我是Demo0104Controller003中的delete方法");
+		log.debug("我是Demo0104Controller003中的delete方法");
 		return "delete";
 	}
 
 	@RequestMapping("/getParams")
 	@ResponseBody
 	public String getParams(String name, String age, String address) {
-		demorun.debug("我是Demo0104Controller003中的getParams方法");
-		demorun.debug("我是参数1：" + name);
+		log.debug("我是Demo0104Controller003中的getParams方法");
+		log.debug("我是参数1：" + name);
 		// 如果要接收参数，直接在get中设置，这里就可以拿到对应的值
-		demorun.debug("我是参数2：" + age);
+		log.debug("我是参数2：" + age);
 		// 好像前端的参数和后端的参数没有区别，这里都可以认定为字符串进行接收操作
-		demorun.debug("我是参数3：" + address);
+		log.debug("我是参数3：" + address);
 		// 如果对应的变量和前端传递过来的参数不一样
 		// 那么这里 就会直接返回为null
 		// 注意一下postman中的写法：

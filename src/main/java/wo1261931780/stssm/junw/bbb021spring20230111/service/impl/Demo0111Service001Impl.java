@@ -1,17 +1,18 @@
 package wo1261931780.stssm.junw.bbb021spring20230111.service.impl;
 
-import com.stssm.github.io.junw.bbb021spring20230111.service.Demo0111Service001;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import wo1261931780.stssm.junw.bbb021spring20230111.service.Demo0111Service001;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * @author junw
  */
 @Service
+@Slf4j
 public class Demo0111Service001Impl implements Demo0111Service001 {
 	@Override
 	public void serviceShow() {
-		demorun.debug("demo001中的show方法被调用");
+		log.debug("demo001中的show方法被调用");
 	}
 }

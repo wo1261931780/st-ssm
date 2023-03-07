@@ -30,7 +30,6 @@ public class MyAdvice {
 	// 第三种方法，使用通配符完成
 	// ===================================================================
 
-
 	@Pointcut("execution(void wo1261931780.stssm.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.show())")
 	private void cutIn() {
 	}
@@ -47,7 +46,7 @@ public class MyAdvice {
 	}
 	// 在show方法之前执行上面这个共享方法
 
-	@Pointcut("execution(* com.stssm.github.io.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.delete(*))")
+	@Pointcut("execution(* wo1261931780.stssm.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.delete(*))")
 	private void cutIn2() {
 	}
 
@@ -70,7 +69,6 @@ public class MyAdvice {
 	// @Pointcut("execution(* *..u*(..))")
 	// @Pointcut("execution(* *..*e(..))")
 	// 上面分别是以u开头和以e结尾的统配符
-
 
 	@Pointcut("execution(* *..*(..))")
 	private void cutIn4() {

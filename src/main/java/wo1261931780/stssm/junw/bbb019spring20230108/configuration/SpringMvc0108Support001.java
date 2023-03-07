@@ -1,12 +1,12 @@
 package wo1261931780.stssm.junw.bbb019spring20230108.configuration;
 
-import com.stssm.github.io.junw.bbb019spring20230108.controller.interceptor.Demo0108Interceptor001;
-import com.stssm.github.io.junw.bbb019spring20230108.controller.interceptor.Demo0108Interceptor002;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+import wo1261931780.stssm.junw.bbb019spring20230108.controller.interceptor.Demo0108Interceptor001;
+import wo1261931780.stssm.junw.bbb019spring20230108.controller.interceptor.Demo0108Interceptor002;
 
 /**
  * @author junw

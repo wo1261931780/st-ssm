@@ -1,9 +1,9 @@
 package wo1261931780.stssm.junw.bbb011spring20221226.dao.impl;
 
-import com.stssm.github.io.junw.bbb011spring20221226.dao.Demo1226Dao;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
+import wo1261931780.stssm.junw.bbb011spring20221226.dao.Demo1226Dao;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -15,37 +15,38 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @description
  */
 @Repository("Demo1226DaoImpl")
+@Slf4j
 public class Demo1226DaoImpl implements Demo1226Dao {
 	@Override
 	public void show() {
-		// info.debug("我是show方法");
+		// log.debug("我是show方法");
 		long startTimeMillis = System.currentTimeMillis();
 		int demo = 10;
 		for (int i = 0; i < demo; i++) {
-			info.debug("我是show方法");
+			log.debug("我是show方法");
 		}
 		long endTimeMillis = System.currentTimeMillis();
 		long duringTime = endTimeMillis - startTimeMillis;
-		info.debug("执行一万次消耗时间：" + duringTime + "ms");
+		log.debug("执行一万次消耗时间：" + duringTime + "ms");
 	}
 
 	@Override
 	public void delete(int demo) {
-		info.debug("我是delete方法");
+		log.debug("我是delete方法");
 	}
 
 	@Override
 	public void update() {
-		info.debug("我是update方法");
+		log.debug("我是update方法");
 	}
 
 	@Override
 	public void select() {
-		info.debug("我是select方法");
+		log.debug("我是select方法");
 	}
 
 	@Override
 	public void save() {
-		info.debug("我是save方法");
+		log.debug("我是save方法");
 	}
 }

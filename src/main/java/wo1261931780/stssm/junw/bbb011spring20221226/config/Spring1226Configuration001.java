@@ -14,7 +14,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * @description
  */
 @Configuration
-@ComponentScan("com.stssm.github.io.junw.bbb011spring20221226")
+@ComponentScan("wo1261931780.stssm.junw.bbb011spring20221226")
 @EnableAspectJAutoProxy
 public class Spring1226Configuration001 {
 // @ComponentScan({"com.stssm.github.io.junw.bbb011spring20221226.dao.impl", "com.stssm.github.io.junw.bbb011spring20221226.aop"})

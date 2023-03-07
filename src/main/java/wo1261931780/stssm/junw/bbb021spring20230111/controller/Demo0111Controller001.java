@@ -1,6 +1,6 @@
 package wo1261931780.stssm.junw.bbb021spring20230111.controller;
 
-import com.stssm.github.io.junw.bbb021spring20230111.domain.YmlSample;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,13 +8,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import wo1261931780.stssm.junw.bbb021spring20230111.domain.YmlSample;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * @author junw
  */
 @RestController
+@Slf4j
 @RequestMapping("/Demo0111Controller001")
 public class Demo0111Controller001 {
 	// @Value("${name.data.name1}")
@@ -32,8 +33,8 @@ public class Demo0111Controller001 {
 
 	@GetMapping("/{id}")
 	public String getUserId(@PathVariable Integer id) {
-		demorun.debug("我是Demo0111Controller001类中的getUserId方法");
-		demorun.debug("我是接收到的id数值：" + id);
+		log.debug("我是Demo0111Controller001类中的getUserId方法");
+		log.debug("我是接收到的id数值：" + id);
 		return "getUserId返回成功";
 	}
 	// 其实这里，我们的spring boot项目已经开发完毕
@@ -43,15 +44,15 @@ public class Demo0111Controller001 {
 
 	@PostMapping("/{ymlData1}")
 	public String getYmlData(@PathVariable String ymlData1) {
-		demorun.debug("我是形参数据：" + ymlData1);
-		// demorun.debug("我是配置文件中的数据：" + ymlData);
-		// demorun.debug("我是配置文件中的数据：" + ymlData2);
-		demorun.debug("我是配置文件中的数据0：" + ymlEnvironment);
-		demorun.debug("我是配置文件中的数据1：" + ymlEnvironment.getProperty("name.data"));
+		log.debug("我是形参数据：" + ymlData1);
+		// log.debug("我是配置文件中的数据：" + ymlData);
+		// log.debug("我是配置文件中的数据：" + ymlData2);
+		log.debug("我是配置文件中的数据0：" + ymlEnvironment);
+		log.debug("我是配置文件中的数据1：" + ymlEnvironment.getProperty("name.data"));
 		// 我是配置文件中的数据1：null
-		demorun.debug("我是配置文件中的数据2：" + ymlEnvironment.getProperty("name.data.subject[1]"));
+		log.debug("我是配置文件中的数据2：" + ymlEnvironment.getProperty("name.data.subject[1]"));
 		// 我是配置文件中的数据2：chinese
-		demorun.debug("我是配置对应对象，拿到的结果：" + ymlSample);
+		log.debug("我是配置对应对象，拿到的结果：" + ymlSample);
 		// 我是配置对应对象，拿到的结果：YmlSample{name1='123', name2='222', subject=[math, chinese, chemistry]}
 		return "getYmlData返回成功";
 	}

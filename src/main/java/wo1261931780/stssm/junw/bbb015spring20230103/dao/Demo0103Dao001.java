@@ -1,6 +1,7 @@
 package wo1261931780.stssm.junw.bbb015spring20230103.dao;
 
-import com.stssm.github.io.junw.bbb015spring20230103.domain.Demo0103Domain001;
+
+import wo1261931780.stssm.junw.bbb015spring20230103.domain.Demo0103Domain001;
 
 /**
  * @author junw

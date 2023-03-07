@@ -1,9 +1,9 @@
 package wo1261931780.stssm.junw.bbb011spring20221226;
 
-import com.stssm.github.io.junw.bbb011spring20221226.config.Spring1226Configuration001;
-import com.stssm.github.io.junw.bbb011spring20221226.dao.Demo1226Dao;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import wo1261931780.stssm.junw.bbb011spring20221226.config.Spring1226Configuration001;
+import wo1261931780.stssm.junw.bbb011spring20221226.dao.Demo1226Dao;
 
 /**
  * Created by Intellij IDEA.

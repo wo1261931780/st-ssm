@@ -1,5 +1,6 @@
 package wo1261931780.stssm.junw.bbb013spring20221231.aop;
 
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -13,14 +14,15 @@ import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
+
 
 /**
  * @author junw
  */
 @Component
 @Aspect
+@Slf4j
 public class Demo1231Aop {
 	@Pointcut("execution(* com.stssm.github.io.junw.bbb013spring20221231.dao.impl.Demo1231DaoImpl.findName(..))")
 	private void cutIn() {
@@ -30,7 +32,7 @@ public class Demo1231Aop {
 
 	@Around("cutIn()")
 	private Object cutInAround(ProceedingJoinPoint pjp) throws Throwable {
-		info.debug("我是aop中的around方法体");
+		log.debug("我是aop中的around方法体");
 		Object[] args = pjp.getArgs();
 		args[0] = 111;
 		return pjp.proceed(args);
@@ -41,8 +43,8 @@ public class Demo1231Aop {
 
 	@Before("cutIn()")
 	private void beforeCutIn(JoinPoint jp) {
-		info.debug("我是切入点后的before方法");
-		info.debug("我是参数集合：" + Arrays.toString(jp.getArgs()));
+		log.debug("我是切入点后的before方法");
+		log.debug("我是参数集合：" + Arrays.toString(jp.getArgs()));
 		// 这里找到的参数，实际上是方法中的实参
 		// 比如我的show(11,12)
 		// 如果这里打印了对应的参数，就会出现[11,12]这样的结果
@@ -52,10 +54,10 @@ public class Demo1231Aop {
 
 	@After("cutIn()")
 	private void cutInAfter(JoinPoint jp) {
-		info.debug("我是切入点后的after方法");
+		log.debug("我是切入点后的after方法");
 		Object[] args = jp.getArgs();
 		args[0] = 1111;
-		info.debug("我是after参数集合：" + Arrays.toString(jp.getArgs()));
+		log.debug("我是after参数集合：" + Arrays.toString(jp.getArgs()));
 		// 这里可以手动修改参数
 		// 意味着，本质上这些数据都可以进一步完成处理
 	}
@@ -71,14 +73,14 @@ public class Demo1231Aop {
 		//     String argNames() default "";
 		// 上面的注解中，定义了以上四个变量
 		// 返回来说，就是四个变量可以用参数的形式在我们的注解中存在
-		info.debug(FINAL_SPLIT);
-		info.debug("我是afterReturning返回值" + obj);
+		log.debug(FINAL_SPLIT);
+		log.debug("我是afterReturning返回值" + obj);
 		// 这里也需要说明：如果JoinPoint jp存在，那就必须作为第一个参数
 	}
 
 	@AfterThrowing(value = "cutIn()", throwing = "throwable")
 	private void afterThrowing(Throwable throwable) {
-		info.debug("我是afterThrowing返回值：" + throwable);// java.lang.NullPointerException
+		log.debug("我是afterThrowing返回值：" + throwable);// java.lang.NullPointerException
 		// 这里和上面的参数接收方式也是不一样的
 	}
 }

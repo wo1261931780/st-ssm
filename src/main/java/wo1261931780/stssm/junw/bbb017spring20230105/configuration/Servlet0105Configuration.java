@@ -1,9 +1,9 @@
 package wo1261931780.stssm.junw.bbb017spring20230105.configuration;
 
-import com.stssm.github.io.junw.bbb016spring20230104.configuration.Spring0104Configuration001;
-import com.stssm.github.io.junw.bbb016spring20230104.configuration.SpringMvc0104Configuration001;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import wo1261931780.stssm.junw.bbb016spring20230104.configuration.Spring0104Configuration001;
+import wo1261931780.stssm.junw.bbb016spring20230104.configuration.SpringMvc0104Configuration001;
 
 import javax.servlet.Filter;
 

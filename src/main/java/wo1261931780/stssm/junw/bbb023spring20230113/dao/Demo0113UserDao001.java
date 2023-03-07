@@ -1,8 +1,8 @@
 package wo1261931780.stssm.junw.bbb023spring20230113.dao;
 
-import com.stssm.github.io.junw.bbb023spring20230113.domain.Demo0113Domain001;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import wo1261931780.stssm.junw.bbb023spring20230113.domain.Demo0113Domain001;
 
 /**
  * Created by Intellij IDEA.

@@ -1,7 +1,6 @@
 package wo1261931780.stssm.junw.bbb019spring20230108.configuration;
 
 
-import com.stssm.github.io.junw.bbb019spring20230108.controller.interceptor.Demo0108Interceptor001;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -9,12 +8,13 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import wo1261931780.stssm.junw.bbb019spring20230108.controller.interceptor.Demo0108Interceptor001;
 
 /**
  * @author junw
  */
 @Configuration
-@ComponentScan({"com.stssm.github.io.junw.bbb019spring20230108.controller", "com.stssm.github.io.junw.bbb019spring20230108.configuration"})
+@ComponentScan({"wo1261931780.stssm.junw.bbb019spring20230108.controller", "wo1261931780.stssm.junw.bbb019spring20230108.configuration"})
 @EnableWebMvc
 public class SpringMvc0108configuration002 implements WebMvcConfigurer {
 	// 这里只是将其整合到一起

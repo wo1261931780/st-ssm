@@ -1,19 +1,21 @@
 package wo1261931780.stssm.junw.bbb014spring20230102.dao.impl;
 
-import com.stssm.github.io.junw.bbb014spring20230102.dao.Demo0102Dao;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
+import wo1261931780.stssm.junw.bbb014spring20230102.dao.Demo0102Dao;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
+
 
 /**
  * @author junw
  */
 @Repository
+@Slf4j
 public class Demo0102DaoImpl implements Demo0102Dao {
 	@Override
 	public void show0102dao(String url, String paw) {
-		demorun.debug("我是dao，这里是url：" + url + "，我是paw:" + paw + "====");
-		demorun.debug(FINAL_SPLIT);
+		log.debug("我是dao，这里是url：" + url + "，我是paw:" + paw + "====");
+		log.debug(FINAL_SPLIT);
 	}
 }

@@ -1,17 +1,19 @@
 package wo1261931780.stssm.junw.bbb014spring20230102.service.impl;
 
-import com.stssm.github.io.junw.bbb014spring20230102.dao.Demo0102Dao002;
-import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102LogService001;
-import com.stssm.github.io.junw.bbb014spring20230102.service.Demo0102Service002;
+
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import wo1261931780.stssm.junw.bbb014spring20230102.dao.Demo0102Dao002;
+import wo1261931780.stssm.junw.bbb014spring20230102.service.Demo0102LogService001;
+import wo1261931780.stssm.junw.bbb014spring20230102.service.Demo0102Service002;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * @author junw
  */
 @Service
+@Slf4j
 public class Demo0102ServiceImpl002 implements Demo0102Service002 {
 	@Autowired
 	Demo0102Dao002 demo0102Dao002;
@@ -22,7 +24,7 @@ public class Demo0102ServiceImpl002 implements Demo0102Service002 {
 
 	@Override
 	public void show0102service(String inputPerson, String outputPerson, Double balance) {
-		demorun.debug("我是转账人：" + inputPerson + "，我是转出人：" + outputPerson + "，当前余额：" + balance);
+		log.debug("我是转账人：" + inputPerson + "，我是转出人：" + outputPerson + "，当前余额：" + balance);
 		logService.insertLog(inputPerson, outputPerson, balance);
 		// 先出现日志，不管成功还是失败
 		// 这里其实也可以根据成功失败来判断是否进一步打印不同的日志

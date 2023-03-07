@@ -1,11 +1,11 @@
 package wo1261931780.stssm.junw.bbb011spring20221226;
 
-import com.stssm.github.io.junw.bbb011spring20221226.config.Spring1226Configuration001;
-import com.stssm.github.io.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import wo1261931780.stssm.junw.bbb011spring20221226.config.Spring1226Configuration001;
+import wo1261931780.stssm.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -16,6 +16,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-12-16-20  星期一
  * @description
  */
+@Slf4j
 public class Bbb033 {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(Spring1226Configuration001.class);
@@ -29,6 +30,6 @@ public class Bbb033 {
 		// 切入点在连接点中
 		// 一定是连接点的范围更大
 		// ===================================================================
-		demorun.debug("" + demo1226dao);
+		log.debug("" + demo1226dao);
 	}
 }
