@@ -17,6 +17,7 @@ public interface Demo0102Service003 {
 	 */
 	@Transactional(readOnly = true, rollbackFor = {IOException.class})
 	void show0102service003(String inputPerson, String outputPerson, Double balance);
+
 	// 是否为只读事务
 	// 是否用不超时
 	// rollbackFor = {IOException.class}

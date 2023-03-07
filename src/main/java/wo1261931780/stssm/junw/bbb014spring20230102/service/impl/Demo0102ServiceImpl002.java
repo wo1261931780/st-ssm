@@ -31,6 +31,5 @@ public class Demo0102ServiceImpl002 implements Demo0102Service002 {
 		demo0102Dao002.outputMoney(outputPerson, balance);
 		// 如果在两个数据库操作之间，出现了异常，那么就需要及时回滚事物
 		demo0102Dao002.inputMoney(inputPerson, balance);
-
 	}
 }

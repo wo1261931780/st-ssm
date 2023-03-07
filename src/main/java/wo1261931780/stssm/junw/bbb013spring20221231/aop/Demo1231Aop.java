@@ -44,7 +44,7 @@ public class Demo1231Aop {
 	@Before("cutIn()")
 	private void beforeCutIn(JoinPoint jp) {
 		log.debug("我是切入点后的before方法");
-		log.debug("我是参数集合：" + Arrays.toString(jp.getArgs()));
+		log.debug("我是beforeCutIn中的参数集合：" + Arrays.toString(jp.getArgs()));
 		// 这里找到的参数，实际上是方法中的实参
 		// 比如我的show(11,12)
 		// 如果这里打印了对应的参数，就会出现[11,12]这样的结果
@@ -73,6 +73,7 @@ public class Demo1231Aop {
 		//     String argNames() default "";
 		// 上面的注解中，定义了以上四个变量
 		// 返回来说，就是四个变量可以用参数的形式在我们的注解中存在
+
 		log.debug(FINAL_SPLIT);
 		log.debug("我是afterReturning返回值" + obj);
 		// 这里也需要说明：如果JoinPoint jp存在，那就必须作为第一个参数

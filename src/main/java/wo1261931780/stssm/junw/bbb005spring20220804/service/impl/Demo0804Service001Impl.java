@@ -14,7 +14,7 @@ import wo1261931780.stssm.junw.bbb005spring20220804.service.Demo0804Service001;
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
- * Package:com.stssm.github.io.junw.bbb004spring20220802.dao.Impl
+ * Package:wo1261931780.stssm.junw.bbb004spring20220802.dao.Impl
  *
  * @author liujiajun_junw
  * @Date 2022-08-21-18  星期四
@@ -38,7 +38,7 @@ public class Demo0804Service001Impl implements Demo0804Service001 {
 		this.demo0804Dao002 = demo0804Dao002;
 		// 所有的set，实际上都是将对象作为一个变量来操作
 		// 如果没有set方法完成注入，就会出现报错
-		// Exception in thread "main" java.lang.NullPointerException: Cannot invoke "com.stssm.github.io.junw.bbb005spring20220804.dao.Demo0804Dao002.demoDaoShow002()" because "this.demo0804Dao002" is null
+		// Exception in thread "main" java.lang.NullPointerException: Cannot invoke "wo1261931780.stssm.junw.bbb005spring20220804.dao.Demo0804Dao002.demoDaoShow002()" because "this.demo0804Dao002" is null
 	}
 
 	/**

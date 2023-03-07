@@ -14,7 +14,8 @@ import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
 @Slf4j
 public class Bbb042 {
 	public static void main(String[] args) {
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Spring0103Configuration001.class);
+		AnnotationConfigApplicationContext context =
+				new AnnotationConfigApplicationContext(Spring0103Configuration001.class);
 		// context.register(Spring0103Configuration001.class);
 		// 这里的注册和上面的一模一样，都是进入spring的管理
 

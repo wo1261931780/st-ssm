@@ -9,14 +9,14 @@ import org.springframework.stereotype.Controller;
  * @author junw
  */
 @Configuration
-@ComponentScan(value = "com.stssm.github.io.junw.bbb015spring20230103",
+@ComponentScan(value = "wo1261931780.stssm.junw.bbb015spring20230103",
 		excludeFilters = @ComponentScan.Filter(
 				type = FilterType.ANNOTATION,
 				classes = Controller.class
 		)
 )
 public class Spring0103Configuration001 {
-// @ComponentScan({"com.stssm.github.io.junw.bbb016spring20230104.service", "com.stssm.github.io.junw.bbb016spring20230104.dao"})
+// @ComponentScan({"wo1261931780.stssm.junw.bbb015spring20230103.service", "wo1261931780.stssm.junw.bbb015spring20230103.dao"})
 // 解释一下上面的两种类型
 // 首先我设置全部扫描
 // 然后发现，我存在一个controller类型的注解不需要进入我的spring管理

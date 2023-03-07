@@ -9,7 +9,7 @@ import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 /**
  * Created by Intellij IDEA.
  * Project:st-ssm.github.io
- * Package:com.stssm.github.io.junw.bbb002spring20220731
+ * Package:wo1261931780.stssm.junw.bbb002spring20220731
  *
  * @author liujiajun_junw
  * @Date 2022-08-07-59  星期一
@@ -23,11 +23,11 @@ public class Bbb007 {
 		SHOW_LOG.debug("下面开始执行关闭=============================================");
 		context.close();
 		// 完整的过程如下：
-		// 我是dao7构造方法，地址为：com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao7Impl@49ec71f8
+		// 我是dao7构造方法，地址为：wo1261931780.stssm.junw.bbb001spring20220730.dao.Impl.DemoDao7Impl@49ec71f8
 		// 我是service7中的DI注入
 		// 我是service7中的初始化方法
 		// 我是service中的show7方法
-		// 我是service中的Dao7对象：com.stssm.github.io.junw.bbb001spring20220730.dao.Impl.DemoDao7Impl@49ec71f8
+		// 我是service中的Dao7对象：wo1261931780.stssm.junw.bbb001spring20220730.dao.Impl.DemoDao7Impl@49ec71f8
 		// 开始调用Dao中的show方法：--------------------------------------
 		// 我是dao方法中的show7
 		// 下面开始执行关闭=============================================

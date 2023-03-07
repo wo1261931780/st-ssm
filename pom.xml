@@ -26,6 +26,7 @@
 		</dependency>
 		<!--spring网络WEB-->
 		<!--使用Spring MVC构建Web，包括RESTful，应用程序。使用Apache Tomcat作为默认的嵌入式容器。-->
+		<!--里面已经包含了spring MVC的内容-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
