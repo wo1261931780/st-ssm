@@ -1,13 +1,13 @@
 package wo1261931780.stssm.junw.bbb009spring20220919.service.impl;
 
-import com.stssm.github.io.junw.bbb009spring20220919.dao.Demo0919Dao001;
-import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919;
-import com.stssm.github.io.junw.bbb009spring20220919.service.Demo0919Service001;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import wo1261931780.stssm.junw.bbb009spring20220919.dao.Demo0919Dao001;
+import wo1261931780.stssm.junw.bbb009spring20220919.domain.Account0919;
+import wo1261931780.stssm.junw.bbb009spring20220919.service.Demo0919Service001;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -19,6 +19,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @description
  */
 @Service
+@Slf4j
 public class Demo0919Service001Impl implements Demo0919Service001 {
 
 	@Autowired
@@ -30,7 +31,7 @@ public class Demo0919Service001Impl implements Demo0919Service001 {
 	 */
 	@Override
 	public void show() {
-		demorun.debug("我是user service 4");
+		log.debug("我是user service 4");
 	}
 
 	/**

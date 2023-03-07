@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Import;
  * @description
  */
 @Configuration
-@Import({com.stssm.github.io.junw.bbb008spring20220807.config.Jdbc0807Configuration002.class})
+@Import({wo1261931780.stssm.junw.bbb008spring20220807.config.Jdbc0807Configuration002.class})
 public class Spring0807Configuration003 {
 	// 包扫描器@ComponentScan({"com.stssm.github.io"})不太直观地看出到底管理了哪些内容
 	// 我们可以直接在上面使用Import包导入的方式，来添加我们需要管理的内容

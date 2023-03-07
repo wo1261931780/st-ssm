@@ -1,6 +1,7 @@
 package wo1261931780.stssm.junw.bbb009spring20220919.service;
 
-import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919;
+
+import wo1261931780.stssm.junw.bbb009spring20220919.domain.Account0919;
 
 /**
  * Created by Intellij IDEA.

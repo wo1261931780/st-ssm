@@ -1,12 +1,13 @@
 package wo1261931780.stssm.junw.bbb011spring20221226.aop;
 
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.FINAL_SPLIT;
+
 
 /**
  * Created by Intellij IDEA.
@@ -19,6 +20,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  */
 @Component
 @Aspect
+@Slf4j
 public class MyAdvice {
 	// 使用Component，表示变成了spring可以控制的bean对象
 
@@ -29,7 +31,7 @@ public class MyAdvice {
 	// ===================================================================
 
 
-	@Pointcut("execution(void com.stssm.github.io.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.show())")
+	@Pointcut("execution(void wo1261931780.stssm.junw.bbb011spring20221226.dao.impl.Demo1226DaoImpl.show())")
 	private void cutIn() {
 	}
 
@@ -40,8 +42,8 @@ public class MyAdvice {
 
 	@Before("cutIn()")
 	private void commonMethod() {
-		demorun.debug("我是共享方法");
-		demorun.debug(FINAL_SPLIT);
+		log.debug("我是共享方法");
+		log.debug(FINAL_SPLIT);
 	}
 	// 在show方法之前执行上面这个共享方法
 
@@ -51,8 +53,8 @@ public class MyAdvice {
 
 	@Before("cutIn2()")
 	private void commonMethod2() {
-		demorun.debug("即将执行删除方法");
-		demorun.debug(FINAL_SPLIT);
+		log.debug("即将执行删除方法");
+		log.debug(FINAL_SPLIT);
 	}
 
 	@Pointcut("execution(void *..update())")
@@ -61,8 +63,8 @@ public class MyAdvice {
 
 	@Before("cutIn3()")
 	private void commonMethod3() {
-		demorun.debug("我是更新方法");
-		demorun.debug(FINAL_SPLIT);
+		log.debug("我是更新方法");
+		log.debug(FINAL_SPLIT);
 	}
 
 	// @Pointcut("execution(* *..u*(..))")
@@ -76,22 +78,22 @@ public class MyAdvice {
 
 	@Before("cutIn4()")
 	private void commonMethod4() {
-		demorun.debug("对任意包下的任意返回值的任意方法");
-		demorun.debug(FINAL_SPLIT);
+		log.debug("对任意包下的任意返回值的任意方法");
+		log.debug(FINAL_SPLIT);
 	}
 
-	@Pointcut("execution(* com.stssm.*.*Impl.*())")
+	@Pointcut("execution(* wo1261931780.stssm.*.*Impl.*())")
 	private void cutIn5() {
 	}
 
 	@Before("cutIn5()")
 	private void commonMethod5() {
-		demorun.debug("对业务层的任意查询方法，添加aop");
-		demorun.debug(FINAL_SPLIT);
+		log.debug("对业务层的任意查询方法，添加aop");
+		log.debug(FINAL_SPLIT);
 	}
 
 	public void showTime() {
 		long timeMillis = System.currentTimeMillis();
-		demorun.debug(timeMillis + "ms");
+		log.debug(timeMillis + "ms");
 	}
 }

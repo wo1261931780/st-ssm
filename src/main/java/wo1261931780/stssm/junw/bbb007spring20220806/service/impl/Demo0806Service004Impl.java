@@ -22,7 +22,7 @@ import wo1261931780.stssm.junw.bbb007spring20220806.service.Demo0806Service004;
 public class Demo0806Service004Impl implements Demo0806Service004 {
 
 	@Autowired
-	@Qualifier("demo0806Dao005")
+	@Qualifier("demo0806Dao005")//Qualifier开启指定名称装配bean
 	private Demo0806Dao005 demo0806Dao005;
 
 	/**

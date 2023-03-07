@@ -21,12 +21,15 @@ public class Spring0807Configuration004 {
 
 	/**
 	 * 在不考虑导入外部jdbc配置的情况下，
+	 * <p>
 	 * 还有一种简单类型的注入
+	 * <p>
 	 * 将所有的数据，保存到变量中，然后再次赋值就可以
+	 * <p>
 	 * ======================================
+	 * <p>
 	 * 简单类型的配置，本质上是为了补充原来没有配置完成的参数
 	 */
-
 	@Value("Jdbc1229Configuration:mysql://localhost:3306/study002jdbc")
 	private String url;
 	@Value("root")

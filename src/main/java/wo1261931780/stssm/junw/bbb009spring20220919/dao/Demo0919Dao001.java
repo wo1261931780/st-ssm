@@ -1,10 +1,10 @@
 package wo1261931780.stssm.junw.bbb009spring20220919.dao;
 
-import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import wo1261931780.stssm.junw.bbb009spring20220919.domain.Account0919;
 
 /**
  * Created by Intellij IDEA.
@@ -55,6 +55,4 @@ public interface Demo0919Dao001 {
 	 */
 	@Select("select * from study001sql.DEMO_1 where id=#{demoId};")
 	Account0919 daoSelectById(Integer demoId);
-
-
 }

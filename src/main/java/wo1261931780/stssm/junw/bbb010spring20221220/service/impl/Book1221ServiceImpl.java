@@ -1,6 +1,7 @@
 package wo1261931780.stssm.junw.bbb010spring20221220.service.impl;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import wo1261931780.stssm.junw.bbb010spring20221220.dao.Book1221Dao;
 import wo1261931780.stssm.junw.bbb010spring20221220.domain.Account1221;
@@ -18,6 +19,7 @@ import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
  * @Date 2022-12-00-21  星期六
  * @description
  */
+@Slf4j
 public class Book1221ServiceImpl implements Book1221Service {
 	@Autowired
 	private Book1221Dao book1221Dao;
@@ -46,7 +48,7 @@ public class Book1221ServiceImpl implements Book1221Service {
 
 	@Override
 	public void serviceShow() {
-		SHOW_LOG.debug("我是service中的show方法");
+		log.debug("我是service中的show方法");
 		book1221Dao.show();// ioc的思想，控制反转
 		// 不通过new的方式新建一个对象，最终的目的都是解耦
 		// 实际上，我们这里没有通过this的方式访问上面的对象

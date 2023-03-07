@@ -14,7 +14,7 @@ import org.springframework.context.annotation.PropertySource;
  * @description 扫描内部的配置信息
  */
 @Configuration
-@ComponentScan({"com.stssm.github.io", "com.stssm.github.io"})
+@ComponentScan({"wo1261931780.stssm.junw", "wo1261931780.stssm.junw"})
 @PropertySource("classpath:Bbb024Jdbc.properties")
 public class Spring0919Configuration001 {
 	// 这里@PropertySource("classpath:Bbb024Jdbc.properties")

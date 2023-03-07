@@ -1,12 +1,12 @@
 package wo1261931780.stssm.junw.bbb008spring20220807.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.stssm.github.io.junw.bbb008spring20220807.dao.Demo0807Dao001;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import wo1261931780.stssm.junw.bbb008spring20220807.dao.Demo0807Dao001;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -18,7 +18,8 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @description
  */
 @Configuration
-@ComponentScan({"com.stssm.github.io.junw.bbb008spring20220807"})
+@ComponentScan({"wo1261931780.stssm.junw.bbb008spring20220807"})
+@Slf4j
 public class Spring0807Configuration005 {
 	// =============================================
 	// 接下来是引用类型
@@ -30,7 +31,7 @@ public class Spring0807Configuration005 {
 	public DruidDataSource dataSource(Demo0807Dao001 demo0807Dao001) {
 		// 这里是按照类型去寻找的，不是按照字节码文件
 		String format = String.format("我是springDao5：%s", demo0807Dao001);
-		demorun.debug(format);
+		log.debug(format);
 		demo0807Dao001.dao0807show();
 		// 这里，首先自动装配，获取了一个springDao5
 		// 然后又新建了一个德鲁伊数据源

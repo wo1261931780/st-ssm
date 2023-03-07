@@ -38,9 +38,6 @@ public class Spring0919JdbcConfiguration001 {
 		druidSource.setPassword(password);
 		druidSource.setUrl(url);
 		druidSource.setDriverClassName(driver);
-
 		return druidSource;
 	}
-
-
 }
