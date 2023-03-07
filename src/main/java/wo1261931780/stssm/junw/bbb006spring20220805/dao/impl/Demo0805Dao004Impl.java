@@ -1,15 +1,14 @@
 package wo1261931780.stssm.junw.bbb006spring20220805.dao.impl;
 
-import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao004;
-import com.stssm.github.io.junw.bbb009spring20220919.domain.Account0919;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
+import wo1261931780.stssm.junw.bbb006spring20220805.dao.Demo0805Dao004;
+import wo1261931780.stssm.junw.bbb009spring20220919.domain.Account0919;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -22,6 +21,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  */
 @Repository("Demo0805Dao004Impl")
 @Scope("prototype")
+@Slf4j
 public class Demo0805Dao004Impl implements Demo0805Dao004 {
 
 	@Value("123")
@@ -43,22 +43,20 @@ public class Demo0805Dao004Impl implements Demo0805Dao004 {
 	 */
 	@Override
 	public void demo0805Dao004Show() {
-		info.debug("我是spring dao3中的show方法");
+		log.debug("我是spring dao3中的show方法");
 		String format = String.format("我是name：%s", name);
-		info.debug(format);
+		log.debug(format);
 	}
 
 	@PostConstruct
 	public void initLife() {
 		// 注解的直译：在构造之前
-		info.debug("SpringDao3中的初始化方法");
+		log.debug("SpringDao3中的初始化方法");
 	}
 
 	@PreDestroy
 	public void destroyLife() {
 		// 注解直译：在销毁之前
-		info.debug("SpringDao3中的销毁方法");
+		log.debug("SpringDao3中的销毁方法");
 	}
-
-
 }

@@ -1,13 +1,12 @@
 package wo1261931780.stssm.junw.bbb006spring20220805.dao.impl;
 
-import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao002;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
+import wo1261931780.stssm.junw.bbb006spring20220805.dao.Demo0805Dao002;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -20,6 +19,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  */
 @Repository
 @Scope("prototype")
+@Slf4j
 public class Demo0805Dao002Impl implements Demo0805Dao002 {
 	// 记得配置仓库的注解
 	// @Scope("singleton")// 单例
@@ -31,18 +31,18 @@ public class Demo0805Dao002Impl implements Demo0805Dao002 {
 	 */
 	@Override
 	public void demo0805Dao002Show() {
-		info.debug("我是Demo0805Dao002Impl中的demo0805Dao002Show方法");
+		log.debug("我是Demo0805Dao002Impl中的demo0805Dao002Show方法");
 	}
 
 	@PostConstruct
 	public void initLife() {
 		// 注解的直译：在构造之前
-		info.debug("Demo0805Dao002Impl中的初始化方法");
+		log.debug("Demo0805Dao002Impl中的初始化方法");
 	}
 
 	@PreDestroy
 	public void destroyLife() {
 		// 注解直译：在销毁之前
-		info.debug("Demo0805Dao002Impl中的销毁方法");
+		log.debug("Demo0805Dao002Impl中的销毁方法");
 	}
 }

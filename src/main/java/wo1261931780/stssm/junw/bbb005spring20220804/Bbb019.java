@@ -1,12 +1,12 @@
 package wo1261931780.stssm.junw.bbb005spring20220804;
 
-import com.stssm.github.io.junw.bbb005spring20220804.dao.Demo0804Dao001;
-import com.stssm.github.io.junw.bbb005spring20220804.dao.Demo0804Dao002;
-import com.stssm.github.io.junw.bbb005spring20220804.service.Demo0804Service001;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import wo1261931780.stssm.junw.bbb005spring20220804.dao.Demo0804Dao001;
+import wo1261931780.stssm.junw.bbb005spring20220804.dao.Demo0804Dao002;
+import wo1261931780.stssm.junw.bbb005spring20220804.service.Demo0804Service001;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -17,6 +17,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-22-35  星期四
  * @description
  */
+@Slf4j
 public class Bbb019 {
 	public static void main(String[] args) {
 		// 我们之前所接触的构造器注入，一般是在整合第三方框架的时候使用
@@ -28,12 +29,12 @@ public class Bbb019 {
 		Demo0804Dao001 dao001 = (Demo0804Dao001) applicationContext.getBean("xmlDemo0804Dao001Impl");
 		dao001.demoDaoShow();
 		String format = String.format("我是dao001%s", dao001);
-		info.debug(format);
+		log.debug(format);
 		// ***********************************************************
 		Demo0804Dao002 dao002 = (Demo0804Dao002) applicationContext.getBean("demo0804Dao002Impl");
 		dao002.demoDaoShow002();
 		String format1 = String.format("我是dao002%s", dao002);
-		info.debug(format1);
+		log.debug(format1);
 		// ***********************************************************
 		// 以上都是使用名称来直接访问的
 		Demo0804Service001 service001 = applicationContext.getBean(Demo0804Service001.class);
@@ -46,6 +47,6 @@ public class Bbb019 {
 		// UserService1 bean2 = applicationContext.getBean(UserService1.class);
 		// 这里寻找的全部都是接口，不是具体的实现类
 		// 但是注解又是写在实现类上面的
-		// info.debug("我是service1中的对象：" + bean2);
+		// log.debug("我是service1中的对象：" + bean2);
 	}
 }

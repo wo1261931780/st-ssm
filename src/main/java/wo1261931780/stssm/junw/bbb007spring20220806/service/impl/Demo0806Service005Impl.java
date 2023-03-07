@@ -1,12 +1,12 @@
 package wo1261931780.stssm.junw.bbb007spring20220806.service.impl;
 
-import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao003;
-import com.stssm.github.io.junw.bbb007spring20220806.service.Demo0806Service005;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import wo1261931780.stssm.junw.bbb006spring20220805.dao.Demo0805Dao003;
+import wo1261931780.stssm.junw.bbb007spring20220806.service.Demo0806Service005;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -18,6 +18,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @description
  */
 @Service
+@Slf4j
 public class Demo0806Service005Impl implements Demo0806Service005 {
 	/**
 	 * 用不同的注解直接说明问题
@@ -49,8 +50,8 @@ public class Demo0806Service005Impl implements Demo0806Service005 {
 	 */
 	@Override
 	public void show() {
-		info.debug("我是service3中的show方法");
+		log.debug("我是service3中的show方法");
 		springDao2.demo0805Dao003Show();
-		info.debug("现在service调用了springDao2中的show方法");
+		log.debug("现在service调用了springDao2中的show方法");
 	}
 }

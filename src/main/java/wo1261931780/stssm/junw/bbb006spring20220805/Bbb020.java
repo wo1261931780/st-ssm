@@ -1,10 +1,10 @@
 package wo1261931780.stssm.junw.bbb006spring20220805;
 
-import com.stssm.github.io.junw.bbb006spring20220805.config.SpringConfiguration0805;
-import com.stssm.github.io.junw.bbb006spring20220805.dao.impl.Demo0805Dao001Impl;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import wo1261931780.stssm.junw.bbb006spring20220805.config.SpringConfiguration0805;
+import wo1261931780.stssm.junw.bbb006spring20220805.dao.impl.Demo0805Dao001Impl;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -15,6 +15,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-20-07  星期五
  * @description
  */
+@Slf4j
 public class Bbb020 {
 	public static void main(String[] args) {
 		// ApplicationContext ctx=new ClassPathXmlApplicationContext();
@@ -25,10 +26,10 @@ public class Bbb020 {
 		// 配置类中，就包含了包扫描，扫描到了需要的dao和service
 		Demo0805Dao001Impl bean = ctx.getBean(Demo0805Dao001Impl.class);
 		Demo0805Dao001Impl bean2 = ctx.getBean(Demo0805Dao001Impl.class);
-		info.debug("我调用了内部的方法");
+		log.debug("我调用了内部的方法");
 		// bean.show();
-		info.debug(bean.toString());
-		info.debug(bean2.toString());
+		log.debug(bean.toString());
+		log.debug(bean2.toString());
 		// 这里的两个对象，内存地址一样
 		// 换句话来说，这是一种单例设计模式
 	}

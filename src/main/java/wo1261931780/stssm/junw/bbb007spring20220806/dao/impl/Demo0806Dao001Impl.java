@@ -1,9 +1,9 @@
 package wo1261931780.stssm.junw.bbb007spring20220806.dao.impl;
 
-import com.stssm.github.io.junw.bbb007spring20220806.dao.Demo0806Dao001;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
+import wo1261931780.stssm.junw.bbb007spring20220806.dao.Demo0806Dao001;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -15,6 +15,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @description
  */
 @Repository
+@Slf4j
 public class Demo0806Dao001Impl implements Demo0806Dao001 {
 	// 我们找到dao就会发现
 	// 这里并没有对dao设置具体的名称
@@ -25,7 +26,6 @@ public class Demo0806Dao001Impl implements Demo0806Dao001 {
 	 */
 	@Override
 	public void demo0806DaoShow() {
-		info.debug("我是Demo0806Dao001Impl中的demo0806DaoShow方法");
-
+		log.debug("我是Demo0806Dao001Impl中的demo0806DaoShow方法");
 	}
 }

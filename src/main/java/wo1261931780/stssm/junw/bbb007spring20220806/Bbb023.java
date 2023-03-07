@@ -1,10 +1,10 @@
 package wo1261931780.stssm.junw.bbb007spring20220806;
 
-import com.stssm.github.io.junw.bbb007spring20220806.config.Spring0806Config;
-import com.stssm.github.io.junw.bbb007spring20220806.service.impl.Demo0806Service001Impl;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import wo1261931780.stssm.junw.bbb007spring20220806.config.Spring0806Config;
+import wo1261931780.stssm.junw.bbb007spring20220806.service.impl.Demo0806Service001Impl;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -15,6 +15,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-08-08-05  星期六
  * @description
  */
+@Slf4j
 public class Bbb023 {
 	public static void main(String[] args) {
 		// 这里就直接讲自动装配
@@ -22,7 +23,7 @@ public class Bbb023 {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Spring0806Config.class);
 		Demo0806Service001Impl bean = ctx.getBean(Demo0806Service001Impl.class);
 		String format = String.format("我是运行类%s", bean);
-		info.debug(format);
+		log.debug(format);
 		bean.demo0806Service001Show(); // Cannot invoke "com.stssm.github.io.junw.bbb007spring20220806.dao.Demo0806Dao001.demo0806DaoShow()" because "this.demo0806Dao001" is null
 		// 直接使用会导致报错
 		// 这里是因为没有注入成功，正好解释了昨天的报错问题

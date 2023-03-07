@@ -1,12 +1,12 @@
 package wo1261931780.stssm.junw.bbb007spring20220806.service.impl;
 
-import com.stssm.github.io.junw.bbb007spring20220806.dao.Demo0806Dao002;
-import com.stssm.github.io.junw.bbb007spring20220806.service.Demo0806Service002;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import wo1261931780.stssm.junw.bbb007spring20220806.dao.Demo0806Dao002;
+import wo1261931780.stssm.junw.bbb007spring20220806.service.Demo0806Service002;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -18,6 +18,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @description
  */
 @Service
+@Slf4j
 public class Demo0806Service002Impl implements Demo0806Service002 {
 	// @Autowired
 	// private Demo0806Dao002 demo0806Dao002;
@@ -47,7 +48,7 @@ public class Demo0806Service002Impl implements Demo0806Service002 {
 	 */
 	@Override
 	public void demo0806Service002Show() {
-		demorun.debug("我是Demo0806Service002中的demo0806Service002Show002方法");
+		log.debug("我是Demo0806Service002中的demo0806Service002Show002方法");
 		demo0806Dao002.demo0806DaoShow002();
 	}
 }

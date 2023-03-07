@@ -1,8 +1,8 @@
 package wo1261931780.stssm.junw.bbb004spring20220802;
 
-import com.stssm.github.io.junw.bbb004spring20220802.dao.Demo0802Dao001;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import wo1261931780.stssm.junw.bbb004spring20220802.dao.Demo0802Dao001;
 
 /**
  * Created by Intellij IDEA.
@@ -13,6 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Date 2022-08-20-30  星期二
  * @description
  */
+
 public class Bbb017 {
 	public static void main(String[] args) {
 		// 加载容器的形式有很多

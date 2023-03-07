@@ -18,7 +18,6 @@ public class DemoDao005Impl implements DemoDao005 {
 	private int age;
 	private String address;
 
-
 	@Override
 	public void dao005Show() {
 		log.debug("我是Dao005中的show方法");

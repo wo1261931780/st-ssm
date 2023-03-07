@@ -1,9 +1,9 @@
 package wo1261931780.stssm.junw.bbb005spring20220804.dao.impl;
 
-import com.stssm.github.io.junw.bbb005spring20220804.dao.Demo0804Dao002;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
-
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import wo1261931780.stssm.junw.bbb005spring20220804.dao.Demo0804Dao002;
 
 
 // @Component("demo0804Dao002Impl")
@@ -19,6 +19,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @description
  */
 @Repository("demo0804Dao002Impl")
+@Slf4j
 public class Demo0804Dao002Impl implements Demo0804Dao002 {
 	// 添加@Component注解，就代表了这是一个bean，
 	// 相当于之前配置的<bean/>
@@ -33,6 +34,6 @@ public class Demo0804Dao002Impl implements Demo0804Dao002 {
 	 */
 	@Override
 	public void demoDaoShow002() {
-		info.debug("我是xmlDemo0804Dao002中的demoDaoShow方法");
+		log.debug("我是xmlDemo0804Dao002中的demoDaoShow方法");
 	}
 }

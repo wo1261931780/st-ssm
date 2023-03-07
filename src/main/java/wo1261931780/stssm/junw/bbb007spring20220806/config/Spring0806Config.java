@@ -13,6 +13,6 @@ import org.springframework.context.annotation.Configuration;
  * @description
  */
 @Configuration
-@ComponentScan("com.stssm.github.io.junw.bbb007spring20220806")
+@ComponentScan("wo1261931780.stssm.junw.bbb007spring20220806")
 public class Spring0806Config {
 }

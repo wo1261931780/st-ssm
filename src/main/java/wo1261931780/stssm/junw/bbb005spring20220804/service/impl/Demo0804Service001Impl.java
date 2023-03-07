@@ -1,11 +1,10 @@
 package wo1261931780.stssm.junw.bbb005spring20220804.service.impl;
 
-import com.stssm.github.io.junw.bbb005spring20220804.dao.Demo0804Dao002;
-import com.stssm.github.io.junw.bbb005spring20220804.service.Demo0804Service001;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
+import wo1261931780.stssm.junw.bbb005spring20220804.dao.Demo0804Dao002;
+import wo1261931780.stssm.junw.bbb005spring20220804.service.Demo0804Service001;
 
 
 // @Component
@@ -22,6 +21,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @description
  */
 @Service
+@Slf4j
 public class Demo0804Service001Impl implements Demo0804Service001 {
 	/**
 	 * 用不同的注解直接说明问题
@@ -46,8 +46,8 @@ public class Demo0804Service001Impl implements Demo0804Service001 {
 	 */
 	@Override
 	public void demo0804Service001Show() {
-		info.debug("我是demo0804");
-		info.debug("开始调用dao中的方法");
+		log.debug("我是demo0804");
+		log.debug("开始调用dao中的方法");
 		// demo0804Dao002.demoDaoShow002();
 		// 这里一直报错，不知道为什么
 	}

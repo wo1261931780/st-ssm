@@ -14,7 +14,7 @@ import org.springframework.context.annotation.PropertySource;
  * @description
  */
 @Configuration
-@ComponentScan("com.stssm.github.io.junw.bbb007spring20220806")
+@ComponentScan("wo1261931780.stssm.junw.bbb007spring20220806")
 @PropertySource("Bbb024Jdbc.properties")
 public class Spring0806Config002 {
 	// 上面的配置文件，只能指定加载，

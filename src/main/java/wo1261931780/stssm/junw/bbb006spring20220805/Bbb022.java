@@ -1,9 +1,10 @@
 package wo1261931780.stssm.junw.bbb006spring20220805;
 
-import com.stssm.github.io.junw.bbb006spring20220805.config.SpringConfiguration0805;
-import com.stssm.github.io.junw.bbb006spring20220805.dao.Demo0805Dao003;
-import com.stssm.github.io.junw.bbb006spring20220805.dao.impl.Demo0805Dao003Impl;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import wo1261931780.stssm.junw.bbb006spring20220805.config.SpringConfiguration0805;
+import wo1261931780.stssm.junw.bbb006spring20220805.dao.Demo0805Dao003;
+import wo1261931780.stssm.junw.bbb006spring20220805.dao.impl.Demo0805Dao003Impl;
 
 /**
  * Created by Intellij IDEA.
@@ -14,6 +15,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @Date 2022-08-23-22  星期日
  * @description
  */
+@Slf4j
 public class Bbb022 {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfiguration0805.class);
