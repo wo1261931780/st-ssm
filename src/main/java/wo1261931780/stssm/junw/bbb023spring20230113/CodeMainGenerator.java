@@ -11,7 +11,7 @@ package wo1261931780.stssm.junw.bbb023spring20230113;
  */
 public class CodeMainGenerator {
 	public static void main(String[] args) {
-		System.out.println("我是代码生成器");
+		// System.out.println("我是代码生成器");
 		// DataSourceConfig dataSourceConfig = new DataSourceConfig();
 		// dataSourceConfig.setUrl("jdbc:mysql://localhost:3306/mybatis");
 		// dataSourceConfig.setUsername("root");

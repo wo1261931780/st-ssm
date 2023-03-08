@@ -21,5 +21,4 @@ public class Demo0113Domain002Query extends Demo0113Domain002 {
 	 * 用来控制age范围的查询变量
 	 */
 	private Integer ageGt;
-
 }

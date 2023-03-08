@@ -16,6 +16,4 @@ import wo1261931780.stssm.junw.bbb023spring20230113.domain.Demo0113Domain001;
 @Mapper
 public interface Demo0113UserDao002 extends BaseMapper<Demo0113Domain001> {
 	// 使用mybatisPlus开发，直接继承，然后写一个实体类名，我们就开发完了
-
-
 }

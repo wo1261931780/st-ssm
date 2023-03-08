@@ -1,12 +1,12 @@
 package wo1261931780.junw.bbb009spring20220919.service;
 
-import com.stssm.github.io.junw.bbb009spring20220919.config.Spring0919Configuration001;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import wo1261931780.stssm.junw.bbb009spring20220919.config.Spring0919Configuration001;
+import wo1261931780.stssm.junw.bbb009spring20220919.service.Demo0919Service001;
 
-import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
 
 /**
  * Created by Intellij IDEA.
@@ -17,7 +17,7 @@ import static com.stssm.github.io.junw.bbb001spring20220730.Bbb002.demorun;
  * @Date 2022-09-20-11  星期二
  * @description
  */
-@RunWith(SpringJUnit4ClassRunner.class)
+@Slf4j
 @ContextConfiguration(classes = Spring0919Configuration001.class)
 public class TestService001 {
 
@@ -25,7 +25,7 @@ public class TestService001 {
 
 	@Test
 	public void selectById() {
-		demorun.debug("我是测试方法");
+		log.debug("我是测试方法");
 		// TestService002.debug(demo0919Service001.selectById(2));
 	}
 }

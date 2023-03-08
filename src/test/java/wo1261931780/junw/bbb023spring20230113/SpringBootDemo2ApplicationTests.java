@@ -4,12 +4,12 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.stssm.github.io.junw.bbb023spring20230113.dao.Demo0113UserDao002;
-import com.stssm.github.io.junw.bbb023spring20230113.domain.Demo0113Domain001;
-import com.stssm.github.io.junw.bbb023spring20230113.domain.query.Demo0113Domain002Query;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import wo1261931780.stssm.junw.bbb023spring20230113.dao.Demo0113UserDao002;
+import wo1261931780.stssm.junw.bbb023spring20230113.domain.Demo0113Domain001;
+import wo1261931780.stssm.junw.bbb023spring20230113.domain.query.Demo0113Domain002Query;
 
 import java.util.List;
 
@@ -125,5 +125,4 @@ class SpringBootDemo2ApplicationTests {
 		System.out.println("一共多少条记录：" + page.getTotal());
 		System.out.println("当前页的所有数据：" + page.getRecords());
 	}
-
 }

@@ -16,5 +16,4 @@ import wo1261931780.stssm.junw.bbb023spring20230113.domain.Demo0113Domain005;
  */
 @Mapper
 public interface Demo0113UserDao003 extends BaseMapper<Demo0113Domain005> {
-
 }

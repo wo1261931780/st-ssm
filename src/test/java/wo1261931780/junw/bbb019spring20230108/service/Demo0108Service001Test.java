@@ -2,6 +2,7 @@ package wo1261931780.junw.bbb019spring20230108.service;
 
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -14,7 +15,7 @@ import java.util.List;
 
 import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+@Slf4j
 @ContextConfiguration(classes = Spring0108Configuration001.class)
 public class Demo0108Service001Test {
 	@Autowired
