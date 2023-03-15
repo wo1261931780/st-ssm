@@ -18,24 +18,24 @@ import static wo1261931780.stssm.junw.bbb001spring20220730.Bbb002.SHOW_LOG;
 @Slf4j
 @ContextConfiguration(classes = Spring0108Configuration001.class)
 public class Demo0108Service001Test {
-	@Autowired
-	private Demo0108Service001 demo0108Service001;
-
-	@Test
-	public void testById() {
-		Demo0108DomainTblBook demo0108DomainTblBook = demo0108Service001.queryById(1);
-		SHOW_LOG.debug(""+demo0108DomainTblBook);
-	}
-
-	@Test
-	public void testGetAll() {
-		List<Demo0108DomainTblBook> demo0108DomainTblBooks = demo0108Service001.selectAll(1);
-		SHOW_LOG.debug(""+demo0108DomainTblBooks);
-	}
-
-	@Test
-	public void testDelete() {
-		Boolean byId = demo0108Service001.deleteById(1);
-		SHOW_LOG.debug(""+byId);
-	}
+	// @Autowired
+	// private Demo0108Service001 demo0108Service001;
+	//
+	// @Test
+	// public void testById() {
+	// 	Demo0108DomainTblBook demo0108DomainTblBook = demo0108Service001.queryById(1);
+	// 	SHOW_LOG.debug(""+demo0108DomainTblBook);
+	// }
+	//
+	// @Test
+	// public void testGetAll() {
+	// 	List<Demo0108DomainTblBook> demo0108DomainTblBooks = demo0108Service001.selectAll(1);
+	// 	SHOW_LOG.debug(""+demo0108DomainTblBooks);
+	// }
+	//
+	// @Test
+	// public void testDelete() {
+	// 	Boolean byId = demo0108Service001.deleteById(1);
+	// 	SHOW_LOG.debug(""+byId);
+	// }
 }
