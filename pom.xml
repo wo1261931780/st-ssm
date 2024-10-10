@@ -235,7 +235,7 @@
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-boot-starter</artifactId>
-			<version>3.5.7</version>
+			<version>3.5.8</version>
 			<!--依赖中一共两个jar包-->
 			<!--一个是mybatis和spring整合包-->
 			<!--一个是mybatis包-->
